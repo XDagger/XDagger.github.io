@@ -1,0 +1,19 @@
+markdown: kramdown
+
+index_title: XDAG A new DAG-based cryptocurrency
+index_keywords: XDAG,DAG,MINNING
+index_description: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
+
+dag_title: About Dagger
+dag_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
+
+mine_title: Mining quick start
+mine_content: The first mineable DAG. Follow the steps below. If you get stuck, join us in the discord.
+
+wallet_title: Wallets
+wallet_content: Select the wallet you require and download will being instantly.
+
+team_title: XDAG_team
+devNum: 28
+
+offical: FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
