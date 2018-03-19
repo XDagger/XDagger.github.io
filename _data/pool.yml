@@ -7,11 +7,11 @@
   name: Khaak
 - ip: 176.31.253.28:13655
   p1st: 0.1
-  p2nd: 0.1
-  p3rd: 0.1
+  p2nd: 0
+  p3rd: 0
   p4th: 1
-  web: http://http://socialpools.net/
-  webName: Site under construction
+  web: http://socialpools.net/
+  webName: socialpools.net
   country: France
   name: Sofar
 - ip: 24.234.35.55:31333
