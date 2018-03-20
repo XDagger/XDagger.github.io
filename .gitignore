@@ -1,0 +1,8 @@
+#some local files
+.idea/
+.DS_Store
+
+# dependencies
+/node_modules
+/_site
+/.sass-cache
