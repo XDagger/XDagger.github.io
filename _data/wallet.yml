@@ -10,7 +10,7 @@
   href: https://github.com/XDagger/xdag/files/1835208/XDag.x86.zip
   delay: 0.1s
   
-  - name: MacOS wallet
+- name: MacOS wallet
   content: MacOS command line wallet.
   pic: ion-social-apple-outline
   href: https://github.com/XDagger/xdag/files/1832276/xdag.zip
