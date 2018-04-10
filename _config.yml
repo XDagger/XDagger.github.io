@@ -17,3 +17,14 @@ team_title: XDAG_team
 devNum: 28
 
 offical: FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
+
+news_title: XDAG_News
+
+baseurl: "/"
+
+paginate: 5
+paginate_path: "page:num"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

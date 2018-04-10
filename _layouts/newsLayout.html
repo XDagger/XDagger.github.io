@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{site.news_title}}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="{{'../assets/images/fav/favicon.png'| prepend: site.baseurl | replace: '//', '/' }}" rel="icon">
+    <link href="{{'../assets/images/fav/apple-touch-icon.png'| prepend: site.baseurl | replace: '//', '/' }}" rel="apple-touch-icon">
+    <link href="{{'../assets/lib/bootstrap/css/bootstrap.min.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet">
+    <link href="{{'../assets/lib/font-awesome/css/font-awesome.min.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet">
+    <link href="{{'../assets/lib/ionicons/css/ionicons.min.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet">
+    <link href="{{'../assets/lib/animate/animate.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet" >
+    <link href="{{'../css/news.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet" >
+</head>
+<body>
+{% include header.html %}
+<div id="intro"></div>
+<main id="main">
+    <section id="news">
+        <div class="container">
+            <div class="section-header wow fadeInUp">
+                <h3>NEWS</h3>
+                <p>The announcemensts of XDAG .</p>
+            </div>
+            <div class="row">
+                <ul class="news">
+
+                {% for post in paginator.posts  %}
+                    <li>
+                        <div class="lft">
+                            <div class="tit">{{ post.title }}<i class="ion-ios-arrow-down"></i></div>
+                            <div class="cont all">{{ post.content }}</div>
+                            <div class="cont h60 top">{{ post.excerpt | strip_html }}</div>
+                        </div>
+                        <div class="rht">
+                            <i class="ion-ios-arrow-down"></i>
+                            <div class="month"><span>{{post.date | date: "%m"}}</span>-<span>{{post.date | date: "%d"}}</span></div>
+                            <div class="year">{{post.date | date: "%Y"}}</div>
+                        </div>
+                    </li>
+                {% endfor %}
+                </ul>
+                {% if paginator.total_pages > 1 %}
+                <div class="pagination">
+                    {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="prev">Previous</a>
+                    {% else %}
+                    <span>Previous</span>
+
+                    {% endif %}
+                    {% for page in (1..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                    <em>{{ page }}</em>
+                    {% elsif page == 1 %}
+                    <a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                    {% else %}
+                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
+                    {% else %}
+                    <span>Next</span>
+                    {% endif %}
+
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+</main>
+{% include footer.html %}
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<script src="{{'../assets/lib/jquery/jquery.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/lib/jquery/jquery-migrate.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/lib/bootstrap/js/bootstrap.bundle.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/lib/easing/easing.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/lib/superfish/hoverIntent.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/lib/superfish/superfish.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/lib/wow/wow.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/js/public.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="{{'../assets/js/news.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+</body>
+</html>
