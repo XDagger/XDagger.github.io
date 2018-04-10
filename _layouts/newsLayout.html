@@ -6,16 +6,37 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <link href="{{'../assets/images/fav/favicon.png'| prepend: site.baseurl | replace: '//', '/' }}" rel="icon">
-    <link href="{{'../assets/images/fav/apple-touch-icon.png'| prepend: site.baseurl | replace: '//', '/' }}" rel="apple-touch-icon">
-    <link href="{{'../assets/lib/bootstrap/css/bootstrap.min.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet">
-    <link href="{{'../assets/lib/font-awesome/css/font-awesome.min.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet">
-    <link href="{{'../assets/lib/ionicons/css/ionicons.min.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet">
-    <link href="{{'../assets/lib/animate/animate.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet" >
-    <link href="{{'../css/news.css'| prepend: site.baseurl | replace: '//', '/' }}" rel="stylesheet" >
+    <link href="../../assets/images/fav/favicon.png" rel="icon">
+    <link href="../../assets/images/fav/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../../assets/lib/animate/animate.css" rel="stylesheet" >
+    <link href="../../css/news.css" rel="stylesheet" >
 </head>
 <body>
-{% include header.html %}
+<header id="header">
+    <div class="container-fluid">
+        <div id="logo" class="pull-left">
+            <a href="#intro"><img src="../../assets/images/logo.png" height="40" alt="" title="" /></a>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li ><a href="../../index.html">Home</a></li>
+                <li><a href="http://explorer.xdag.io/" target="_blank">Block explorer</a></li>
+                <!--<li><a href="team.html">Team</a></li>-->
+                <!--<li><a href="#">Forum</a></li>-->
+                <!--<li><a href="#">Blog</a></li>-->
+                <!--<li><a href="#">Wiki</a></li>-->
+                <li><a href="../../index.html#services">MINING QUICK START</a></li>
+                <li><a href="../../index.html#wallet">WALLETS</a></li>
+                <!--<li><a href="{{'blog/index.html'| prepend: site.baseurl | replace: '//', '/' }}">NEWS</a></li>-->
+                <li><a href="../../index.html#roadmap">ROADMAP</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 <div id="intro"></div>
 <main id="main">
     <section id="news">
@@ -72,16 +93,45 @@
         </div>
     </section>
 </main>
-{% include footer.html %}
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 footer-info">
+                    <img src="../../assets/images/logo.png" height="40" alt="" title="" />
+                    <div class="btm">
+                        <p>Support The Community: This site is managed by the XDAG community.</p>
+                        <p class="btmWallet">Contribute XDAG: {{site.offical}}</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="../../index.html">Home</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a></li>
+                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Forum</a></li>-->
+                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Blog</a></li>-->
+                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Wiki</a></li>-->
+                        <li><i class="ion-ios-arrow-right"></i> <a href="../../index.html#services">MINING QUICK START</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="../index.html#wallet">WALLETS</a></li>
+                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="{{'blog/index.html'| prepend: site.baseurl | replace: '//', '/' }}">NEWS</a></li>-->
+                        <li><i class="ion-ios-arrow-right"></i> <a href="../index.html#roadmap">ROADMAP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<script src="{{'../assets/lib/jquery/jquery.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/lib/jquery/jquery-migrate.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/lib/bootstrap/js/bootstrap.bundle.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/lib/easing/easing.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/lib/superfish/hoverIntent.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/lib/superfish/superfish.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/lib/wow/wow.min.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/js/public.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
-<script src="{{'../assets/js/news.js'| prepend: site.baseurl | replace: '//', '/' }}"></script>
+<script src="../../assets/lib/jquery/jquery.min.js"></script>
+<script src="../../assets/lib/jquery/jquery-migrate.min.js"></script>
+<script src="../../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../assets/lib/easing/easing.min.js"></script>
+<script src="../../assets/lib/superfish/hoverIntent.js"></script>
+<script src="../../assets/lib/superfish/superfish.min.js"></script>
+<script src="../../assets/lib/wow/wow.min.js"></script>
+<script src="../../assets/js/public.js"></script>
+<script src="../../assets/js/news.js"></script>
 </body>
 </html>
