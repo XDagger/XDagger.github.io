@@ -21,15 +21,6 @@
   p4th: 0.5
   country:  US/Las Vegas
   name: true
-- ip: pool.xdag.top:8899
-  p1st: 1
-  p2nd: 5
-  p3rd: 19
-  p4th: X
-  web: https://xdag.top
-  webName: https://xdag.top
-  country: China
-  name: Thomasab
 - ip: 109.196.45.218:443
   p1st: 1
   p2nd: 1
@@ -43,7 +34,7 @@
   p1st: 0.5
   p2nd: 1
   p3rd: 1
-  p4th: 0.5
+  p4th: 1
   web: https://xdagpool.com/
   webName: https://xdagpool.com/
   country: Germany
@@ -57,13 +48,6 @@
   webName: http://xdag.pool.ga/stats.txt
   country: Canada
   name: RamsesIII
-- ip: 199.16.31.96:3355
-  p1st: 1
-  p2nd: 1
-  p3rd: 1
-  p4th: 0.5
-  country: US / Rochester
-  name: Khaak
 - ip: 148.251.139.197:443
   p1st: 1
   p2nd: 5
