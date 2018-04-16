@@ -1,10 +1,3 @@
-- ip: 172.105.216.53:3355
-  p1st: 1
-  p2nd: 6
-  p3rd: 8
-  p4th: 2
-  country: Japan
-  name: Khaak
 - ip: 176.31.253.28:13655
   p1st: 0.1
   p2nd: 0
@@ -66,4 +59,10 @@
   webName: https://xdag.signal2noi.se/
   country: USA / NJ
   name: Gribbly
-
+- ip: 172.105.216.53:3355
+  p1st: 1
+  p2nd: 6
+  p3rd: 8
+  p4th: 2
+  country: Japan
+  name: Khaak
