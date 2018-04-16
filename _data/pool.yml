@@ -30,8 +30,8 @@
   p2nd: 1
   p3rd: 1
   p4th: 1
-  web: http://xdag.pool.ga/stats.txt
-  webName: http://xdag.pool.ga/stats.txt
+  web: http://xdag.pool.ga/
+  webName: http://xdag.pool.ga/
   country: Canada
   name: RamsesIII
 - ip: 148.251.139.197:443
