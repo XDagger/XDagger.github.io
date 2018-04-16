@@ -7,13 +7,6 @@
   webName: socialpools.net
   country: France
   name: Sofar
-- ip: 24.234.35.55:31333
-  p1st: 0.5
-  p2nd: 2
-  p3rd: 7
-  p4th: 0.5
-  country:  US/Las Vegas
-  name: true
 - ip: 109.196.45.218:443
   p1st: 1
   p2nd: 1
