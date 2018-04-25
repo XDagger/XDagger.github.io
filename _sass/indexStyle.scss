@@ -1460,34 +1460,42 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ddd;
 }
 
-
+/*--------------------------------------------------------------
+# Roadmap
+--------------------------------------------------------------*/
 
 // Dark Theme
-
 /*
-$background: linear-gradient(190deg, #1f1821, #14181b);
-$text-color: #e6ecf3;
-$text-date-color: $line-color;
-$hline-color: #fd4ea0;
+$background: url('../assets/images/roadmap-gradient.png') #0f212b;
+$timeline-background: url('../assets/images/roadmap-beginning-dark.png') left center;
+$lights-background-opacity: 0.22;
+$text-color: rgba(255, 255, 255, 0.85);
+$vline-color: #428bca;
+$text-date-color: #fff;
+$header-color: #fff;
+$hline-color: rgba(255, 255, 255, 0.85);
 $hline-circle-color: $hline-color;
-$vline-color: $hline-color;
-$vline-secondary-color: rgba(255, 255, 255, 0.5);
-$vline-circle-color: $text-color;
+$vline-secondary-color: rgba(165, 245, 255, 0.72);
+$vline-circle-color: $vline-color;
 */
 
 // Light Theme
-$background: linear-gradient(45deg, #4d3ff5 0%, #b2f9d0 100%);
-$text-color: #fff;
-$text-date-color: #fff;
-$hline-color: #fff;
+
+$background: linear-gradient(45deg, #f7f7f7 0%, #ffffff 100%);
+$timeline-background: url('../assets/images/roadmap-beginning-dark.png') left center;
+$lights-background-opacity: 1;
+$text-color: #333;
+$vline-color: #428bca;
+$text-date-color: #162a38;
+$header-color: #000;
+$hline-color: #1f323e;
 $hline-circle-color: $hline-color;
-$vline-color: #f74cac;
 $vline-secondary-color: rgba(165, 245, 255, 0.72);
 $vline-circle-color: $vline-color;
 
 
-$font-stack-primary: 'Muli', arial, sans-serif;
-$font-stack-secondary: 'Nunito', arial, sans-serif;
+$font-stack-primary: 'Open Sans', arial, sans-serif;
+$font-stack-secondary: 'Open Sans', arial, sans-serif;
 
 $hline-width: 10px;
 $hline-circle-width: 25px;
@@ -1533,61 +1541,46 @@ $vline-spacing: 10px;
   justify-content: center;
   min-height: 100vh;
   min-width: 100%;
-  padding: 30px 80px 80px 0;
+  padding: 60px 0;
   overflow: hidden;
   color: $text-color;
   background: $background;
+  background-size: cover;
   font-family: $font-stack-primary;
   list-style: none;
 
   @include smallscreen {
-    padding: -40px 0 80px 0;
+    padding: 0 0 60px 0;
     align-items: center;
     width: auto;
     flex-direction: row;
     justify-content: flex-start;
   }
 
-  &-title {
-    padding-left: 0.1em;
-    padding-top: 1em;
-    z-index: 1;
-    font-size:3em;
-    font-family: $font-stack-secondary;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-
-
-    @include largescreen {
-      padding-bottom: 80px;
-    }
-
+  .section-header {
     @include smallscreen {
-      font-size: calc(7.9vw + 1.1em);
-      align-self: flex-start;
-      width: 10vw;
-      word-wrap: break-word;
       position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      z-index: 1;
     }
-  }
 
+    h3 {
+      color: $header-color;
+      margin-bottom: 40px;
 
-  &-bg {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://svgshare.com/i/5ey.svg');
-    background-size: cover;
-    opacity: 0.15;
-    filter: blur(10px);
+      @include smallscreen {
+        color: #fff;
+      }
+    }
   }
 
   &-timeline {
     display: flex;
     height: 0;
+    margin: 0;
+    padding-right: 60px;
 
     @include smallscreen {
       flex-direction: column;
@@ -1622,7 +1615,7 @@ $vline-spacing: 10px;
       width: 340px;
       height: 800px;
       left: 0;
-      background: url('https://s14.postimg.org/cwe76i4r5/paint2.png') left center;
+      background: $timeline-background;
       background-repeat: no-repeat;
 
       @include smallscreen {
@@ -1630,7 +1623,7 @@ $vline-spacing: 10px;
         transform: translateX(calc(100vw - 330px)) rotateZ(90deg);
         width: 800px;
         height: 800px;
-        left: -50vw;
+        left: -53vw;
       }
     }
   }
@@ -1685,7 +1678,6 @@ $vline-spacing: 10px;
 
     &:first-child {
       @include smallscreen {
-        width: 40vw;
         margin-top: -$hline-spacing - $hline-circle-width / 2;
       }
     }
@@ -1797,18 +1789,17 @@ $vline-spacing: 10px;
 
       .roadmap-swirly {
         @include largescreen {
-          transform: rotateX(180deg);
           bottom: auto;
           top: 30px;
         }
 
         @include smallscreen {
-          transform: rotateY(180deg);
           height: 155px - $vline-spacing;
           bottom: 0;
           top: auto;
           left: auto;
-          right: calc(-6% + 36px);
+          // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
+          right: calc(-6% + 45px);
           width: calc(106% - 64px)
         }
       }
@@ -1831,6 +1822,7 @@ $vline-spacing: 10px;
     @include largescreen {
       height: 150px - $hline-spacing - $vline-spacing;
       bottom: $hline-spacing;
+      // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
       left: calc(-3% + 7px);
       width: calc(53% - 5px);
     }
@@ -1838,6 +1830,7 @@ $vline-spacing: 10px;
     @include smallscreen {
       height: 155px - $vline-spacing;
       bottom: 0;
+      // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
       left: calc(-6% + 36px);
       width: calc(106% - 64px);
     }
