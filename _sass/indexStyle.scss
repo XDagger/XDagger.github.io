@@ -1801,6 +1801,12 @@ $vline-spacing: 10px;
           right: calc(-6% + 45px);
           width: calc(106% - 64px)
         }
+
+        path {
+          @include smallscreen {
+            animation-direction: reverse;
+          }
+        }
       }
 
       .roadmap-vline {
