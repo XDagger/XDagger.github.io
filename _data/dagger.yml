@@ -1,6 +1,6 @@
 - name: CPU/GPU Mineable
   content: XDAG is both CPU & GPU mineable. Making it the first mineable dag project.
-  pic: '../assets/images/about-vision.jpg'
+  pic: '../assets/images/about-mining.jpg'
   delay: 0s
 
 - name: Privacy
