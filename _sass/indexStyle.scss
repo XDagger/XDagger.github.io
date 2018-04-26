@@ -1526,14 +1526,6 @@ $vline-spacing: 10px;
   }
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .roadmap {
   position: relative;;
   display: flex;
@@ -1548,6 +1540,13 @@ $vline-spacing: 10px;
   background-size: cover;
   font-family: $font-stack-primary;
   list-style: none;
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+  }
 
   @include smallscreen {
     padding: 0 0 60px 0;
