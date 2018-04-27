@@ -1610,7 +1610,6 @@ $vline-spacing: 10px;
     &::after {
       content: '';
       position: absolute;
-      align-self: center;
       width: 340px;
       height: 800px;
       left: 0;
@@ -1623,6 +1622,10 @@ $vline-spacing: 10px;
         width: 800px;
         height: 800px;
         left: -53vw;
+      }
+
+      @include largescreen {
+        transform: translateY(-50%);
       }
     }
   }
@@ -1653,6 +1656,7 @@ $vline-spacing: 10px;
       border-radius: 50%;
 
       @include largescreen {
+        bottom: 0;
         left: 50%;
         transform: translate(-50%,50%);
       }
@@ -1693,6 +1697,7 @@ $vline-spacing: 10px;
 
       &::after {
         @include largescreen {
+          top: 0;
           transform: translate(-50%, -50%);
         }
 
@@ -1810,6 +1815,11 @@ $vline-spacing: 10px;
       }
 
       .roadmap-vline {
+        @include smallscreen {
+          left: auto;
+          right: 0;
+        }
+
         &::before,
         &::after {
           @include smallscreen {
@@ -1986,6 +1996,7 @@ $vline-spacing: 10px;
     position: absolute;
     top: 0;
     bottom: 0;
+    left: 0;
 
     &::before,
     &::after {
