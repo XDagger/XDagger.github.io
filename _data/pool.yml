@@ -8,23 +8,23 @@
   country: Poland
   name: AnotherYou
 - ip: 136.243.55.153:13654
-  p1st: 0.5
-  p2nd: 1
-  p3rd: 1
+  p1st: 1
+  p2nd: 0
+  p3rd: 0
   p4th: 1
   web: https://xdagpool.com/
   webName: https://xdagpool.com/
   country: Germany
   name: kbs1
-- ip: 46.4.102.56:13654
-  p1st: 0.3
-  p2nd: 1
-  p3rd: 1
+- ip: 95.216.36.234:13654
+  p1st: 1
+  p2nd: 0
+  p3rd: 0
   p4th: 1
   web: https://xdagpool.org/
   webName: https://xdagpool.org/
-  country: Germany
-  name: filipo
+  country: Finland
+  name: Filipo
 - ip: 142.44.143.234:777
   p1st: 1
   p2nd: 1
