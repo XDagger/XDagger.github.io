@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 ###### Are you agreed to use this tool to make poll to start to manage our community?
 
 Please take 2 seconde to reply to this one.

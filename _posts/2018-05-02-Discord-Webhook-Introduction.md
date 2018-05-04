@@ -1,5 +1,6 @@
 ---
 layout: postLayout
+author: Xdag.io
 ---
 
 We are now using webhooks to automatically get you the latest news from xdag.io.
