@@ -30,7 +30,7 @@
                 {% for post in paginator.posts  %}
                     <li>
                         <div class="lft">
-                            <div class="tit"> <a href="{{post.url}}">{{ post.title }}</a><i class="ion-ios-arrow-down"></i></div>
+                            <div class="tit"> <a href="{{ post.url | relative_url }}">{{ post.title }}</a><i class="ion-ios-arrow-down"></i></div>
                             <div class="cont all">{{ post.content }}</div>
                             <div class="cont h60 top">{{ post.excerpt | strip_html }}</div>
                         </div>
