@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 ###### OVERVIEW
 The first bounty program task is to create a block explorer. The new Dagger community website (xdag.org) will be out soon, and it will include lots of information from the community regarding the Dagger project. The website will need tools in the future to let users explore Dagger, and the first tool is a block explorer.
 

@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 - Link to download [https://github.com/jonano614/DaggerGpuMiner/releases](https://github.com/jonano614/DaggerGpuMiner/releases)
 - Source codes [https://github.com/jonano614/DaggerGpuMiner](https://github.com/jonano614/DaggerGpuMiner)
 
