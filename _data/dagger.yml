@@ -1,14 +1,14 @@
 - name: CPU/GPU Mineable
   content: XDAG is both CPU & GPU mineable. Making it the first mineable dag project.
-  pic: '../assets/images/about-mining.jpg'
+  pic: 'assets/images/about-mining.jpg'
   delay: 0s
 
 - name: Privacy
   content: XDAG is working on incorporating privacy features. These are part of the 2018 roadmap.
-  pic: '../assets/images/about-mission.jpg'
+  pic: 'assets/images/about-mission.jpg'
   delay: 0.1s
 
 - name: Smart contracts
   content: XDAG is working on the possibility to add smart contract.
-  pic: '../assets/images/about-plan.jpg'
+  pic: 'assets/images/about-plan.jpg'
   delay: 0.2s
