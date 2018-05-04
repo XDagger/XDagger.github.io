@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 - The Dagger Community is proud to inform everyone that the second award of funds has been decided.
 
 - We are also proud to share with you the latest news regarding Dagger and the development plans that are currently under way.

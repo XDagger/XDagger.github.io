@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 - This poll has been formed to determine if community funds, collected to the community address from voluntary pool fees, should be distributed to members of the community who have produced, created, or improved community resources which further grow Dagger or secure the XDAG network.
 - Rewards will be given for completed tasks such as:
 

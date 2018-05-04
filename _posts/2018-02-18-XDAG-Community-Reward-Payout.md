@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 The winner of the XDAG Block Explorer bounty was not difficult to determine, as only one participant shared his work publicly before the end of the contest.
 
 Discord user @rubencm#5207 has publicly released his block-explorer, based on prior work by Cheatoshin0.

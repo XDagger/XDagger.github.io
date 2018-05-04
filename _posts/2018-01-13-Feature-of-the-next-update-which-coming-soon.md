@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 ###### T13.816
 - 1) work with memory is rewritten. The data is now stored in a file that is mapped to memory. This will help if there is not much memory, and the necessary memory is constantly growing.
 - 2) the new version can be run in parallel with the old one, if you have a powerful server, so as not to interrupt the work of the miners

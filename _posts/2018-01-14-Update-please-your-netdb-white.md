@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 ###### Pools owner! Update please your netdb-white.txt in the working folder.
 
 ##### Here is current whitelist:

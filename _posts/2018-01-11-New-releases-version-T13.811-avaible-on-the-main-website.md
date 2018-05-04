@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 ###### Fixes:
 - 1) trouble with another address fixed (already!). If you run the program again you should obtain the same address.
 - 2) some rebranding done:

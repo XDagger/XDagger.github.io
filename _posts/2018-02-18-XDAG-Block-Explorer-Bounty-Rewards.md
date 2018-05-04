@@ -1,3 +1,8 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
 After the result of the first poll regarding the payout of rewards from the community fund (https://goo.gl/forms/KxEFzbZcE7njKse22), a reward value has been determined, and a list of people from these results has been created.
 This list was discussed publicly on Discord, and this is the final payout reward schedule is:
 
