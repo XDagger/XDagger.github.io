@@ -7,16 +7,16 @@
     <meta content="{{site.index_keywords}}" name="keywords">
     <meta content="{{site.index_description}}" name="description">
 
-    <link href="../assets/images/fav/favicon.png" rel="icon">
-    <link href="../assets/images/fav/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ 'assets/images/fav/favicon.png' | relative_url }}" rel="icon">
+    <link href="{{ 'assets/images/fav/apple-touch-icon.png' | relative_url }}" rel="apple-touch-icon">
 
-    <link href="../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../assets/lib/animate/animate.css" rel="stylesheet">
-    <link href="../assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="../assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
+    <link href="{{ 'assets/lib/bootstrap/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/font-awesome/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/animate/animate.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/ionicons/css/ionicons.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/owlcarousel/assets/owl.carousel.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/lightbox/css/lightbox.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'css/index.css' | relative_url }}" rel="stylesheet">
 </head>
 <body>
 {% include header.html %}
@@ -38,7 +38,7 @@
                 <div class="col-md-4 wow fadeInUp" data-wow-delay="{{d.delay}}">
                     <div class="about-col">
                         <div class="img">
-                            <img src="{{d.pic}}" alt="" class="img-fluid">
+                            <img src="{{ d.pic | relative_url }}" alt="" class="img-fluid">
                             <div class="icon"><i class="ion-ios-unlocked-outline"></i></div>
                         </div>
                         <h2 class="title">{{ d.name }}</h2>
@@ -75,8 +75,7 @@
                             <p class="pStrong">Fee&nbsp;explanation:</p>
                             <hr />
                             <p >For example: IP | (
-                                <span class="purple">1%<sup><span class="brdr"><span class="sup">1</span></span></sup>
-</span> -
+                                <span class="purple">1%<sup><span class="brdr"><span class="sup">1</span></span></sup></span> -
                                 <span class="black">1%<sup><span class="brdr"><span class="sup">2</span></span></sup></span> -
                                 <span class="dark">1%<sup><span class="brdr"><span class="sup">3</span></span></sup></span> -
                                 <span class="blue">1%<sup><span class="brdr"><span class="sup">4</span></span></sup></span>) | Pool Location | (Pool link) | Pool Owner</p>
@@ -151,7 +150,7 @@
             </header>
             <div class="owl-carousel clients-carousel">
                 {% for d in site.data.community %}
-                <a href="{{ d.href }}" target="_blank"><img src="{{ d.pic }}" alt=""></a>
+                <a href="{{ d.href }}" target="_blank"><img src="{{ d.pic | relative_url }}" alt=""></a>
                 {% endfor %}
             </div>
         </div>
@@ -160,18 +159,18 @@
 {% include footer.html %}
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<script src="../assets/lib/jquery/jquery.min.js"></script>
-<script src="../assets/lib/jquery/jquery-migrate.min.js"></script>
-<script src="../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/lib/easing/easing.min.js"></script>
-<script src="../assets/lib/superfish/hoverIntent.js"></script>
-<script src="../assets/lib/superfish/superfish.min.js"></script>
-<script src="../assets/lib/wow/wow.min.js"></script>
-<script src="../assets/lib/waypoints/waypoints.min.js"></script>
-<script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="../assets/lib/lightbox/js/lightbox.min.js"></script>
-<script src="../assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-<script src="../assets/js/public.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="{{ 'assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/jquery/jquery-migrate.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/easing/easing.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/superfish/hoverIntent.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/superfish/superfish.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/wow/wow.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/waypoints/waypoints.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/owlcarousel/owl.carousel.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/lightbox/js/lightbox.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/touchSwipe/jquery.touchSwipe.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/public.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

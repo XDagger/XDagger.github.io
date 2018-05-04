@@ -6,37 +6,16 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <link href="../../assets/images/fav/favicon.png" rel="icon">
-    <link href="../../assets/images/fav/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="../../assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../../assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="../../assets/lib/animate/animate.css" rel="stylesheet" >
-    <link href="../../css/news.css" rel="stylesheet" >
+    <link href="{{ 'assets/images/fav/favicon.png' | relative_url }}" rel="icon">
+    <link href="{{ 'assets/images/fav/apple-touch-icon.png' | relative_url }}" rel="apple-touch-icon">
+    <link href="{{ 'assets/lib/bootstrap/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/font-awesome/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/ionicons/css/ionicons.min.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/lib/animate/animate.css' | relative_url }}" rel="stylesheet" >
+    <link href="{{ 'css/news.css' | relative_url }}" rel="stylesheet" >
 </head>
 <body>
-<header id="header">
-    <div class="container-fluid">
-        <div id="logo" class="pull-left">
-            <a href="../../index.html"><img src="../../assets/images/logo.png" height="40" alt="" title="" /></a>
-        </div>
-
-        <nav id="nav-menu-container">
-            <ul class="nav-menu">
-                <li ><a href="../../index.html">Home</a></li>
-                <li><a href="http://explorer.xdag.io/" target="_blank">Block explorer</a></li>
-                <!--<li><a href="team.html">Team</a></li>-->
-                <!--<li><a href="#">Forum</a></li>-->
-                <!--<li><a href="#">Blog</a></li>-->
-                <!--<li><a href="#">Wiki</a></li>-->
-                <li><a href="../../index.html#services">MINING QUICK START</a></li>
-                <li><a href="../../index.html#wallet">WALLETS</a></li>
-                <li><a href="../blog/index.html">NEWS</a></li>
-                <!--<li><a href="../../index.html#roadmap">ROADMAP</a></li>-->
-            </ul>
-        </nav>
-    </div>
-</header>
+{% include header.html %}
 <div id="intro"></div>
 <main id="main">
     <section id="news">
@@ -51,7 +30,7 @@
                 {% for post in paginator.posts  %}
                     <li>
                         <div class="lft">
-                            <div class="tit"> <a href="{{post.url}}">{{ post.title }}</a><i class="ion-ios-arrow-down"></i></div>
+                            <div class="tit"> <a href="{{ post.url | relative_url }}">{{ post.title }}</a><i class="ion-ios-arrow-down"></i></div>
                             <div class="cont all">{{ post.content }}</div>
                             <div class="cont h60 top">{{ post.excerpt | strip_html }}</div>
                         </div>
@@ -66,7 +45,7 @@
                 {% if paginator.total_pages > 1 %}
                 <div class="pagination">
                     {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="prev">Previous</a>
+                    <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">Previous</a>
                     {% else %}
                     <span>Previous</span>
 
@@ -75,14 +54,14 @@
                     {% if page == paginator.page %}
                     <em>{{ page }}</em>
                     {% elsif page == 1 %}
-                    <a href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+                    <a href="{{ '/blog/index.html' | relative_url }}">{{ page }}</a>
                     {% else %}
-                    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
                     {% endif %}
                     {% endfor %}
 
                     {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
+                    <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
                     {% else %}
                     <span>Next</span>
                     {% endif %}
@@ -98,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-6 footer-info">
-                    <img src="../../assets/images/logo.png" height="40" alt="" title="" />
+                    <img src="{{ 'assets/images/logo.png' | relative_url }}" height="40" alt="" title="" />
                     <div class="btm">
                         <p>Support The Community: This site is managed by the XDAG community.</p>
                         <p class="btmWallet">Contribute XDAG: {{site.offical}}</p>
@@ -108,15 +87,15 @@
                 <div class="col-lg-4 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="../../index.html">Home</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html' | relative_url }}">Home</a></li>
                         <li><i class="ion-ios-arrow-right"></i> <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a></li>
                         <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Forum</a></li>-->
                         <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Blog</a></li>-->
                         <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Wiki</a></li>-->
-                        <li><i class="ion-ios-arrow-right"></i> <a href="../../index.html#services">MINING QUICK START</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="../../index.html#wallet">WALLETS</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html#services' | relative_url }}">MINING QUICK START</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html#wallet' | relative_url }}">WALLETS</a></li>
                         <!--<li><i class="ion-ios-arrow-right"></i> <a href="{{'blog/index.html'| prepend: site.baseurl | replace: '//', '/' }}">NEWS</a></li>-->
-                        <li><i class="ion-ios-arrow-right"></i> <a href="../../index.html#roadmap">ROADMAP</a></li>
+                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html#roadmap' | relative_url }}">ROADMAP</a></li>
                     </ul>
                 </div>
             </div>
@@ -124,14 +103,14 @@
     </div>
 </footer>
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<script src="../../assets/lib/jquery/jquery.min.js"></script>
-<script src="../../assets/lib/jquery/jquery-migrate.min.js"></script>
-<script src="../../assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../../assets/lib/easing/easing.min.js"></script>
-<script src="../../assets/lib/superfish/hoverIntent.js"></script>
-<script src="../../assets/lib/superfish/superfish.min.js"></script>
-<script src="../../assets/lib/wow/wow.min.js"></script>
-<script src="../../assets/js/public.js"></script>
-<script src="../../assets/js/news.js"></script>
+<script src="{{ 'assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/jquery/jquery-migrate.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/easing/easing.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/superfish/hoverIntent.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/superfish/superfish.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/lib/wow/wow.min.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/public.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/news.js' | relative_url }}"></script>
 </body>
 </html>

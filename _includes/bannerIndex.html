@@ -3,7 +3,7 @@
         <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators"></ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active" style="background-image: url('../assets/images/banner/1.jpg');">
+                <div class="carousel-item active" style="background-image: url({{ 'assets/images/banner/1.jpg' | relative_url }});">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>XDAG: A new DAG-based<br> cryptocurrency</h2>
@@ -11,7 +11,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item " style="background-image: url('../assets/images/banner/2.png');">
+                <div class="carousel-item " style="background-image: url({{ 'assets/images/banner/2.png'  | relative_url }});">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>The first mineable DAG</h2>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item" style="background-image: url('../assets/images/banner/3.jpg');">
+                <div class="carousel-item" style="background-image: url({{ 'assets/images/banner/3.jpg'  | relative_url }});">
                     <div class="carousel-container">
                         <div class="carousel-content">
                             <h2>No pre-mine or ICO</h2>
