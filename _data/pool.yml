@@ -59,3 +59,12 @@
   p4th: 2
   country: Japan
   name: Khaak
+- ip: eu.xdag.signal2noi.se:13655
+  p1st: 0.5
+  p2nd: 0
+  p3rd: 0
+  p4th: 1
+  web: https://eu.xdag.signal2noi.se/
+  webName: https://eu.xdag.signal2noi.se/
+  country: Netherlands
+  name: Gribbly
