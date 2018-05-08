@@ -1,0 +1,12 @@
+---
+layout: postLayout
+author: Xdag.io
+---
+
+Recently there have been some issues regarding the mainnet desynchronization. Last night, several pool owners reported a DDoS attack. The pools in mainland China generated a lot of traffic to the rest of the international pools. Sadly, the Great Firewall of China controls traffic to and from mainland China, and the bandwidth is heavily restricted which resulted in desynchronization issues between mainland Chinese pools and international pools. The issues with slow synchronization of blocks further increased the problems.
+
+Temporarily, it has been negotiated with some Chinese pool owners to move their pools outside of mainland China due to firewall restrictions. Pools with mainland Chinese IP addresses have temporarily been removed from the whitelist. 
+
+In the future, we are going to investigate and give recommendations of hardware configurations to make sure that pools run optimally. The whitelisted pools will also be audited so that the configuration does not interfere with the network. To do this, we would like all pool owners to keep in contact with the developers and the rest of the community to ensure that everything works smoothly.
+
+In the meanwhile, the development team will start to work on optimizing the network layer to avoid desynchronization issues.
