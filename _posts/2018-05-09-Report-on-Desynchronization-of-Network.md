@@ -14,7 +14,7 @@ In the meanwhile, the development team will start to work on optimizing the netw
 The plan for returning to a stable network is as follows:
 1. Pools which are in a non-fork status will synchronize for 24 hours.
 2. If the pools are in normal operation within 24 hours, the network will slowly expand to allow more pools. 
-3. If the pools are not synchronized within 24 hours, there is a need for an emergency rollback to Monday 7 May, 15:21 UTC. 
+3. If the pools are not synchronized within 24 hours, there is a need for an emergency rollback to a previous state. 
 
 Pool owners who can be trusted by the community miners and volunteer to do this rollback are advised to contact the development team. There are already several pools that volunteer to do this.
 
