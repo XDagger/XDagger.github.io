@@ -9,4 +9,10 @@ Temporarily, it has been negotiated with some Chinese pool owners to move their 
 
 In the future, we are going to investigate and give recommendations of hardware configurations to make sure that pools run optimally. The whitelisted pools will also be audited so that the configuration does not interfere with the network. To do this, we would like all pool owners to keep in contact with the developers and the rest of the community to ensure that everything works smoothly.
 
-In the meanwhile, the development team will start to work on optimizing the network layer to avoid desynchronization issues.
+In the meanwhile, the development team will start to work on optimizing the network layer to avoid desynchronization issues. 
+
+The plan for returning to a stable network is as follows:
+1. Pools which are in a non-fork status will synchronize for 24 hours.
+2. If the pools are in normal operation within 24 hours, the network will slowly expand to allow more pools. 
+3. If the pools are not synchronized within 24 hours, there is a need for an emergency rollback to Monday 7 May, 15:21 UTC. 
+
