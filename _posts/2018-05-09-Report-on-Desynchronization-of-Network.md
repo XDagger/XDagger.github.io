@@ -16,3 +16,6 @@ The plan for returning to a stable network is as follows:
 2. If the pools are in normal operation within 24 hours, the network will slowly expand to allow more pools. 
 3. If the pools are not synchronized within 24 hours, there is a need for an emergency rollback to Monday 7 May, 15:21 UTC. 
 
+Pool owners who can be trusted by the community miners and volunteer to do this rollback are advised to contact the development team. 
+
+In the case of a rollback, if you are affected by a loss of coins, please contact communitymanager@xdag.io. If you lost coins due to a trade, first contact the person you performed the trade with. If you lost coins due to an exchange trade, please contact the specific exchange. 
