@@ -29,10 +29,10 @@ title: XDAG
 description: A new DAG-based cryptocurrency
 logo: /assets/images/logo.png
 
-author:
-  twitter: XDAG_Community
-  name: Xdag.io
-  email: communitymanager@xdag.io 
+#author:
+#  name: Xdag.io
+#  twitter: XDAG_Community
+#  email: communitymanager@xdag.io 
 
 social:
   links:
