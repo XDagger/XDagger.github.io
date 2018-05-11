@@ -71,36 +71,7 @@
         </div>
     </section>
 </main>
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-6 footer-info">
-                    <img src="{{ 'assets/images/logo.png' | relative_url }}" height="40" alt="" title="" />
-                    <div class="btm">
-                        <p>Support The Community: This site is managed by the XDAG community.</p>
-                        <p class="btmWallet">Contribute XDAG: {{site.offical}}</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html' | relative_url }}">Home</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a></li>
-                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Forum</a></li>-->
-                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Blog</a></li>-->
-                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="#">Wiki</a></li>-->
-                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html#services' | relative_url }}">MINING QUICK START</a></li>
-                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html#wallet' | relative_url }}">WALLETS</a></li>
-                        <!--<li><i class="ion-ios-arrow-right"></i> <a href="{{'blog/index.html'| prepend: site.baseurl | replace: '//', '/' }}">NEWS</a></li>-->
-                        <li><i class="ion-ios-arrow-right"></i> <a href="{{ 'index.html#roadmap' | relative_url }}">ROADMAP</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+{% include footer.html %}
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <script src="{{ 'assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
 <script src="{{ 'assets/lib/jquery/jquery-migrate.min.js' | relative_url }}"></script>
