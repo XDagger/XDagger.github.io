@@ -160,7 +160,7 @@ Array.prototype.shuffle = function() {
     let stateEl = pool.querySelector('.js-pool-state');
     let url = stateEl.dataset.url;
     
-    stateEl.textContent = ' | Loading pool state...';
+    stateEl.textContent = 'Loading pool state...';
 
     handleStateCheck(url, stateEl);
     fragment.appendChild(pool);
@@ -170,13 +170,11 @@ Array.prototype.shuffle = function() {
   poolList.appendChild(fragment);
 
   function handleStateCheck(url, el) {
-    console.log('https://cors-anywhere.herokuapp.com/' + url);
-
     $.ajax({
       url: 'https://cors-anywhere.herokuapp.com/' + url,
       type: 'GET',
       success: function(res) {
-          el.textContent = res;
+        el.textContent = res;
       },
       error: function() {
         el.textContent = 'Pool state could not be resolved'; 
