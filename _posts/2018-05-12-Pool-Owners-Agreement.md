@@ -1,14 +1,14 @@
 ---
 layout: postLayout
 author: 
-date: "2018-05-12 09:00:00"
+date: "2018-05-12 10:00:00"
 image: assets/images/about-mining.png
 ---
 Due to the recent events the following recommendations and decisions have been made by the community and developer team.
 
 Only use pools listed in the whitelist. Even though it's very restraining in its current state, using only approved pools is vital for the health of the network.
 For now, every submission regarding whitelist addition will be audited. This will continue until the network is fully stable.
-The following requirements have to be fulfilled inorder to apply for a pool:
+The following requirements have to be fulfilled in order to apply for a pool:
 
 
 * No private pools
@@ -42,6 +42,7 @@ In your email request, please include this list and fill out everything.
 4. 4 Pool frontend:
   * 4.1 Stats through HTTP:
   * 4.2 Net conn through HTTP:
+  * 4.3 Pool frontend link (optional): 
 5. 5 Pool Owner:
 
 
