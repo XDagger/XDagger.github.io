@@ -12,7 +12,7 @@ The following requirements have to be fulfilled inorder to apply for a pool:
 
 
 * No private pools
-* A public frontend would be appreciate. If you don't want to add one, please provide at least:
+* A public frontend would be appreciated. If you don't want to add one, please provide at least:
   * Pool status must be exposed in real time (maximum interval time: one minute) by HTTP
   * Pool net conn must be exposed in real time (maximum interval time: one minute) by HTTP
 
