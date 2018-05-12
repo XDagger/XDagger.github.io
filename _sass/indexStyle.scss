@@ -2066,6 +2066,32 @@ $vline-spacing: 10px;
   background: #f7f7f9;
   padding-bottom: 20px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+
+  .purple{
+    color: #5255c8;
+    .brdr,.brdrbtm{
+      border-color:#5255c8 ;
+    }
+  }
+  .blue{
+    color:#317f5b;
+    .brdr,.brdrbtm{
+      border-color:#317f5b ;
+    }
+  }
+  .dark{
+    color: #428bca;
+    .brdr,.brdrbtm{
+      border-color:#428bca ;
+    }
+  }
+  .black{
+    color: #000000;
+    .brdr,.brdrbtm{
+      border-color:#000000 ;
+    }
+  }
+  
   ul,li{
     list-style: none;
     padding: 0;
@@ -2087,32 +2113,12 @@ $vline-spacing: 10px;
       font-weight: bold;
     }
     .brdr{
-      border-radius: 50%; height:14px;width:14px;display: inline-block;vertical-align: top;
+      border-radius: 50%; 
+      height:14px;
+      width:14px;
+      display: inline-block;
+      vertical-align: top;
       border: 1px solid;
-    }
-    .purple{
-      color: #5255c8;
-      .brdr,.brdrbtm{
-        border-color:#5255c8 ;
-      }
-    }
-    .blue{
-      color:#96cab2;
-      .brdr,.brdrbtm{
-        border-color:#96cab2 ;
-      }
-    }
-    .dark{
-      color: #428bca;
-      .brdr,.brdrbtm{
-        border-color:#428bca ;
-      }
-    }
-    .black{
-      color: #000000;
-      .brdr,.brdrbtm{
-        border-color:#000000 ;
-      }
     }
 .sup{
   display: block;line-height:14px;text-align: center
@@ -2150,6 +2156,18 @@ $vline-spacing: 10px;
     }
   }
 }
-.hideList{
-  display: none;
+
+.plist p {
+  padding: 15px 1%;
+  line-height: 1.6;
+}
+
+.plist span {
+  line-height: 1.6;
+}
+
+.pool-state {
+  display: block;
+  font-size: 14px;
+  color: #666;
 }
