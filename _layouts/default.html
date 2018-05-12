@@ -91,26 +91,22 @@
                 <div class="row poollist">
                     <div class="col span_12  left">
                         <h5>All the pools in this list contribute 1% to the community fund.</h5>
-                        <div class="hideList">
+                        <div class="plist">
                             {% for d in site.data.pool %}
                             <p>
-                                <span class="ip">{{d.ip}}</span>
-                                <span class="p1st">{{d.p1st}}</span>
-                                <span class="p2nd">{{d.p2nd}}</span>
-                                <span class="p3rd">{{d.p3rd}}</span>
-                                <span class="p4th">{{d.p4th}}</span>%)
-                                <span class="web">{{d.web}}</span>
-                                <span class="webName">{{d.webName}}</span>
-                                <span class="country">{{d.country}}</span>
-                                <span class="name">{{d.name}}</span>
+                                <span class="ip">{{ d.ip }}</span>
+                                <span> | (</span><span class="purple">{{ d.fee_pool }}%</span><span>-</span><span class="black">{{ d.fee_miner_finder }}%</span><span>-</span><span class="dark">{{ d.fee_miner_contributor }}%</span><span>-</span><span class="blue">{{ d.fee_community }}%</span><span>) | </span>
+                                {% if d.web %}
+                                <a class="web" href="{{ d.web }}" target="_blank">{{ d.webName }}</a>
+                                <span> | </span>
+                                {% endif %} 
+                                <span class="country">{{ d.country }}</span>
+                                <span> | </span>
+                                <span class="name">{{ d.name }}</span>
+                                <span class="pool-state">
+                                  State: <span class="js-pool-state" data-url="{{ d.state }}"></span>
+                                </span>
                             </p>
-                            {% endfor%}
-                        </div>
-                        <div class="plist">
-
-                            {% for d in site.data.pool %}
-                            <p><span class="ip">{{d.ip}}</span> | (<span class="p1st">{{d.p1st}}</span>%-<span class="p2nd">{{d.p2nd}}</span>%-<span class="p3rd">{{d.p3rd}}</span>%-<span class="p4th">{{d.p4th}}</span>%)
-                                {%if d.web %}<span class="web">|&nbsp;<a href="{{d.web}}" target="_blank">{{d.webName}}</a> </span>{% endif%} | <span class="country">{{d.country}}</span> |&nbsp;<span class="name">{{d.name}}</span></p>
                             {% endfor%}
                         </div>
 
