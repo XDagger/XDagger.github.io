@@ -965,11 +965,15 @@ ul,li{
 
 #news .post-content {
 
+  ul {
+    padding-left: 20px;
+  }
+
   ul ul,
   ol ol,
   ul ol,
   ol ul {
-    padding-left: 30px;
+    padding-left: 20px;
     list-style: none;
   }
 
