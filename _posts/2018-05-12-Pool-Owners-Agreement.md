@@ -8,7 +8,7 @@ Due to the recent events the following recommendations and decisions have been m
 
 Only use pools listed in the whitelist. Even though it's very restraining in its current state, using only approved pools is vital for the health of the network.
 For now, every submission regarding whitelist addition will be audited. This will continue until the network is fully stable.
-The following requirement have to be fulfilled inorder to apply for a pool:
+The following requirements have to be fulfilled inorder to apply for a pool:
 
 
 * No private pools
