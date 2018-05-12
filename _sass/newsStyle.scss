@@ -962,3 +962,35 @@ ul,li{
     font-style: normal;
   }
 }
+
+#news .post-content {
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul {
+    padding-left: 20px;
+    list-style: none;
+  }
+
+  ul li {
+    list-style: square;
+  }
+
+  ol {
+    list-style: none;
+  }
+
+  ol li {
+    list-style: none;
+  }
+
+  p {
+    margin: 30px 0;
+  }
+
+}
