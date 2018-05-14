@@ -156,6 +156,8 @@ Array.prototype.shuffle = function() {
   var toggle = document.querySelector('.js-pool-info-toggle');
   var shuffledPools = Array.prototype.slice.call(pools).shuffle();
   var fragment = document.createDocumentFragment();
+  var errorMsg = 'Pool state could not be resolved';
+
   for (pool of shuffledPools) {
     fragment.appendChild(pool);
   }
@@ -169,10 +171,13 @@ Array.prototype.shuffle = function() {
     for (pool of shuffledPools) {
       let stateEl = pool.querySelector('.js-pool-state');
       let url = stateEl.dataset.url;
-      
-      stateEl.textContent = 'Loading pool state...';
 
-      handleStateCheck(url, stateEl);
+      if (url === "") {
+        stateEl.textContent = errorMsg;
+      } else {
+        stateEl.textContent = 'Loading pool state...';
+        handleStateCheck(url, stateEl);
+      }
     }
 
     toggle.removeEventListener('click', renderPoolStates);
@@ -187,7 +192,7 @@ Array.prototype.shuffle = function() {
         el.textContent = res;
       },
       error: function() {
-        el.textContent = 'Pool state could not be resolved'; 
+        el.textContent = errorMsg; 
       }
     });
   }

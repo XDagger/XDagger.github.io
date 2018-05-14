@@ -58,8 +58,7 @@
   fee_miner_finder: 6
   fee_miner_contributor: 8
   fee_community: 2
-  # Placeholder
-  state: placeholder
+  state:
   country: Japan
   name: Khaak
 
