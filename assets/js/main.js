@@ -153,25 +153,35 @@ Array.prototype.shuffle = function() {
 (function() {
   var poolList = document.querySelector('.plist');
   var pools = document.querySelectorAll('.plist > p');
+  var toggle = document.querySelector('.js-pool-info-toggle');
   var shuffledPools = Array.prototype.slice.call(pools).shuffle();
   var fragment = document.createDocumentFragment();
-
   for (pool of shuffledPools) {
-    let stateEl = pool.querySelector('.js-pool-state');
-    let url = stateEl.dataset.url;
-    
-    stateEl.textContent = 'Loading pool state...';
-
-    handleStateCheck(url, stateEl);
     fragment.appendChild(pool);
   }
 
   poolList.innerHTML = "";
   poolList.appendChild(fragment);
 
+  toggle.addEventListener('click', renderPoolStates);
+
+  function renderPoolStates() {
+    for (pool of shuffledPools) {
+      let stateEl = pool.querySelector('.js-pool-state');
+      let url = stateEl.dataset.url;
+      
+      stateEl.textContent = 'Loading pool state...';
+
+      handleStateCheck(url, stateEl);
+    }
+
+    toggle.removeEventListener('click', renderPoolStates);
+  }
+
   function handleStateCheck(url, el) {
     $.ajax({
-      url: 'https://cors-anywhere.herokuapp.com/' + url,
+      // Proxy server
+      url: 'https://powerful-sea-54885.herokuapp.com/' + url,
       type: 'GET',
       success: function(res) {
         el.textContent = res;
