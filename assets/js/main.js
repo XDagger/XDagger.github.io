@@ -97,6 +97,7 @@ jQuery(document).ready(function( $ ) {
 			wrapper.style.paddingTop = '';
 		}
 	})();
+});
 
 /**
  * Pool list functionality
