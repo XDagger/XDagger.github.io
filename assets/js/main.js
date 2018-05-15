@@ -98,42 +98,6 @@ jQuery(document).ready(function( $ ) {
     }
   })();
 });
-/*
-let arr=[];
-  $(".hideList").find("p").each(function () {
-    let obj={
-      ip:$(this).find(".ip").html(),
-      p1st:$(this).find(".p1st").html(),
-      p2nd:$(this).find(".p2nd").html(),
-      p3rd:$(this).find(".p3rd").html(),
-      p4th:$(this).find(".p4th").html(),
-      web:$(this).find(".web").html(),
-      webName:$(this).find(".webName").html(),
-      country:$(this).find(".country").html(),
-      name:$(this).find(".name").html()
-    };
-    arr.push(obj)
-  });
-
-  arr.shuffle();
-  let str="";
- for(let i=0 ;i<arr.length;i++){
-  str+=`<p>${arr[i].ip} | (${arr[i].p1st}%-${arr[i].p2nd}%-${arr[i].p3rd}%-${arr[i].p4th}%) |&nbsp;<a href="${arr[i].web}" target="_blank">${arr[i].webName}</a> | ${arr[i].country} |&nbsp;${arr[i].name}</p>`;
- }
-$(".plist").html(str);
-});
-
-Array.prototype.shuffle = function() {
-  const input = this;
-  for (let i = input.length-1; i >=0; i--) {
-    const randomIndex = Math.floor(Math.random()*(i+1));
-    let itemAtIndex = input[randomIndex];
-    input[randomIndex] = input[i];
-    input[i] = itemAtIndex;
-  }
-  return input;
-};
-*/
 
 Array.prototype.shuffle = function() {
   const input = this;
@@ -147,7 +111,7 @@ Array.prototype.shuffle = function() {
 };
 
 /**
- * Pool list funtionality
+ * Pool list functionality
  */
 
 (function() {
