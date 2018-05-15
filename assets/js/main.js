@@ -153,7 +153,7 @@ Array.prototype.shuffle = function() {
       url: 'https://powerful-sea-54885.herokuapp.com/' + url,
       type: 'GET',
       success: function(res) {
-        if (res.indexOf('Can\'t connect to unix domain socket errno:111' > -1)) {
+        if (res.indexOf('Can\'t connect to unix domain socket errno:111') > -1) {
           el.textContent = 'Pool is currently offline'
         } else {
           el.textContent = res;
