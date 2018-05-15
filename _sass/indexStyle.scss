@@ -2136,34 +2136,31 @@ $vline-spacing: 10px;
 .collbtm{
   padding-top: 10px!important;
 }
+
 .poollist{
   padding-bottom: 20px;
-  h5{
+
+  h5 {
     font-weight: bold;
     padding:30px 0 0 2.5%;
   }
-  p{
-    padding: 0;
-    margin: 0;
-    margin-left:1.5%;
-    line-height: 2.5em;
+
+  p,
+  span {
+  	line-height: 1.6;
+  }
+
+  p {
+    padding: 15px 1%;
+    margin: 0 0 0 1.5%;
     display: inline-block;
     width: 95%;
     border-bottom: 1px solid #e5e5e5;
-    padding-left: 1%;
-    &:nth-child(odd){
+
+    &:nth-child(odd) {
       background: #fff;
     }
   }
-}
-
-.plist p {
-  padding: 15px 1%;
-  line-height: 1.6;
-}
-
-.plist span {
-  line-height: 1.6;
 }
 
 .pool-state {
