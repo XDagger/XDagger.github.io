@@ -121,6 +121,8 @@ Array.prototype.shuffle = function() {
   var shuffledPools = Array.prototype.slice.call(pools).shuffle();
   var fragment = document.createDocumentFragment();
   var errorMsg = 'Pool state could not be resolved';
+  var proxy = 'https://powerful-sea-54885.herokuapp.com/';
+  var proxyFallback = 'https://cors-anywhere.herokuapp.com/';
 
   for (pool of shuffledPools) {
     fragment.appendChild(pool);
@@ -140,17 +142,17 @@ Array.prototype.shuffle = function() {
         stateEl.textContent = errorMsg;
       } else {
         stateEl.textContent = 'Loading pool state...';
-        handleStateCheck(url, stateEl);
+        handleStateCheck(url, stateEl, true);
       }
     }
 
     toggle.removeEventListener('click', renderPoolStates);
   }
 
-  function handleStateCheck(url, el) {
+  function handleStateCheck(url, el, firstRun) {
     $.ajax({
       // Proxy server
-      url: 'https://powerful-sea-54885.herokuapp.com/' + url,
+      url: proxy + url,
       type: 'GET',
       success: function(res) {
         if (res.indexOf('Can\'t connect to unix domain socket errno:111') > -1) {
@@ -159,8 +161,13 @@ Array.prototype.shuffle = function() {
           el.textContent = res;
         }
       },
-      error: function() {
-        el.textContent = errorMsg; 
+      error: function(res) {
+      	if (firstRun) {
+      		proxy = proxyFallback;
+      		handleStateCheck(url, el, false);
+      	} else {
+      		el.textContent = errorMsg; 
+      	}
       }
     });
   }
