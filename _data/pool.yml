@@ -1,61 +1,74 @@
 - ip: 109.196.45.218:443
-  p1st: 1
-  p2nd: 1
-  p3rd: 1
-  p4th: 1
+  fee_pool: 1
+  fee_miner_finder: 1
+  fee_miner_contributor: 1
+  fee_community: 1
   web: http://www.corpopool.com/
   webName: http://www.corpopool.com/
+  state: http://dagger.corpopool.com/state.txt
   country: Poland
   name: AnotherYou
+
 - ip: 136.243.55.153:13654
-  p1st: 1
-  p2nd: 0
-  p3rd: 0
-  p4th: 1
+  fee_pool: 1
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
   web: https://xdagpool.com/
   webName: https://xdagpool.com/
+  state: https://xdagpool.com/state.txt
   country: Germany
   name: kbs1
+
 - ip: 95.216.36.234:13654
-  p1st: 1
-  p2nd: 0
-  p3rd: 0
-  p4th: 1
+  fee_pool: 1
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
   web: https://xdagpool.org/
   webName: https://xdagpool.org/
+  state: https://www.xdagpool.org/state.txt
   country: Finland
   name: Filipo
+
 - ip: 142.44.143.234:777
-  p1st: 1
-  p2nd: 1
-  p3rd: 1
-  p4th: 1
+  fee_pool: 1
+  fee_miner_finder: 1
+  fee_miner_contributor: 1
+  fee_community: 1
   web: http://xdag.pool.ga/
   webName: http://xdag.pool.ga/
+  state: http://xdag.pool.ga/state_.txt
   country: Canada
   name: RamsesIII
+
 - ip: 148.251.139.197:443
-  p1st: 1
-  p2nd: 5
-  p3rd: 2
-  p4th: 1
+  fee_pool: 1
+  fee_miner_finder: 5
+  fee_miner_contributor: 2
+  fee_community: 1
   web: https://xdag.poolaroid.com/
   webName: https://xdag.poolaroid.com/
+  state: https://xdag.poolaroid.com/rawstats/state
   country: Netherlands
   name: HacktionMan-asdSd1n23ffd
+
 - ip: 172.105.216.53:3355
-  p1st: 1
-  p2nd: 6
-  p3rd: 8
-  p4th: 2
+  fee_pool: 1
+  fee_miner_finder: 6
+  fee_miner_contributor: 8
+  fee_community: 2
+  state:
   country: Japan
   name: Khaak
+
 - ip: eu.xdag.signal2noi.se:13655
-  p1st: 0.5
-  p2nd: 0
-  p3rd: 0
-  p4th: 1
+  fee_pool: 0.5
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
   web: https://eu.xdag.signal2noi.se/
   webName: https://eu.xdag.signal2noi.se/
+  state: http://eu.xdag.private.signal2noi.se/state.txt
   country: Netherlands
   name: Gribbly

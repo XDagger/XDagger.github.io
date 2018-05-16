@@ -97,34 +97,12 @@ jQuery(document).ready(function( $ ) {
 			wrapper.style.paddingTop = '';
 		}
 	})();
-
-
-let arr=[];
-	$(".hideList").find("p").each(function () {
-		let obj={
-      ip:$(this).find(".ip").html(),
-    	p1st:$(this).find(".p1st").html(),
-    	p2nd:$(this).find(".p2nd").html(),
-    	p3rd:$(this).find(".p3rd").html(),
-    	p4th:$(this).find(".p4th").html(),
-    	web:$(this).find(".web").html(),
-      webName:$(this).find(".webName").html(),
-			country:$(this).find(".country").html(),
-    	name:$(this).find(".name").html()
-		};
-		arr.push(obj)
-  });
-
-  arr.shuffle();
-  let str="";
- for(let i=0 ;i<arr.length;i++){
- 	str+=`<p>${arr[i].ip} | (${arr[i].p1st}%-${arr[i].p2nd}%-${arr[i].p3rd}%-${arr[i].p4th}%) |&nbsp;<a href="${arr[i].web}" target="_blank">${arr[i].webName}</a> | ${arr[i].country} |&nbsp;${arr[i].name}</p>`;
- }
-$(".plist").html(str);
 });
 
-
-
+/**
+ * Pool list functionality
+ */
+ 
 Array.prototype.shuffle = function() {
   const input = this;
   for (let i = input.length-1; i >=0; i--) {
@@ -135,3 +113,55 @@ Array.prototype.shuffle = function() {
   }
   return input;
 };
+
+(function() {
+  var poolList = document.querySelector('.plist');
+  var pools = document.querySelectorAll('.plist > p');
+  var toggle = document.querySelector('.js-pool-info-toggle');
+  var shuffledPools = Array.prototype.slice.call(pools).shuffle();
+  var fragment = document.createDocumentFragment();
+  var errorMsg = 'Pool state could not be resolved';
+
+  for (pool of shuffledPools) {
+    fragment.appendChild(pool);
+  }
+
+  poolList.innerHTML = "";
+  poolList.appendChild(fragment);
+
+  toggle.addEventListener('click', renderPoolStates);
+
+  function renderPoolStates() {
+    for (pool of shuffledPools) {
+      let stateEl = pool.querySelector('.js-pool-state');
+      let url = stateEl.dataset.url;
+
+      if (url === "") {
+        stateEl.textContent = errorMsg;
+      } else {
+        stateEl.textContent = 'Loading pool state...';
+        handleStateCheck(url, stateEl);
+      }
+    }
+
+    toggle.removeEventListener('click', renderPoolStates);
+  }
+
+  function handleStateCheck(url, el) {
+    $.ajax({
+      // Proxy server
+      url: 'https://powerful-sea-54885.herokuapp.com/' + url,
+      type: 'GET',
+      success: function(res) {
+        if (res.indexOf('Can\'t connect to unix domain socket errno:111') > -1) {
+          el.textContent = 'Pool is currently offline'
+        } else {
+          el.textContent = res;
+        }
+      },
+      error: function() {
+        el.textContent = errorMsg; 
+      }
+    });
+  }
+})();
