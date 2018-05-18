@@ -72,3 +72,14 @@
   state: http://eu.xdag.private.signal2noi.se/state.txt
   country: Netherlands
   name: Gribbly
+
+- ip: pool.xdag.us:13654
+  fee_pool: 2
+  fee_miner_finder: 10
+  fee_miner_contributor: 5
+  fee_community: 1
+  web: http://pool.xdag.us/
+  webName: http://pool.xdag.us/
+  state: http://pool.xdag.us/state.txt
+  country: Japan
+  name: Frozen
