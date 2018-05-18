@@ -94,9 +94,9 @@ Existing block explorers can use this field to show the block state.
 
 
 Example of command line for starting pool (for test net):
-{% highlight ruby %}
+~~~
 xdag -t -p 213.21.5.18:3366 -P 213.21.5.18:454:1000:100:60:1:1:1:1
-{% endhighlight %}
+~~~
 
 Output of miners command was changed. Example:
 ~~~
