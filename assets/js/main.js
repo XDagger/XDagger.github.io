@@ -7,12 +7,25 @@ jQuery(document).ready(function( $ ) {
 			$('.back-to-top').fadeOut('slow');
 		}
 	});
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 10) {
+			$('#header').addClass('header-scrolled');
+		} else {
+			$('#header').removeClass('header-scrolled');
+		}
+	});
+
 	$('.back-to-top').click(function(){
 		$('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
 		return false;
 	});
 
 	new WOW().init();
+
+	/**
+	 * Header navigation
+	 */
 
 	$('.nav-menu').superfish({
 		animation: {
@@ -60,6 +73,8 @@ jQuery(document).ready(function( $ ) {
 		$("#mobile-nav, #mobile-nav-toggle").hide();
 	}
 
+	// Smooth scroll to element
+
 	$('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
@@ -92,13 +107,7 @@ jQuery(document).ready(function( $ ) {
 			}
 		}
 	});
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 10) {
-			$('#header').addClass('header-scrolled');
-		} else {
-			$('#header').removeClass('header-scrolled');
-		}
-	});
+
 	// var urlStr=window.location.href;
 	// var urlArr=urlStr.split("/");
 	// if(urlArr[urlArr.length-1]===""){

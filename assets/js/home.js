@@ -1,5 +1,9 @@
 jQuery(document).ready(function( $ ) {
 
+	/**
+	 * Video overlay
+	 */
+
 	$('.playvideo').click(function () {
 		$(".mask").show();
 		$(".playbrdr").show();
@@ -12,6 +16,10 @@ jQuery(document).ready(function( $ ) {
 		var iframeUrl=$("iframe").attr("src");
 		$("iframe").attr("src","https://www.youtube.com/embed/mUlEVP2MjgQ?rel=0&amp;showinfo=0")
 	});
+
+	/**
+	 * Banner
+	 */
 
 	var introCarousel = $(".carousel");
 	var introCarouselIndicators = $(".carousel-indicators");
@@ -27,6 +35,11 @@ jQuery(document).ready(function( $ ) {
 	},
 	allowPageScroll:"vertical"
 	});
+
+	/**
+	 * Community
+	 */
+
   $(".clients-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -34,70 +47,74 @@ jQuery(document).ready(function( $ ) {
     responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
     }
   });
-	(function() {
-		var throttle = function(type, name, obj) {
-			obj = obj || window;
-			var running = false;
-			var func = function() {
-				if (running) { return; }
-				running = true;
-				requestAnimationFrame(function() {
-					obj.dispatchEvent(new CustomEvent(name));
-					running = false;
-				});
-			};
-			obj.addEventListener(type, func);
-		};
-		throttle("resize", "optimizedResize");
-	})();
-
-	var roadmap = (function() {
-		var wrapper = document.querySelector('.js-roadmap-timeline');
-		var timeframes = document.querySelectorAll('.js-roadmap-timeframe');
-		var mediaQuery = window.matchMedia("(min-width: 1201px)");
-		var topMaxHeight;
-		var bottomMaxHeight;
-
-		handleStyling();
-		window.addEventListener("optimizedResize", handleStyling);
-
-		function handleStyling() {
-			if (mediaQuery.matches) {
-				applyHeights();
-				styleWrapper();
-			} else {
-				clearWrapperStyling();
-			}
-		}
-
-		function applyHeights() {
-			topMaxHeight = getMaxHeight(timeframes, 0);
-			bottomMaxHeight = getMaxHeight(timeframes, 1);
-		}
-
-		function getMaxHeight(els, start) {
-			var maxHeight = 0;
-			var i = start;
-
-			for (; i < els.length - 1; i = i + 2) {
-				var elHeight = els[i].offsetHeight;
-				maxHeight = maxHeight > elHeight ? maxHeight : elHeight;
-			}
-
-			return maxHeight;
-		}
-
-		function styleWrapper() {
-			wrapper.style.paddingBottom = bottomMaxHeight + 'px';
-			wrapper.style.paddingTop = topMaxHeight + 'px';
-		}
-
-		function clearWrapperStyling() {
-			wrapper.style.paddingBottom = '';
-			wrapper.style.paddingTop = '';
-		}
-	})();
 });
+
+/**
+ * Roadmap
+ */
+
+(function() {
+
+	var throttle = function(type, name, obj) {
+		obj = obj || window;
+		var running = false;
+		var func = function() {
+			if (running) { return; }
+			running = true;
+			requestAnimationFrame(function() {
+				obj.dispatchEvent(new CustomEvent(name));
+				running = false;
+			});
+		};
+		obj.addEventListener(type, func);
+	};
+	throttle("resize", "optimizedResize");
+
+	var wrapper = document.querySelector('.js-roadmap-timeline');
+	var timeframes = document.querySelectorAll('.js-roadmap-timeframe');
+	var mediaQuery = window.matchMedia("(min-width: 1201px)");
+	var topMaxHeight;
+	var bottomMaxHeight;
+
+	handleStyling();
+	window.addEventListener("optimizedResize", handleStyling);
+
+	function handleStyling() {
+		if (mediaQuery.matches) {
+			applyHeights();
+			styleWrapper();
+		} else {
+			clearWrapperStyling();
+		}
+	}
+
+	function applyHeights() {
+		topMaxHeight = getMaxHeight(timeframes, 0);
+		bottomMaxHeight = getMaxHeight(timeframes, 1);
+	}
+
+	function getMaxHeight(els, start) {
+		var maxHeight = 0;
+		var i = start;
+
+		for (; i < els.length - 1; i = i + 2) {
+			var elHeight = els[i].offsetHeight;
+			maxHeight = maxHeight > elHeight ? maxHeight : elHeight;
+		}
+
+		return maxHeight;
+	}
+
+	function styleWrapper() {
+		wrapper.style.paddingBottom = bottomMaxHeight + 'px';
+		wrapper.style.paddingTop = topMaxHeight + 'px';
+	}
+
+	function clearWrapperStyling() {
+		wrapper.style.paddingBottom = '';
+		wrapper.style.paddingTop = '';
+	}
+})();
 
 /**
  * Pool list functionality
