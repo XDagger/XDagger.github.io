@@ -4,7 +4,7 @@ title: XDAG v.0.2.2 Release & Change List
 image: assets/images/posts/v022.png
 ---
 
-We are pleased to announced that XDag v0.2.2 is released.
+We are pleased to announce that XDAG v0.2.2 is released.
 
 1. [XDag v0.2.2 release](https://github.com/XDagger/xdag/releases/tag/0.2.2)
 2. [Github](https://github.com/XDagger/xdag)
