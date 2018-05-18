@@ -1,19 +1,19 @@
 - name: 64 bit wallet
   content: 64 bit Windows Console and GUI executables (x64).
   pic: ion-social-windows-outline
-  href: https://github.com/XDagger/xdag/files/1835207/XDag.x64.zip
+  href: https://github.com/XDagger/xdag/files/2014989/XDag.x64.zip
   delay: 0s
 
 - name: 32 bit wallet
   content: 32 bit Windows Console and GUI executables (x86).
   pic: ion-social-windows-outline
-  href: https://github.com/XDagger/xdag/files/1835208/XDag.x86.zip
+  href: https://github.com/XDagger/xdag/files/2014990/XDag.x86.zip
   delay: 0.1s
   
 - name: MacOS wallet
   content: MacOS command line wallet.
   pic: ion-social-apple-outline
-  href: https://github.com/XDagger/xdag/files/1832276/xdag.zip
+  href: https://github.com/XDagger/xdag/files/2015090/xdag_0.2.2.zip
   delay: 0.2s
 
 - name: GPU Miner
