@@ -278,7 +278,7 @@
   padding: 0 20px 20px 20px;
 }
 
-/* Services Section
+/* Mining & Pools Section
 --------------------------------*/
 #services {
   background: #fff;
@@ -324,8 +324,138 @@
   margin-bottom: 0;
 }
 
+
+.collBg {
+  background: #f7f7f9;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+
+  .purple{
+    color: #5255c8;
+
+    .brdr,.brdrbtm{
+      border-color:#5255c8 ;
+    }
+  }
+
+  .blue{
+    color:#317f5b;
+
+    .brdr,.brdrbtm{
+      border-color:#317f5b ;
+    }
+  }
+
+  .dark{
+    color: #428bca;
+
+    .brdr,.brdrbtm{
+      border-color:#428bca ;
+    }
+  }
+
+  .black{
+    color: #000000;
+
+    .brdr,.brdrbtm{
+      border-color:#000000 ;
+    }
+  }
+  
+  ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    line-height:2em;
+  }
+
+  .collTit {
+    background: #ffffff;
+    margin: 1px;
+    padding: 35px 10px 30px;
+    border-bottom: 1px solid #e5e5e5;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .pStrong {
+      font-weight: bold;
+    }
+
+    .brdr {
+      border-radius: 50%; 
+      height:14px;
+      width:14px;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid;
+    }
+
+		.sup {
+		  display: block;line-height:14px;text-align: center
+		}
+  }
+}
+
+.brdrbtm {
+  border-radius: 50%; 
+  height:18px;
+  width:18px;
+  display: inline-block;
+  border: 1px solid;
+  margin-right:10px;
+}
+
+.sup2 {
+  display: block;
+  line-height:18px;
+  text-align: center;
+}
+
+.collbtm {
+  padding-top: 10px!important;
+}
+
+.poollist{
+  padding-bottom: 20px;
+
+  h5 {
+    font-weight: bold;
+    padding:30px 0 0 2.5%;
+  }
+
+  p,
+  span {
+  	line-height: 1.6;
+  }
+
+  p {
+    padding: 15px 1%;
+    margin: 0 0 0 1.5%;
+    display: inline-block;
+    width: 95%;
+    border-bottom: 1px solid #e5e5e5;
+
+    &:nth-child(odd) {
+      background: #fff;
+    }
+  }
+}
+
+.pool-state {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
 /* Call To Action Section
 --------------------------------*/
+/*
 #call-to-action {
   background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
@@ -360,10 +490,11 @@
 #call-to-action .cta-btn:hover {
   background: #428bca;
   border: 2px solid #428bca;
-}
+}*/
 
 /* Call To Action Section
 --------------------------------*/
+/*
 #skills {
   padding: 60px 0;
 }
@@ -392,9 +523,11 @@
   text-align: left;
   transition: .9s;
 }
+*/
 
 /* Facts Section
 --------------------------------*/
+/*
 #facts {
   background: url("../img/facts-bg.jpg") center top no-repeat fixed;
   background-size: cover;
@@ -438,8 +571,9 @@
   text-align: center;
   padding-top: 30px;
 }
+*/
 
-/* Portfolio Section
+/* Wallet Section
 --------------------------------*/
 #wallet {
   padding: 60px 0;
@@ -593,7 +727,7 @@
   text-transform: uppercase;
 }
 
-/* Clients Section
+/* Community Section
 --------------------------------*/
 #community {
   padding: 60px 0;
@@ -630,6 +764,7 @@
 
 /* Testimonials Section
 --------------------------------*/
+/*
 #testimonials {
   padding: 60px 0;
 }
@@ -705,9 +840,11 @@
 #testimonials .owl-dot.active {
   background-color: #428bca;
 }
+*/
 
 /* Team Section
 --------------------------------*/
+/*
 #team {
   background: #fff;
   padding: 60px 0;
@@ -781,9 +918,11 @@
   font-size: 18px;
   margin: 0 2px;
 }
+*/
 
 /* Contact Section
 --------------------------------*/
+/*
 #contact {
   padding: 60px 0;
 }
@@ -889,6 +1028,7 @@
 #contact .form button[type="submit"]:hover {
   background: #13a456;
 }
+*/
 
 /*--------------------------------------------------------------
 # Roadmap
@@ -1440,132 +1580,4 @@ $vline-spacing: 10px;
       bottom: 0;
     }
   }
-}
-
-.collBg {
-  background: #f7f7f9;
-  padding-bottom: 20px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-
-  .purple{
-    color: #5255c8;
-
-    .brdr,.brdrbtm{
-      border-color:#5255c8 ;
-    }
-  }
-
-  .blue{
-    color:#317f5b;
-
-    .brdr,.brdrbtm{
-      border-color:#317f5b ;
-    }
-  }
-
-  .dark{
-    color: #428bca;
-
-    .brdr,.brdrbtm{
-      border-color:#428bca ;
-    }
-  }
-
-  .black{
-    color: #000000;
-
-    .brdr,.brdrbtm{
-      border-color:#000000 ;
-    }
-  }
-  
-  ul,li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    line-height:2em;
-  }
-
-  .collTit {
-    background: #ffffff;
-    margin: 1px;
-    padding: 35px 10px 30px;
-    border-bottom: 1px solid #e5e5e5;
-
-    p {
-      padding: 0;
-      margin: 0;
-    }
-
-    .pStrong {
-      font-weight: bold;
-    }
-
-    .brdr {
-      border-radius: 50%; 
-      height:14px;
-      width:14px;
-      display: inline-block;
-      vertical-align: top;
-      border: 1px solid;
-    }
-
-		.sup {
-		  display: block;line-height:14px;text-align: center
-		}
-  }
-}
-
-.brdrbtm {
-  border-radius: 50%; 
-  height:18px;
-  width:18px;
-  display: inline-block;
-  border: 1px solid;
-  margin-right:10px;
-}
-
-.sup2 {
-  display: block;
-  line-height:18px;
-  text-align: center;
-}
-
-.collbtm {
-  padding-top: 10px!important;
-}
-
-.poollist{
-  padding-bottom: 20px;
-
-  h5 {
-    font-weight: bold;
-    padding:30px 0 0 2.5%;
-  }
-
-  p,
-  span {
-  	line-height: 1.6;
-  }
-
-  p {
-    padding: 15px 1%;
-    margin: 0 0 0 1.5%;
-    display: inline-block;
-    width: 95%;
-    border-bottom: 1px solid #e5e5e5;
-
-    &:nth-child(odd) {
-      background: #fff;
-    }
-  }
-}
-
-.pool-state {
-  display: block;
-  font-size: 14px;
-  color: #666;
 }
