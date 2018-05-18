@@ -1,6 +1,6 @@
 ---
 layout: postLayout
-title: XDAG v.0.2.2 change list
+title: XDAG v.0.2.2 Release & Change List
 ---
 
 We are pleased to announced that XDag v0.2.2 is released.
