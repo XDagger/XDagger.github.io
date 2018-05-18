@@ -1,7 +1,7 @@
 {% include head.html %}
     <link href="{{ 'assets/lib/owlcarousel/assets/owl.carousel.min.css' | relative_url }}" rel="stylesheet">
     <link href="{{ 'assets/lib/lightbox/css/lightbox.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/css/main.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/css/home.css' | relative_url }}" rel="stylesheet">
 </head>
 
 <body>
@@ -16,8 +16,8 @@
     <section id="about">
         <div class="container">
             <header class="section-header">
-                <h3>{{site.dag_title}}</h3>
-                <p>{{site.dag_content}}</p>
+                <h3>{{ page.dag_title }}</h3>
+                <p>{{ page.dag_content }}</p>
             </header>
             <div class="row about-cols">
                 {% for d in site.data.dagger %}
@@ -38,8 +38,8 @@
     <section id="services">
         <div class="container">
             <header class="section-header wow fadeInUp">
-                <h3>{{site.mine_title}}</h3>
-                <p>{{site.mine_content}}</p>
+                <h3>{{ page.mine_title }}</h3>
+                <p>{{ page.mine_content }}</p>
             </header>
             <div class="row">
                 {% for d in site.data.mine %}
@@ -106,8 +106,8 @@
     <section id="wallet"  class="section-bg" >
         <div class="container">
             <header class="section-header">
-                <h3 class="section-title">{{site.wallet_title}}</h3>
-                <p>{{site.wallet_content}}</p>
+                <h3 class="section-title">{{ page.wallet_title }}</h3>
+                <p>{{ page.wallet_content }}</p>
             </header>
             <div class="row justify-content-center portfolio-container">
                 {% for d in site.data.wallet %}
