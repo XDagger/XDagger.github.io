@@ -63,7 +63,7 @@
   name: Khaak
 
 - ip: eu.xdag.signal2noi.se:13655
-  fee_pool: 0.5
+  fee_pool: 0
   fee_miner_finder: 0
   fee_miner_contributor: 0
   fee_community: 1
@@ -83,3 +83,14 @@
   state: http://pool.xdag.us/state.txt
   country: Japan
   name: Frozen
+
+- ip: asia.xdag.signal2noi.se:443
+  fee_pool: 0
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
+  web: http://asia.xdag.signal2noi.se/
+  webName: http://asia.xdag.signal2noi.se/
+  state: http://asia.xdag.private.signal2noi.se/state.txt
+  country: Singapore
+  name: Gribbly
