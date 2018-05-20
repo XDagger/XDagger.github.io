@@ -94,3 +94,37 @@
   state: http://asia.xdag.private.signal2noi.se/state.txt
   country: Singapore
   name: Gribbly
+
+- ip: 78.46.82.220:16775
+  fee_pool: 1
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
+  web: https://xdagmining.com/
+  webName: https://xdagmining.com/
+  state: https://xdagmining.com/state.txt
+  country: 
+  name: Maximous
+  
+  
+- ip: 104.40.243.113:31337
+  fee_pool: 1
+  fee_miner_finder: 0
+  fee_miner_contributor: 98
+  fee_community: 1
+  web: https://xdagger.yourspool.com/
+  webName: https://xdagger.yourspool.com/
+  state: https://xdagger.yourspool.com/info/state.txt
+  country: Netherland
+  name: Zyzakus
+  
+  - ip: 139.99.124.135:13654
+  fee_pool: 1
+  fee_miner_finder: 1
+  fee_miner_contributor: 1
+  fee_community: 1
+  web: http://www.xdagvip.com/
+  webName: http://www.xdagvip.com//
+  state: http://www.xdagvip.com/state.txt
+  country: 
+  name: Machao
