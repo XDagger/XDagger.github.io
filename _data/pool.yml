@@ -16,7 +16,7 @@
   fee_community: 1
   web: https://xdagpool.com/
   webName: https://xdagpool.com/
-  state: https://xdagpool.com/state.txt
+  state: https://xdagpool.com/raw/state
   country: Germany
   name: kbs1
 
@@ -58,7 +58,7 @@
   fee_miner_finder: 6
   fee_miner_contributor: 8
   fee_community: 2
-  state:
+  state: http://172.105.216.53/state.txt
   country: Japan
   name: Khaak
 
