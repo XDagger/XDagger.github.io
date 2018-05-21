@@ -124,7 +124,19 @@
   fee_miner_contributor: 1
   fee_community: 1
   web: http://www.xdagvip.com/
-  webName: http://www.xdagvip.com//
+  webName: http://www.xdagvip.com/
   state: http://www.xdagvip.com/state.txt
   country: 
   name: Machao
+  
+  - ip: 139.99.124.135:13654
+  fee_pool: 0
+  fee_miner_finder: 10
+  fee_miner_contributor: 5
+  fee_community: 1
+  web: https://www.vspool.com/xdag/
+  webName: https://www.vspool.com/xdag/
+  state: https://www.vspool.com/xdag/
+  country: 
+  name: Laywon
+ 
