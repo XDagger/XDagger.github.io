@@ -118,7 +118,7 @@
   country: Netherland
   name: Zyzakus
   
-  - ip: 139.99.124.135:13654
+- ip: 139.99.124.135:13654
   fee_pool: 1
   fee_miner_finder: 1
   fee_miner_contributor: 1
@@ -129,7 +129,7 @@
   country: 
   name: Machao
   
-  - ip: 139.99.124.135:13654
+- ip: 139.99.124.135:13654
   fee_pool: 1
   fee_miner_finder: 10
   fee_miner_contributor: 5
