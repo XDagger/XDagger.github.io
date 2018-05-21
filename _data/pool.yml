@@ -16,7 +16,7 @@
   fee_community: 1
   web: https://xdagpool.com/
   webName: https://xdagpool.com/
-  state: https://xdagpool.com/raw/state
+  state: #https://xdagpool.com/raw/state
   country: Germany
   name: kbs1
 
