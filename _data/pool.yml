@@ -104,8 +104,7 @@
   webName: https://xdagmining.com/
   state: https://xdagmining.com/state.txt
   country: 
-  name: Maximous
-  
+  name: Maximous 
   
 - ip: 104.40.243.113:31337
   fee_pool: 1
@@ -115,7 +114,7 @@
   web: https://xdagger.yourspool.com/
   webName: https://xdagger.yourspool.com/
   state: https://xdagger.yourspool.com/info/state.txt
-  country: Netherland
+  country: Netherlands
   name: Zyzakus
   
 - ip: 139.99.124.135:13654
@@ -126,17 +125,17 @@
   web: http://www.xdagvip.com/
   webName: http://www.xdagvip.com/
   state: http://www.xdagvip.com/state.txt
-  country: 
+  country: Singapore
   name: Machao
   
-- ip: 139.99.124.135:13654
+- ip: 139.99.124.23:13654
   fee_pool: 1
   fee_miner_finder: 10
   fee_miner_contributor: 5
   fee_community: 1
   web: https://www.vspool.com/xdag/
   webName: https://www.vspool.com/xdag/
-  state: https://www.vspool.com/xdag/
-  country: 
+  state: http://139.99.124.23/state.txt
+  country: Singapore
   name: Laywon
  
