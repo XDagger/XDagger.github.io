@@ -1,29 +1,19 @@
-markdown: kramdown
+# Site configuration
 
-dag_title: About Dagger
-dag_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
-
-mine_title: Mining quick start
-mine_content: The first mineable DAG. Follow the steps below. If you get stuck, join us in the discord.
-
-wallet_title: Wallets
-wallet_content: If you need help choosing the correct version, please open About your PC and look for system type, then select the appropriate release for your operating system below.
-
-roadmap_title: Roadmap
-
-team_title: XDAG team
 devNum: 28
+community_wallet: FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
 
-offical: FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
+# Jekyll configuration
 
 baseurl: "/"
 
 paginate: 5
 paginate_path: "/blog/page:num"
 
-plugins:
-  - jekyll-paginate
-  - jekyll-seo-tag
+sass:
+  style: compressed
+
+## jekyll-seo-tag
 
 title: XDAG
 description: A new DAG-based cryptocurrency
@@ -55,3 +45,9 @@ defaults:
       path: ""
     values:
       image: /assets/images/default-card.png
+      
+## end jekyll-seo-tag
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag

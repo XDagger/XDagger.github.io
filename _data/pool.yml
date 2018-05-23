@@ -16,7 +16,7 @@
   fee_community: 1
   web: https://xdagpool.com/
   webName: https://xdagpool.com/
-  state: https://xdagpool.com/state.txt
+  state: https://xdagpool.com/raw/state
   country: Germany
   name: kbs1
 
@@ -58,12 +58,12 @@
   fee_miner_finder: 6
   fee_miner_contributor: 8
   fee_community: 2
-  state:
+  state: http://172.105.216.53/state.txt
   country: Japan
   name: Khaak
 
 - ip: eu.xdag.signal2noi.se:13655
-  fee_pool: 0.5
+  fee_pool: 0
   fee_miner_finder: 0
   fee_miner_contributor: 0
   fee_community: 1
@@ -72,3 +72,59 @@
   state: http://eu.xdag.private.signal2noi.se/state.txt
   country: Netherlands
   name: Gribbly
+
+- ip: pool.xdag.us:13654
+  fee_pool: 2
+  fee_miner_finder: 10
+  fee_miner_contributor: 5
+  fee_community: 1
+  web: http://pool.xdag.us/
+  webName: http://pool.xdag.us/
+  state: http://pool.xdag.us/state.txt
+  country: Japan
+  name: Frozen
+
+- ip: 78.46.82.220:16775
+  fee_pool: 1
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
+  web: https://xdagmining.com/
+  webName: https://xdagmining.com/
+  state: https://xdagmining.com/state.txt
+  country: 
+  name: Maximous 
+  
+- ip: 104.40.243.113:31337
+  fee_pool: 1
+  fee_miner_finder: 0
+  fee_miner_contributor: 98
+  fee_community: 1
+  web: https://xdagger.yourspool.com/
+  webName: https://xdagger.yourspool.com/
+  state: https://xdagger.yourspool.com/info/state.txt
+  country: Netherlands
+  name: Zyzakus
+  
+- ip: 139.99.124.135:13654
+  fee_pool: 1
+  fee_miner_finder: 1
+  fee_miner_contributor: 1
+  fee_community: 1
+  web: http://www.xdagvip.com/
+  webName: http://www.xdagvip.com/
+  state: http://www.xdagvip.com/raw/state
+  country: Singapore
+  name: Machao
+  
+- ip: 139.99.124.23:13654
+  fee_pool: 1
+  fee_miner_finder: 10
+  fee_miner_contributor: 5
+  fee_community: 1
+  web: https://www.vspool.com/xdag/
+  webName: https://www.vspool.com/xdag/
+  state: http://139.99.124.23/state.txt
+  country: Singapore
+  name: Laywon
+ 

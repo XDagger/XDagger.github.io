@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    
-    {% seo %}
-    <link href="{{ 'assets/images/fav/favicon.png' | relative_url }}" rel="icon">
-    <link href="{{ 'assets/images/fav/apple-touch-icon.png' | relative_url }}" rel="apple-touch-icon">
-
-    <link href="{{ 'assets/lib/bootstrap/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/lib/font-awesome/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/lib/animate/animate.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/lib/ionicons/css/ionicons.min.css' | relative_url }}" rel="stylesheet">
+{% include head.html %}
     <link href="{{ 'assets/lib/owlcarousel/assets/owl.carousel.min.css' | relative_url }}" rel="stylesheet">
     <link href="{{ 'assets/lib/lightbox/css/lightbox.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'css/index.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ 'assets/css/home.css' | relative_url }}" rel="stylesheet">
 </head>
+
 <body>
 {% include header.html %}
 <div class="mask"></div>
@@ -28,8 +16,8 @@
     <section id="about">
         <div class="container">
             <header class="section-header">
-                <h3>{{site.dag_title}}</h3>
-                <p>{{site.dag_content}}</p>
+                <h3>{{ page.dag_title }}</h3>
+                <p>{{ page.dag_content }}</p>
             </header>
             <div class="row about-cols">
                 {% for d in site.data.dagger %}
@@ -50,8 +38,8 @@
     <section id="services">
         <div class="container">
             <header class="section-header wow fadeInUp">
-                <h3>{{site.mine_title}}</h3>
-                <p>{{site.mine_content}}</p>
+                <h3>{{ page.mine_title }}</h3>
+                <p>{{ page.mine_content }}</p>
             </header>
             <div class="row">
                 {% for d in site.data.mine %}
@@ -80,8 +68,8 @@
                             <hr />
                             <ul class="row">
                                 <li class="col-lg-7 purple"><span class="brdrbtm"><span class="sup2">1</span> </span><span class="purple">1%</span> pool fee.</li>
-                                <li class="col-lg-5 black"><span class="brdrbtm"><span class="sup2">2</span></span><span class="black">1%</span> reward for miner who discovered a block</li>
-                                <li class="col-lg-7 dark"><span class="brdrbtm"><span class="sup2">3</span></span><span class="dark">1%</span> reward for miner who contribute directly to the discover of a block</li>
+                                <li class="col-lg-5 black"><span class="brdrbtm"><span class="sup2">2</span></span><span class="black">1%</span> reward for miner who discovers a block</li>
+                                <li class="col-lg-7 dark"><span class="brdrbtm"><span class="sup2">3</span></span><span class="dark">1%</span> reward for miners who contribute directly to the discovery of a block</li>
                                 <li class="col-lg-5 blue"><span class="brdrbtm"><span class="sup2">4</span></span><span class="blue">1%</span> community fund fee.</li>
                             </ul>
                             <p class="collbtm">The remainder, in this example 96%, is shared between all miners on the pool.</p>
@@ -118,8 +106,8 @@
     <section id="wallet"  class="section-bg" >
         <div class="container">
             <header class="section-header">
-                <h3 class="section-title">{{site.wallet_title}}</h3>
-                <p>{{site.wallet_content}}</p>
+                <h3 class="section-title">{{ page.wallet_title }}</h3>
+                <p>{{ page.wallet_content }}</p>
             </header>
             <div class="row justify-content-center portfolio-container">
                 {% for d in site.data.wallet %}
@@ -151,20 +139,10 @@
     </section>
 </main>
 {% include footer.html %}
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-<script src="{{ 'assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/jquery/jquery-migrate.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/easing/easing.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/superfish/hoverIntent.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/superfish/superfish.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/wow/wow.min.js' | relative_url }}"></script>
 <script src="{{ 'assets/lib/waypoints/waypoints.min.js' | relative_url }}"></script>
 <script src="{{ 'assets/lib/owlcarousel/owl.carousel.min.js' | relative_url }}"></script>
 <script src="{{ 'assets/lib/lightbox/js/lightbox.min.js' | relative_url }}"></script>
 <script src="{{ 'assets/lib/touchSwipe/jquery.touchSwipe.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/public.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/home.js' | relative_url }}"></script>
 </body>
 </html>

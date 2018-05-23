@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    {% seo %}
-    <link href="{{ 'assets/images/fav/favicon.png' | relative_url }}" rel="icon">
-    <link href="{{ 'assets/images/fav/apple-touch-icon.png' | relative_url }}" rel="apple-touch-icon">
-    <link href="{{ 'assets/lib/bootstrap/css/bootstrap.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/lib/font-awesome/css/font-awesome.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/lib/ionicons/css/ionicons.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/lib/animate/animate.css' | relative_url }}" rel="stylesheet" >
-    <link href="{{ 'css/news.css' | relative_url }}" rel="stylesheet" >
+{% include head.html %}
+    <link href="{{ 'assets/css/news.css' | relative_url }}" rel="stylesheet">
 </head>
+
 <body>
 {% include header.html %}
-<div id="intro"></div>
 <main id="main">
     <section id="news">
         <div class="container">
@@ -35,15 +23,5 @@
     </section>
 </main>
 {% include footer.html %}
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<script src="{{ 'assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/jquery/jquery-migrate.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/easing/easing.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/superfish/hoverIntent.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/superfish/superfish.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/wow/wow.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/public.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/news.js' | relative_url }}"></script>
 </body>
 </html>

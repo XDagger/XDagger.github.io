@@ -1,174 +1,117 @@
 jQuery(document).ready(function( $ ) {
 
-	$('.playvideo').click(function () {
-		$(".mask").show();
-		$(".playbrdr").show();
-		var iframeUrl=$("iframe").attr("src");
-		$("iframe").attr("src","https://www.youtube.com/embed/mUlEVP2MjgQ?autoplay=1")
-	});
-	$('.videoclose').click(function () {
-		$(".mask").hide();
-		$(".playbrdr").hide();
-		var iframeUrl=$("iframe").attr("src");
-		$("iframe").attr("src","https://www.youtube.com/embed/mUlEVP2MjgQ?rel=0&amp;showinfo=0")
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			$('.back-to-top').fadeIn('slow');
+		} else {
+			$('.back-to-top').fadeOut('slow');
+		}
 	});
 
-	var introCarousel = $(".carousel");
-	var introCarouselIndicators = $(".carousel-indicators");
-	introCarousel.find(".carousel-inner").children(".carousel-item").each(function(index) {
-	(index === 0) ?
-	introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>") :
-	introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 10) {
+			$('#header').addClass('header-scrolled');
+		} else {
+			$('#header').removeClass('header-scrolled');
+		}
 	});
-	$(".carousel").swipe({
-	swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-	  if (direction == 'left') $(this).carousel('next');
-	  if (direction == 'right') $(this).carousel('prev');
-	},
-	allowPageScroll:"vertical"
+
+	$('.back-to-top').click(function(){
+		$('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+		return false;
 	});
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
-    }
-  });
-	(function() {
-		var throttle = function(type, name, obj) {
-			obj = obj || window;
-			var running = false;
-			var func = function() {
-				if (running) { return; }
-				running = true;
-				requestAnimationFrame(function() {
-					obj.dispatchEvent(new CustomEvent(name));
-					running = false;
-				});
-			};
-			obj.addEventListener(type, func);
-		};
-		throttle("resize", "optimizedResize");
-	})();
 
-	var roadmap = (function() {
-		var wrapper = document.querySelector('.js-roadmap-timeline');
-		var timeframes = document.querySelectorAll('.js-roadmap-timeframe');
-		var mediaQuery = window.matchMedia("(min-width: 1201px)");
-		var topMaxHeight;
-		var bottomMaxHeight;
+	new WOW().init();
 
-		handleStyling();
-		window.addEventListener("optimizedResize", handleStyling);
+	/**
+	 * Header navigation
+	 */
 
-		function handleStyling() {
-			if (mediaQuery.matches) {
-				applyHeights();
-				styleWrapper();
-			} else {
-				clearWrapperStyling();
+	$('.nav-menu').superfish({
+		animation: {
+			opacity: 'show'
+		},
+		speed: 400
+	});
+
+	if ($('#nav-menu-container').length) {
+		var $mobile_nav = $('#nav-menu-container').clone().prop({
+			id: 'mobile-nav'
+		});
+		$mobile_nav.find('> ul').attr({
+			'class': '',
+			'id': ''
+		});
+		$('body').append($mobile_nav);
+		$('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
+		$('body').append('<div id="mobile-body-overly"></div>');
+		$('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
+
+		$(document).on('click', '.menu-has-children i', function(e) {
+			$(this).next().toggleClass('menu-item-active');
+			$(this).nextAll('ul').eq(0).slideToggle();
+			$(this).toggleClass("fa-chevron-up fa-chevron-down");
+		});
+
+		$(document).on('click', '#mobile-nav-toggle', function(e) {
+			$('body').toggleClass('mobile-nav-active');
+			$('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+			$('#mobile-body-overly').toggle();
+		});
+
+		$(document).click(function(e) {
+			var container = $("#mobile-nav, #mobile-nav-toggle");
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				if ($('body').hasClass('mobile-nav-active')) {
+					$('body').removeClass('mobile-nav-active');
+					$('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+					$('#mobile-body-overly').fadeOut();
+				}
+			}
+		});
+	} else if ($("#mobile-nav, #mobile-nav-toggle").length) {
+		$("#mobile-nav, #mobile-nav-toggle").hide();
+	}
+
+	// Smooth scroll to element
+
+	$('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			if (target.length) {
+				var top_space = 0;
+
+				if ($('#header').length) {
+					top_space = $('#header').outerHeight();
+
+					if( ! $('#header').hasClass('header-fixed') ) {
+						top_space = top_space - 20;
+					}
+				}
+
+				$('html, body').animate({
+					scrollTop: target.offset().top - top_space
+				}, 1500, 'easeInOutExpo');
+
+				if ($(this).parents('.nav-menu').length) {
+					$('.nav-menu .menu-active').removeClass('menu-active');
+					$(this).closest('li').addClass('menu-active');
+				}
+
+				if ($('body').hasClass('mobile-nav-active')) {
+					$('body').removeClass('mobile-nav-active');
+					$('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+					$('#mobile-body-overly').fadeOut();
+				}
+				return false;
 			}
 		}
+	});
 
-		function applyHeights() {
-			topMaxHeight = getMaxHeight(timeframes, 0);
-			bottomMaxHeight = getMaxHeight(timeframes, 1);
-		}
-
-		function getMaxHeight(els, start) {
-			var maxHeight = 0;
-			var i = start;
-
-			for (; i < els.length - 1; i = i + 2) {
-				var elHeight = els[i].offsetHeight;
-				maxHeight = maxHeight > elHeight ? maxHeight : elHeight;
-			}
-
-			return maxHeight;
-		}
-
-		function styleWrapper() {
-			wrapper.style.paddingBottom = bottomMaxHeight + 'px';
-			wrapper.style.paddingTop = topMaxHeight + 'px';
-		}
-
-		function clearWrapperStyling() {
-			wrapper.style.paddingBottom = '';
-			wrapper.style.paddingTop = '';
-		}
-	})();
+	// var urlStr=window.location.href;
+	// var urlArr=urlStr.split("/");
+	// if(urlArr[urlArr.length-1]===""){
+	// 	urlArr[urlArr.length-1]="index.html"
+	// }
+	// $(".nav-menu li a[href='"+urlArr[urlArr.length-1]+"']").parent().addClass("menu-active");
 });
-
-/**
- * Pool list functionality
- */
- 
-Array.prototype.shuffle = function() {
-  const input = this;
-  for (let i = input.length-1; i >=0; i--) {
-    const randomIndex = Math.floor(Math.random()*(i+1));
-    let itemAtIndex = input[randomIndex];
-    input[randomIndex] = input[i];
-    input[i] = itemAtIndex;
-  }
-  return input;
-};
-
-(function() {
-  var poolList = document.querySelector('.plist');
-  var pools = document.querySelectorAll('.plist > p');
-  var toggle = document.querySelector('.js-pool-info-toggle');
-  var shuffledPools = Array.prototype.slice.call(pools).shuffle();
-  var fragment = document.createDocumentFragment();
-  var errorMsg = 'Pool state could not be resolved';
-  var proxy = 'https://powerful-sea-54885.herokuapp.com/';
-  var proxyFallback = 'https://cors-anywhere.herokuapp.com/';
-
-  for (pool of shuffledPools) {
-    fragment.appendChild(pool);
-  }
-
-  poolList.innerHTML = "";
-  poolList.appendChild(fragment);
-
-  toggle.addEventListener('click', renderPoolStates);
-
-  function renderPoolStates() {
-    for (pool of shuffledPools) {
-      let stateEl = pool.querySelector('.js-pool-state');
-      let url = stateEl.dataset.url;
-
-      if (url === "") {
-        stateEl.textContent = errorMsg;
-      } else {
-        stateEl.textContent = 'Loading pool state...';
-        handleStateCheck(url, stateEl, true);
-      }
-    }
-
-    toggle.removeEventListener('click', renderPoolStates);
-  }
-
-  function handleStateCheck(url, el, firstRun) {
-    $.ajax({
-      // Proxy server
-      url: proxy + url,
-      type: 'GET',
-      success: function(res) {
-        if (res.indexOf('Can\'t connect to unix domain socket errno:111') > -1) {
-          el.textContent = 'Pool is currently offline'
-        } else {
-          el.textContent = res;
-        }
-      },
-      error: function(res) {
-      	if (firstRun) {
-      		proxy = proxyFallback;
-      		handleStateCheck(url, el, false);
-      	} else {
-      		el.textContent = errorMsg; 
-      	}
-      }
-    });
-  }
-})();
