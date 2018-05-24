@@ -95,10 +95,10 @@
   country: 
   name: Maximous 
   
-- ip: 104.40.243.113:31337
+- ip: xdag.yourspool.com:443
   fee_pool: 1
-  fee_miner_finder: 0
-  fee_miner_contributor: 98
+  fee_miner_finder: 1
+  fee_miner_contributor: 1
   fee_community: 1
   web: https://xdagger.yourspool.com/
   webName: https://xdagger.yourspool.com/
