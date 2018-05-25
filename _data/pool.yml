@@ -84,7 +84,7 @@
   country: Japan
   name: Frozen
 
-- ip: 78.46.82.220:16775
+- ip: 78.46.82.220:13654
   fee_pool: 1
   fee_miner_finder: 0
   fee_miner_contributor: 0
@@ -92,7 +92,7 @@
   web: https://xdagmining.com/
   webName: https://xdagmining.com/
   state: https://xdagmining.com/state.txt
-  country: 
+  country: Germany
   name: Maximous 
   
 - ip: xdag.yourspool.com:443
@@ -127,4 +127,25 @@
   state: http://139.99.124.23/state.txt
   country: Singapore
   name: Laywon
- 
+
+- ip: xdagmine.com:13654
+  fee_pool: 1
+  fee_miner_finder: 1
+  fee_miner_contributor: 1
+  fee_community: 1
+  web: http://xdagmine.com/
+  webName: http://xdagmine.com/
+  state: http://xdagmine.com/state.txt
+  country: Singapore
+  name: Edward
+
+- ip: xdag.coolmine.top:13654
+  fee_pool: 1
+  fee_miner_finder: 1
+  fee_miner_contributor: 1
+  fee_community: 1
+  web: http://xdag.coolmine.top/
+  webName: http://xdag.coolmine.top/
+  state: http://xdag.coolmine.top/state.txt
+  country: Singapore
+  name: [Dev] Alex
