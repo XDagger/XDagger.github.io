@@ -1,19 +1,48 @@
-<header id="header">
-    <div class="container-fluid">
-        <div id="logo" class="pull-left">
-            <a href="{{ 'index.html#intro' | relative_url}}"><img src="{{ 'assets/images/logo.png' | relative_url }}" height="40" alt="" title="" /></a>
-        </div>
-
-        <nav id="nav-menu-container">
-            <ul class="nav-menu">
-                <li ><a href="{{ 'index.html' | relative_url }}">Home</a></li>
-                <li><a href="http://explorer.xdag.io/" target="_blank">Block explorer</a></li>
-                <li><a href="{{ 'index.html#services' | relative_url }}">Mining quick start</a></li>
-                <li><a href="{{ 'index.html#wallet' | relative_url }}">Wallets</a></li>
-                <li><a href="{{ 'blog/index.html' | relative_url }}">News</a></li>
-                <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a></li>
-            </ul>
-        </nav>
+<header id="header" class="js-header">
+    <div id="logo">
+        <a href="{{ 'index.html#intro' | relative_url}}">
+            <img src="{{ 'assets/images/logo.svg' | relative_url }}" height="70" alt="Dagger" />
+        </a>
     </div>
+    <input class="display-toggle js-nav-main-toggle" type="checkbox" id="nav-main-toggle">
+    <label class="nav-main-icon" for="nav-main-toggle"></label>
+    <nav class="nav-main-container" role="navigation">
+        <ul class="nav-main js-nav-main">
+            <li class="js-nav-no-sublevel">
+                <a href="{{ 'index.html' | relative_url }}">Home</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-getstarted-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-getstarted-toggle" tabindex="0">Get Started</label>
+                <ul id="nav-getstarted" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="{{ 'index.html#wallet' | relative_url }}">Wallet</a></li>
+                    <li><a href="{{ 'index.html#services' | relative_url }}">Mining</a></li>
+                </ul>
+            </li>
+            <li class="js-nav-no-sublevel">
+                <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-resources-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-resources-toggle" tabindex="0">Resources</label>
+                <ul id="nav-resources" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a></li>
+                    <li><a href="https://github.com/XDagger/xdag/releases" target="_blank">Releases</a></li>
+                    <li><a href="{{ 'index.html#roadmap' | relative_url }}">Roadmap</a></li>
+                </ul>
+            </li>
+            <li class="js-nav-no-sublevel">
+                <a href="{{ 'blog/index.html' | relative_url }}">News</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-community-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-community-toggle" tabindex="0">Community</label>
+                <ul id="nav-community" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="{{ 'index.html#community' | relative_url }}">Social channels</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="nav-overlay"></div>
 </header>
 <div class="header-bg"></div>
