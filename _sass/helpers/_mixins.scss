@@ -5,3 +5,15 @@
     clear: both;
   }
 }
+
+@mixin bp-min($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin bp-max($breakpoint ) {
+  @media (max-width: $breakpoint - 0.1px) {
+    @content;
+  }
+}
