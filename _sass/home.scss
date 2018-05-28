@@ -1183,6 +1183,8 @@ $vline-spacing: 10px;
       left: 0;
       background: $timeline-background;
       background-repeat: no-repeat;
+      visibility: visible;
+      pointer-events: none;
 
       @include smallscreen {
         top: 0;
@@ -1196,6 +1198,17 @@ $vline-spacing: 10px;
         transform: translateY(-50%);
       }
     }
+
+    &.animated::before {
+      opacity: 0;
+      animation-name: fadeInDown;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+
+      @include largescreen {
+        animation-name: fadeInLeft;
+      }
+    }
   }
 
   &-timeframe {
@@ -1206,13 +1219,51 @@ $vline-spacing: 10px;
     flex-direction: column-reverse;
     align-self: flex-end;
     position: relative;
-    z-index: 1;
     min-width: 100px;
     width: 0;
+
 
     @include smallscreen {
       width: 50vw;
       max-width: 300px;
+    }
+
+    @for $i from 1 through 9 {
+      &:nth-child(#{$i}) {
+        animation-delay: unquote("0." + "#{$i}s");
+      }
+    }
+
+    @at-root .animated & {
+      opacity: 0;
+      animation-name: fadeInDown;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+
+      @include largescreen {
+        animation-name: fadeInLeft;
+      }
+    }
+
+
+    &:hover {
+      .roadmap-event {
+        transform: scale(1.1);
+      }
+
+      .roadmap-date {
+        @include largescreen {
+          transform: scale(1.1);
+        }
+
+        @include smallscreen {
+          transform: translate(100%, -50%) scale(1.1);
+        }
+      }
+
+      path {
+        animation-play-state: running;
+      }
     }
 
     &::after {
@@ -1275,16 +1326,27 @@ $vline-spacing: 10px;
         }
       }
 
+      &:hover {
+        .roadmap-date {
+          @include smallscreen {
+            transform: translate(-100%, -50%) scale(1.1);
+          }
+        }
+      }
+
       .roadmap-date {
         bottom: auto;
 
         @include largescreen {
-          transform: translateY(calc(-100% - #{$hline-circle-width} / 2));
+          padding: 0 0 #{$hline-circle-width / 2} 0;
+          bottom: auto;
+          top: -#{55 + $hline-circle-width / 2};
         }
 
         @include smallscreen {
           justify-content: flex-end;
           transform: translate(-100%, -50%);
+          transform-origin: right;
           top: 50%;
         }
       }
@@ -1321,6 +1383,7 @@ $vline-spacing: 10px;
         @include smallscreen {
           text-align: right;
           justify-content: flex-end;
+          transform-origin: right;
         }
 
         &:first-child {
@@ -1371,8 +1434,8 @@ $vline-spacing: 10px;
           top: auto;
           left: auto;
           // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
-          right: calc(-6% + 45px);
-          width: calc(106% - 64px)
+          right: 28px;
+          width: calc(106% - 60px);
         }
 
         path {
@@ -1425,7 +1488,8 @@ $vline-spacing: 10px;
       vector-effect: non-scaling-stroke;
       stroke-dashoffset: 0;
       stroke-dasharray: 50;
-      animation: strokeoffset 55s linear infinite;
+      animation: strokeoffset 25s linear infinite;
+      animation-play-state: paused;
 
       &:nth-of-type(1) {
         stroke-dasharray: 0;
@@ -1444,19 +1508,21 @@ $vline-spacing: 10px;
     align-items: center;
     position: absolute;
     width: 100%;
-    height: 60px;
+    height: #{55 + $hline-circle-width / 2};
     text-align: center;
     text-transform: uppercase;
     color: $text-date-color;
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 
     @include largescreen {
-      bottom: 0;
-      transform: translateY(calc(100% + #{$hline-circle-width} / 2));
+      padding-top: #{$hline-circle-width / 2};
+      bottom: -#{55 + $hline-circle-width / 2};
       font-size: 18px;
     }
 
     @include smallscreen {
       transform: translate(100%, -50%);
+      transform-origin: left;
       justify-content: flex-start;
       padding: 0 30px;
       top: 50%;
@@ -1524,6 +1590,8 @@ $vline-spacing: 10px;
     position: relative;
     z-index: 1;
     padding: 20px 0;
+    transform-origin: left;
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
 
     &::before {
       content: '';
