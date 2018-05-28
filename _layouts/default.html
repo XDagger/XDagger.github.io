@@ -132,7 +132,7 @@
             </header>
             <div class="owl-carousel clients-carousel">
                 {% for d in site.data.community %}
-                <a href="{{ d.href }}" target="_blank"><img src="{{ d.pic | relative_url }}" alt=""></a>
+                <a href="{{ d.href }}" class="owl-{{ d.alt }}" target="_blank"><img src="{{ d.pic | relative_url }}" alt="{{ d.alt }} community"></a>
                 {% endfor %}
             </div>
         </div>
