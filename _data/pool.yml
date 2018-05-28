@@ -86,8 +86,8 @@
 
 - ip: 78.46.82.220:13654
   fee_pool: 1
-  fee_miner_finder: 0
-  fee_miner_contributor: 0
+  fee_miner_finder: 10
+  fee_miner_contributor: 5
   fee_community: 1
   web: https://xdagmining.com/
   webName: https://xdagmining.com/
