@@ -62,7 +62,7 @@
   country: Japan
   name: Khaak
 
-- ip: pool1.xdag.signal2noi.se:443
+- ip: pool1.xdag.signal2noi.se:443, pool1.xdag.signal2noi.se:13655
   fee_pool: 0
   fee_miner_finder: 0
   fee_miner_contributor: 0
