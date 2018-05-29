@@ -62,15 +62,15 @@
   country: Japan
   name: Khaak
 
-- ip: eu.xdag.signal2noi.se:13655
+- ip: pool1.xdag.signal2noi.se:443
   fee_pool: 0
   fee_miner_finder: 0
   fee_miner_contributor: 0
   fee_community: 1
-  web: https://eu.xdag.signal2noi.se/
-  webName: https://eu.xdag.signal2noi.se/
-  state: http://eu.xdag.private.signal2noi.se/state.txt
-  country: Netherlands
+  web: https://xdag.signal2noi.se/
+  webName: https://xdag.signal2noi.se/
+  state: http://pool1.xdag.signal2noi.se/state.txt
+  country: Germany
   name: Gribbly
 
 - ip: pool.xdag.us:13654
