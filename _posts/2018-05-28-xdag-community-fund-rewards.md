@@ -19,12 +19,12 @@ the following people are rewarded **6666 XDAG** (13332 in total):
 
 For helping out others on our social channels, completing light development tasks, or generally contributing to the development of XDAG,  
 the following people are rewarded **5000 XDAG** (45000 in total):
-* [**rubencm**]() (Discord help/light code task)
+* [**rubencm**](https://explorer.xdag.io/block/VxpMfjgHSxk7UW6/5r+pOkNG6Pf8ikxH) (Discord help/light code task)
 * [**13ecause**](https://explorer.xdag.io/block/PEVFuTJj4n7cDovCXvVYeygsdb78NA1F) (Discord help)
-* [**hughchiu**]() (CN telegram maintainer)
+* [**hughchiu**](https://explorer.xdag.io/block/MIkofO08qgSuDpOL1igiDnuxfrtTrapW) (CN telegram maintainer)
 * [**merklin**](https://explorer.xdag.io/block/ztVr682SOxy7dfkmxEaPS1GK18T3c159) (Discord help)
 * [**cyan_inf**](https://explorer.xdag.io/block/fNdmf8tDPaVhbf1tKyWjflOH4niw9dr+) (Facebook page maintainer)
-* [**Jimmy**]() (Web-dev and marketing)
+* [**Jimmy**](https://explorer.xdag.io/block/tNIf/UqDg9OpmsqO+osxw1DVoiUZjOb0) (Web-dev and marketing)
 * [**mojs**](https://explorer.xdag.io/block/Xoon/8T23MiGUPVKnycSTps7fWQKbBC3) (Code)
 * [**true**](https://explorer.xdag.io/block/8kV+d9nxoEmo1aLPUOHyxemCg9MY3W1X) (Discord help and code)
 * [**n8**](https://explorer.xdag.io/block/VXaRH3L1cCPCUQDqBunXS8bzr+qlUPzJ) (Telegram bot maintainer)
