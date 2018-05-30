@@ -1041,9 +1041,6 @@
 
 // Dark Theme
 /*
-$background: url('../images/roadmap-gradient.png') #0f212b;
-$timeline-background: url('../images/roadmap-beginning-dark.png') left center;
-$lights-background-opacity: 0.22;
 $text-color: rgba(255, 255, 255, 0.85);
 $vline-color: #428bca;
 $text-date-color: #fff;
@@ -1056,9 +1053,6 @@ $vline-circle-color: $vline-color;
 
 // Light Theme
 
-$background: linear-gradient(45deg, #f7f7f7 0%, #ffffff 100%);
-$timeline-background: url('../images/roadmap-beginning-dark.png') left center;
-$lights-background-opacity: 1;
 $text-color: #333;
 $vline-color: #428bca;
 $text-date-color: #162a38;
@@ -1092,6 +1086,26 @@ $vline-spacing: 10px;
   }
 }
 
+@keyframes down {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes right {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  } to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes strokeoffset {
   0% {
     stroke-dashoffset: 0;
@@ -1106,29 +1120,26 @@ $vline-spacing: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
   min-width: 100%;
   padding: 60px 0;
   overflow: hidden;
   color: $text-color;
-  background: $background;
+  background: linear-gradient(45deg, #f7f7f7 0%, #ffffff 100%);
   background-size: cover;
   font-family: $font-stack-primary;
   list-style: none;
 
   @include smallscreen {
-    padding: 0 0 60px 0;
+    padding: 60px 0;
     align-items: center;
     width: auto;
-    flex-direction: row;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #fff 300px, #f7f7f7);
     justify-content: flex-start;
   }
 
   .section-header {
     @include smallscreen {
-      position: absolute;
-      top: 60px;
-      left: 0;
       width: 100%;
       z-index: 1;
     }
@@ -1138,519 +1149,540 @@ $vline-spacing: 10px;
       margin-bottom: 40px;
 
       @include smallscreen {
-        color: #fff;
+        margin-bottom: 30px;
       }
     }
   }
+}
 
-  &-timeline {
-    display: flex;
-    height: 0;
-    margin: 0;
-    padding-right: 60px;
+.roadmap-timeline {
+  display: flex;
+  height: 0;
+  margin: 0;
+  padding-right: 60px;
 
-    @include smallscreen {
-      flex-direction: column;
-      height: auto;
-      width: 0;
-      padding-left: 50%;
-      padding-right: 50%;
-    }
-
-    &::before {
-      content: '';
-      position: relative;
-      background: $hline-color;
-
-      @include smallscreen {
-        height: 300px;
-        left: -$hline-width / 2;
-        width: $hline-width;
-      }
-
-      @include largescreen {
-        width: 300px;
-        top: -$hline-width / 2;
-        height: $hline-width;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 340px;
-      height: 800px;
-      left: 0;
-      background: $timeline-background;
-      background-repeat: no-repeat;
-      visibility: visible;
-      pointer-events: none;
-
-      @include smallscreen {
-        top: 0;
-        transform: translateX(calc(100vw - 330px)) rotateZ(90deg);
-        width: 800px;
-        height: 800px;
-        left: -53vw;
-      }
-
-      @include largescreen {
-        transform: translateY(-50%);
-      }
-    }
-
-    &.animated::before {
-      opacity: 0;
-      animation-name: fadeInDown;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-
-      @include largescreen {
-        animation-name: fadeInLeft;
-      }
-    }
-  }
-
-  &-timeframe {
-    $pos: $hline-width + 60px - $hline-width / 2;
-
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column-reverse;
-    align-self: flex-end;
-    position: relative;
-    min-width: 100px;
+  @include smallscreen {
+    flex-direction: column;
+    height: auto;
     width: 0;
+    padding-left: 50%;
+    padding-right: 50%;
+  }
 
+  &::before {
+    content: '';
+    position: relative;
+    background: $hline-color;
 
     @include smallscreen {
-      width: 50vw;
-      max-width: 300px;
+      height: 75px;
+      left: -$hline-width / 2;
+      width: $hline-width;
+      border-radius: $hline-width / 2 $hline-width / 2 0 0;
     }
 
-    @for $i from 1 through 9 {
-      &:nth-child(#{$i}) {
-        animation-delay: unquote("0." + "#{$i}s");
-      }
+    @include largescreen {
+      width: 75px;
+      top: -$hline-width / 2;
+      height: $hline-width;
+      margin-left: 50px + $hline-spacing;
+      border-radius: $hline-width / 2 0 0 $hline-width / 2;
+    }
+  }
+
+  &.animated::before {
+    opacity: 0;
+    animation-name: down;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation-fill-mode: forwards;
+
+    @include largescreen {
+      animation-name: right;
+    }
+  }
+}
+
+.roadmap-beginning {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: $hline-width solid $hline-circle-color;
+  border-radius: 50%;
+  
+  @include largescreen {
+    left: -50px;
+    margin-top: -50px;
+  }
+
+  @include smallscreen {
+    top: -60px;
+    margin-left: -50px;
+  }
+
+  &::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background:  $hline-circle-color;
+    border-radius: 50%;
+  }
+}
+
+.roadmap-timeframe {
+  $pos: $hline-width + 60px - $hline-width / 2;
+
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+  align-self: flex-end;
+  position: relative;
+  min-width: 100px;
+  width: 0;
+
+  @include smallscreen {
+    width: 50vw;
+    max-width: 300px;
+    margin-top: -1px;
+  }
+
+  @include largescreen {
+    margin-left: -1px;
+  }
+
+  @at-root .animated & {
+    opacity: 0;
+    animation-name: down;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation-fill-mode: forwards;
+
+    @include largescreen {
+      animation-name: right;
+    }
+  }
+
+  &:hover {
+    .roadmap-event {
+      transform: scale(1.1);
     }
 
-    @at-root .animated & {
-      opacity: 0;
-      animation-name: fadeInDown;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-
+    .roadmap-date {
       @include largescreen {
-        animation-name: fadeInLeft;
-      }
-    }
-
-
-    &:hover {
-      .roadmap-event {
         transform: scale(1.1);
       }
 
-      .roadmap-date {
-        @include largescreen {
-          transform: scale(1.1);
-        }
-
-        @include smallscreen {
-          transform: translate(100%, -50%) scale(1.1);
-        }
-      }
-
-      path {
-        animation-play-state: running;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: $hline-circle-width;
-      height: $hline-circle-width;
-      background: $hline-circle-color;
-      border-radius: 50%;
-
-      @include largescreen {
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%,50%);
-      }
-
       @include smallscreen {
-        right: -$hline-circle-width / 2;
-        bottom: -$hline-circle-width / 2;
+        transform: translate(100%, -50%) scale(1.1);
       }
-    }
-
-    &:nth-child(3n - 2) {
-      .roadmap-swirly path {
-        animation-delay: -2s;
-      }
-    }
-
-    &:nth-child(3n - 1) {
-      .roadmap-swirly path {
-        animation-delay: -4s;
-      }
-    }
-
-    &:first-child {
-      @include smallscreen {
-        margin-top: -$hline-spacing - $hline-circle-width / 2;
-      }
-    }
-
-    &:last-child .roadmap-events::after {
-      @include largescreen {
-        content: none;
-      }
-    }
-
-    &:nth-child(even) {
-      flex-direction: column;
-      align-self: flex-start;
-
-      &::after {
-        @include largescreen {
-          top: 0;
-          transform: translate(-50%, -50%);
-        }
-
-        @include smallscreen {
-          right: auto;
-          left: -$hline-circle-width / 2;
-        }
-      }
-
-      &:hover {
-        .roadmap-date {
-          @include smallscreen {
-            transform: translate(-100%, -50%) scale(1.1);
-          }
-        }
-      }
-
-      .roadmap-date {
-        bottom: auto;
-
-        @include largescreen {
-          padding: 0 0 #{$hline-circle-width / 2} 0;
-          bottom: auto;
-          top: -#{55 + $hline-circle-width / 2};
-        }
-
-        @include smallscreen {
-          justify-content: flex-end;
-          transform: translate(-100%, -50%);
-          transform-origin: right;
-          top: 50%;
-        }
-      }
-
-      .roadmap-events {
-        @include largescreen {
-          padding: $hline-width + 140px calc(15vw - 200px) 0 0;
-        }
-
-        @include smallscreen {
-          padding: 0 25px $hline-width + 140px 10vw;
-        }
-
-        &::before {
-          @include largescreen {
-            top: -$hline-width / 2;
-            bottom: auto;
-          }
-        }
-
-        &::after {
-          @include largescreen {
-            top: -$hline-width / 2;
-            bottom: auto;
-          }
-
-          @include smallscreen {
-            left: -$hline-width / 2;
-          }
-        }
-      }
-
-      .roadmap-event {
-        @include smallscreen {
-          text-align: right;
-          justify-content: flex-end;
-          transform-origin: right;
-        }
-
-        &:first-child {
-          @include largescreen {
-            padding-top: 0;
-          }
-
-          .roadmap-vline {
-            &::after {
-              @include largescreen {
-                top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
-              }
-            }
-          }
-        }
-
-        &:last-child {
-          @include largescreen {
-            padding-bottom: 20px;
-          }
-
-          .roadmap-vline {
-            &::before {
-              @include largescreen {
-                bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
-              }
-            }
-          }
-        }
-
-        &::before {
-          @include smallscreen {
-            order: 2;
-            margin: 0 0 0 20px;
-          }
-        }
-      }
-
-      .roadmap-swirly {
-        @include largescreen {
-          bottom: auto;
-          top: 30px;
-        }
-
-        @include smallscreen {
-          height: 155px - $vline-spacing;
-          bottom: 0;
-          top: auto;
-          left: auto;
-          // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
-          right: 28px;
-          width: calc(106% - 60px);
-        }
-
-        path {
-          @include smallscreen {
-            animation-direction: reverse;
-          }
-        }
-      }
-
-      .roadmap-vline {
-        @include smallscreen {
-          left: auto;
-          right: 0;
-        }
-
-        &::before,
-        &::after {
-          @include smallscreen {
-            left: auto;
-            right: $vline-circle-width / 2 - $vline-width / 2;
-          }
-        }
-      }
-    }
-  }
-
-  &-swirly {
-    position: absolute;
-
-    @include largescreen {
-      height: 150px - $hline-spacing - $vline-spacing;
-      bottom: $hline-spacing;
-      // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
-      left: calc(-3% + 7px);
-      width: calc(53% - 5px);
-    }
-
-    @include smallscreen {
-      height: 155px - $vline-spacing;
-      bottom: 0;
-      // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
-      left: calc(-6% + 36px);
-      width: calc(106% - 64px);
     }
 
     path {
-      stroke-width: $vline-width;
-      stroke: $vline-color;
-      fill-opacity: 0;
-      vector-effect: non-scaling-stroke;
-      stroke-dashoffset: 0;
-      stroke-dasharray: 50;
-      animation: strokeoffset 25s linear infinite;
-      animation-play-state: paused;
-
-      &:nth-of-type(1) {
-        stroke-dasharray: 0;
-        animation: none;
-      }
-
-      &:nth-of-type(2) {
-        stroke: $vline-secondary-color;
-      }
+      animation-play-state: running;
     }
   }
 
-  &-date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &::after {
+    content: '';
     position: absolute;
-    width: 100%;
-    height: #{55 + $hline-circle-width / 2};
-    text-align: center;
-    text-transform: uppercase;
-    color: $text-date-color;
-    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    width: $hline-circle-width;
+    height: $hline-circle-width;
+    background: $hline-circle-color;
+    border-radius: 50%;
 
     @include largescreen {
-      padding-top: #{$hline-circle-width / 2};
-      bottom: -#{55 + $hline-circle-width / 2};
-      font-size: 18px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%,50%);
     }
 
     @include smallscreen {
-      transform: translate(100%, -50%);
-      transform-origin: left;
-      justify-content: flex-start;
-      padding: 0 30px;
-      top: 50%;
-      font-size: 19px;
+      right: -$hline-circle-width / 2;
+      bottom: -$hline-circle-width / 2;
     }
   }
 
-  &-events {
-    position: relative;
-    padding-bottom: $hline-width + 140px;
-    list-style: none;
-
-    @include largescreen {
-      padding-right: calc(15vw - 200px);
-    }
-
+  &:first-of-type {
     @include smallscreen {
-      position: relative;
-      padding-bottom: 150px;
-      list-style: none;
-      padding-left: 25px;
-      padding-right: 10vw;
+      margin-top: -$hline-spacing - $hline-circle-width / 2 - 1;
     }
 
-    &::before {
-      $spacing: $hline-circle-width / 2 + $hline-spacing;
-
-      @include largescreen {
-        content: '';
-        position: absolute;
-        background: $hline-color;
-        height: $hline-width;
-        left: 0;
-        right: calc(50% + #{$spacing});
-        bottom: -$hline-width / 2;
+    .roadmap-events::after {
+      @include smallscreen {
+        border-radius: 0 0 $hline-spacing / 2 $hline-spacing / 2;
       }
     }
+  }
+
+  &:last-of-type .roadmap-events::after {
+    @include largescreen {
+      content: none;
+    }
+  }
+
+  @for $i from 1 through 9 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: unquote("0." + "#{$i - 1}s");
+    }
+  }
+
+  &:nth-of-type(3n - 2) {
+    .roadmap-swirly path {
+      animation-delay: -2s;
+    }
+  }
+
+  &:nth-of-type(3n - 1) {
+    .roadmap-swirly path {
+      animation-delay: -4s;
+    }
+  }
+
+  &:nth-of-type(even) {
+    flex-direction: column;
+    align-self: flex-start;
 
     &::after {
-      $spacing: $hline-circle-width / 2 + $hline-spacing;
-
-      content: '';
-      position: absolute;
-      background: $hline-color;
-
       @include largescreen {
-        height: $hline-width;
-        left: calc(50% + #{$spacing});
-        right: 0;
-        bottom: -$hline-width / 2;
+        top: 0;
+        transform: translate(-50%, -50%);
       }
 
       @include smallscreen {
-        top: $spacing;
-        bottom: $spacing;
-        right: -$hline-width / 2;
-        width: $hline-width;
+        right: auto;
+        left: -$hline-circle-width / 2;
+      }
+    }
+
+    &:hover {
+      .roadmap-date {
+        @include smallscreen {
+          transform: translate(-100%, -50%) scale(1.1);
+        }
+      }
+    }
+
+    .roadmap-date {
+      bottom: auto;
+
+      @include largescreen {
+        padding: 0 0 #{$hline-circle-width / 2} 0;
+        bottom: auto;
+        top: -#{55 + $hline-circle-width / 2};
+      }
+
+      @include smallscreen {
+        justify-content: flex-end;
+        transform: translate(-100%, -50%);
+        transform-origin: right;
+        top: 50%;
+      }
+    }
+
+    .roadmap-events {
+      @include largescreen {
+        padding: $hline-width + 140px calc(15vw - 200px) 0 0;
+      }
+
+      @include smallscreen {
+        padding: 0 25px $hline-width + 140px 10vw;
+      }
+
+      &::before {
+        @include largescreen {
+          top: -$hline-width / 2;
+          bottom: auto;
+        }
+      }
+
+      &::after {
+        @include largescreen {
+          top: -$hline-width / 2;
+          bottom: auto;
+        }
+
+        @include smallscreen {
+          left: -$hline-width / 2;
+        }
+      }
+    }
+
+    .roadmap-event {
+      @include smallscreen {
+        text-align: right;
+        justify-content: flex-end;
+        transform-origin: right;
+      }
+
+      &:first-child {
+        @include largescreen {
+          padding-top: 0;
+        }
+
+        .roadmap-vline {
+          &::after {
+            @include largescreen {
+              top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        @include largescreen {
+          padding-bottom: 20px;
+        }
+
+        .roadmap-vline {
+          &::before {
+            @include largescreen {
+              bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+            }
+          }
+        }
+      }
+
+      &::before {
+        @include smallscreen {
+          order: 2;
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+
+    .roadmap-swirly {
+      @include largescreen {
+        bottom: auto;
+        top: 30px;
+      }
+
+      @include smallscreen {
+        height: 155px - $vline-spacing;
+        bottom: 0;
+        top: auto;
+        left: auto;
+        // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
+        right: 28px;
+        width: calc(106% - 60px);
+      }
+
+      path {
+        @include smallscreen {
+          animation-direction: reverse;
+        }
+      }
+    }
+
+    .roadmap-vline {
+      @include smallscreen {
+        left: auto;
+        right: 0;
+      }
+
+      &::before,
+      &::after {
+        @include smallscreen {
+          left: auto;
+          right: $vline-circle-width / 2 - $vline-width / 2;
+        }
       }
     }
   }
+}
 
-  &-event {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    padding: 20px 0;
-    transform-origin: left;
-    transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+.roadmap-swirly {
+  position: absolute;
 
-    &::before {
-      content: '';
-      flex-shrink: 0;
-      left: 0px;
-      margin-right: 10px;
-      border-radius: 50%;
-      width: $vline-circle-width;
-      height: $vline-circle-width;
-      background: $vline-circle-color;
-    }
-
-    &:first-child {
-      .roadmap-vline {
-        &::before {
-          content: none;
-        }
-      }
-    }
-
-    &:last-child {
-      padding-bottom: 0px;
-
-      .roadmap-vline {
-        &::before {
-          bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
-        }
-
-        &::after {
-          content: none;
-        }
-      }
-    }
-
+  @include largescreen {
+    height: 150px - $hline-spacing - $vline-spacing;
+    bottom: $hline-spacing;
+    // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
+    left: calc(-3% + 7px);
+    width: calc(53% - 5px);
   }
 
-  &-vline {
-    position: absolute;
-    top: 0;
+  @include smallscreen {
+    height: 155px - $vline-spacing;
     bottom: 0;
-    left: 0;
+    // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
+    left: calc(-6% + 36px);
+    width: calc(106% - 64px);
+  }
 
-    &::before,
-    &::after {
+  path {
+    stroke-width: $vline-width;
+    stroke: $vline-color;
+    fill-opacity: 0;
+    vector-effect: non-scaling-stroke;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 50;
+    animation: strokeoffset 25s linear infinite;
+    animation-play-state: paused;
+
+    &:nth-of-type(1) {
+      stroke-dasharray: 0;
+      animation: none;
+    }
+
+    &:nth-of-type(2) {
+      stroke: $vline-secondary-color;
+    }
+  }
+}
+
+.roadmap-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: #{55 + $hline-circle-width / 2};
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-date-color;
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include largescreen {
+    padding-top: #{$hline-circle-width / 2};
+    bottom: -#{55 + $hline-circle-width / 2};
+    font-size: 18px;
+  }
+
+  @include smallscreen {
+    transform: translate(100%, -50%);
+    transform-origin: left;
+    justify-content: flex-start;
+    padding: 0 30px;
+    top: 50%;
+    font-size: 19px;
+  }
+}
+
+.roadmap-events {
+  $spacing: $hline-circle-width / 2 + $hline-spacing;
+  $half: $hline-width / 2;
+
+  position: relative;
+  padding-bottom: $hline-width + 140px;
+  list-style: none;
+
+  @include largescreen {
+    padding-right: calc(15vw - 200px);
+  }
+
+  @include smallscreen {
+    position: relative;
+    padding-bottom: 150px;
+    list-style: none;
+    padding-left: 25px;
+    padding-right: 10vw;
+  }
+
+  &::before {
+    @include largescreen {
       content: '';
       position: absolute;
-      left: $vline-circle-width / 2 - $vline-width / 2;
-      width: $vline-width;
-      background: $vline-color;
+      background: $hline-color;
+      height: $hline-width;
+      left: 0;
+      right: calc(50% + #{$spacing});
+      bottom: -$half;
+      border-radius: 0 $half $half 0;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: $hline-color;
+
+    @include largescreen {
+      height: $hline-width;
+      left: calc(50% + #{$spacing});
+      right: 0;
+      bottom: -$half;
+      border-radius: $half 0 0 $half;
     }
 
-    &::before {
-      top: 0;
-      bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+    @include smallscreen {
+      top: $spacing;
+      bottom: $spacing;
+      right: -$half;
+      width: $hline-width;
+      border-radius: $half;
     }
+  }
+}
 
-    &::after {
-      top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
-      bottom: 0;
+.roadmap-event {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+  transform-origin: left;
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    left: 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: $vline-circle-width;
+    height: $vline-circle-width;
+    background: $vline-circle-color;
+  }
+
+  &:first-child {
+    .roadmap-vline {
+      &::before {
+        content: none;
+      }
     }
+  }
+
+  &:last-child {
+    padding-bottom: 0px;
+
+    .roadmap-vline {
+      &::before {
+        bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+}
+
+.roadmap-vline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: $vline-circle-width / 2 - $vline-width / 2;
+    width: $vline-width;
+    background: $vline-color;
+  }
+
+  &::before {
+    top: 0;
+    bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+  }
+
+  &::after {
+    top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+    bottom: 0;
   }
 }
