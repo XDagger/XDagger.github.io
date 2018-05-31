@@ -1149,7 +1149,7 @@ $vline-spacing: 10px;
       margin-bottom: 40px;
 
       @include smallscreen {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
       }
     }
   }
@@ -1172,20 +1172,20 @@ $vline-spacing: 10px;
   &::before {
     content: '';
     position: relative;
+    z-index: 1;
     background: $hline-color;
 
     @include smallscreen {
       height: 75px;
       left: -$hline-width / 2;
       width: $hline-width;
-      border-radius: $hline-width / 2 $hline-width / 2 0 0;
     }
 
     @include largescreen {
-      width: 75px;
+      width: 60px;
       top: -$hline-width / 2;
       height: $hline-width;
-      margin-left: 50px + $hline-spacing;
+      margin-left: 40px;
       border-radius: $hline-width / 2 0 0 $hline-width / 2;
     }
   }
@@ -1205,30 +1205,19 @@ $vline-spacing: 10px;
 
 .roadmap-beginning {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border: $hline-width solid $hline-circle-color;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  background: url('../images/roadmap-circles.svg') no-repeat;
   
   @include largescreen {
-    left: -50px;
-    margin-top: -50px;
+    left: -125px;
+    margin-top: -125px;
   }
 
   @include smallscreen {
-    top: -60px;
-    margin-left: -50px;
-  }
-
-  &::before {
-    content: '';
-    width: 50px;
-    height: 50px;
-    background:  $hline-circle-color;
-    border-radius: 50%;
+    top: -125px;
+    margin-left: -125px;
+    transform: rotateZ(10deg);
   }
 }
 
