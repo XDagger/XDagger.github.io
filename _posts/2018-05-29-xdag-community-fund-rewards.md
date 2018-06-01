@@ -5,20 +5,20 @@ date: "2018-05-29 14:00:00"
 image: "/assets/images/posts/community-fund-rewards.jpg"
 ---
 
-Dear community, the rewards for the months of April and May 2018 have been decided.  
+Dear community, the rewards for the months of April and May 2018 have been decided. 
 The rewards are based on Github contributions and notable community involvement. Transaction ID's are linked to each name.
 
-For their constant help and daily involvement in the development of XDAG and its core code,  
+For their constant help and daily involvement in the development of XDAG and its core code, 
 the following people are rewarded **26666 XDAG** (53332 in total):
 * [**Evgeniy**](https://explorer.xdag.io/block/keOYcyjmwD3bWM8ARXBgUTMJeFLQb/iz)
 * [**Frozen**](https://explorer.xdag.io/block/xkBXJSmEfbxm8xsS4WKO9aPHHoYU2lQS)
 
-For their constant help and daily involvement in the marketing development of XDAG,  
+For their constant help and daily involvement in the marketing development of XDAG, 
 the following people are rewarded **6666 XDAG** (13332 in total):
 * [**Mathsw**](https://explorer.xdag.io/block/gxCc0+JRuhUjFnioDE7KXRGP8FrH3kq4)
 * [**Sgaragagghu**](https://explorer.xdag.io/block/H67JnIa0dwgSQwF/On5LrQv3CyfYbF6K)
 
-For helping out others on our social channels, completing light development tasks, or generally contributing to the development of XDAG,  
+For helping out others on our social channels, completing light development tasks, or generally contributing to the development of XDAG, 
 the following people are rewarded **5000 XDAG** (45000 in total):
 * [**rubencm**](https://explorer.xdag.io/block/VxpMfjgHSxk7UW6/5r+pOkNG6Pf8ikxH) (Discord help/light code task)
 * [**13ecause**](https://explorer.xdag.io/block/PEVFuTJj4n7cDovCXvVYeygsdb78NA1F) (Discord help)
