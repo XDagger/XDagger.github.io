@@ -1041,9 +1041,6 @@
 
 // Dark Theme
 /*
-$background: url('../images/roadmap-gradient.png') #0f212b;
-$timeline-background: url('../images/roadmap-beginning-dark.png') left center;
-$lights-background-opacity: 0.22;
 $text-color: rgba(255, 255, 255, 0.85);
 $vline-color: #428bca;
 $text-date-color: #fff;
@@ -1056,9 +1053,6 @@ $vline-circle-color: $vline-color;
 
 // Light Theme
 
-$background: linear-gradient(45deg, #f7f7f7 0%, #ffffff 100%);
-$timeline-background: url('../images/roadmap-beginning-dark.png') left center;
-$lights-background-opacity: 1;
 $text-color: #333;
 $vline-color: #428bca;
 $text-date-color: #162a38;
@@ -1092,6 +1086,26 @@ $vline-spacing: 10px;
   }
 }
 
+@keyframes down {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes right {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  } to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes strokeoffset {
   0% {
     stroke-dashoffset: 0;
@@ -1103,32 +1117,45 @@ $vline-spacing: 10px;
 
 .roadmap {
   position: relative;;
+  display: -webkit-box;;
+  display: -ms-flexbox;;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-width: 100%;
   padding: 60px 0;
   overflow: hidden;
   color: $text-color;
-  background: $background;
+  background: -o-linear-gradient(45deg, #f7f7f7 0%, #ffffff 100%);
+  background: linear-gradient(45deg, #f7f7f7 0%, #ffffff 100%);
   background-size: cover;
   font-family: $font-stack-primary;
   list-style: none;
 
   @include smallscreen {
-    padding: 0 0 60px 0;
-    align-items: center;
+    padding: 60px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: auto;
-    flex-direction: row;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -o-linear-gradient(top, #fff 300px, #f7f7f7);
+    background: linear-gradient(to bottom, #fff 300px, #f7f7f7);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .section-header {
     @include smallscreen {
-      position: absolute;
-      top: 60px;
-      left: 0;
       width: 100%;
       z-index: 1;
     }
@@ -1138,451 +1165,628 @@ $vline-spacing: 10px;
       margin-bottom: 40px;
 
       @include smallscreen {
-        color: #fff;
+        margin-bottom: 0px;
       }
     }
   }
+}
 
-  &-timeline {
-    display: flex;
-    height: 0;
-    margin: 0;
-    padding-right: 60px;
+.roadmap-timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  margin: 0;
+  padding-right: 60px;
 
-    @include smallscreen {
-      flex-direction: column;
+  @include smallscreen {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 0;
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  @at-root .no-js & {
+    @include largescreen {
       height: auto;
-      width: 0;
-      padding-left: 50%;
-      padding-right: 50%;
-    }
-
-    &::before {
-      content: '';
-      position: relative;
-      background: $hline-color;
-
-      @include smallscreen {
-        height: 300px;
-        left: -$hline-width / 2;
-        width: $hline-width;
-      }
-
-      @include largescreen {
-        width: 300px;
-        top: -$hline-width / 2;
-        height: $hline-width;
-      }
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 340px;
-      height: 800px;
-      left: 0;
-      background: $timeline-background;
-      background-repeat: no-repeat;
-
-      @include smallscreen {
-        top: 0;
-        transform: translateX(calc(100vw - 330px)) rotateZ(90deg);
-        width: 800px;
-        height: 800px;
-        left: -53vw;
-      }
-
-      @include largescreen {
-        transform: translateY(-50%);
-      }
+      padding-top: 100px;
     }
   }
 
-  &-timeframe {
-    $pos: $hline-width + 60px - $hline-width / 2;
-
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column-reverse;
-    align-self: flex-end;
+  &::before {
+    content: '';
     position: relative;
     z-index: 1;
-    min-width: 100px;
-    width: 0;
+    background: $hline-color;
 
     @include smallscreen {
-      width: 50vw;
-      max-width: 300px;
+      height: 75px;
+      left: -$hline-width / 2;
+      width: $hline-width;
     }
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: $hline-circle-width;
-      height: $hline-circle-width;
-      background: $hline-circle-color;
-      border-radius: 50%;
-
-      @include largescreen {
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%,50%);
-      }
-
-      @include smallscreen {
-        right: -$hline-circle-width / 2;
-        bottom: -$hline-circle-width / 2;
-      }
-    }
-
-    &:nth-child(3n - 2) {
-      .roadmap-swirly path {
-        animation-delay: -2s;
-      }
-    }
-
-    &:nth-child(3n - 1) {
-      .roadmap-swirly path {
-        animation-delay: -4s;
-      }
-    }
-
-    &:first-child {
-      @include smallscreen {
-        margin-top: -$hline-spacing - $hline-circle-width / 2;
-      }
-    }
-
-    &:last-child .roadmap-events::after {
-      @include largescreen {
-        content: none;
-      }
-    }
-
-    &:nth-child(even) {
-      flex-direction: column;
-      align-self: flex-start;
-
-      &::after {
-        @include largescreen {
-          top: 0;
-          transform: translate(-50%, -50%);
-        }
-
-        @include smallscreen {
-          right: auto;
-          left: -$hline-circle-width / 2;
-        }
-      }
-
-      .roadmap-date {
-        bottom: auto;
-
-        @include largescreen {
-          transform: translateY(calc(-100% - #{$hline-circle-width} / 2));
-        }
-
-        @include smallscreen {
-          justify-content: flex-end;
-          transform: translate(-100%, -50%);
-          top: 50%;
-        }
-      }
-
-      .roadmap-events {
-        @include largescreen {
-          padding: $hline-width + 140px calc(15vw - 200px) 0 0;
-        }
-
-        @include smallscreen {
-          padding: 0 25px $hline-width + 140px 10vw;
-        }
-
-        &::before {
-          @include largescreen {
-            top: -$hline-width / 2;
-            bottom: auto;
-          }
-        }
-
-        &::after {
-          @include largescreen {
-            top: -$hline-width / 2;
-            bottom: auto;
-          }
-
-          @include smallscreen {
-            left: -$hline-width / 2;
-          }
-        }
-      }
-
-      .roadmap-event {
-        @include smallscreen {
-          text-align: right;
-          justify-content: flex-end;
-        }
-
-        &:first-child {
-          @include largescreen {
-            padding-top: 0;
-          }
-
-          .roadmap-vline {
-            &::after {
-              @include largescreen {
-                top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
-              }
-            }
-          }
-        }
-
-        &:last-child {
-          @include largescreen {
-            padding-bottom: 20px;
-          }
-
-          .roadmap-vline {
-            &::before {
-              @include largescreen {
-                bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
-              }
-            }
-          }
-        }
-
-        &::before {
-          @include smallscreen {
-            order: 2;
-            margin: 0 0 0 20px;
-          }
-        }
-      }
-
-      .roadmap-swirly {
-        @include largescreen {
-          bottom: auto;
-          top: 30px;
-        }
-
-        @include smallscreen {
-          height: 155px - $vline-spacing;
-          bottom: 0;
-          top: auto;
-          left: auto;
-          // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
-          right: calc(-6% + 45px);
-          width: calc(106% - 64px)
-        }
-
-        path {
-          @include smallscreen {
-            animation-direction: reverse;
-          }
-        }
-      }
-
-      .roadmap-vline {
-        @include smallscreen {
-          left: auto;
-          right: 0;
-        }
-
-        &::before,
-        &::after {
-          @include smallscreen {
-            left: auto;
-            right: $vline-circle-width / 2 - $vline-width / 2;
-          }
-        }
-      }
+    @include largescreen {
+      width: 60px;
+      top: -$hline-width / 2;
+      height: $hline-width;
+      margin-left: 40px;
+      border-radius: $hline-width / 2 0 0 $hline-width / 2;
     }
   }
 
-  &-swirly {
-    position: absolute;
+  &.animated::before {
+    opacity: 0;
+    -webkit-animation-name: down;
+            animation-name: down;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+            animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 
     @include largescreen {
-      height: 150px - $hline-spacing - $vline-spacing;
-      bottom: $hline-spacing;
-      // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
-      left: calc(-3% + 7px);
-      width: calc(53% - 5px);
+      -webkit-animation-name: right;
+              animation-name: right;
+    }
+  }
+}
+
+.roadmap-beginning {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: url('../images/roadmap-circles.svg') no-repeat;
+  
+  @include largescreen {
+    left: -125px;
+    margin-top: -125px;
+  }
+
+  @include smallscreen {
+    top: -125px;
+    margin-left: -125px;
+    -webkit-transform: rotateZ(10deg);
+        -ms-transform: rotate(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+.roadmap-timeframe {
+  $pos: $hline-width + 60px - $hline-width / 2;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  min-width: 100px;
+  width: 0;
+
+  @include smallscreen {
+    width: 50vw;
+    max-width: 300px;
+    margin-top: -1px;
+  }
+
+  @include largescreen {
+    margin-left: -1px;
+  }
+
+  @at-root .animated & {
+    opacity: 0;
+    -webkit-animation-name: down;
+            animation-name: down;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+            animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+    @include largescreen {
+      -webkit-animation-name: right;
+              animation-name: right;
+    }
+  }
+
+  &:hover {
+    .roadmap-event {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
     }
 
-    @include smallscreen {
-      height: 155px - $vline-spacing;
-      bottom: 0;
-      // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
-      left: calc(-6% + 36px);
-      width: calc(106% - 64px);
+    .roadmap-date {
+      @include largescreen {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+      }
+
+      @include smallscreen {
+        -webkit-transform: translate(100%, -50%) scale(1.1);
+            -ms-transform: translate(100%, -50%) scale(1.1);
+                transform: translate(100%, -50%) scale(1.1);
+      }
     }
 
     path {
-      stroke-width: $vline-width;
-      stroke: $vline-color;
-      fill-opacity: 0;
-      vector-effect: non-scaling-stroke;
-      stroke-dashoffset: 0;
-      stroke-dasharray: 50;
-      animation: strokeoffset 55s linear infinite;
-
-      &:nth-of-type(1) {
-        stroke-dasharray: 0;
-        animation: none;
-      }
-
-      &:nth-of-type(2) {
-        stroke: $vline-secondary-color;
-      }
+      -webkit-animation-play-state: running;
+              animation-play-state: running;
     }
   }
 
-  &-date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &::after {
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $text-date-color;
+    width: $hline-circle-width;
+    height: $hline-circle-width;
+    background: $hline-circle-color;
+    border-radius: 50%;
 
     @include largescreen {
       bottom: 0;
-      transform: translateY(calc(100% + #{$hline-circle-width} / 2));
-      font-size: 18px;
+      left: 50%;
+      -webkit-transform: translate(-50%,50%);
+          -ms-transform: translate(-50%,50%);
+              transform: translate(-50%,50%);
     }
 
     @include smallscreen {
-      transform: translate(100%, -50%);
-      justify-content: flex-start;
-      padding: 0 30px;
-      top: 50%;
-      font-size: 19px;
+      right: -$hline-circle-width / 2;
+      bottom: -$hline-circle-width / 2;
     }
   }
 
-  &-events {
-    position: relative;
-    padding-bottom: $hline-width + 140px;
-    list-style: none;
-
-    @include largescreen {
-      padding-right: calc(15vw - 200px);
-    }
-
+  &:first-of-type {
     @include smallscreen {
-      position: relative;
-      padding-bottom: 150px;
-      list-style: none;
-      padding-left: 25px;
-      padding-right: 10vw;
+      margin-top: -$hline-spacing - $hline-circle-width / 2 - 1;
     }
 
-    &::before {
-      $spacing: $hline-circle-width / 2 + $hline-spacing;
-
-      @include largescreen {
-        content: '';
-        position: absolute;
-        background: $hline-color;
-        height: $hline-width;
-        left: 0;
-        right: calc(50% + #{$spacing});
-        bottom: -$hline-width / 2;
+    .roadmap-events::after {
+      @include smallscreen {
+        border-radius: 0 0 $hline-spacing / 2 $hline-spacing / 2;
       }
     }
+  }
+
+  &:last-of-type .roadmap-events::after {
+    @include largescreen {
+      content: none;
+    }
+  }
+
+  @for $i from 1 through 9 {
+    &:nth-of-type(#{$i}) {
+      -webkit-animation-delay: unquote("0." + "#{$i - 1}s");
+              animation-delay: unquote("0." + "#{$i - 1}s");
+    }
+  }
+
+  &:nth-of-type(3n - 2) {
+    .roadmap-swirly path {
+      -webkit-animation-delay: -2s;
+              animation-delay: -2s;
+    }
+  }
+
+  &:nth-of-type(3n - 1) {
+    .roadmap-swirly path {
+      -webkit-animation-delay: -4s;
+              animation-delay: -4s;
+    }
+  }
+
+  @at-root .no-js &:nth-child(even) svg {
+    transform: rotateX(180deg);
+  }
+
+  @at-root .no-js &,
+  &:nth-of-type(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
 
     &::after {
-      $spacing: $hline-circle-width / 2 + $hline-spacing;
-
-      content: '';
-      position: absolute;
-      background: $hline-color;
-
       @include largescreen {
-        height: $hline-width;
-        left: calc(50% + #{$spacing});
-        right: 0;
-        bottom: -$hline-width / 2;
+        top: 0;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
       }
 
       @include smallscreen {
-        top: $spacing;
-        bottom: $spacing;
-        right: -$hline-width / 2;
-        width: $hline-width;
+        right: auto;
+        left: -$hline-circle-width / 2;
+      }
+    }
+
+    &:hover {
+      .roadmap-date {
+        @include smallscreen {
+          -webkit-transform: translate(-100%, -50%) scale(1.1);
+              -ms-transform: translate(-100%, -50%) scale(1.1);
+                  transform: translate(-100%, -50%) scale(1.1);
+        }
+      }
+    }
+
+    .roadmap-date {
+      bottom: auto;
+
+      @include largescreen {
+        padding: 0 0 #{$hline-circle-width / 2} 0;
+        bottom: auto;
+        top: -#{55 + $hline-circle-width / 2};
+      }
+
+      @include smallscreen {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-transform: translate(-100%, -50%);
+            -ms-transform: translate(-100%, -50%);
+                transform: translate(-100%, -50%);
+        -webkit-transform-origin: right;
+            -ms-transform-origin: right;
+                transform-origin: right;
+        top: 50%;
+      }
+    }
+
+    .roadmap-events {
+      @include largescreen {
+        padding: $hline-width + 140px calc(15vw - 200px) 0 0;
+      }
+
+      @include smallscreen {
+        padding: 0 25px $hline-width + 140px 10vw;
+      }
+
+      &::before {
+        @include largescreen {
+          top: -$hline-width / 2;
+          bottom: auto;
+        }
+      }
+
+      &::after {
+        @include largescreen {
+          top: -$hline-width / 2;
+          bottom: auto;
+        }
+
+        @include smallscreen {
+          left: -$hline-width / 2;
+        }
+      }
+    }
+
+    .roadmap-event {
+      @include smallscreen {
+        text-align: right;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        -webkit-transform-origin: right;
+            -ms-transform-origin: right;
+                transform-origin: right;
+      }
+
+      &:first-child {
+        @include largescreen {
+          padding-top: 0;
+        }
+
+        .roadmap-vline {
+          &::after {
+            @include largescreen {
+              top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
+            }
+          }
+        }
+      }
+
+      &:last-child {
+        @include largescreen {
+          padding-bottom: 20px;
+        }
+
+        .roadmap-vline {
+          &::before {
+            @include largescreen {
+              bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+            }
+          }
+        }
+      }
+
+      &::before {
+        @include smallscreen {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2;
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+
+    .roadmap-swirly {
+      @include largescreen {
+        bottom: auto;
+        top: 30px;
+      }
+
+      @include smallscreen {
+        height: 155px - $vline-spacing;
+        bottom: 0;
+        top: auto;
+        left: auto;
+        // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
+        right: 28px;
+        width: calc(106% - 60px);
+      }
+
+      path {
+        @include smallscreen {
+          animation-direction: reverse;
+        }
+      }
+    }
+
+    .roadmap-vline {
+      @include smallscreen {
+        left: auto;
+        right: 0;
+      }
+
+      &::before,
+      &::after {
+        @include smallscreen {
+          left: auto;
+          right: $vline-circle-width / 2 - $vline-width / 2;
+        }
       }
     }
   }
+}
 
-  &-event {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    padding: 20px 0;
+.roadmap-swirly {
+  position: absolute;
 
-    &::before {
-      content: '';
-      flex-shrink: 0;
-      left: 0px;
-      margin-right: 10px;
-      border-radius: 50%;
-      width: $vline-circle-width;
-      height: $vline-circle-width;
-      background: $vline-circle-color;
-    }
-
-    &:first-child {
-      .roadmap-vline {
-        &::before {
-          content: none;
-        }
-      }
-    }
-
-    &:last-child {
-      padding-bottom: 0px;
-
-      .roadmap-vline {
-        &::before {
-          bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
-        }
-
-        &::after {
-          content: none;
-        }
-      }
-    }
-
+  @include largescreen {
+    height: 150px - $hline-spacing - $vline-spacing;
+    bottom: $hline-spacing;
+    // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
+    left: calc(-3% + 7px);
+    width: calc(53% - 5px);
   }
 
-  &-vline {
-    position: absolute;
-    top: 0;
+  @include smallscreen {
+    height: 155px - $vline-spacing;
     bottom: 0;
-    left: 0;
+    // Magic numbers to make the svg line up properly after scaling with preserveAspectRatio="none"
+    left: calc(-6% + 36px);
+    width: calc(106% - 64px);
+  }
 
-    &::before,
-    &::after {
+  path {
+    stroke-width: $vline-width;
+    stroke: $vline-color;
+    fill-opacity: 0;
+    vector-effect: non-scaling-stroke;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 50;
+    -webkit-animation: strokeoffset 25s linear infinite;
+            animation: strokeoffset 25s linear infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+
+    &:nth-of-type(1) {
+      stroke-dasharray: 0;
+      -webkit-animation: none;
+              animation: none;
+    }
+
+    &:nth-of-type(2) {
+      stroke: $vline-secondary-color;
+    }
+  }
+}
+
+.roadmap-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  height: #{55 + $hline-circle-width / 2};
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-date-color;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include largescreen {
+    padding-top: #{$hline-circle-width / 2};
+    bottom: -#{55 + $hline-circle-width / 2};
+    font-size: 18px;
+  }
+
+  @include smallscreen {
+    -webkit-transform: translate(100%, -50%);
+        -ms-transform: translate(100%, -50%);
+            transform: translate(100%, -50%);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 30px;
+    top: 50%;
+    font-size: 19px;
+  }
+}
+
+.roadmap-events {
+  $spacing: $hline-circle-width / 2 + $hline-spacing;
+  $half: $hline-width / 2;
+
+  position: relative;
+  padding-bottom: $hline-width + 140px;
+  list-style: none;
+
+  @include largescreen {
+    padding-right: calc(15vw - 200px);
+  }
+
+  @include smallscreen {
+    position: relative;
+    padding-bottom: 150px;
+    list-style: none;
+    padding-left: 25px;
+    padding-right: 10vw;
+  }
+
+  &::before {
+    @include largescreen {
       content: '';
       position: absolute;
-      left: $vline-circle-width / 2 - $vline-width / 2;
-      width: $vline-width;
-      background: $vline-color;
+      background: $hline-color;
+      height: $hline-width;
+      left: 0;
+      right: calc(50% + #{$spacing});
+      bottom: -$half;
+      border-radius: 0 $half $half 0;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: $hline-color;
+
+    @include largescreen {
+      height: $hline-width;
+      left: calc(50% + #{$spacing});
+      right: 0;
+      bottom: -$half;
+      border-radius: $half 0 0 $half;
     }
 
-    &::before {
-      top: 0;
-      bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+    @include smallscreen {
+      top: $spacing;
+      bottom: $spacing;
+      right: -$half;
+      width: $hline-width;
+      border-radius: $half;
     }
+  }
+}
 
-    &::after {
-      top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
-      bottom: 0;
+.roadmap-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+  -webkit-transform-origin: left;
+      -ms-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::before {
+    content: '';
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    left: 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: $vline-circle-width;
+    height: $vline-circle-width;
+    background: $vline-circle-color;
+  }
+
+  &:first-child {
+    .roadmap-vline {
+      &::before {
+        content: none;
+      }
     }
+  }
+
+  &:last-child {
+    padding-bottom: 0px;
+
+    .roadmap-vline {
+      &::before {
+        bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing} - 10px);
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+}
+
+.roadmap-vline {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: $vline-circle-width / 2 - $vline-width / 2;
+    width: $vline-width;
+    background: $vline-color;
+  }
+
+  &::before {
+    top: 0;
+    bottom: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+  }
+
+  &::after {
+    top: calc(50% + #{$vline-circle-width} / 2 + #{$vline-spacing});
+    bottom: 0;
   }
 }

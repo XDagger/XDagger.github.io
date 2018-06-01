@@ -1,0 +1,34 @@
+- date: December 2017
+  events:
+    - CLI for Windows and Linux
+    - Miner, full node and pool release
+    - Testnet launch
+
+- date: January 2018
+  events:
+    - Mainnet launch
+    - GUI wallet with integrated miner for Windows
+
+- date: February 2018
+  events:
+    - Community built a block explorer based on original developers code
+    - Original developer gives the ownership of the project to the community
+    - Xdag.org is fully operational
+    - The original code is being cleaned
+
+- date: March 2018
+  events:
+    - Release of XDAG wallet 0.2.0
+    - Release of XDAG wallet 0.2.1 with MAC support
+    - Brand new website for our new domain xdag.io
+
+- date: ETA 2018
+  events:
+    - After a wallet RPC is created, the community will push for exchange listing
+    - GUI wallet with integrated miner for Windows
+
+- date: Future plans
+  events:
+    - Expansion of the development team
+    - Social media and marketing
+    - Escrow services
