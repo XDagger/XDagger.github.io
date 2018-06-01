@@ -7,7 +7,7 @@ community_wallet: FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
 
 baseurl: "/"
 
-paginate: 5
+paginate: 7
 paginate_path: "/blog/page:num"
 
 sass:
