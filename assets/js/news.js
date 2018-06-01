@@ -1,15 +1,34 @@
 jQuery(document).ready(function( $ ) {
-  $('.news .rht').click(function (e) {
-      $(this).parent().find(".all").toggle();
-      $(this).parent().find(".top").toggle();
-      $(this).parent().find("i").toggleClass("ion-ios-arrow-up");
+
+  function toggleContent($parent) {
+      var on = $parent.find(".js-toggle-content").hasClass("ion-ios-arrow-up");
+
+      if (on) {
+          $parent.find(".all").hide();
+          $parent.find(".top").show();
+          $parent.find(".js-toggle-content").removeClass("ion-ios-arrow-up");
+      } else {
+          $parent.find(".all").show();
+          $parent.find(".top").hide();
+          $parent.find(".js-toggle-content").addClass("ion-ios-arrow-up");
+      }
+  }
+
+  $('.news .rht').click(function() {
+      toggleContent($(this).parent());
   });
 
-  $('.news .lft').click(function (e) {
+  $('.news .tit .js-toggle-content').click(function() {
+      toggleContent($(this).parent().parent().parent());
+  });
+
+  $('.news .top').click(function (e) {
       if(e.target.nodeName !== "A"){
-          $(this).find(".all").show();
-          $(this).find(".top").hide();
-          $(this).parent().find("i").addClass("ion-ios-arrow-up");
+          var $parent = $(this).parent().parent();
+
+          $parent.find(".all").show();
+          $(this).hide();
+          $parent.find(".js-toggle-content").addClass("ion-ios-arrow-up");
       }
   });
 
