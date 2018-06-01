@@ -1190,6 +1190,13 @@ $vline-spacing: 10px;
     padding-right: 50%;
   }
 
+  @at-root .no-js & {
+    @include largescreen {
+      height: auto;
+      padding-top: 100px;
+    }
+  }
+
   &::before {
     content: '';
     position: relative;
@@ -1383,6 +1390,11 @@ $vline-spacing: 10px;
     }
   }
 
+  @at-root .no-js &:nth-child(even) svg {
+    transform: rotateX(180deg);
+  }
+
+  @at-root .no-js &,
   &:nth-of-type(even) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
