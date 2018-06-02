@@ -4,6 +4,9 @@ author:
 date: "2018-05-12 10:00:00"
 image: assets/images/about-mining.png
 ---
+
+**Updated requirements**: [Update - Pool Owners' Agreement]({% post_url 2018-06-02-update-pool-owners-agreement %})  
+
 Due to the recent events the following recommendations and decisions have been made by the community and developer team.
 
 Only use pools listed in the whitelist. Even though it's very restraining in its current state, using only approved pools is vital for the health of the network.
