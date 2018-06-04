@@ -16,7 +16,7 @@
   fee_community: 1
   web: https://xdagpool.com/
   webName: https://xdagpool.com/
-  state: https://xdagpool.com/raw/state
+  state: https://xdagpool.com/status
   country: Germany
   name: kbs1
 
@@ -113,7 +113,7 @@
   fee_community: 1
   web: http://www.xdagvip.com/
   webName: http://www.xdagvip.com/
-  state: http://www.xdagvip.com/raw/state
+  state: http://www.xdagvip.com/state.txt
   country: Singapore
   name: Machao
   
