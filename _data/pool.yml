@@ -38,7 +38,7 @@
   fee_community: 1
   web: http://xdag.pool.ga/
   webName: http://xdag.pool.ga/
-  state: http://xdag.pool.ga/state_.txt
+  state: http://xdag.pool.ga/info/state.txt
   country: Canada
   name: RamsesIII
 
