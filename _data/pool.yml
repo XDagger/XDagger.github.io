@@ -149,3 +149,15 @@
   state: http://xdag.coolmine.top/state.txt
   country: Singapore
   name: Dev Alex
+  
+- ip: xdag.dapool.co:13654
+  fee_pool: 0
+  fee_miner_finder: 5
+  fee_miner_contributor: 5
+  fee_community: 1
+  web: https://xdag.dapool.co/
+  webName: https://xdag.dapool.co/
+  state: https://xdag.dapool.co/state.txt
+  country: Russia
+  name: DarkMoon
+
