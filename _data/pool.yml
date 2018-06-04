@@ -97,8 +97,8 @@
   
 - ip: xdag.yourspool.com:443
   fee_pool: 1
-  fee_miner_finder: 1
-  fee_miner_contributor: 1
+  fee_miner_finder: 15
+  fee_miner_contributor: 5
   fee_community: 1
   web: https://xdagger.yourspool.com/
   webName: https://xdagger.yourspool.com/
