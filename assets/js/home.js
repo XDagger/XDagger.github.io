@@ -188,6 +188,8 @@ Array.prototype.shuffle = function() {
       url: proxy + url,
       type: 'GET',
       success: function(res) {
+        res = res.state ? res.state : res;
+        
         var message = messages.find(function(message) {
           return res.indexOf(message.text) > -1;
         });
