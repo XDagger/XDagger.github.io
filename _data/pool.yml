@@ -64,8 +64,8 @@
 
 - ip: pool1.xdag.signal2noi.se:443, pool1.xdag.signal2noi.se:13655
   fee_pool: 0
-  fee_miner_finder: 0
-  fee_miner_contributor: 0
+  fee_miner_finder: 20
+  fee_miner_contributor: 10
   fee_community: 1
   web: https://xdag.signal2noi.se/
   webName: https://xdag.signal2noi.se/
