@@ -5,7 +5,7 @@ date: "2018-05-12 10:00:00"
 image: assets/images/about-mining.png
 ---
 
-**Updated requirements**: [Update - Pool Owners' Agreement]({% post_url 2018-06-02-update-pool-owners-agreement %})  
+**The up-to-date version of Pool Owners' Agreement can be found on our [Wiki](https://github.com/XDagger/xdag/wiki/White-List#pool-owners-agreement).**  
 
 Due to the recent events the following recommendations and decisions have been made by the community and developer team.
 
