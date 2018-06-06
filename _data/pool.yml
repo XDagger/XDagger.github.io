@@ -161,3 +161,13 @@
   country: Russia
   name: DarkMoon
 
+- ip: pool.xdagcn.com:13654
+  fee_pool: 1
+  fee_miner_finder: 5
+  fee_miner_contributor: 10
+  fee_community: 1
+  web: http://xdagcn.com/
+  webName: http://xdagcn.com/
+  state: http://54.39.28.77/state.txt
+  country: Canada
+  name: James
