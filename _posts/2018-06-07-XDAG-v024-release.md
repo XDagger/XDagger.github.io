@@ -1,7 +1,7 @@
 ---
 layout: postLayout
-date: "2018-06-07 01:10:00"
-image: 
+date: "2018-06-07 09:30:00"
+image: assets/images/posts/v024.png
 title: XDAG v0.2.4 Release & Change List
 ---
 
