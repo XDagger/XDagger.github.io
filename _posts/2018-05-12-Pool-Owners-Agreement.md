@@ -4,6 +4,9 @@ author:
 date: "2018-05-12 10:00:00"
 image: assets/images/about-mining.png
 ---
+
+**The up-to-date version of Pool Owners' Agreement can be found on our [Wiki](https://github.com/XDagger/xdag/wiki/White-List#pool-owners-agreement).**  
+
 Due to the recent events the following recommendations and decisions have been made by the community and developer team.
 
 Only use pools listed in the whitelist. Even though it's very restraining in its current state, using only approved pools is vital for the health of the network.

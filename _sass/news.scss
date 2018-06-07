@@ -1,5 +1,10 @@
 @import "helpers/mixins";
 
+em.underline {
+  text-decoration: underline;
+  font-style: normal;
+}
+
 #news {
   padding: 60px 0;
 }

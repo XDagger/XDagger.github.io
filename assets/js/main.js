@@ -1,6 +1,10 @@
-jQuery(document).ready(function( $ ) {
-  new WOW().init();
-});
+/**
+ * Display elements on scroll to view
+ */
+
+new WOW({
+  resetAnimation: false
+}).init();
 
 /**
  * Execute callbacks depending on user scroll position
