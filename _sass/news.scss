@@ -19,16 +19,16 @@ em.underline {
 
   ul, ol {
     margin: 0 0 30px 0;
+    padding: 0 0 0 20px;
   }
 
   ol {
-    padding: 0;
+    position: relative;
     counter-reset: order_top_level;
     list-style: none;
   }
 
   ul {
-    padding: 0 0 0 20px;
     list-style: disc;
   }
 
@@ -36,23 +36,25 @@ em.underline {
   ul ol,
   ol ol,
   ol ul {
-    padding: 0 0 0 20px;
     margin-bottom: 0;
   }
 
   ol ol {
+    padding-left: 30px;
     counter-reset: order_sub_level;
   }
 
-  ol li {
+  ol > li {
+
     &::before {
+      position: absolute;
+      left: 0;
       counter-increment: order_top_level;
       content: counter(order_top_level)'.';
-      margin-right: 7px;
     }
   }
 
-  ol ol li {
+  ol ol > li {
     &::before {
       counter-increment: order_sub_level;
       content: counter(order_top_level) '.' counter(order_sub_level) '.';
@@ -64,8 +66,13 @@ em.underline {
       list-style: none;
     }
 
-    > ul {
+    > ul,
+    > ol {
       padding-left: 0;
+    }
+
+    ol ol {
+      padding-left: 20px;
     }
 
     ol li::before {
