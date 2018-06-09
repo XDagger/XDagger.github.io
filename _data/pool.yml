@@ -171,3 +171,14 @@
   state: http://54.39.28.77/state.txt
   country: Canada
   name: James
+
+- ip: xdag.uupool.cn:13654
+  fee_pool: 2
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
+  web: http://www.uupool.cn/xdag 
+  webName: http://www.uupool.cn/xdag 
+  state: http://47.100.202.206:56601/state.txt
+  country: China
+  name: HelloTony
