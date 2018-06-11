@@ -101,7 +101,7 @@ $header-bg-scrolled: rgba(0, 0, 0, 0.7);
   padding: 30px 15px;
   z-index: 997;
   background: 0;
-  transition: height 0.5s;
+  transition: height 0.5s, background 0.5s;
 
   @media (min-width: 1050px) {
     padding: 30px 60px;
