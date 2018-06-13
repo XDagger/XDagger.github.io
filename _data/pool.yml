@@ -93,8 +93,8 @@
   webName: https://xdagmining.com/
   state: https://xdagmining.com/state.txt
   country: Germany
-  name: Maximous 
-  
+  name: Maximous
+
 - ip: xdag.yourspool.com:443
   fee_pool: 1
   fee_miner_finder: 15
@@ -105,7 +105,7 @@
   state: https://xdagger.yourspool.com/info/state.txt
   country: Netherlands
   name: Zyzakus
-  
+
 - ip: 139.99.124.135:13654
   fee_pool: 1
   fee_miner_finder: 1
@@ -116,7 +116,7 @@
   state: http://www.xdagvip.com/state.txt
   country: Singapore
   name: Machao
-  
+
 - ip: 139.99.124.23:13654
   fee_pool: 1
   fee_miner_finder: 10
@@ -149,7 +149,7 @@
   state: http://xdag.coolmine.top/state.txt
   country: Singapore
   name: Dev Alex
-  
+
 - ip: xdag.dapool.co:13654
   fee_pool: 0
   fee_miner_finder: 5
@@ -177,8 +177,19 @@
   fee_miner_finder: 0
   fee_miner_contributor: 0
   fee_community: 1
-  web: http://www.uupool.cn/xdag 
-  webName: http://www.uupool.cn/xdag 
+  web: http://www.uupool.cn/xdag
+  webName: http://www.uupool.cn/xdag
   state: http://47.100.202.206:56601/state.txt
   country: China
   name: HelloTony
+
+- ip: xdag.jeepool.com:13654
+  fee_pool: 1
+  fee_miner_finder: 0
+  fee_miner_contributor: 0
+  fee_community: 1
+  web: http://xdag.jeepool.com/
+  webName: http://xdag.jeepool.com/
+  state: http://xdag.jeepool.com/status
+  country: Germany
+  name: Bitopia
