@@ -1,11 +1,5 @@
 @import "helpers/mixins";
 
-ul, li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 em.underline {
   text-decoration: underline;
   font-style: normal;
@@ -15,22 +9,102 @@ em.underline {
   padding: 60px 0;
 }
 
+.post-content {
+  pre {
+    color: #000000;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  ul, ol {
+    margin: 0 0 30px 0;
+    padding: 0 0 0 20px;
+  }
+
+  ol {
+    position: relative;
+    counter-reset: order_top_level;
+    list-style: none;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-bottom: 0;
+  }
+
+  ol ol {
+    padding-left: 30px;
+    counter-reset: order_sub_level;
+  }
+
+  ol > li {
+
+    &::before {
+      position: absolute;
+      left: 0;
+      counter-increment: order_top_level;
+      content: counter(order_top_level)'.';
+    }
+  }
+
+  ol ol > li {
+    &::before {
+      counter-increment: order_sub_level;
+      content: counter(order_top_level) '.' counter(order_sub_level) '.';
+    }
+  }
+
+  .no-list-marks {
+    ul {
+      list-style: none;
+    }
+
+    > ul,
+    > ol {
+      padding-left: 0;
+    }
+
+    ol ol {
+      padding-left: 20px;
+    }
+
+    ol li::before {
+      content: none;
+    }
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .news {
   width: 100%;
 
-  &>li {
-    @include clearfix();
+  & > li {
     border-bottom: 1px solid #e5e5e5;
     width: 100%;
     min-height: 100px;
     margin-bottom: 5px;
-    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 20px;
 
     .lft {
-      display: table-cell;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      width: 0;
       border-right:1px solid #e5e5e5;
-      cursor: pointer;
       vertical-align: top;
     }
 
@@ -41,6 +115,7 @@ em.underline {
 
       i {
         display: none;
+        cursor: pointer;
       }
     }
 
@@ -51,25 +126,35 @@ em.underline {
       overflow: hidden;
     }
 
+    .top {
+      cursor: pointer;
+    }
+
     .h60 {
       height: 60px;
     }
 
     .rht {
-      display: table-cell;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
       padding:0 25px;
       position: relative;
       width: 190px;
       font-family: Verdana;
       word-break: keep-all;
       white-space: nowrap;
+      cursor: pointer;
 
       i {
         position: absolute;
-        color: #e8e8e8;
-        right: 15px;
-        font-size:50px;
-        top: 3px;
+        color: #d7d7d7;
+        right: 5px;
+        font-size: 50px;
+        top: 15px;
+
+        &.ion-ios-arrow-up {
+          color: #111;
+        }
       }
     }
   }
@@ -92,24 +177,38 @@ em.underline {
 
 @media (max-width: 768px) {
   .news > li {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    .lft {
+      border-right:0!important;
+      width: auto;
+      position: relative;
+
+      .tit {
+        margin-right: 35px;
+
+        i {
+          display: inline-block !important;
+          font-size: 16px;
+          color: #777;
+          padding: 2px 10px;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          &.ion-ios-arrow-up {
+            color: #111;
+          }
+        }
+      }
+    }
   }
 
   .lft,.rht {
-  	display: block!important;
-  }
-
-  .lft {
-    border-right:0!important;
-
-    .tit {
-      i {
-        display: inline-block !important;
-        font-size: 16px;
-        color: #777;
-        padding-left: 10px;
-      }
-    }
+    display: block!important;
   }
 
   .rht {
@@ -146,6 +245,11 @@ em.underline {
 
 .pagination {
   margin: 50px auto 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
   a,span,em {
     padding: 3px 10px;
@@ -165,34 +269,18 @@ em.underline {
     color: #fff;
     font-style: normal;
   }
-}
 
-#news .post-content {
-  ul {
-    padding-left: 20px;
-  }
+  .page-numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 
-  ul ul,
-  ol ol,
-  ul ol,
-  ol ul {
-    padding-left: 20px;
-    list-style: none;
-  }
-
-  ul li {
-    list-style: square;
-  }
-
-  ol {
-    list-style: none;
-  }
-
-  ol li {
-    list-style: none;
-  }
-
-  p {
-    margin: 30px 0;
+    @include bp-max(550px) {
+      width: 100%;
+      margin: 10px 0;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
   }
 }

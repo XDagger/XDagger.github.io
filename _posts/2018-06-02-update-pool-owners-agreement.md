@@ -27,6 +27,7 @@ Only use pools listed in the whitelist. Even though it’s very restraining in i
 Regarding whitelist additions, please send your requests to: [pool@xdag.io](mailto:pool@xdag.io). No other ways will be accepted for now.
 In your email request, please include this list and fill out everything.
 
+<div class="no-list-marks" markdown="1">
 1. 1 Pool IP:
 1. 2 Pool Configuration:
     1. 2.1 Pool config:
@@ -43,6 +44,7 @@ In your email request, please include this list and fill out everything.
     1. 4.3 Net conn through HTTP:
     1. 4.4 Pool frontend link (optional):
 1. 5 Pool Owner: <em class="underline">(Discord username is better for communication.)</em>
+</div>
 
 <em class="underline">You will receive invitation to join Discord from [pool@xdag.io](mailto:pool@xdag.io).</em>
 

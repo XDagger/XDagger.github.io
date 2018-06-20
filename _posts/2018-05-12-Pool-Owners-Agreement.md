@@ -32,22 +32,23 @@ Regarding whitelist additions, please send your requests to: [pool@xdag.io](mail
 
 In your email request, please include this list and fill out everything.
 
+<div class="no-list-marks" markdown="1">
 1. 1 Pool IP:
-2. 2 Pool Configuration:
-  * 2.1 Pool config:
-  * 2.2 NTP config:
-  * 2.3 Timezone config:
-3. 3 Pool hardware configuration:
-  * 3.1 CPU:
-  * 3.2 RAM:
-  * 3.3 Disk:
-  * 3.4 Internet bandwidth:
-4. 4 Pool frontend:
-  * 4.1 Stats through HTTP:
-  * 4.2 Net conn through HTTP:
-  * 4.3 Pool frontend link (optional): 
-5. 5 Pool Owner:
-
+1. 2 Pool Configuration:
+    1. 2.1 Pool config:
+    1. 2.2 NTP config:
+    1. 2.3 Timezone config:
+1. 3 Pool hardware configuration:
+    1. 3.1 CPU:
+    1. 3.2 RAM:
+    1. 3.3 Disk:
+    1. 3.4 Internet bandwidth:
+1. 4 Pool frontend:
+    1. 4.1 Stats through HTTP:
+    1. 4.2 Net conn through HTTP:
+    1. 4.3 Pool frontend link (optional): 
+1. 5 Pool Owner:
+</div>
 
 
 
