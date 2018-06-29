@@ -84,8 +84,8 @@
   country: Japan
   name: Frozen
 
-- ip: 78.46.82.220:13654
-  fee_pool: 1
+- ip: 88.99.254.6:13654
+  fee_pool: 2
   fee_miner_finder: 10
   fee_miner_contributor: 5
   fee_community: 1
