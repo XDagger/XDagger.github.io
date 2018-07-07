@@ -128,28 +128,6 @@
   country: Singapore
   name: Laywon
 
-#- ip: xdagmine.com:13654
-#  fee_pool: 1
-#  fee_miner_finder: 1
-#  fee_miner_contributor: 1
-#  fee_community: 1
-#  web: http://xdagmine.com/
-#  webName: http://xdagmine.com/
-#  state: http://xdagmine.com/state.txt
-#  country: Singapore
-#  name: Edward
-
-- ip: xdag.coolmine.top:13654
-  fee_pool: 1
-  fee_miner_finder: 1
-  fee_miner_contributor: 1
-  fee_community: 1
-  web: http://xdag.coolmine.top/
-  webName: http://xdag.coolmine.top/
-  state: http://xdag.coolmine.top/state.txt
-  country: Singapore
-  name: Dev Alex
-
 - ip: xdag.dapool.co:13654
   fee_pool: 0
   fee_miner_finder: 5
@@ -160,17 +138,6 @@
   state: https://xdag.dapool.co/state.txt
   country: Russia
   name: DarkMoon
-
-- ip: pool.xdagcn.com:13654
-  fee_pool: 1
-  fee_miner_finder: 5
-  fee_miner_contributor: 10
-  fee_community: 1
-  web: http://xdagcn.com/
-  webName: http://xdagcn.com/
-  state: http://54.39.28.77/state.txt
-  country: Canada
-  name: James
 
 - ip: xdag.uupool.cn:13654
   fee_pool: 2
