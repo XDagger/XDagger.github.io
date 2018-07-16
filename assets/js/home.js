@@ -54,65 +54,95 @@ jQuery(document).ready(function( $ ) {
  */
 
 (function() {
+  var roadmap = document.querySelector('.js-roadmap');
+  var timeline = roadmap.querySelector('.js-roadmap-timeline');
+  var nav = roadmap.querySelector('.js-roadmap-nav');
+  var timeframes = timeline.querySelectorAll('.js-roadmap-timeframe');
+  var navEls = roadmap.querySelectorAll('.js-roadmap-link');
+  var navActiveClass = 'roadmap__nav-link--active';
+  var $carousel = $(timeline);
+  var breakPoint = '600px';
+  var stage;
+  var previousHeight;
 
-  var throttle = function(type, name, obj) {
-    obj = obj || window;
-    var running = false;
-    var func = function() {
-      if (running) { return; }
-      running = true;
-      requestAnimationFrame(function() {
-        obj.dispatchEvent(new CustomEvent(name));
-        running = false;
-      });
-    };
-    obj.addEventListener(type, func);
-  };
-  throttle("resize", "optimizedResize");
+  var startIndex = Array.prototype.findIndex.call(navEls, function(el) {
+    return el.classList.contains(navActiveClass);
+  });
 
-  var wrapper = document.querySelector('.js-roadmap-timeline');
-  var timeframes = document.querySelectorAll('.js-roadmap-timeframe');
-  var mediaQuery = window.matchMedia("(min-width: 1201px)");
-  var topMaxHeight;
-  var bottomMaxHeight;
+  $carousel.on('translated.owl.carousel', handleCurrentSlide);
+  $carousel.on('resized.owl.carousel', handleCurrentSlide);
+  $carousel.on('initialized.owl.carousel', function() {
+    stage = roadmap.querySelector('.owl-stage-outer');
+    styleRoadmapHeight(startIndex);
+  });
 
-  handleStyling();
-  window.addEventListener("optimizedResize", handleStyling);
+  $carousel.owlCarousel({
+    autoplay: false,
+    loop: false,
+    startPosition: startIndex,
+    items: 1
+  });
 
-  function handleStyling() {
-    if (mediaQuery.matches) {
-      applyHeights();
-      styleWrapper();
+  Array.prototype.forEach.call(navEls, function(el, i) {
+    var nextIndex = i;
+
+    el.addEventListener('click', function(e) {
+      goToSlide(nextIndex);
+    })
+  });
+
+  function goToSlide(nextIndex) {
+    $carousel.trigger('to.owl.carousel', nextIndex, 1000);
+
+    Array.prototype.forEach.call(navEls, function(el, i) {
+      el.classList.remove(navActiveClass);
+
+      if (i === nextIndex) {
+        el.classList.add(navActiveClass);
+      }
+    });
+  }
+
+  function handleCurrentSlide(translateEvent) {
+    styleNavLinks(translateEvent.item.index);
+    styleRoadmapHeight(translateEvent.item.index);
+  }
+
+  function isDesktopView() {
+    return window.matchMedia('(min-width:' + breakPoint + ')').matches;
+  }
+
+  function styleRoadmapHeight(slideIndex) {
+    var timeframeHeight = timeframes[slideIndex].offsetHeight;
+
+    if (isDesktopView()) {
+      var navHeight = nav.offsetHeight;
+      var nextHeight = timeframeHeight > navHeight ? timeframeHeight : navHeight;
+
+      if (previousHeight !== nextHeight) {
+        $(roadmap).animate({
+          height: nextHeight
+        }, 1000, 'easeInOutQuart');
+      }
+
+      previousHeight = nextHeight;
     } else {
-      clearWrapperStyling();
+      $(stage).animate({
+        height: timeframeHeight
+      }, 1000, 'easeInOutQuart');
     }
   }
 
-  function applyHeights() {
-    topMaxHeight = getMaxHeight(timeframes, 0);
-    bottomMaxHeight = getMaxHeight(timeframes, 1);
-  }
+  function styleNavLinks(slideIndex) {
+    var nodes = roadmap.querySelectorAll('.js-roadmap-link');
 
-  function getMaxHeight(els, start) {
-    var maxHeight = 0;
-    var i = start;
+    Array.prototype.forEach.call(nodes, function(node, i) {
+      node.classList.remove(navActiveClass);
 
-    for (; i < els.length - 1; i = i + 2) {
-      var elHeight = els[i].offsetHeight;
-      maxHeight = maxHeight > elHeight ? maxHeight : elHeight;
-    }
-
-    return maxHeight;
-  }
-
-  function styleWrapper() {
-    wrapper.style.paddingBottom = bottomMaxHeight + 'px';
-    wrapper.style.paddingTop = topMaxHeight + 'px';
-  }
-
-  function clearWrapperStyling() {
-    wrapper.style.paddingBottom = '';
-    wrapper.style.paddingTop = '';
+      if (i === slideIndex) {
+        node.classList.add(navActiveClass);
+      }
+    });
   }
 })();
 

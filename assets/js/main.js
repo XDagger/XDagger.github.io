@@ -274,14 +274,14 @@ if (document.documentMode || /Edge/.test(navigator.userAgent)) {
   }
 
   function handleScroll(e) {
-    var scrollTarget = document.querySelector(e.target.hash);
+    var $scrollTarget = $(e.target.hash);
     var headerHeight = header.classList.contains('header-scrolled') ? header.offsetHeight : header.offsetHeight - 20;
 
     navToggle.checked = false;
     document.body.classList.remove('nav-overlay-active');
     nav.$el.superfish('hide');
     $('html, body').animate({
-      scrollTop: scrollTarget.offsetTop - headerHeight
+      scrollTop: $scrollTarget.offset().top - headerHeight
     }, 1500, 'easeInOutExpo');
   }
 
