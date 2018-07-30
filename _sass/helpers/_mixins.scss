@@ -12,7 +12,7 @@
   }
 }
 
-@mixin bp-max($breakpoint ) {
+@mixin bp-max($breakpoint) {
   @media (max-width: $breakpoint - 0.1px) {
     @content;
   }
