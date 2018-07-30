@@ -50,7 +50,9 @@
         - Release of XDAG wallet 0.2.5 with major performance improvements
         - GPU Miner 0.3.0 release with MAC support
         - Block explorer visual and performance update
-        - Release of XDAG Android wallet
+    - date: August 2018
+      events:
+        - Release of XDAG Android and iOS wallets
 
 - timeframe: Future
   dates: 
