@@ -16,15 +16,21 @@
   href: https://github.com/XDagger/xdag/files/2180609/xdag.0.2.5.zip
   delay: 0.2s
 
+- name: Android wallet
+  content: For Android 5.0 and newer.
+  pic: ion-social-android-outline
+  href: https://github.com/XDagger/android-wallet/releases/download/release_0.2.1/android_wallet_release_v0.2.1.apk
+  delay: 0.3s
+
 - name: GPU Miner
   content: GPU Miner by Jonano.
   pic: ion-social-windows
   href: https://github.com/jonano614/DaggerGpuMiner/releases
-  delay: 0.3s
+  delay: 0.4s
 
 - name: Sources
-  content: Sources for Linux, MacOS and Windows(Visual Studio 2017).
+  content: Sources for XDAG wallets and codebases.
   pic: ion-ios-color-filter-outline
-  href: https://github.com/XDagger/xdag
-  delay: 0.4s
+  href: https://github.com/XDagger
+  delay: 0.5s
 
