@@ -1,3 +1,4 @@
+@import "helpers/variables";
 @import "helpers/mixins";
 
 em.underline {
@@ -160,7 +161,7 @@ em.underline {
   }
 
   .month {
-    color: #428bca;
+    color: $color-primary;
     line-height: 40px;
     padding-top: 5px;
 
@@ -234,7 +235,7 @@ em.underline {
   .year {
     float: left;
     line-height: 25px!important;
-    color: #428bca!important;
+    color: $color-primary!important;
   }
 }
 
@@ -265,7 +266,7 @@ em.underline {
   }
 
   em, a:hover{
-    background: #428bca;
+    background: $color-primary;
     color: #fff;
     font-style: normal;
   }

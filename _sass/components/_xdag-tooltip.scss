@@ -1,0 +1,48 @@
+.xdag-tooltip {
+  position: relative;
+  white-space: normal;
+
+  &:hover {
+    z-index: 1;
+
+    &::after,
+    &::before {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.1s 0.1s, visibility 0s 0.1s;
+    }
+  }
+
+  &::before,
+  &::after {
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.1s, visibility 0s 0.1s;
+  }
+
+  &::before {
+    content: attr(data-tooltip);
+    background: #111111;
+    color: #ffffff;
+    padding: 5px;
+    bottom: 29px;
+    width: 120px;
+    text-align: center;
+    left: 50%;
+    border: 1px solid rgb(66, 139, 202);
+    transform: translate(-50%);
+  }
+
+  &::after {
+    content: '';
+    bottom: 19px;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #428bca;
+    transform: translate(-50%);
+  }
+}

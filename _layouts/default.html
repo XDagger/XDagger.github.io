@@ -8,7 +8,7 @@
 {% include header.html %}
 <div class="mask"></div>
 <div class="playbrdr">
-    <div class="videoclose"><i class="ion-ios-close-outline" ></i></div>
+    <div class="videoclose"><i class="ion-ios-close-circle-outline"></i></div>
     <iframe src="" frameborder="0" width="100%" height="100%"></iframe>
 </div>
 {% include bannerIndex.html %}
@@ -25,7 +25,7 @@
                     <div class="about-col">
                         <div class="img">
                             <img src="{{ d.pic | relative_url }}" alt="" class="img-fluid">
-                            <div class="icon"><i class="ion-ios-unlocked-outline"></i></div>
+                            <div class="icon"><i class="ion-ios-unlock"></i></div>
                         </div>
                         <h2 class="title">{{ d.name }}</h2>
                         <p>{{ d.content }}</p>
@@ -48,58 +48,11 @@
                     <h4 class="title">
                         {% if d.index == 0 %}<a href="#wallet">{{ d.name }}</a>{% endif%}
                         {% if d.index == 1 %}<a class="playvideo">{{ d.name }}</a>{% endif%}
-                        {% if d.index == 2 %}<a class="pool js-pool-info-toggle" data-toggle="collapse" data-target="#pool-info-wrapper" aria-expanded="false" aria-controls="pool-info-wrapper">{{ d.name }}</a>{% endif%}
+                        {% if d.index == 2 %}<a class="pool" href="pools">{{ d.name }}</a>{% endif%}
                     </h4>
                     <p class="description">{{ d.content }}</p>
                 </div>
                 {% endfor %}
-            </div>
-            <div class="collBg collapse" id="pool-info-wrapper">
-                <div class="row collTit">
-                    <div class="col span_12  left">
-                        <div>
-                            <p class="pStrong">Fee&nbsp;explanation:</p>
-                            <hr />
-                            <p >For example: IP | (
-                                <span class="purple">1%<sup><span class="brdr"><span class="sup">1</span></span></sup></span> -
-                                <span class="black">1%<sup><span class="brdr"><span class="sup">2</span></span></sup></span> -
-                                <span class="dark">1%<sup><span class="brdr"><span class="sup">3</span></span></sup></span> -
-                                <span class="blue">1%<sup><span class="brdr"><span class="sup">4</span></span></sup></span>) | Pool Location | (Pool link) | Pool Owner</p>
-                            <hr />
-                            <ul class="row">
-                                <li class="col-lg-7 purple"><span class="brdrbtm"><span class="sup2">1</span> </span><span class="purple">1%</span> pool fee.</li>
-                                <li class="col-lg-5 black"><span class="brdrbtm"><span class="sup2">2</span></span><span class="black">1%</span> reward for miner who discovers a block</li>
-                                <li class="col-lg-7 dark"><span class="brdrbtm"><span class="sup2">3</span></span><span class="dark">1%</span> reward for miners who contribute directly to the discovery of a block</li>
-                                <li class="col-lg-5 blue"><span class="brdrbtm"><span class="sup2">4</span></span><span class="blue">1%</span> community fund fee.</li>
-                            </ul>
-                            <p class="collbtm">The remainder, in this example 96%, is shared between all miners on the pool.</p>
-                            </div>
-                    </div>
-                </div>
-                <div class="row poollist">
-                    <div class="col span_12  left">
-                        <h5>All the pools in this list contribute at least 1% to the community fund.</h5>
-                        <div class="plist">
-                            {% for d in site.data.pool %}
-                            <p>
-                                <span class="ip">{{ d.ip }}</span>
-                                <span> | (</span><span class="purple">{{ d.fee_pool }}%</span><span>-</span><span class="black">{{ d.fee_miner_finder }}%</span><span>-</span><span class="dark">{{ d.fee_miner_contributor }}%</span><span>-</span><span class="blue">{{ d.fee_community }}%</span><span>) | </span>
-                                {% if d.web %}
-                                <a class="web" href="{{ d.web }}" target="_blank">{{ d.webName }}</a>
-                                <span> | </span>
-                                {% endif %} 
-                                <span class="country">{{ d.country }}</span>
-                                <span> | </span>
-                                <span class="name">{{ d.name }}</span>
-                                <span class="pool-state">
-                                  State: <span class="js-pool-state" data-url="{{ d.state }}"></span>
-                                </span>
-                            </p>
-                            {% endfor%}
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </section>

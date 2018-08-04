@@ -1,162 +1,210 @@
-- ip: 109.196.45.218:443
-  fee_pool: 1
-  fee_miner_finder: 1
-  fee_miner_contributor: 1
-  fee_community: 1
-  web: http://www.corpopool.com/
-  webName: http://www.corpopool.com/
-  state: http://dagger.corpopool.com/state.txt
-  country: Poland
-  name: AnotherYou
+- owner: AnotherYou
+  pools: 
+  - address: 109.196.45.218:443
+    fee_pool: 1
+    fee_miner_finder: 1
+    fee_miner_contributor: 1
+    fee_community: 1
+    website: http://www.corpopool.com/
+    name: corpopool.com
+    state: http://dagger.corpopool.com/state.txt
+    country: Poland
 
-- ip: pool.xdagpool.com:13654
-  fee_pool: 1
-  fee_miner_finder: 0
-  fee_miner_contributor: 0
-  fee_community: 1
-  web: https://xdagpool.com/
-  webName: https://xdagpool.com/
-  state: https://xdagpool.com/status
-  country: Germany
-  name: kbs1
+- owner: kbs1
+  pools: 
+    - address: pool.xdagpool.com:13654
+      fee_pool: 1
+      fee_miner_finder: 0
+      fee_miner_contributor: 0
+      fee_community: 1
+      website: https://xdagpool.com/
+      name: xdagpool.com
+      state: https://xdagpool.com/status
+      country: Germany
+    - address: pool2.xdagpool.com:13655
+      fee_pool: 1
+      fee_miner_finder: 0
+      fee_miner_contributor: 0
+      fee_community: 1
+      website: https://pool2.xdagpool.com/
+      name: pool2.xdagpool.com
+      state: https://pool2.xdagpool.com/status
+      country: Germany
+    - address: pool3.xdagpool.com:13656
+      fee_pool: 1
+      fee_miner_finder: 7
+      fee_miner_contributor: 5
+      fee_community: 1
+      website: https://pool3.xdagpool.com/
+      name: pool3.xdagpool.com
+      state: https://pool3.xdagpool.com/status
+      country: Germany
 
-- ip: 95.216.36.234:13654
-  fee_pool: 1
-  fee_miner_finder: 0
-  fee_miner_contributor: 0
-  fee_community: 1
-  web: https://xdagpool.org/
-  webName: https://xdagpool.org/
-  state: https://www.xdagpool.org/status
-  country: Finland
-  name: Filipo
+- owner: Filipo
+  pools: 
+  - address: 95.216.36.234:13654
+    fee_pool: 1
+    fee_miner_finder: 0
+    fee_miner_contributor: 0
+    fee_community: 1
+    website: https://xdagpool.org/
+    name: xdagpool.org
+    state: https://www.xdagpool.org/status
+    country: Finland
 
-- ip: 142.44.143.234:777
-  fee_pool: 1
-  fee_miner_finder: 1
-  fee_miner_contributor: 1
-  fee_community: 1
-  web: http://xdag.pool.ga/
-  webName: http://xdag.pool.ga/
-  state: http://xdag.pool.ga/info/state.txt
-  country: Canada
-  name: RamsesIII
+- owner: RamsesIII
+  pools: 
+  - address: 142.44.143.234:777
+    fee_pool: 1
+    fee_miner_finder: 1
+    fee_miner_contributor: 1
+    fee_community: 1
+    website: http://xdag.pool.ga/
+    name: xdag.pool.ga
+    state: http://xdag.pool.ga/info/state.txt
+    country: Canada
 
-- ip: xdag.poolaroid.cash:443
-  fee_pool: 1
-  fee_miner_finder: 0
-  fee_miner_contributor: 0
-  fee_community: 1
-  web: https://xdag.poolaroid.com/
-  webName: https://xdag.poolaroid.com/
-  state: https://xdag.poolaroid.com/rawstats/state
-  country: Germany
-  name: asdSd1n23ffd
+- owner: asdSd1n23ffd
+  pools: 
+  - address: 148.251.139.197:443
+    fee_pool: 1
+    fee_miner_finder: 5
+    fee_miner_contributor: 2
+    fee_community: 1
+    website: https://xdag.poolaroid.com/
+    name: xdag.poolaroid.com
+    state: https://xdag.poolaroid.com/rawstats/state
+    country: Netherlands
 
-- ip: 172.105.216.53:3355
-  fee_pool: 1
-  fee_miner_finder: 6
-  fee_miner_contributor: 8
-  fee_community: 2
-  state: http://172.105.216.53/state.txt
-  country: Japan
-  name: Khaak
+#- owner: Khaak
+#  pools: 
+#  - address: 172.105.216.53:3355
+#    fee_pool: 1
+#    fee_miner_finder: 6
+#    fee_miner_contributor: 8
+#    fee_community: 2
+#    name: Khaak's pool
+#    state: http://172.105.216.53/state.txt
+#    country: Japan
 
-- ip: pool1.xdag.signal2noi.se:443, pool1.xdag.signal2noi.se:13655
-  fee_pool: 0
-  fee_miner_finder: 20
-  fee_miner_contributor: 10
-  fee_community: 1
-  web: https://xdag.signal2noi.se/
-  webName: https://xdag.signal2noi.se/
-  state: http://pool1.xdag.signal2noi.se/state.txt
-  country: Germany
-  name: Gribbly
+- owner: Gribbly
+  pools: 
+  - address: 
+      - pool1.xdag.signal2noi.se:443 
+      - pool1.xdag.signal2noi.se:13655
+    fee_pool: 0
+    fee_miner_finder: 20
+    fee_miner_contributor: 10
+    fee_community: 1
+    website: https://xdag.signal2noi.se/
+    name: xdag.signal2noi.se
+    state: http://pool1.xdag.signal2noi.se/state.txt
+    country: Germany
 
-- ip: pool.xdag.us:13654
-  fee_pool: 2
-  fee_miner_finder: 10
-  fee_miner_contributor: 5
-  fee_community: 1
-  web: http://pool.xdag.us/
-  webName: http://pool.xdag.us/
-  state: http://pool.xdag.us/state.txt
-  country: Japan
-  name: Frozen
+- owner: Frozen
+  pools: 
+  - address: pool.xdag.us:13654
+    fee_pool: 2
+    fee_miner_finder: 10
+    fee_miner_contributor: 5
+    fee_community: 1
+    website: http://pool.xdag.us/
+    name: pool.xdag.us
+    state: http://pool.xdag.us/state.txt
+    country: Japan
 
-- ip: 88.99.254.6:13654
-  fee_pool: 1
-  fee_miner_finder: 10
-  fee_miner_contributor: 5
-  fee_community: 1
-  web: https://xdagmining.com/
-  webName: https://xdagmining.com/
-  state: https://xdagmining.com/state.txt
-  country: Germany
-  name: Maximous
+- owner: Maximous
+  pools: 
+  - address: 78.46.82.220:13654
+    fee_pool: 1
+    fee_miner_finder: 10
+    fee_miner_contributor: 5
+    fee_community: 1
+    website: https://xdagmining.com/
+    name: xdagmining.com
+    state: https://xdagmining.com/state.txt
+    country: Germany
+  
+- owner: Zyzakus
+  pools: 
+  - address: xdag.yourspool.com:443
+    fee_pool: 1
+    fee_miner_finder: 15
+    fee_miner_contributor: 5
+    fee_community: 1
+    website: https://xdagger.yourspool.com/
+    name: xdagger.yourspool.com
+    state: https://xdagger.yourspool.com/info/state.txt
+    country: Netherlands
+  
+#- owner: Machao
+#  pools: 
+#  - address: 139.99.124.135:13654
+#    fee_pool: 1
+#    fee_miner_finder: 1
+#    fee_miner_contributor: 1
+#    fee_community: 1
+#    website: http://www.xdagvip.com/
+#    name: xdagvip.com
+#    state: http://www.xdagvip.com/state.txt
+#    country: Singapore
+  
+- owner: Thomasab
+  pools: 
+  - address: 139.99.124.23:13654
+    fee_pool: 1
+    fee_miner_finder: 10
+    fee_miner_contributor: 5
+    fee_community: 1
+    website: https://www.vspool.com/xdag/
+    name: vspool.com
+    state: http://139.99.124.23/state.txt
+    country: Singapore
+  
+#- owner: DarkMoon
+#  pools: 
+#  - address: xdag.dapool.co:13654
+#    fee_pool: 0
+#    fee_miner_finder: 5
+#    fee_miner_contributor: 5
+#    fee_community: 1
+#    website: https://xdag.dapool.co/
+#    name: xdag.dapool.co
+#    state: https://xdag.dapool.co/state.txt
+#    country: Russia
 
-- ip: xdag.yourspool.com:443
-  fee_pool: 1
-  fee_miner_finder: 15
-  fee_miner_contributor: 5
-  fee_community: 1
-  web: https://xdagger.yourspool.com/
-  webName: https://xdagger.yourspool.com/
-  state: https://xdagger.yourspool.com/info/state.txt
-  country: Netherlands
-  name: Zyzakus
+- owner: HelloTony
+  pools: 
+  - address: xdag.uupool.cn:13654
+    fee_pool: 2
+    fee_miner_finder: 0
+    fee_miner_contributor: 0
+    fee_community: 1
+    website: http://www.uupool.cn/xdag
+    name: uupool.cn
+    state: http://47.100.202.206:56601/state.txt
+    country: China
 
-- ip: 139.99.124.135:13654
-  fee_pool: 1
-  fee_miner_finder: 1
-  fee_miner_contributor: 1
-  fee_community: 1
-  web: http://www.xdagvip.com/
-  webName: http://www.xdagvip.com/
-  state: http://www.xdagvip.com/state.txt
-  country: Singapore
-  name: Machao
+- owner: Bitopia
+  pools: 
+  - address: xdag.jeepool.com:13654
+    fee_pool: 1
+    fee_miner_finder: 0
+    fee_miner_contributor: 0
+    fee_community: 1
+    website: http://xdag.jeepool.com/
+    name: xdag.jeepool.com
+    state: http://xdag.jeepool.com/status
+    country: Germany
 
-- ip: 139.99.124.23:13654
-  fee_pool: 1
-  fee_miner_finder: 10
-  fee_miner_contributor: 5
-  fee_community: 1
-  web: https://www.vspool.com/xdag/
-  webName: https://www.vspool.com/xdag/
-  state: http://139.99.124.23/state.txt
-  country: Singapore
-  name: Thomasab
-
-- ip: xdag.dapool.co:13654
-  fee_pool: 0
-  fee_miner_finder: 5
-  fee_miner_contributor: 5
-  fee_community: 1
-  web: https://xdag.dapool.co/
-  webName: https://xdag.dapool.co/
-  state: https://xdag.dapool.co/state.txt
-  country: Russia
-  name: DarkMoon
-
-- ip: xdag.uupool.cn:13654
-  fee_pool: 2
-  fee_miner_finder: 0
-  fee_miner_contributor: 0
-  fee_community: 1
-  web: http://www.uupool.cn/xdag
-  webName: http://www.uupool.cn/xdag
-  state: http://47.100.202.206:56601/state.txt
-  country: China
-  name: HelloTony
-
-- ip: xdag.jeepool.com:13654
-  fee_pool: 1
-  fee_miner_finder: 0
-  fee_miner_contributor: 0
-  fee_community: 1
-  web: http://xdag.jeepool.com/
-  webName: http://xdag.jeepool.com/
-  state: http://xdag.jeepool.com/status
-  country: Germany
-  name: Bitopia
+- owner: Foodtrust
+  pools: 
+  - address: 188.214.130.18:16775
+    fee_pool: 0.8
+    fee_miner_finder: 1
+    fee_miner_contributor: 1
+    fee_community: 1
+    website: https://xdagme.com/
+    name: xdagme.com
+    state: http://xdagme.com/state.txt
+    country: Lithuania
