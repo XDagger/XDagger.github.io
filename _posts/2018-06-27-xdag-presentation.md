@@ -15,7 +15,7 @@ Topics: Introduction, Block, Transaction, PoW, Algorithm, Transport, Security, F
   {% if image.path contains 'images/posts/xdag-presentation-img' %}
   <div markdown="0">
     <hr>
-    <img class="img-responsive" src="{{ image.path | relative_url }}" alt="XDAG presentation"/>
+    <img class="img-responsive lazyload" data-src="{{ image.path | relative_url }}" alt="XDAG presentation"/>
   </div>
   {% endif %}
 {% endfor %}
