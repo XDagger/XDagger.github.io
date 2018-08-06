@@ -5,9 +5,8 @@ title: Looking for New Contributors
 image: assets/images/posts/join-the-dagger-side.png
 ---
 
-<div markdown="0">
-  <hr>
-  <img class="text-center mb-5 bg-black lazyload" data-src="{{ "/assets/images/posts/join-the-dagger-side.png" | absolute_url }}" alt="Join the Dagger side"/>
+<div class="text-center mb-5 bg-black" markdown="0">
+  <img class="lazyload" data-src="{{ "/assets/images/posts/join-the-dagger-side.png" | absolute_url }}" alt="Join the Dagger side"/>
 </div>
 
 As a community run project Dagger is always looking for new contributors to improve and drive the project forwards. Right now we're specifically looking for developers with **C**, **C++** and **blockchain** knowledge. 
