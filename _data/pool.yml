@@ -76,16 +76,16 @@
     state: https://xdag.poolaroid.com/rawstats/state
     country: Netherlands
 
-#- owner: Khaak
-#  pools: 
-#  - address: 172.105.216.53:3355
-#    fee_pool: 1
-#    fee_miner_finder: 6
-#    fee_miner_contributor: 8
-#    fee_community: 2
-#    name: Khaak's pool
-#    state: http://172.105.216.53/state.txt
-#    country: Japan
+- owner: Khaak
+  pools: 
+  - address: 172.105.216.53:3355
+    fee_pool: 1
+    fee_miner_finder: 6
+    fee_miner_contributor: 8
+    fee_community: 2
+    name: Khaak's pool
+    state: http://172.105.216.53/state.txt
+    country: Japan
 
 - owner: Gribbly
   pools: 
@@ -137,17 +137,17 @@
     state: https://xdagger.yourspool.com/info/state.txt
     country: Netherlands
   
-#- owner: Machao
-#  pools: 
-#  - address: 139.99.124.135:13654
-#    fee_pool: 1
-#    fee_miner_finder: 1
-#    fee_miner_contributor: 1
-#    fee_community: 1
-#    website: http://www.xdagvip.com/
-#    name: xdagvip.com
-#    state: http://www.xdagvip.com/state.txt
-#    country: Singapore
+- owner: Machao
+  pools: 
+  - address: 139.99.124.135:13654
+    fee_pool: 1
+    fee_miner_finder: 1
+    fee_miner_contributor: 1
+    fee_community: 1
+    website: http://www.xdagvip.com/
+    name: xdagvip.com
+    state: http://www.xdagvip.com/state.txt
+    country: Singapore
   
 - owner: Thomasab
   pools: 
@@ -161,17 +161,17 @@
     state: http://139.99.124.23/state.txt
     country: Singapore
   
-#- owner: DarkMoon
-#  pools: 
-#  - address: xdag.dapool.co:13654
-#    fee_pool: 0
-#    fee_miner_finder: 5
-#    fee_miner_contributor: 5
-#    fee_community: 1
-#    website: https://xdag.dapool.co/
-#    name: xdag.dapool.co
-#    state: https://xdag.dapool.co/state.txt
-#    country: Russia
+- owner: DarkMoon
+  pools: 
+  - address: xdag.dapool.co:13654
+    fee_pool: 0
+    fee_miner_finder: 5
+    fee_miner_contributor: 5
+    fee_community: 1
+    website: https://xdag.dapool.co/
+    name: xdag.dapool.co
+    state: https://xdag.dapool.co/state.txt
+    country: Russia
 
 - owner: HelloTony
   pools: 
