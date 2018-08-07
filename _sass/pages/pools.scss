@@ -1,0 +1,26 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "components/xdag-tooltip";
+@import "components/pool";
+
+.section-header {
+  p {
+    color: white;
+  }
+
+  h3 {
+    color: white;
+
+    &::before {
+      background: #474747;
+    }
+  }
+}
+
+.header-bg {
+  background: #111;
+}
+
+#footer {
+  position: relative;
+}
