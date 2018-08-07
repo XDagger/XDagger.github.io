@@ -27,7 +27,7 @@
   fee_community: 1
   web: https://xdagpool.org/
   webName: https://xdagpool.org/
-  state: https://www.xdagpool.org/state.txt
+  state: https://www.xdagpool.org/status
   country: Finland
   name: Filipo
 
@@ -126,7 +126,7 @@
   webName: https://www.vspool.com/xdag/
   state: http://139.99.124.23/state.txt
   country: Singapore
-  name: Laywon
+  name: Thomasab
 
 - ip: xdag.dapool.co:13654
   fee_pool: 0
