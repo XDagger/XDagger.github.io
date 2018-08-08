@@ -179,7 +179,7 @@
     fee_pool: 2
     fee_miner_finder: 0
     fee_miner_contributor: 0
-    fee_community: 1
+    fee_community: 2
     website: http://www.uupool.cn/xdag
     name: uupool.cn
     state: http://47.100.202.206:56601/state.txt
