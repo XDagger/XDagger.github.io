@@ -155,7 +155,7 @@ $header-bg-scrolled: rgba(0, 0, 0, 0.7);
 --------------------------------------------------------------*/
 
 // navBreakpoint in main.js 
-$nav-breakpoint: 1050px;
+$nav-breakpoint: 1120px;
 
 .nav-overlay-active {
   @include bp-max($nav-breakpoint) {
