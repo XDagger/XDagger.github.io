@@ -394,6 +394,20 @@ $nav-breakpoint: 1120px;
   }
 }
 
+#nav-lang img {
+  width: 32px;
+  padding-right: 10px;
+} 
+
+.nav-sublevel-label img {
+  width: 22px;
+}
+
+#nav-lang.nav-sublevel {
+  min-width: 95px !important;
+  width: 95px;
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
