@@ -20,7 +20,7 @@ $text-color: #333;
 $text-date-color: #162a38;
 $header-color: #000;
 
-$hline-color: rgba(0, 0, 0, 0.15);
+$hline-color: #444;
 $hline-circle-color: $color-primary;
 $hline-width: 8px;
 $hline-circle-width: 20px;
@@ -167,15 +167,16 @@ $lg-screen: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 
 
   @include bp-max($md-screen) {
-    padding-top: 20px;
+    padding-top: 60px;
   }
 
   @include bp-min($md-screen) {
     padding-top: 160px;
+    padding-bottom: 120px;
   }
 
   @include bp-max($lg-screen) {
@@ -332,7 +333,7 @@ $lg-screen: 1200px;
   }
 
   @include bp-min($md-screen) {
-    padding: 160px 50px 100px 20px;
+    padding: 160px calc(5vw + 30px) 100px calc(5vw);
   }
 }
 

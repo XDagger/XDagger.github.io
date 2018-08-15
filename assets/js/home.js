@@ -61,7 +61,7 @@ jQuery(document).ready(function( $ ) {
   var navEls = roadmap.querySelectorAll('.js-roadmap-link');
   var navActiveClass = 'roadmap__nav-link--active';
   var $carousel = $(timeline);
-  var breakPoint = '600px';
+  var breakPoint = '650px';
   var stage;
   var previousHeight;
 
