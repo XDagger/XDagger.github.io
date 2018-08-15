@@ -12,23 +12,30 @@ community_wallets:
 
 # Jekyll configuration
 
-baseurl: "/"
-url: https://xdag.io
 
+url: https://xdag.io
+baseurl: ""
+
+permalink: /blog/:categories/:year/:month/:day/:title
 paginate: 7
 paginate_path: "/blog/page:num"
 
 sass:
   style: compressed
 
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-paginate
+
 ## Exclude files from build folder
 exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'package.json', 'package-lock.json']
 
-## jekyll-seo-tag
+## SEO
 
 title: XDAG
 description: A new DAG-based cryptocurrency
 logo: /assets/images/logo.png
+default_image: /assets/images/default-card.png
 
 author:
   name: Xdag.io
@@ -45,20 +52,13 @@ social:
     - https://github.com/orgs/XDagger
 
 twitter:
-  card: summary
+  card: summary_large_image
   username: XDAG_Community
 
 facebook:
   publisher: https://www.facebook.com/XDAG.Dagger.Community/
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: /assets/images/default-card.png
       
-## end jekyll-seo-tag
+## Translations
 
-plugins:
-  - jekyll-paginate
-  - jekyll-seo-tag
+languages: ["en", "fi"]
+exclude_from_localizations: ["README.md", "feed.xml", "assets", "CNAME"]

@@ -1,0 +1,158 @@
+# Global
+
+global:
+  description: translate
+  previous: translate
+  next: translate
+
+nav:
+  home: translate
+  get_started: translate
+  wallet: translate
+  mining: translate
+  pools: translate
+  explorer: translate
+  resources: translate
+  whitepaper: translate
+  releases: translate
+  roadmap: translate
+  news: translate
+  community: translate
+  social_channels: translate
+
+footer:
+  support: translate
+  support_address_pre: translate
+  links: translate
+
+# Pages
+
+home:
+  meta_description: translate
+  slides:
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+  introduction: translate
+  introduction_content: translate
+  features:
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+  mining: translate
+  mining_content: translate
+  mining_guides:
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+  software: translate
+  software_content: translate
+  software_links: 
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate
+    - title: translate
+      content: translate   
+  roadmap: translate
+  roadmap_content:
+    - timeframe: translate
+      dates: 
+        - date: translate
+          events:
+            - translate
+            - translate
+            - translate
+    - timeframe: translate
+      dates: 
+        - date: translate
+          events:
+            - translate
+            - translate
+        - date: translate
+          events:
+            - translate
+            - translate
+            - translate
+            - translate
+        - date: translate
+          events:
+            - translate
+            - translate
+            - translate
+    - timeframe: translate
+      dates: 
+        - date: translate
+          events:
+            - translate
+            - translate
+            - translate
+        - date: translate
+          events:
+            - translate
+    - timeframe: translate
+      dates: 
+        - date: translate
+          events:
+            - translate
+            - translate
+            - translate
+        - date: translate
+          events:
+            - translate
+    - timeframe: translate
+      dates: 
+        - date: translate
+          events:
+            - translate
+        - date: translate
+          events:
+            - translate
+            - translate
+  community: translate
+
+
+news:
+  title: translate
+  description: translate
+
+
+pools:
+  url: /translate/
+  title: translate
+  description: translate
+  distribution: translate
+  distribution_pool: translate
+  distribution_finder: translate
+  distribution_contributor: translate
+  distribution_community: translate
+  loading: translate
+  status_on: translate
+  status_sync: translate
+  status_init: translate
+  status_down: translate
+  status_unknown: translate
+  header_1: translate
+  header_2: translate
+  header_3: translate
+  header_4: translate
+  header_5: translate
+  header_6: translate
+  # continues in pools/reward-distribution.md

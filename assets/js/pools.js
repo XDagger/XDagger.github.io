@@ -24,30 +24,30 @@ Array.prototype.shuffle = function() {
     {
       text: 'Synchronized with the main network. Normal operation.',
       icon: function() {
-        return createIconNode('Operational', 'up', 'ion-md-checkmark')
+        return createIconNode(poolStatusMsg.on, 'up', 'ion-md-checkmark')
       }
     },
     {
       text: 'Connected to the main network. Synchronizing.',
       icon: function() {
-        return createIconNode('Synchronizing', 'sync', 'ion-ios-flash')
+        return createIconNode(poolStatusMsg.sync, 'sync', 'ion-ios-flash')
       }
     },
     {
       text: 'Loading blocks from the local storage.',
       icon: function() {
-        return createIconNode('Initializing', 'init', 'ion-ios-flash')
+        return createIconNode(poolStatusMsg.init, 'init', 'ion-ios-flash')
       }
     },
     {
       text: 'Can\'t connect to unix domain socket errno:111',
       icon: function() {
-        return createIconNode('Offline', 'down', 'ion-md-close')
+        return createIconNode(poolStatusMsg.down, 'down', 'ion-md-close')
       }
     }
   ];
   var messageFallbackIcon = function() {
-    return createIconNode('No response', 'unknown', 'ion-md-help');
+    return createIconNode(poolStatusMsg.unknown, 'unknown', 'ion-md-help');
   }
 
   fragment.appendChild(header);

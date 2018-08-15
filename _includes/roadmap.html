@@ -1,19 +1,22 @@
-<section id="roadmap" class="roadmap js-roadmap">
+{% assign progress_index = 4 %}
+{% assign show_first_index = 4 %}
+
+<section id="{% t nav.roadmap %}" class="roadmap js-roadmap">
     <header class="roadmap__header section-header">
-        <h3>{{ page.roadmap_title }}</h3>
+        <h3>{% t home.roadmap %}</h3>
     </header>
     <nav class="roadmap__nav wow fadeInLeft">
         <ol class="roadmap__nav-list js-roadmap-nav">
-            {% for timeframe in site.data.roadmap %}
-            <li class="roadmap__nav-item {% if timeframe.progress %} roadmap__nav-item--progress {% endif %}">
+            {% for timeframe in site.translations[site.lang].home.roadmap_content %}
+            <li class="roadmap__nav-item {% if forloop.index <= progress_index %} roadmap__nav-item--progress {% endif %}">
                 <div class="roadmap__vline"></div>
-                <div class="roadmap__nav-link js-roadmap-link {% if timeframe.show_first %}roadmap__nav-link--active{% endif %}">{{ timeframe.timeframe }}</div>
+                <div class="roadmap__nav-link js-roadmap-link {% if forloop.index == show_first_index %}roadmap__nav-link--active{% endif %}">{{ timeframe.timeframe }}</div>
             </li>
             {% endfor %}
         </ol>
     </nav>
     <ol class="roadmap__timeline js-roadmap-timeline owl-carousel wow fadeInUp">
-        {% for timeframe in site.data.roadmap %}
+        {% for timeframe in site.translations[site.lang].home.roadmap_content %}
         <li class="roadmap__timeframe js-roadmap-timeframe">
             {% for date in timeframe.dates %}
             <div class="roadmap__content">

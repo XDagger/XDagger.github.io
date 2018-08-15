@@ -1,0 +1,28 @@
+- icon: ion-logo-windows
+  href: https://github.com/XDagger/xdag/files/2186514/XDag.x64.zip
+  delay: 0s
+
+- icon: ion-logo-windows
+  href: https://github.com/XDagger/xdag/files/2186515/XDag.x86.zip
+  delay: 0.1s
+
+- icon: ion-logo-windows
+  href: https://github.com/jonano614/DaggerGpuMiner/files/2186569/DaggerGpuMiner.0.3.0.zip
+  delay: 0.2s
+  
+- icon: ion-logo-apple
+  href: https://github.com/XDagger/xdag/files/2180609/xdag.0.2.5.zip
+  delay: 0.3s
+
+- icon: ion-logo-apple
+  href: https://github.com/jonano614/DaggerGpuMiner/files/2180530/GpuMiner.0.3.0.zip
+  delay: 0.4s
+
+- icon: ion-logo-android
+  href: https://github.com/XDagger/android-wallet/releases/download/release_0.2.1/android_wallet_release_v0.2.1.apk
+  delay: 0.5s
+
+- icon: ion-ios-color-filter
+  href: https://github.com/XDagger
+  delay: 0.6s
+

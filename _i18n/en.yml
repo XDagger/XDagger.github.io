@@ -1,0 +1,166 @@
+# Global
+
+global:
+  description: A new DAG-based cryptocurrency
+  previous: Previous
+  next: Next
+
+nav:
+  home: Home
+  get_started: Get started
+  wallet: Wallet
+  mining: Mining
+  pools: Pools
+  explorer: Block explorer
+  resources: Resources
+  whitepaper: Whitepaper
+  releases: Releases
+  roadmap: Roadmap
+  news: News
+  community: Community
+  social_channels: Social Channels
+
+footer:
+  support: "Support The Community: This site is managed by the XDAG community."
+  support_address_pre: Contribute XDAG
+  links: Useful links
+
+# Pages
+
+home:
+  meta_description: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
+  slides:
+    - title: |
+        XDAG: A new DAG-based
+        cryptocurrency
+      content: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
+    - title: The first mineable DAG 
+      content: |
+        Block = transaction = address
+        Original main chain idea
+        Mining new money every 64 seconds
+    - title: No pre-mine or ICO
+      content: XDAG offer bleeding edge technology to offer a decentralised solution to the problems facing other cryptocurrencies. XDAG has no pre-mine or ICO, and is a true community-driven project aligned by a common goal and innovative development team.
+  introduction: About Dagger
+  introduction_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
+  features:
+    - title: CPU/GPU Mineable
+      content: XDAG is both CPU & GPU mineable. Making it the first mineable DAG project.
+    - title: Privacy
+      content: XDAG is working on incorporating privacy features. These are part of the 2018 roadmap.
+    - title: Smart contracts
+      content: XDAG is researching the possibility to add smart contract functionality.
+  mining: Mining quick start
+  mining_content: The first mineable DAG. Follow the steps below. If you get stuck, check out our social channels for help, specifically Discord.
+  mining_guides:
+    - title: Download wallet
+      content: First, download the Dagger miner & wallet suitable for your operating system. Click to download.
+    - title: Learn about the process
+      content: Next watch the easy to follow video setup guide.
+    - title: Select a pool
+      content: You can connect to a featured pool or visit our wiki for a complete list of approved pools.
+  software: Software
+  software_content: Download links for applications that interact with the XDAG network.
+  software_links: 
+    - title: Windows 64-bit wallet
+      content: 64 bit Windows Console and GUI executables (x64).
+    - title: Windows 32-bit wallet
+      content: 32 bit Windows Console and GUI executables (x86).
+    - title: Windows GPU miner
+      content: GPU miner by Jonano for Windows (x64).
+    - title: MacOS wallet
+      content: MacOS command line wallet.
+    - title: MacOS GPU miner
+      content: GPU Miner by Jonano for MacOS.
+    - title: Android wallet
+      content: For Android 5.0 and newer.
+    - title: Sources
+      content: Sources for XDAG software and codebases.    
+  roadmap: Roadmap
+  roadmap_content:
+    - timeframe: Q3 2017
+      dates: 
+        - date: December 2017
+          events:
+            - CLI for Windows and Linux
+            - Miner, full node and pool release
+            - Testnet launch
+    - timeframe: Q1 2018
+      dates: 
+        - date: January 2018
+          events:
+            - Mainnet launch
+            - GUI wallet with integrated miner for Windows
+        - date: February 2018
+          events:
+            - Community built a block explorer based on original developers code
+            - Original developer gives the ownership of the project to the community
+            - Xdag.org is fully operational
+            - The original code is being cleaned
+        - date: March 2018
+          events:
+            - Release of XDAG wallet 0.2.0
+            - Release of XDAG wallet 0.2.1 with MAC support
+            - Brand new website for our new domain xdag.io
+    - timeframe: Q2 2018
+      dates: 
+        - date: May 2018
+          events:
+            - Release of XDAG wallet 0.2.2
+            - XDAG gets listed on the bbx.com cryptocurrency exchange
+            - Release of XDAG wallet 0.2.3
+        - date: June 2018
+          events:
+            - Release of XDAG wallet 0.2.4
+    - timeframe: Q3 2018
+      dates: 
+        - date: July 2018
+          events:
+            - Release of XDAG wallet 0.2.5 with major performance improvements
+            - GPU Miner 0.3.0 release with MAC support
+            - Block explorer visual and performance update
+        - date: August 2018
+          events:
+            - Release of XDAG Android and iOS wallets
+    - timeframe: Future
+      dates: 
+        - date: ETA 2018
+          events:
+            - After a wallet RPC is created, the community will push for exchange listing
+        - date: Future plans
+          events:
+            - Expansion of the development team
+            - Social media and marketing
+  community: Community
+
+
+news:
+  title: News
+  description: The latest XDAG news.
+
+
+pools:
+  title: Pools
+  description: Featured XDAG mining pools.
+  distribution: |
+    Reward 
+    distribution
+  distribution_pool: Pool fee
+  distribution_finder: Block finder reward
+  distribution_contributor: Contributor reward
+  distribution_community: Community fund donation
+  loading: Loading status...
+  status_on: Operational
+  status_sync: Synchronizing
+  status_init: Initializing
+  status_down: Offline
+  status_unknown: No response
+  header_1: Pool
+  header_2: Owner
+  header_3: Address
+  header_4: Location
+  header_5: |
+      Reward 
+      distribution
+  header_6: Network status
+  # continues in pools/reward-distribution.md

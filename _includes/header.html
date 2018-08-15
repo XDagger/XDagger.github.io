@@ -1,7 +1,7 @@
 <header id="header" class="js-header">
     <div id="logo">
-        <a href="{{ 'index.html#intro' | relative_url}}">
-            <img src="{{ 'assets/images/logo.svg' | relative_url }}" height="70" alt="Dagger" />
+        <a href="{% tl home %}">
+            <img src="{{ '/assets/images/logo.svg' | prepend: site.baseurl_root }}" height="70" alt="Dagger" />
         </a>
     </div>
     <input class="display-toggle js-nav-main-toggle" type="checkbox" id="nav-main-toggle">
@@ -9,45 +9,58 @@
     <nav class="nav-main-container" role="navigation">
         <ul class="nav-main js-nav-main">
             <li class="js-nav-no-sublevel">
-                <a href="{{ 'index.html' | relative_url }}">Home</a>
+                <a href="{% tl home %}">{% t nav.home %}</a>
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-getstarted-toggle">
-                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-getstarted-toggle" tabindex="0">Get Started</label>
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-getstarted-toggle" tabindex="0">{% t nav.get_started %}</label>
                 <ul id="nav-getstarted" class="nav-sublevel js-nav-sublevel">
-                    <li><a href="{{ 'index.html#wallet' | relative_url }}">Wallet</a></li>
-                    <li><a href="{{ 'index.html#services' | relative_url }}">Mining</a></li>
-                    <li><a href="{{ 'pools' | relative_url }}">Pools</a></li>
+                    <li><a href="{% tl home %}#{% t nav.wallet %}">{% t nav.wallet %}</a></li>
+                    <li><a href="{% tl home %}#{% t nav.mining %}">{% t nav.mining %}</a></li>
+                    <li><a href="{% tl pools %}">{% t nav.pools %}</a></li>
                 </ul>
             </li>
             <li class="js-nav-no-sublevel">
-                <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a>
+                <a href="http://explorer.xdag.io/" target="_blank">{% t nav.explorer %}{% include lang-warn.html %}</a>
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-resources-toggle">
-                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-resources-toggle" tabindex="0">Resources</label>
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-resources-toggle" tabindex="0">{% t nav.resources %}</label>
                 <ul id="nav-resources" class="nav-sublevel js-nav-sublevel">
-                    <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a></li>
-                    <li><a href="https://github.com/XDagger/xdag/releases" target="_blank">Releases</a></li>
-                    <li><a href="{{ 'index.html#roadmap' | relative_url }}">Roadmap</a></li>
+                    <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">{% t nav.whitepaper %}{% include lang-warn.html %}</a></li>
+                    <li><a href="https://github.com/XDagger/xdag/releases" target="_blank">{% t nav.releases %}{% include lang-warn.html %}</a></li>
+                    <li><a href="{% tl home %}#{% t nav.roadmap %}">{% t nav.roadmap %}</a></li>
                 </ul>
             </li>
             <li class="js-nav-no-sublevel">
-                <a href="{{ 'blog/index.html' | relative_url }}">News</a>
+                <a href="{{ '/blog' | prepend: site.baseurl_root }}">{% t nav.news %}{% include lang-warn.html %}</a>
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-community-toggle">
-                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-community-toggle" tabindex="0">Community</label>
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-community-toggle" tabindex="0">{% t nav.community %}</label>
                 <ul id="nav-community" class="nav-sublevel js-nav-sublevel">
-                    <li><a href="{{ 'index.html#community' | relative_url }}">Social channels</a></li>
+                    <li><a href="{% tl home %}#{% t nav.community %}">{% t nav.social_channels %}</a></li>
                 </ul>
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-lang-toggle">
-                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0"><img src="{{ 'assets/images/lang/en.png' | relative_url }}" alt=""></label>
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0">
+                  <img src="{{ '/assets/images/lang/en.png' | prepend: site.baseurl_root }}" alt="">
+                </label>
                 <ul id="nav-lang" class="nav-sublevel js-nav-sublevel">
-                    <li><a href="https://xdag.io"><img src="{{ 'assets/images/lang/en.png' | relative_url }}" alt="">US</a></li>
-                    <li><a href="https://xdag.top"><img src="{{ 'assets/images/lang/cn.png' | relative_url }}" alt="">CN</a></li>
+                {% for lang in site.languages %}
+                  <li>
+                  {% if page.translated_url %}
+                    {% capture translated_url %}{{page.namespace}} {{ lang }}{% endcapture %}
+                    <a href="{{ site.url}}{% tl translated_url %}"><img src="{{ '/assets/images/lang/' | append: lang | append: '.png' | prepend: site.baseurl_root }}" alt="{{ lang }}">{{ lang }}</a>
+                  {% else %}
+                    <a href="{{ site.url}}/{% if lang != 'en' %}{{ lang }}{% endif %}"><img src="{{ '/assets/images/lang/' | append: lang | append: '.png' | prepend: site.baseurl_root }}" alt="{{ lang }}">{{ lang }}</a>
+                  {% endif %}
+                  </li>
+                {% endfor %} 
+                    <li>
+                      <a href="https://xdag.top"><img src="{{ '/assets/images/lang/cn.png' | prepend: site.baseurl_root }}" alt="">CN</a>
+                    </li>
                 </ul>
             </li>
         </ul>

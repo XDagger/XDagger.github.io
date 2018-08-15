@@ -1,34 +1,34 @@
 # xdag.io
-The website of XDAG
+The website of XDAG, built with [Jekyll](https://jekyllrb.com/docs/home/).
 
-## News Directory structure -- '_posts'
-As explained on the directory structure page, the _posts folder is where your blog posts will live. These files are generally Markdown or HTML, but can be other formats with the proper converter installed. All posts must have YAML Front Matter, and they will be converted from their source format into an HTML page that is part of your static site.
+## News Posts guidelines
 
-### Creating Post FilesPermalink
-To create a new post, all you need to do is create a file in the _posts directory. How you name files in this folder is important. Jekyll requires blog post files to be named according to the following format:
+### Setup
+News posts are placed in `_i18n/en/_posts/`. 
+
+The filename must use the following format:
 ````
-YEAR-MONTH-DAY-title.MARKUP
-````
-
-Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. For example, the following are examples of valid post filenames:
-
-````
-├── _posts
-|   ├── 2018-01-31-Our-fresh-new-website.md
-|   └── 2018-02-03-What-tool-to-use-to-make-poll.md
-|   └── 2018-03-07-XDag-v0.2.0-is-released.md
-
+YYYY-MM-DD-title.md
 ````
 
+Where YYYY is the year (4 digits), MM the month (2 digits), DD the day (2 digits), and .md is the file extension representing the format used in the file. The following are examples of valid post filenames:
 
-### Including images and resourcesPermalink
+````
+2018-01-31-Our-fresh-new-website.md
+2018-02-03-What-tool-to-use-to-make-poll.md
+2018-03-07-XDAG-v0.2.0-is-released.md
+````
 
-Including an image asset in a post:
+The file must start with the following YAML code:
 ````
-![My helpful screenshot]({{ "/assets/screenshot.jpg" | absolute_url }})
+---
+layout: post
+title: Title of the post
+date: "YYYY-MM-DD hh:mm:ss"
+---
 ````
+Optional YAML tags:
+* `image:` Path to an image file. Displayed with the post link on platforms that support it (Facebook, Twitter, Reddit...). Example format for an internal image: `"/assets/images/posts/community-fund-rewards.jpg"`
 
-Linking to a PDF for readers to download:
-````
-... you can [get the PDF]({{ "/assets/mydoc.pdf" | absolute_url }}) directly.
-````
+### Writing
+Markdown is used for rich text formatting, you can find examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).

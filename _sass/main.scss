@@ -90,6 +90,15 @@ h1, h2, h3, h4, h5, h6 {
 .bg-black {
   background: #111;
 }
+
+.lang-warn {
+  font-size: 11px;
+  position: relative;
+  top: -5px;
+  margin-left: 5px;
+  color: #bdbdbd;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -393,6 +402,10 @@ $nav-breakpoint: 1120px;
     display: block;
   }
 }
+
+#nav-lang  {
+  text-transform: uppercase;
+} 
 
 #nav-lang img {
   width: 32px;

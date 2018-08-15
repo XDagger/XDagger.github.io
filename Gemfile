@@ -4,5 +4,4 @@ ruby RUBY_VERSION
 gem "rake", "~> 12" # for Travis CI
 gem 'jekyll', '~> 3.7', '>= 3.7.3'
 gem 'jekyll-paginate', '~> 1.1'
-gem 'jekyll-feed', '~> 0.9.3'
-gem 'jekyll-seo-tag'
+gem 'jekyll-multiple-languages-plugin'

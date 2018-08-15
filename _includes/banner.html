@@ -1,0 +1,29 @@
+<section id="intro">
+    <div class="intro-container">
+        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators"></ol>
+            <div class="carousel-inner" role="listbox"> 
+                {% for slide in site.translations[site.lang].home.slides %}
+                {% assign slide_d = site.data.banner[forloop.index0] %}
+                <div class="carousel-item {% if forloop.index == 1 %} active{% endif %}" style="background-image: url({{ slide_d.img | prepend: site.baseurl_root }});">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>{{ slide.title | newline_to_br }}</h2>
+                            <p>{{ slide.content | newline_to_br }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon ion-ios-arrow-back" aria-hidden="true"></span>
+                <span class="sr-only">{% t global.previous %}</span>
+            </a>
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon ion-ios-arrow-forward" aria-hidden="true"></span>
+                <span class="sr-only">{% t global.next %}</span>
+            </a>
+
+        </div>
+    </div>
+</section>
