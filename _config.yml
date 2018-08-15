@@ -60,5 +60,5 @@ facebook:
       
 ## Translations
 
-languages: ["en", "fi"]
+languages: ["en"]
 exclude_from_localizations: ["README.md", "feed.xml", "assets", "CNAME"]
