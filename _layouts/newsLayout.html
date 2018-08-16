@@ -20,7 +20,7 @@
                         <div class="lft post-content">
                             <div class="tit"> <a href="{{ post.url | relative_url }}">{{ post.title }}</a><i class="ion-ios-arrow-down js-toggle-content"></i></div>
                             <div class="cont all">{{ post.content }}</div>
-                            <div class="cont h60 top">{{ post.excerpt | strip_html }}</div>
+                            <div class="cont h60 top">{{ post.summary | default: post.excerpt | strip_html }}</div>
                         </div>
                         <div class="rht">
                             <i class="ion-ios-arrow-down js-toggle-content"></i>
