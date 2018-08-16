@@ -4,12 +4,26 @@
   flex-wrap: wrap;
 }
 
+$spacing: 3px;
+
 .img-gallery__item {
   position: relative;
   flex-grow: 1;
-  max-width: 50%;
-  min-width: 33%;
+  max-width: calc(100% - #{$spacing * 2});
+  min-width: calc(100% - #{$spacing * 2});
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  margin: $spacing;
+
+  @include bp-min(460px) {
+    min-width: calc(50% - #{$spacing * 2});
+  }
+
+  @include bp-min(992px) {
+    max-width: calc(50% - #{$spacing * 2});
+    min-width: calc(33% - #{$spacing * 2});
+  }
 
   &::before {
     display: block;
@@ -22,14 +36,14 @@
 
 .img-gallery__img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   transition: transform 0.5s ease;
 
   &:hover {
-    transform: translate(-50%, -50%) scale(1.07);
+    transform: scale(1.07);
   }
 }
