@@ -24,7 +24,6 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-multiple-languages-plugin
   - jekyll-paginate
 
 ## Exclude files from build folder
@@ -61,4 +60,4 @@ facebook:
 ## Translations
 
 languages: ["en"]
-exclude_from_localizations: ["README.md", "feed.xml", "assets", "CNAME"]
+exclude_from_localizations: ["assets", "blog", "CNAME", "README.md", "feed.xml"]
