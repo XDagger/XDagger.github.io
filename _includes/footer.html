@@ -4,9 +4,18 @@
             <div class="row">
                 <div class="col-lg-8 col-md-6 footer-info">
                     <img src="{{ '/assets/images/logo.svg' | relative_url }}" height="60" alt="Dagger, by the community" />
-                    <div class="btm">
-                        <p>Support The Community: This site is managed by the XDAG community.</p>
-                        <p class="btmWallet">Contribute XDAG: {{ site.community_wallet }}</p>
+                    <div class="community_wallets">
+                        <p class="mb-3">Support The Community: This site is managed by the XDAG community.</p>
+                        {% for wallet in site.community_wallets %}
+                        <div>
+                          <p class="community_wallets__item community_wallets__item">
+                            <span class="community_wallets__currency">{{ wallet.currency }}</span>
+                            <i class=" community_wallets__arrow community_wallets__arrow--i{{ forloop.index }} ion-ios-arrow-back"></i>
+                            <i class=" community_wallets__arrow community_wallets__arrow--i{{ forloop.index }} ion-ios-arrow-forward"></i>
+                            <span class="community_wallets__address">{{ wallet.address }}</span>
+                          </p>  
+                        </div>
+                        {% endfor %}
                     </div>
 
                 </div>
