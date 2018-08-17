@@ -619,15 +619,67 @@ $nav-breakpoint: 1120px;
   color: #ddd;
 }
 
-.btm {
+.community_wallets {
   padding-top:40px;
 }
 
-.btmWallet {
-  font-size: 16px!important;
-  font-weight: bold!important;
-  color: #25dde0!important;
+.community_wallets__item {
+  display: inline-block;
+  margin: 3px 0;
+
+  &:hover {
+    .community_wallets__arrow {
+
+      &:nth-of-type(1) {
+        transform: translateX(-2px);
+      }
+
+      &:nth-of-type(2) {
+        transform: translateX(2px);
+      }
+    }
+  }
 }
+
+@keyframes community_wallets__color {
+  0% {
+    color: #588ee9;
+  } 
+  50% {
+    color: #2ad4de;
+  }
+  100% {
+    color: #588ee9;
+  }
+}
+
+.community_wallets__currency {
+  display: inline-block;
+  width: 3.5em;
+  user-select: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+.community_wallets__arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  user-select: none;
+  animation: community_wallets__color 10s ease infinite;
+
+  &--i2 {
+    animation-delay: -3.666s 
+  }
+
+  &--i3 {
+    animation-delay: -6.333s 
+  }
+
+  &:last-of-type {
+    margin-right: 1em;
+  }
+}
+
 .mask {
   display: none;
   position:fixed;
