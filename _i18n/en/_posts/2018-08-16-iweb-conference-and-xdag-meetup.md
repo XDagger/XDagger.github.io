@@ -1,5 +1,5 @@
 ---
-layout: postLayout
+layout: post
 title: Progress in China — iWeb conference and XDAG meetup
 date: "2018-08-16 12:00:00"
 image: "/assets/images/posts/iweb2018/iweb.png"
@@ -19,13 +19,13 @@ A special thank you to all who contributed XDAG so Airdrops could be made possib
 
 <div class="img-gallery mb-5" markdown="0">
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/conf_1.jpg' | relative_url }}" data-lightbox="conf">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/conf_1.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/conf_1.jpg' | relative_url }})"></div>
   </a>
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/conf_2.jpg' | relative_url }}" data-lightbox="conf">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/conf_2.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/conf_2.jpg' | relative_url }})"></div>
   </a>
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/conf_3.jpg' | relative_url }}" data-lightbox="conf">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/conf_3.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/conf_3.jpg' | relative_url }})"></div>
   </a>
 </div>
 
@@ -49,18 +49,18 @@ The community would like to say many thanks for representing us this weekend as 
 
 <div class="img-gallery mb-5" markdown="0">
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_1.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_1.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/meetup_1.jpg' | relative_url }})"></div>
   </a>
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_2.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_2.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/meetup_2.jpg' | relative_url }})"></div>
   </a>
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_3.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_3.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/meetup_3.jpg' | relative_url }})"></div>
   </a>
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_4.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_4.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/meetup_4.jpg' | relative_url }})"></div>
   </a>
   <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_5.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_5.jpg' | relative_url }})"></div>
+    <div class="img-gallery__img" style="background-image: url({{ '/assets/images/posts/iweb2018/meetup_5.jpg' | relative_url }})"></div>
   </a>
 </div>

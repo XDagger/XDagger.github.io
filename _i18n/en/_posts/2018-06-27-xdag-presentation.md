@@ -2,7 +2,7 @@
 layout: post
 date: "2018-06-27 00:00:00"
 title: XDAG Presentation
-image: assets/images/posts/xdag-presentation-img/XDAG-15.jpg
+image: /assets/images/posts/xdag-presentation-img/XDAG-15.jpg
 ---
 
 

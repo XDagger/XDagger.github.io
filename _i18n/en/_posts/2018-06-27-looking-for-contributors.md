@@ -2,7 +2,7 @@
 layout: post
 date: "2018-06-27 22:00:00"
 title: Looking for New Contributors
-image: assets/images/posts/join-the-dagger-side.png
+image: /assets/images/posts/join-the-dagger-side.png
 ---
 
 <div class="text-center mb-5 bg-black" markdown="0">
