@@ -49,13 +49,16 @@
 
 #intro .carousel-content {
   text-align: center;
+  width: 100%;
 }
 
 #intro h2 {
   color: #fff;
-  margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  padding: 0 15px;
+  max-width: 15em;
+  margin: 0 auto 30px;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +68,9 @@
 }
 
 #intro p {
+  font-size: 20px;
   width: 80%;
+  max-width: 50em;
   margin: 0 auto 30px auto;
   color: #fff;
 }

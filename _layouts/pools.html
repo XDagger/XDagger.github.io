@@ -80,7 +80,8 @@
           </div>
           <div class="pool__data"><div class="pool__row-header">{% t pools.header_2 %}:</div>{{ pool_owner.owner }}</div>
           <div class="pool__data"><div class="pool__row-header">{% t pools.header_3 %}:</div>{% for address in pool.address %}<span class="pool__address">{{ address }}</span>{% endfor %}</div>
-          <div class="pool__data"><div class="pool__row-header">{% t pools.header_4 %}:</div>{{ pool.country }}</div>
+          {% capture country_translated %}{% t countries.{{ pool.country | downcase }} %}{% endcapture %}
+          <div class="pool__data"><div class="pool__row-header">{% t pools.header_4 %}:</div>{{ country_translated | default: pool.country }}</div>
           <div class="pool__data pool__data--reward">
             <div class="pool__row-header">{% t pools.header_5 %}:</div>
             <div class="d-inline-block text-nowrap">

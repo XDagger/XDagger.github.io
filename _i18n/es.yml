@@ -43,9 +43,7 @@ countries:
 home:
   meta_description: XDAG es una novedosa aplicación que utiliza la tecnología Grafo Acíclico Dirigido (DAG) que resuelve algunos de los problemas a los cuales se enfrenta la tecnología blockchain.
   slides:
-    - title: |
-        XDAG: Nueva criptomoneda
-        basada en DAG
+    - title: "XDAG: Nueva criptomoneda basada en DAG"
       content: XDAG es una novedosa aplicación que utiliza la tecnología Grafo Acíclico Dirigido (DAG) que resuelve algunos de los problemas a los cuales se enfrenta la tecnología blockchain.
     - title: El primer DAG minable 
       content: |

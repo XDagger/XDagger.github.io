@@ -42,25 +42,25 @@
                     <li><a href="{% tl home %}#{% t nav.community %}">{% t nav.social_channels %}</a></li>
                 </ul>
             </li>
-            <li class="js-nav-has-sublevel">
+            <li class="js-nav-has-sublevel nav-lang">
                 <input class="display-toggle" type="checkbox" id="nav-lang-toggle">
                 <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0">
-                  <img src="{{ '/assets/images/lang/en.png' | prepend: site.baseurl_root }}" alt="">
+                  <i class="ion-ios-globe nav-sublevel-icon"></i><span class="nav-sublevel-text">{{ site.translations[site.lang].nav.current_language }}</span>
                 </label>
                 <ul id="nav-lang" class="nav-sublevel js-nav-sublevel">
+                  <li>
+                    <a href="https://xdag.top">中文</a>
+                  </li>
                 {% for lang in site.languages %}
                   <li>
                   {% if page.translated_url %}
                     {% capture translated_url %}{{page.namespace}} {{ lang }}{% endcapture %}
-                    <a href="{{ site.url}}{% tl translated_url %}"><img src="{{ '/assets/images/lang/' | append: lang | append: '.png' | prepend: site.baseurl_root }}" alt="{{ lang }}">{{ lang }}</a>
+                    <a href="{{ site.url }}{% tl translated_url %}">{{ site.translations[lang].nav.current_language }}</a>
                   {% else %}
-                    <a href="{{ site.url}}/{% if lang != 'en' %}{{ lang }}{% endif %}"><img src="{{ '/assets/images/lang/' | append: lang | append: '.png' | prepend: site.baseurl_root }}" alt="{{ lang }}">{{ lang }}</a>
+                    <a href="/{% if lang != 'en' %}{{ lang }}{% endif %}">{{ site.translations[lang].nav.current_language }}</a>
                   {% endif %}
                   </li>
                 {% endfor %} 
-                    <li>
-                      <a href="https://xdag.top"><img src="{{ '/assets/images/lang/cn.png' | prepend: site.baseurl_root }}" alt="">CN</a>
-                    </li>
                 </ul>
             </li>
         </ul>

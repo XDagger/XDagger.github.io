@@ -43,8 +43,7 @@ countries:
 home:
   meta_description: XDAG est une nouvelle application utilisant la technologie du graphe orienté acyclique qui résout les problémes lrencontré par la technologie blockchain. 
   slides:
-    - title: |
-        XDAG: Une nouvelle cryptomonnaie basée sur le DAG
+    - title: "XDAG: Une nouvelle cryptomonnaie basée sur le DAG"
       content: XDAG est une nouvelle application utilisant la technologie du graphe orienté acyclique qui résout les problémes lrencontré par la technologie blockchain. 
     - title: La premiere monnaie basée sur le DAG que l'on peut miner.
       content: |
@@ -62,7 +61,7 @@ home:
       content: Nous travailons actuellement pour incorporer des fonction de protection de la vie privée .Cela fait partie de notre feuille de route 2018.
     - title: Contrat intelligents
       content: Nous recherchons la possibilitée d'ajouter la fonction de contrats intelligents au réseau XDAG.
-  mining: asd
+  mining: Mining quick start
   mining_content: La premiere monnaie basée sur le DAG que l'on peut miner. Suivez les instructions suivante. Si vous etes coincé, n'hésitez pas a nous rejoindre sur nos réseau sociaux, principalement sur Discord.
   mining_guides:
     - title: Télécharger le portefeuille

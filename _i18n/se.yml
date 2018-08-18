@@ -43,9 +43,7 @@ countries:
 home:
   meta_description: XDAG är en ny applikation som implementerar Directed Acyclic Graph (DAG)-teknologi som löser de problem som blockchain-tekniken står inför.
   slides:
-    - title: |
-        XDAG: En ny DAG-baserad 
-        kryptovaluta
+    - title: "XDAG: En ny DAG-baserad kryptovaluta"
       content: XDAG är en ny applikation som implementerar Directed Acyclic Graph (DAG)-teknologi som löser de problem som blockchain-tekniken står inför.
     - title: DAG-mining
       content: |

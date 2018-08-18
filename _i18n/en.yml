@@ -43,9 +43,7 @@ countries:
 home:
   meta_description: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
   slides:
-    - title: |
-        XDAG: A new DAG-based
-        cryptocurrency
+    - title: "XDAG: A new DAG-based cryptocurrency"
       content: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
     - title: The first mineable DAG 
       content: |

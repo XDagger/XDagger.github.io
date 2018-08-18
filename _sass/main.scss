@@ -65,16 +65,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-// Utility classes
-
-.display-toggle {
-  display: none;
-
-  &:not(:checked) ~ .display-toggle-target {
-    display: none;
-  }
-}
-
 .chs {
   text-indent: -9999px;
   height: 0;
@@ -99,6 +89,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #bdbdbd;
 }
 
+// Utility classes
+
+.display-toggle {
+  display: none;
+
+  &:not(:checked) ~ .display-toggle-target {
+    display: none;
+  }
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -106,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 $header-height: 92px;
 $header-height-scrolled: 72px;
 $header-bg-scrolled: rgba(0, 0, 0, 0.7);
+$header-bp: 1400px;
 
 #header {
   display: flex;
@@ -120,7 +121,7 @@ $header-bg-scrolled: rgba(0, 0, 0, 0.7);
   background: 0;
   transition: height 0.5s, background 0.5s;
 
-  @media (min-width: 1050px) {
+  @include bp-min($header-bp) {
     padding: 30px 60px;
   }
 
@@ -135,7 +136,7 @@ $header-bg-scrolled: rgba(0, 0, 0, 0.7);
   padding: 20px 15px;
   height: $header-height-scrolled;
 
-  @media (min-width: 1050px) {
+  @include bp-min($header-bp) {
     padding: 20px 60px;
   }
 }
@@ -159,12 +160,13 @@ $header-bg-scrolled: rgba(0, 0, 0, 0.7);
   background: #000 url("../images/banner/1.jpg") center;
 }
 
+
 /*--------------------------------------------------------------
 # Main navigation
 --------------------------------------------------------------*/
 
 // navBreakpoint in main.js 
-$nav-breakpoint: 1120px;
+$nav-breakpoint: 1300px;
 
 .nav-overlay-active {
   @include bp-max($nav-breakpoint) {
@@ -263,6 +265,20 @@ $nav-breakpoint: 1120px;
     transition: color 0.5s;
     cursor: pointer;
     user-select: none;
+
+    &.nav-sublevel-label--lang {
+      padding-left: 40px;
+      font-size: 11px;
+      line-height: 16px;
+
+      @include bp-max($nav-breakpoint) {
+        margin-top: 20px;
+      }
+
+      @include bp-min($nav-breakpoint) {
+        padding-left: 20px;
+      }
+    }
   }
 
   ul {
@@ -275,6 +291,73 @@ $nav-breakpoint: 1120px;
 
     &:hover {
       z-index: 1;
+    }
+  }
+}
+
+.nav-lang {
+  margin-top: 20px;
+
+  @include bp-min($nav-breakpoint) {
+    margin-top: 0;
+    margin-left: 100px !important; 
+  }
+
+  .nav-sublevel-icon {
+    font-size: 24px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fbfdff;
+
+    @include bp-min($nav-breakpoint) {
+      left: 0;
+    }
+  }
+
+  .nav-sublevel-text {
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    margin-left: 30px;
+
+    @include bp-min($nav-breakpoint) {
+      margin-left: 16px;
+    }
+  }
+
+  .nav-sublevel {
+    @include bp-min($nav-breakpoint) {
+      left: auto;
+      right: 0;
+      min-width: 0;
+      word-break: keep-all;
+      flex-wrap: wrap;
+      width: 100vw;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      max-width: calc(100vw - 60px);
+    }
+
+    @include clearfix;
+
+    @include bp-min($header-bp) {
+      max-width: calc(100vw - 120px);
+    }
+
+    li {
+      @include bp-min($nav-breakpoint) {
+        float: right;
+        margin: 10px !important;
+      }
+    }
+
+    a {
+      font-size: 11px;
+      text-transform: uppercase;
     }
   }
 }
@@ -403,23 +486,6 @@ $nav-breakpoint: 1120px;
   }
 }
 
-#nav-lang  {
-  text-transform: uppercase;
-} 
-
-#nav-lang img {
-  width: 32px;
-  padding-right: 10px;
-} 
-
-.nav-sublevel-label img {
-  width: 22px;
-}
-
-#nav-lang.nav-sublevel {
-  min-width: 95px !important;
-  width: 95px;
-}
 
 /*--------------------------------------------------------------
 # Sections
