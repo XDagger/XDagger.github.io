@@ -19,11 +19,24 @@ nav:
   news: News
   community: Community
   social_channels: Social Channels
+  current_language: English
 
 footer:
   support: "Support The Community: This site is managed by the XDAG community."
   support_address_pre: Contribute XDAG
   links: Useful links
+
+countries:
+  poland: Poland
+  germany: Germany
+  finland: Finland
+  canada: Canada
+  netherlands: Netherlands
+  japan: Japan
+  singapore: Singapore
+  russia: Russia
+  china: China
+  lithuania: Lithuania
 
 # Pages
 

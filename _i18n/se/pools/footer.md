@@ -1,2 +1,2 @@
-Alla poolerna som presenteras här donerar en procentandel av blockbelöningar till communityts fond.
-Den fullständiga listan över godkända pooler finns på vår [wiki] (https://github.com/XDagger/xdag/wiki/WhiteList).
+Alla poolerna som presenteras här donerar en procentandel av blockbelöningar till communityts fond.  
+Den fullständiga listan över godkända pooler finns på vår [wiki](https://github.com/XDagger/xdag/wiki/WhiteList).

@@ -19,11 +19,24 @@ nav:
   news: Nyheter
   community: Community
   social_channels: Sociala medier
+  current_language: Svenska
 
 footer:
   support: "Stöd communityt: Denna hemsida förvaltas ideelt av XDAG communityt."
   support_address_pre: Bidra med XDAG
   links: Användbara länkar
+
+countries:
+  poland: Polen
+  germany: Tyskland
+  finland: Finland
+  canada: Kanada
+  netherlands: Nederländerna
+  japan: Japan
+  singapore: Singapore
+  russia: Ryssland
+  china: Kina
+  lithuania: Litauen
 
 # Pages
 
@@ -31,7 +44,8 @@ home:
   meta_description: XDAG är en ny applikation som implementerar Directed Acyclic Graph (DAG)-teknologi som löser de problem som blockchain-tekniken står inför.
   slides:
     - title: |
-        XDAG: En ny DAG-baserad kryptovaluta
+        XDAG: En ny DAG-baserad 
+        kryptovaluta
       content: XDAG är en ny applikation som implementerar Directed Acyclic Graph (DAG)-teknologi som löser de problem som blockchain-tekniken står inför.
     - title: DAG-mining
       content: |
@@ -141,8 +155,7 @@ news:
 pools:
   title: Pools
   description: Utvalda XDAG mining pools.
-  distribution: |
-    Belöningsfördelning
+  distribution: Belöningsfördelning
   distribution_pool: Poolavgift
   distribution_finder: Block hittarens belöning
   distribution_contributor: Bidragsbelöning
@@ -157,7 +170,6 @@ pools:
   header_2: Ägare
   header_3: Adress
   header_4: Plats
-  header_5: |
-      Belöningsfördelning
+  header_5: Belöningsfördelning
   header_6: Nätverksstatus
   # continues in pools/reward-distribution.md
