@@ -106,8 +106,13 @@ module Jekyll
       self.config[        'lang'] = languages.first          # Current language being processed
       self.config['baseurl_root'] = baseurl_org              # Baseurl of website root (without the appended language code)
       self.config['translations'] = self.parsed_translations # Hash that stores parsed translations read from YAML files. Exposes this hash to Liquid.
-      
-      
+
+      # Load all translations to site.translations to access all languages at any moment in the build process
+      languages.drop(1).each do |lang|
+        puts              "Loading translation from file #{self.source}/_i18n/#{lang}.yml"
+        self.parsed_translations[lang] = YAML.load_file("#{self.source}/_i18n/#{lang}.yml")
+      end
+
       # Build the website for default language
       #-------------------------------------------------------------------------
       puts "Building site for default language: \"#{self.config['lang']}\" to: #{self.dest}"
