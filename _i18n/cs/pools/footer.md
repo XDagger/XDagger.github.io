@@ -1,2 +1,2 @@
-Všechny zde uvedené pooly pøispívají procentní podíl do komunitního fondu.  
+Všechny zde uvedené pooly přispívají procentní podíl do komunitního fondu.  
 KOmpletní list najdete na naší wiki.
