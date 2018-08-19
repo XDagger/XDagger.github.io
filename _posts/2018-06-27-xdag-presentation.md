@@ -1,8 +1,8 @@
 ---
-layout: postLayout
+layout: post
 date: "2018-06-27 00:00:00"
 title: XDAG Presentation
-image: assets/images/posts/xdag-presentation-img/XDAG-15.jpg
+image: /assets/images/posts/xdag-presentation-img/XDAG-15.jpg
 ---
 
 
@@ -15,7 +15,7 @@ Topics: Introduction, Block, Transaction, PoW, Algorithm, Transport, Security, F
   {% if image.path contains 'images/posts/xdag-presentation-img' %}
   <div markdown="0">
     <hr>
-    <img class="img-responsive lazyload" data-src="{{ image.path | relative_url }}" alt="XDAG presentation"/>
+    <img class="img-responsive lazyload" data-src="{{ image.path | absolute_url }}" alt="XDAG presentation"/>
   </div>
   {% endif %}
 {% endfor %}

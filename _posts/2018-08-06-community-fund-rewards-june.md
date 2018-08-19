@@ -1,5 +1,5 @@
 ---
-layout: postLayout
+layout: post
 title: Community fund rewards for June
 date: "2018-08-06 9:00:00"
 image: "/assets/images/posts/community-fund-rewards.jpg"

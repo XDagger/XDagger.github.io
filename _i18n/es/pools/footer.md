@@ -1,0 +1,2 @@
+Todas las pools recomendadas aquí donan un pequeño porcentaje de sus recompensas al fondo de la comunidad.  
+Se puede encontrar la lista completa de pools aprobadas en nuestra [wiki](https://github.com/XDagger/xdag/wiki/White-List).

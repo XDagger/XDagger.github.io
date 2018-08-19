@@ -1,7 +1,7 @@
 ---
-layout: postLayout
+layout: post
 date: "2018-07-12 07:30:00"
-image: assets/images/posts/v025.png
+image: /assets/images/posts/v025.png
 title: XDAG v0.2.5 Release
 ---
 

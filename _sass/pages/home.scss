@@ -49,13 +49,16 @@
 
 #intro .carousel-content {
   text-align: center;
+  width: 100%;
 }
 
 #intro h2 {
   color: #fff;
-  margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  padding: 0 15px;
+  max-width: 15em;
+  margin: 0 auto 30px;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +68,9 @@
 }
 
 #intro p {
+  font-size: 18px;
   width: 80%;
+  max-width: 50em;
   margin: 0 auto 30px auto;
   color: #fff;
 }
@@ -282,44 +287,44 @@
 
 /* Mining & Pools Section
 --------------------------------*/
-#services {
+.mining {
   background: #fff;
   background-size: cover;
   padding: 60px 0 40px 0;
 }
 
-#services .box {
+.mining .box {
   margin-bottom: 30px;
 }
 
-#services .icon {
+.mining .icon {
   float: left;
 }
 
-#services .icon i {
+.mining .icon i {
   color: $color-primary;
   font-size: 36px;
   line-height: 1;
   transition: 0.5s;
 }
 
-#services .title {
+.mining .title {
   margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-#services .title a {
+.mining .title a {
   color: #111;
   cursor: pointer;
 }
 
-#services .box:hover .title a {
+.mining .box:hover .title a {
   color: $color-primary;
 }
 
-#services .description {
+.mining .description {
   font-size: 14px;
   margin-left: 60px;
   line-height: 24px;
@@ -577,18 +582,18 @@
 
 /* Wallet Section
 --------------------------------*/
-#wallet {
+.wallets {
   padding: 60px 0;
 }
 
-#wallet #portfolio-flters {
+.wallets #portfolio-flters {
   padding: 0;
   margin: 5px 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-#wallet #portfolio-flters li {
+.wallets #portfolio-flters li {
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
@@ -603,34 +608,34 @@
   transition: all 0.3s ease-in-out;
 }
 
-#wallet #portfolio-flters li:hover, #wallet #portfolio-flters li.filter-active {
+.wallets #portfolio-flters li:hover, .wallets #portfolio-flters li.filter-active {
   background: $color-primary;
   color: #fff;
 }
 
-#wallet #portfolio-flters li:last-child {
+.wallets #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-#wallet .portfolio-wrap {
+.wallets .portfolio-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
   margin-bottom: 20px;
 }
 
-#wallet .portfolio-wrap:hover {
+.wallets .portfolio-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 }
 
-#wallet .portfolio-item {
+.wallets .portfolio-item {
   position: relative;
   //height: 360px;
   overflow: hidden;
 }
-#wallet .portfolio-item svg{
+.wallets .portfolio-item svg{
   width:35px;
 }
-#wallet .portfolio-item figure {
+.wallets .portfolio-item figure {
   background: #000;
   overflow: hidden;
   //height: 240px;
@@ -639,12 +644,12 @@
   margin: 0;
 }
 
-#wallet .portfolio-item figure:hover img {
+.wallets .portfolio-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
 }
 
-#wallet .portfolio-item figure .link-preview, #wallet .portfolio-item figure .link-details {
+.wallets .portfolio-item figure .link-preview, .wallets .portfolio-item figure .link-details {
   position: absolute;
   display: inline-block;
   visibility: hidden;
@@ -657,41 +662,41 @@
   transition: 0.2s;
 }
 
-#wallet .portfolio-item figure .link-preview i, #wallet .portfolio-item figure .link-details i {
+.wallets .portfolio-item figure .link-preview i, .wallets .portfolio-item figure .link-details i {
   padding-top: 6px;
   font-size: 22px;
   color: #333;
 }
 
-#wallet .portfolio-item figure .link-preview:hover, #wallet .portfolio-item figure .link-details:hover {
+.wallets .portfolio-item figure .link-preview:hover, .wallets .portfolio-item figure .link-details:hover {
   background: $color-primary;
 }
 
-#wallet .portfolio-item figure .link-preview:hover i, #wallet .portfolio-item figure .link-details:hover i {
+.wallets .portfolio-item figure .link-preview:hover i, .wallets .portfolio-item figure .link-details:hover i {
   color: #fff;
 }
 
-#wallet .portfolio-item figure .link-preview {
+.wallets .portfolio-item figure .link-preview {
   left: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#wallet .portfolio-item figure .link-details {
+.wallets .portfolio-item figure .link-details {
   right: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#wallet .portfolio-item figure:hover .link-preview {
+.wallets .portfolio-item figure:hover .link-preview {
   visibility: visible;
   left: calc(50% - 44px);
 }
 
-#wallet .portfolio-item figure:hover .link-details {
+.wallets .portfolio-item figure:hover .link-details {
   visibility: visible;
   right: calc(50% - 44px);
 }
 
-#wallet .portfolio-item .portfolio-info {
+.wallets .portfolio-item .portfolio-info {
   background: #fff;
   text-align: center;
   padding: 30px;
@@ -699,7 +704,7 @@
   border-radius: 0 0 3px 3px;
 }
 
-#wallet .portfolio-item .portfolio-info h4 {
+.wallets .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   line-height: 1px;
   font-weight: 700;
@@ -707,20 +712,20 @@
   padding-bottom: 0;
 
 }
-#wallet .portfolio-item .portfolio-info .icons{
+.wallets .portfolio-item .portfolio-info .icons{
   padding-bottom: 15px;
   font-size:36px;
   color:$color-primary;
 }
-#wallet .portfolio-item .portfolio-info h4 a {
+.wallets .portfolio-item .portfolio-info h4 a {
   color:$color-primary;
 }
 
-#wallet .portfolio-item .portfolio-info h4 a:hover {
+.wallets .portfolio-item .portfolio-info h4 a:hover {
   color: #333;
 }
 
-#wallet .portfolio-item .portfolio-info p {
+.wallets .portfolio-item .portfolio-info p {
   padding: 0;
   margin: 0;
   color: #b8b8b8;
@@ -731,27 +736,27 @@
 
 /* Community Section
 --------------------------------*/
-#community {
+.community {
   padding: 60px 0;
 }
 
-#community img {
+.community img {
   max-width: 100%;
   opacity: 0.5;
   transition: 0.3s;
   padding: 15px 0;
 }
 
-#community img:hover {
+.community img:hover {
   opacity: 1;
 }
 
-#community .owl-nav, #community .owl-dots {
+.community .owl-nav, .community .owl-dots {
   margin-top: 5px;
   text-align: center;
 }
 
-#community .owl-dot {
+.community .owl-dot {
   display: inline-block;
   margin: 0 5px;
   width: 12px;
@@ -760,11 +765,11 @@
   background-color: #ddd;
 }
 
-#community .owl-dot.active {
+.community .owl-dot.active {
   background-color: $color-primary;
 }
 
-#community .owl-reddit {
+.community .owl-reddit {
   position: relative;
   top: -8px;
 }

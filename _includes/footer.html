@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-6 footer-info">
-                    <img src="{{ '/assets/images/logo.svg' | relative_url }}" height="60" alt="Dagger, by the community" />
+                    <img src="{{ '/assets/images/logo.svg' | absolute_url }}" height="60" alt="Dagger, by the community" />
                     <div class="community_wallets">
-                        <p class="mb-3">Support The Community: This site is managed by the XDAG community.</p>
+                        <p class="mb-3">{% t footer.support %}</p>
                         {% for wallet in site.community_wallets %}
                         <div>
                           <p class="community_wallets__item community_wallets__item">
@@ -17,17 +17,16 @@
                         </div>
                         {% endfor %}
                     </div>
-
                 </div>
                 <div class="col-lg-4 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>{% t footer.links %}</h4>
                     <ul>
-                        <li><a href="{{ 'index.html' | relative_url }}">Home</a></li>
-                        <li><a href="http://explorer.xdag.io/" target="_blank">Block explorer</a></li>
-                        <li><a href="{{ 'index.html#services' | relative_url }}">Mining quick start</a></li>
-                        <li><a href="{{ 'index.html#wallet' | relative_url }}">Wallets</a></li>
-                        <li><a href="{{ 'blog/index.html' | relative_url }}">News</a></li>
-                        <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md">Whitepaper</a></li>
+                        <li><a href="{% tl home %}">{% t nav.home %}</a></li>
+                        <li><a href="http://explorer.xdag.io/" target="_blank">{% t nav.explorer %}{% include lang-warn.html %}</a></li>
+                        <li><a href="{% tl home %}#{% t nav.mining %}">{% t nav.mining %}</a></li>
+                        <li><a href="{% tl home %}#{% t nav.wallet %}">{% t nav.wallet %}</a></li>
+                        <li><a href="{{ '/blog' | absolute_url }}">{% t nav.news %}{% include lang-warn.html %}</a></li>
+                        <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">{% t nav.whitepaper %}{% include lang-warn.html %}</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,10 +34,10 @@
     </div>
 </footer>
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<script src="{{ 'assets/lib/jquery/jquery.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/jquery/jquery-migrate.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/bootstrap/js/bootstrap.bundle.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/easing/easing.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/wow/wow.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/superfish.custom.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/main.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/jquery/jquery.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/jquery/jquery-migrate.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/bootstrap/js/bootstrap.bundle.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/easing/easing.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/wow/wow.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/superfish.custom.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/main.js' | absolute_url }}"></script>

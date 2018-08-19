@@ -1,7 +1,7 @@
 ---
-layout: postLayout
+layout: post
 date: "2018-07-12 08:30:00"
-image: assets/images/about-mining.jpg
+image: /assets/images/about-mining.jpg
 title: XDAG GPU Miner v0.3.0 Release
 ---
 

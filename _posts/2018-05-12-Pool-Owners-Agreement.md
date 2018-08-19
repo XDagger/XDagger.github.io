@@ -1,8 +1,8 @@
 ---
-layout: postLayout
+layout: post
 author: 
 date: "2018-05-12 10:00:00"
-image: assets/images/about-mining.png
+image: /assets/images/about-mining.png
 ---
 
 **The up-to-date version of Pool Owners' Agreement can be found on our [Wiki](https://github.com/XDagger/xdag/wiki/White-List#pool-owners-agreement).**  

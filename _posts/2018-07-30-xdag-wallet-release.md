@@ -1,7 +1,7 @@
 ---
-layout: postLayout
+layout: post
 date: "2018-07-30 19:00:00"
-image: assets/images/posts/androidwallet.png
+image: /assets/images/posts/androidwallet.png
 title: XDAG Android Wallet Release
 ---
 

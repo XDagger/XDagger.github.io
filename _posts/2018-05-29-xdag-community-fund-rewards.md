@@ -1,5 +1,5 @@
 ---
-layout: postLayout
+layout: post
 title: XDAG Community fund rewards
 date: "2018-05-29 14:00:00"
 image: "/assets/images/posts/community-fund-rewards.jpg"

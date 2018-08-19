@@ -1,0 +1,177 @@
+# Global
+
+global:
+  description: Una criptomoneda basada en DAG
+  previous: Anterior
+  next: Siguiente
+
+nav:
+  home: Inicio
+  get_started: Empezar
+  wallet: Cartera
+  mining: Mining
+  pools: Pools
+  explorer: Explorador de bloques
+  resources: Recursos
+  whitepaper: Whitepaper
+  releases: Lanzamientos
+  roadmap: Roadmap
+  news: Noticias
+  community: Comunidad
+  social_channels: Redes sociales
+  current_language: Español
+
+footer:
+  support: "Apoye a la comunidad: Este sitio está administrado por la comunidad de XDAG."
+  support_address_pre: Contribuir a XDAG
+  links: Enlaces de interés
+
+countries:
+  poland: Polonia
+  germany: Alemania
+  finland: Finlandia
+  canada: Canadá
+  netherlands: Países Bajos
+  japan: Japón
+  singapore: Singapur
+  russia: Rusia
+  china: China
+  lithuania: Lituania
+
+# Pages
+
+home:
+  meta_description: XDAG es una novedosa aplicación que utiliza la tecnología Grafo Acíclico Dirigido (DAG) que resuelve algunos de los problemas a los cuales se enfrenta la tecnología blockchain.
+  slides:
+    - title: "XDAG: Nueva criptomoneda basada en DAG"
+      content: XDAG es una novedosa aplicación que utiliza la tecnología Grafo Acíclico Dirigido (DAG) que resuelve algunos de los problemas a los cuales se enfrenta la tecnología blockchain.
+    - title: El primer DAG minable 
+      content: |
+        Bloque = transacción = dirección
+        Idea original
+        Se mina dinero nuevo cada 64 segundos
+    - title: Sin pre-minado ni ICO
+      content: XDAG ofrece tecnología punta para ofrecer una solución descentralizada a los problemas a los cuales se enfrentan otras criptomonedas. XDAG no tiene pre-minado ni ICO, y es un proyecto impulsado por la comunidad y un equipo de desarrollo innovador.ocurrencies.
+  introduction: Sobre Dagger
+  introduction_content: Dagger es parte de una nueva ola de Carteras distribuidas basadas en la infraestructura DAG, el cual es un método alternativo para enviar datos entre las personas a través de un entorno distribuido. Esto es posible sin una cadena de bloques, lo cual permite una mayor escalabilidad.
+  features:
+    - title: Minable con CPU/GPU
+      content: XDAG es minable tanto con CPU como con GPU. Esto la convierte en el primer proyecto basado en DAG minable.
+    - title: Privacidad
+      content: Los desarrolladores de XDAG están trabajando en incorporar características relacionadas con la privacidad. Esto es parte del roadmap durante el año 2018.
+    - title: Smart contracts
+      content: Los desarrolladores de XDAG están investigando la posibilidad de agregar contratos inteligentes.
+  mining: Mining quick start
+  mining_content: El primer DAG minable. Sigue las siguientes instrucciones. Si te bloqueas, echa un vistazo a nuestras redes sociales en busca de ayuda, especialmente en Discord.
+  mining_guides:
+    - title: Descargar wallet
+      content: Primero, descarga la cartera de Dagger adecuada para tu sistema operativo. Haz click para descargar.
+    - title: Aprende sobre el proceso
+      content: A continuación mira el video para seguir las instrucciones de instalación.
+    - title: Selecciona una a pool
+      content: Puedes conectar a alguno de los nodos recomendados o visitar la wiki para encontrar una lista completa de nodos recomendados.
+  software: Software
+  software_content: Enlaces de descarga de aplicaciónes relacionadas con la red de XDAG.
+  software_links: 
+    - title: Cartera Windows 64-bit
+      content: Aplicación de consola e interfaz gráfica para Windows de 64 bit (x64).
+    - title: Cartera Windows 32-bit
+      content: Aplicación de consola e interfaz gráfica para Windows de 32 bit (x86).
+    - title: Miner de GPU para Windows
+      content: Miner de GPU para Windows (x64) desarrollado por Jonano.
+    - title: Cartera MacOS
+      content: Aplicación de consola para MacOS.
+    - title: Miner de GPU para MacOS
+      content: Miner de GPU para MacOS desarrollado por Jonano.
+    - title: Cartera Android
+      content: Para Android 5.0 y superiores.
+    - title: Código fuente
+      content: Códigos fuente de XDAG.
+  roadmap: Roadmap
+  roadmap_content:
+    - timeframe: Q3 2017
+      dates: 
+        - date: Diciembre del 2017
+          events:
+            - Aplicación de línea de comandos para Linux y Windows
+            - Lanzamiento del miner, nodos completos y pool
+            - Lanzamiento de la testnet
+    - timeframe: Q1 2018
+      dates: 
+        - date: Enero del 2018
+          events:
+            - Lanzamiento de la red principal
+            - Aplicación de interfaz gráfica con miner integrado para Windows
+        - date: February 2018
+          events:
+            - Explorador de bloques desarrollado por la comunidad basado en el código original de los desarrolladores
+            - Desarrollador principal delega el proyecto a la comunidad
+            - Xdag.org está por fin completamente operacional
+            - Refactorización del código original
+        - date: March 2018
+          events:
+            - Lanzamiento de la cartera XDAG versión 0.2.0
+            - Lanzamiento de la cartera XDAG versión 0.2.1 con soporte para MAC
+            - Nuevo sitio web xdag.io
+    - timeframe: Q2 2018
+      dates: 
+        - date: Mayo del 2018
+          events:
+            - Lanzamiento de la cartera XDAG versión 0.2.2
+            - XDAG es listado en el exchange bbx.com
+            - Lanzamiento de la cartera XDAG versión 0.2.3
+        - date: Junio del 2018
+          events:
+            - Lanzamiento de la cartera XDAG versión 0.2.4
+    - timeframe: Q3 2018
+      dates: 
+        - date: Julio del 2018
+          events:
+            - Lanzamiento de la cartera XDAG versión 0.2.5 con grandes mejoras de rendimiento
+            - Lanzamiento del miner para GPU versión 0.3.0 con soporte para MAC
+            - Mejora visual y de rendimiento del explorador de bloques
+        - date: Agosto del 2018
+          events:
+            - Lanzamiento de la cartera de XDAG para Android e iOS
+    - timeframe: Futuro
+      dates: 
+        - date: ETA 2018
+          events:
+            - Despues de que el RPC sea completamente funcional, la comunidad se esforzará en listar la criptomoneda en los exchanges más destacados
+        - date: Planes futuros
+          events:
+            - Ampliación del esquipo de desarrollo
+            - Redes sociales y marketing
+  community: Comunidad
+
+
+news:
+  title: Noticias
+  description: Las últimas noticias relacionadas con XDAG.
+
+
+pools:
+  title: Pools
+  description: Pools recomendadas.
+  distribution: |
+    Distribución de 
+    las recompensas
+  distribution_pool: Comisión
+  distribution_finder: Recompensa para quien encuentra el bloque
+  distribution_contributor: Recompensa para los que contribuyen
+  distribution_community: Donación al fondo de la comunidad
+  loading: Cargando status...
+  status_on: En línea
+  status_sync: Sincronizando
+  status_init: Inicializando
+  status_down: Desconectado
+  status_unknown: No response
+  header_1: Pool
+  header_2: Propietario
+  header_3: Dirección
+  header_4: Localización
+  header_5: |
+      Distribución de
+      las recompensas
+  header_6: Estado de la red
+  # continues in pools/reward-distribution.md

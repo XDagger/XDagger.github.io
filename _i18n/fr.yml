@@ -1,0 +1,177 @@
+# Global
+
+global:
+  description: Une nouvelle Crypto-monnaie basé sur le DAG
+  previous: Precedent
+  next: Suivant
+
+nav:
+  home: Home
+  get_started: Commencer
+  wallet: Portefeuille
+  mining: Minage
+  pools: Pools
+  explorer: Block explorer
+  resources: Resources
+  whitepaper: Whitepaper
+  releases: Releases
+  roadmap: Roadmap
+  news: News
+  community: Communité
+  social_channels: Réseau Sociaux
+  current_language: "Le français"
+
+footer:
+  support: "Soutenez la communauté: Ce site est géré par la communauté XDAG."
+  support_address_pre: Contribuez au projet XDAG
+  links: Lien utiles
+
+countries:
+  poland: Pologne
+  germany: Allemagne
+  finland: Finlande
+  canada: Canada
+  netherlands: Pays-Bas
+  japan: Japon
+  singapore: Singapour
+  russia: Russie
+  china: Chine
+  lithuania: Lituanie
+
+# Pages
+
+home:
+  meta_description: XDAG est une nouvelle application utilisant la technologie du graphe orienté acyclique qui résout les problémes lrencontré par la technologie blockchain. 
+  slides:
+    - title: "XDAG: Une nouvelle cryptomonnaie basée sur le DAG"
+      content: XDAG est une nouvelle application utilisant la technologie du graphe orienté acyclique qui résout les problémes lrencontré par la technologie blockchain. 
+    - title: La premiere monnaie basée sur le DAG que l'on peut miner.
+      content: |
+        Block = transaction = addresse
+        Idée d'origine de la chaine principale
+        Nouvelle monnaie minable toute les 64 secondes
+    - title: Pas de pré-minage ou d'ICO
+      content: XDAG offre une technologie de pointe pour offrir une solution décentralisée aux problèmes rencontrés par les autres cryptomonnaies. XDAG n'a pas de pré-minage ou d'ICO, et est un véritable projet axé sur la communauté, animé par un objectif commun et une équipe de développement innovante.
+  introduction: A propos de Dagger
+  introduction_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
+  features:
+    - title: CPU/GPU Mineable
+      content: Vous pouvez miner le XDAG avec votre CPU ou votre GPU. Cela en fait le premier projet de DAG que l'on peut miner.
+    - title: Vie privée
+      content: Nous travailons actuellement pour incorporer des fonction de protection de la vie privée .Cela fait partie de notre feuille de route 2018.
+    - title: Contrat intelligents
+      content: Nous recherchons la possibilitée d'ajouter la fonction de contrats intelligents au réseau XDAG.
+  mining: Mining quick start
+  mining_content: La premiere monnaie basée sur le DAG que l'on peut miner. Suivez les instructions suivante. Si vous etes coincé, n'hésitez pas a nous rejoindre sur nos réseau sociaux, principalement sur Discord.
+  mining_guides:
+    - title: Télécharger le portefeuille
+      content: Premierement, téléchargez le mineur et le portefeuille correspondant a votre systeme d'exploitation. Cliquez pour télécharger.
+    - title: En savoir plus
+      content: Regardez une vidéo explicative de l'installation .
+    - title: Selectionner une pool
+      content: Vous pouvez vous connecter a une de nos pool contributrice, ou visiter notre wiki pour retrouver la liste complete.
+  software: Logiciel
+  software_content: Lien téléchargeable d'applications pour intéragir avec le réseau XDAG.
+  software_links: 
+    - title: Portefeuille pour Windows 64-bit 
+      content: 64 bit Windows Console and GUI executables (x64).
+    - title: Portefeuille pour Windows 32-bit 
+      content: 32 bit Windows Console and GUI executables (x86).
+    - title: Mineur GPU pour windows 
+      content: GPU miner by Jonano for Windows (x64).
+    - title: Portefeuille pour MacOS 
+      content: Portefeuille en ligne de commande pour MacOS.
+    - title: Mineur GPU pour MacOS 
+      content: GPU Miner by Jonano for MacOS.
+    - title: Portefeuille Android 
+      content: Pouur Android 5.0 et plus récent.
+    - title: Sources
+      content: Sources for XDAG software and codebases.    
+  roadmap: Feuille de route
+  roadmap_content:
+    - timeframe: Q3 2017
+      dates: 
+        - date: Decembre 2017
+          events:
+            - CLI pour Windows et Linux
+            - Mineur, noeud complet et logiciel de pool
+            - Lancmeent du testnet
+    - timeframe: Q1 2018
+      dates: 
+        - date: Janvier 2018
+          events:
+            - Lancement du mainnet
+            - Portefeuille avec GUI et mineur intégré pour Windows.
+        - date: Fevrier 2018
+          events:
+            - La communautée a developpé un block explorer basé sur le code original du developeur.
+            - Le dévelopeur original quitte le projet et le confie a la communautée.
+            - Xdag.org est le premier site crée
+            - Le code original commence a etre nettoyé
+        - date: Mars 2018
+          events:
+            - Parution du portefeuille XDAG 0.2.0
+            - Parution du portefeuille XDAG 0.2.1 avec le support de MacOS
+            - Lancement du nouveau site sur notre nouveau domaine xdag.io
+    - timeframe: Q2 2018
+      dates: 
+        - date: Mai 2018
+          events:
+            - Parution du portefeuille XDAG 0.2.2
+            - XDAG est ajouté au site d'échange de cryptomonnaiegets bbx.com 
+            - Parution du portefeuille XDAG 0.2.3
+        - date: Junin 2018
+          events:
+            - Parution du portefeuille XDAG 0.2.4
+    - timeframe: Q3 2018
+      dates: 
+        - date: Juillet 2018
+          events:
+            - Parution du portefeuille XDAG 0.2.5 avec des modifications augmentant considérablement ses performances 
+            - Parution du mineur GPU 0.3.0 avec MAC support
+            - Refonte visuelle et amélioration du block explorer
+        - date: Aout 2018
+          events:
+            - Parution des portefeuille Android et iOS 
+    - timeframe: Future
+      dates: 
+        - date: ETA 2018
+          events:
+            - Dés que nous aurons finalisé le dévelopement de notre RPC, la comunautée vas faire les démarches pour etre listé sur d'autre échanges
+        - date: Future plans
+          events:
+            - Expansion of the development team
+            - Social media and marketing
+  community: Community
+
+
+news:
+  title: News
+  description: Les dernieres nouvelles de la communauté.
+
+
+pools:
+  title: Pools
+  description: Mining pool qui contribue au dévelopement actif du réseau.
+  distribution: |
+    Reward 
+    distribution
+  distribution_pool: Frais de la pool
+  distribution_finder: Récompense du mineur ayant résolu le bloc
+  distribution_contributor: Récompense pour avoir contribué a miner le bloc
+  distribution_community: Donation au fond de dévelopement
+  loading: Loading status...
+  status_on: Operational
+  status_sync: Synchronizing
+  status_init: Initializing
+  status_down: Offline
+  status_unknown: No response
+  header_1: Pool
+  header_2: Owner
+  header_3: Address
+  header_4: Location
+  header_5: |
+      Reward 
+      distribution
+  header_6: Network status
+  # continues in pools/reward-distribution.md

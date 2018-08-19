@@ -1,0 +1,173 @@
+# Global
+
+global:
+  description: En ny DAG-baserad kryptovaluta
+  previous: Föregående
+  next: Nästa
+
+nav:
+  home: Hem
+  get_started: Komma igång
+  wallet: Plånbok
+  mining: Mining
+  pools: Pools
+  explorer: Block explorer
+  resources: Resurser
+  whitepaper: Whitepaper
+  releases: Releases
+  roadmap: Roadmap
+  news: Nyheter
+  community: Community
+  social_channels: Sociala medier
+  current_language: Svenska
+
+footer:
+  support: "Stöd communityt: Denna hemsida förvaltas ideelt av XDAG communityt."
+  support_address_pre: Bidra med XDAG
+  links: Användbara länkar
+
+countries:
+  poland: Polen
+  germany: Tyskland
+  finland: Finland
+  canada: Kanada
+  netherlands: Nederländerna
+  japan: Japan
+  singapore: Singapore
+  russia: Ryssland
+  china: Kina
+  lithuania: Litauen
+
+# Pages
+
+home:
+  meta_description: XDAG är en ny applikation som implementerar Directed Acyclic Graph (DAG)-teknologi som löser de problem som blockchain-tekniken står inför.
+  slides:
+    - title: "XDAG: En ny DAG-baserad kryptovaluta"
+      content: XDAG är en ny applikation som implementerar Directed Acyclic Graph (DAG)-teknologi som löser de problem som blockchain-tekniken står inför.
+    - title: DAG-mining
+      content: |
+        Block = transaktion = adress
+        Originell idé för huvudkedjan (main chain)
+        Ny valuta genereras varje 64 sekunder
+    - title: Ingen pre-mine eller ICO
+      content: XDAG erbjuder högteknologisk teknik för att erbjuda en decentraliserad lösning för problemen med andra kryptovalutor. XDAG har ingen pre-mine eller ICO, och är ett sant community-projekt som riktas mot ett gemensamt mål och innovativt utvecklingsteam.
+  introduction: Om Dagger
+  introduction_content: Dagger är en del av en ny våg av Distributed Ledger-projekt baserade på en DAG-infrastruktur. DAG, eller Directed acyclic graph, är en alternativ metod för att skicka data bland människor inom en distribuerad, decentraliserad miljö. Detta görs utan blockchain, vilket möjliggör större skalbarhet.
+  features:
+    - title: CPU/GPU Mining
+      content: XDAG är både CPU och GPU minbar. Det gör XDAG till det första DAG-projektet med möjlighet för mining.
+    - title: Privat integritet
+      content: XDAG arbetar med att integrera sekretessfunktioner. Dessa är en del av roadmapen för 2018.
+    - title: Smart contracts
+      content: XDAG undersöker möjligheten att lägga till smarta kontraktsfunktioner.
+  mining: Mining snabbstart
+  mining_content: Den första DAG-teknologin med stöd för mining. Följ stegen nedan. Om du fastnar, kolla in våra sociala kanaler för hjälp, särskilt Discord.
+  mining_guides:
+    - title: Ladda ner en plånbok
+      content: Ladda ner en Dagger miner & plånbok som passar ditt operativsystem. Klicka för att ladda ner.
+    - title: Lär dig om processen
+      content: Följ sedan videoinställningsguiden.
+    - title: Välj en pool
+      content: Du kan ansluta till en pool, eller besöka vår wiki för en komplett lista över godkända pooler.
+  software: Programvara
+  software_content: Nerladdningslänkar för applikationer som interagerar med XDAG-nätverket.
+  software_links: 
+    - title: Windows 64-bit plånbok
+      content: 64 bit Windows Console och GUI exekverbara filer (x64).
+    - title: Windows 32-bit wallet
+      content: 32 bit Windows Console och GUI exekverbara filer (x86).
+    - title: Windows GPU miner
+      content: GPU miner av Jonano för Windows (x64).
+    - title: MacOS plånbok
+      content: MacOS textbaserad användargränssnitts plånbok.
+    - title: MacOS GPU miner
+      content: GPU Miner av Jonano för MacOS.
+    - title: Android plånbok
+      content: För Android 5.0 och nyare versioner.
+    - title: Källkod
+      content: Källkod för XDAG-programvara och kodbaser.    
+  roadmap: Roadmap
+  roadmap_content:
+    - timeframe: Q3 2017
+      dates: 
+        - date: December 2017
+          events:
+            - CLI för Windows och Linux
+            - Miner, full node och pool release
+            - Testnet start
+    - timeframe: Q1 2018
+      dates: 
+        - date: Januari 2018
+          events:
+            - Mainnet start
+            - GUI plånbok med integrerad miner för Windows
+        - date: Februari 2018
+          events:
+            - Communityt utvecklade en block explorer baserad på originalutvecklarens kod
+            - Originalutvecklaren ger äganderätten till projektet till communityt
+            - Xdag.io är fullt fungerande
+            - Den ursprungliga kodens läsbarhet förbättras
+        - date: Mars 2018
+          events:
+            - Release av XDAG plånbok 0.2.0
+            - Release av XDAG plånbok 0.2.1 med MacOS support
+            - Helt ny webbplats för vår nya domän xdag.io
+    - timeframe: Q2 2018
+      dates: 
+        - date: Maj 2018
+          events:
+            - Release av XDAG plånbok 0.2.2
+            - XDAG listas på BBX.com kryptovalutamarknad
+            - Release av XDAG plånbok 0.2.3
+        - date: Juni 2018
+          events:
+            - Release av XDAG plånbok 0.2.4
+    - timeframe: Q3 2018
+      dates: 
+        - date: Juli 2018
+          events:
+            - Release av XDAG plånbok 0.2.5 med stora prestationsförbättringar
+            - GPU Miner 0.3.0 release med MacOS support
+            - Visuell och prestanda uppdatering av block explorer
+        - date: Augusti 2018
+          events:
+            - Release av XDAG Android och iOS plånböcker 
+    - timeframe: Kommande
+      dates: 
+        - date: ETA 2018
+          events:
+            - Skapa RPC för att kunna lista XDAG på flera marknader
+        - date: Framtida planer
+          events:
+            - Expandera utvecklingsteamet
+            - Marknadsföra XDAG
+  community: Community
+
+
+news:
+  title: Nyheter
+  description: De senaste XDAG nyheterna.
+
+
+pools:
+  title: Pools
+  description: Utvalda XDAG mining pools.
+  distribution: Belöningsfördelning
+  distribution_pool: Poolavgift
+  distribution_finder: Block hittarens belöning
+  distribution_contributor: Bidragsbelöning
+  distribution_community: Donation till communityts fond
+  loading: Laddar status...
+  status_on: Operativ
+  status_sync: Synkroniserar
+  status_init: Initierar
+  status_down: Offline
+  status_unknown: Inget svar
+  header_1: Pool
+  header_2: Ägare
+  header_3: Adress
+  header_4: Plats
+  header_5: Belöningsfördelning
+  header_6: Nätverksstatus
+  # continues in pools/reward-distribution.md

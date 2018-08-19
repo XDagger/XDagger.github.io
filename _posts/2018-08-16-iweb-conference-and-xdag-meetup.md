@@ -1,5 +1,5 @@
 ---
-layout: postLayout
+layout: post
 title: Progress in China — iWeb conference and XDAG meetup
 date: "2018-08-16 12:00:00"
 image: "/assets/images/posts/iweb2018/iweb.png"
@@ -17,17 +17,10 @@ We are excited to announce one of our community developers Frozen,  was represen
 A special thank you to all who contributed XDAG so Airdrops could be made possible this weekend:  
 [bbx.com](https://bbx.com/), [coinbat.com](https://www.coinbat.com/), [feipool.xyz](http://www.feipool.xyz/), [vspool.com](https://www.vspool.com/), [xdagcn.com](http://www.xdagcn.com/), [xdag.in](http://www.xdag.in), 大胖鱼, 王备, Calvin.
 
-<div class="img-gallery mb-5" markdown="0">
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/conf_1.jpg' | relative_url }}" data-lightbox="conf">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/conf_1.jpg' | relative_url }})"></div>
-  </a>
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/conf_2.jpg' | relative_url }}" data-lightbox="conf">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/conf_2.jpg' | relative_url }})"></div>
-  </a>
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/conf_3.jpg' | relative_url }}" data-lightbox="conf">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/conf_3.jpg' | relative_url }})"></div>
-  </a>
-</div>
+{% include image-gallery.html 
+  images="/assets/images/posts/iweb2018/conf_1.jpg, /assets/images/posts/iweb2018/conf_2.jpg, /assets/images/posts/iweb2018/conf_3.jpg" 
+  group="conf"
+%}
 
 #### XDAG Meetup
     
@@ -47,20 +40,7 @@ On this note Frozen has said that XDAG will be very busy over the next month or 
 
 The community would like to say many thanks for representing us this weekend as well A big thanks to bCamp for providing meeting rooms and a variety of snacks for the team! Thanks bCamp for the long-term support of the XDAG community! This is all very exciting news and the team is very excited about welcoming more contributors to the project, the more we grow, firm up our technology, work hard on our social platforms and outreach, the moons the limit. 
 
-<div class="img-gallery mb-5" markdown="0">
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_1.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_1.jpg' | relative_url }})"></div>
-  </a>
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_2.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_2.jpg' | relative_url }})"></div>
-  </a>
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_3.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_3.jpg' | relative_url }})"></div>
-  </a>
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_4.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_4.jpg' | relative_url }})"></div>
-  </a>
-  <a class="img-gallery__item" href="{{ 'assets/images/posts/iweb2018/meetup_5.jpg' | relative_url }}" data-lightbox="meetup">
-    <div class="img-gallery__img" style="background-image: url({{ 'assets/images/posts/iweb2018/meetup_5.jpg' | relative_url }})"></div>
-  </a>
-</div>
+{% include image-gallery.html 
+  images="/assets/images/posts/iweb2018/meetup_1.jpg, /assets/images/posts/iweb2018/meetup_2.jpg, /assets/images/posts/iweb2018/meetup_3.jpg, /assets/images/posts/iweb2018/meetup_4.jpg, /assets/images/posts/iweb2018/meetup_5.jpg" 
+  group="meetup"
+%}

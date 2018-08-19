@@ -1,0 +1,30 @@
+{% include head.html %}
+    <link href="{{ '/assets/css/news.css' | absolute_url }}" rel="stylesheet">
+    <link href="{{ '/assets/lib/lightbox/css/lightbox.min.css' | absolute_url }}" rel="stylesheet">
+</head>
+
+<body>
+{% include header.html %}
+<main id="main">
+    <section id="news">
+        <div class="container">
+            <div class="section-header wow fadeInUp">
+                <div class="tit"><h3><a href="{{ post.url }}">{{page.title}}</a></h3></div>
+            </div>
+
+            <div class="news" align="pull-left">
+                <section class="post-wrapper">
+                    <p class="post-date"><div class="month"><span>{{ page.date | date: "%m" }}</span>-<span>{{ page.date | date: "%d" }}</span></div><div class="year">{{ page.date | date: "%Y" }}</div></p>
+                </section>
+                <article class="post-content">
+                    {{ content }}
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+{% include footer.html %}
+<script src="{{ '/assets/lib/lazysizes/lazysizes.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/lightbox/js/lightbox.min.js' | absolute_url }}"></script>
+</body>
+</html>

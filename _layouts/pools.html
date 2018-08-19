@@ -1,12 +1,12 @@
 {% include head.html %}
-    <link href="{{ 'assets/css/pools.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/pools.css' | absolute_url }}" rel="stylesheet">
 </head>
 
 <body>
 {% include header.html %}
 <main id="main">
   <section class="pool">
-    <img class="pool__graphic pool__graphic--bg" src="{{ 'assets/images/banner/2.png' | relative_url }}">
+    <img class="pool__graphic pool__graphic--bg" src="{{ '/assets/images/banner/2.png' | absolute_url }}">
     <svg version="1.1" class="pool__graphic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 1920 1280" style="enable-background:new 0 0 1920 1280;" xml:space="preserve">
       <polyline points="1541.7,546 1511.7,514 1478.3,518.7 1418.3,493.3 1346.3,433.3 1284,480 1249,444.5 
@@ -38,39 +38,30 @@
     </svg>
 
     <header class="section-header">
-      <h3>{{ page.title }}</h3>
-      <p>Featured XDAG mining pools.</p>
+      <h3>{% t pools.title %}</h3>
+      <p>{% t pools.description %}</p>
     </header>
 
     <div class="text-center">
       <div class="pool__info-header" data-toggle="collapse" href="#reward" role="button" aria-expanded="false" aria-controls="payment">
-        <i class="pool__reward-icon ion-md-information-circle-outline"></i>Reward<br>distribution
+        <i class="pool__reward-icon ion-md-information-circle-outline"></i><p>{{ site.translations[site.lang].pools.distribution | newline_to_br }}</p>
       </div>
     </div>
     <div class="collapse" id="reward">
-      <div class="pool__info container">
-        <p>When you mine XDAG in a pool and a block is found, the block rewards (1024 XDAG) are distributed according to the pool's setup. Percentages displayed in the area below represent where a portion of the reward goes to in this order:</p>
-        <ol class="pl-3">
-          <li>Pool fee</li>
-          <li>Reward to miner who found the block</li>
-          <li>Reward to miners who helped finding the block</li>
-          <li>Community fund donation</li>
-        </ol>
-        <p><strong>The remaining amount</strong> is paid out to <strong>everyone</strong> mining on the pool.</p>
-      </div>
+      <div class="pool__info container">{% tf pools/reward-distribution.md %}</div>
     </div>
 
     <div class="pool__table js-pool-list">
       <div class="pool__header-area js-pool-header">
         <div class="pool__row">
-          <div class="pool__header">Pool</div>
-          <div class="pool__header">Owner</div>
-          <div class="pool__header">Address</div>
-          <div class="pool__header">Location</div>
+          <div class="pool__header">{% t pools.header_1 %}</div>
+          <div class="pool__header">{% t pools.header_2 %}</div>
+          <div class="pool__header">{% t pools.header_3 %}</div>
+          <div class="pool__header">{% t pools.header_4 %}</div>
           <div class="pool__header text-right">
-            <i class="pool__reward-icon ion-md-information-circle-outline" data-toggle="collapse" href="#reward" role="button" aria-expanded="false" aria-controls="reward"></i>Reward<br>distribution
+            <i class="pool__reward-icon ion-md-information-circle-outline" data-toggle="collapse" href="#reward" role="button" aria-expanded="false" aria-controls="reward"></i>{{ site.translations[site.lang].pools.header_5 | newline_to_br }}
           </div>
-          <div class="pool__header">Network status</div>
+          <div class="pool__header">{% t pools.header_6 %}</div>
         </div>
       </div>
 
@@ -79,7 +70,7 @@
       <div class="pool__row-group js-pool-group">
         {% for pool in pool_owner.pools %}
         <div class="pool__row{% if forloop.index > 1%} collapse js-pool-group-{{ owner_index }}{% endif %}">
-          <div class="pool__data pool__data--name"><div class="pool__row-header">Pool:</div>
+          <div class="pool__data pool__data--name"><div class="pool__row-header">{% t pools.header_1 %}:</div>
             {% if pool.website %}<a href="{{ pool.website }}" target="_blank">{% endif %}
               {{ pool.name }}
             {% if pool.website %}</a>{% endif %}
@@ -87,20 +78,21 @@
               <i class="pool__group-toggle ion-ios-arrow-dropdown" data-toggle="collapse" data-target=".js-pool-group-{{ owner_index }}" role="button" aria-expanded="false" aria-controls="js-group-{{ owner_index }}"></i>
             {% endif %}
           </div>
-          <div class="pool__data"><div class="pool__row-header">Owner:</div>{{ pool_owner.owner }}</div>
-          <div class="pool__data"><div class="pool__row-header">Address:</div>{% for address in pool.address %}<span class="pool__address">{{ address }}</span>{% endfor %}</div>
-          <div class="pool__data"><div class="pool__row-header">Country:</div>{{ pool.country }}</div>
+          <div class="pool__data"><div class="pool__row-header">{% t pools.header_2 %}:</div>{{ pool_owner.owner }}</div>
+          <div class="pool__data"><div class="pool__row-header">{% t pools.header_3 %}:</div>{% for address in pool.address %}<span class="pool__address">{{ address }}</span>{% endfor %}</div>
+          {% capture country_translated %}{% t countries.{{ pool.country | downcase }} %}{% endcapture %}
+          <div class="pool__data"><div class="pool__row-header">{% t pools.header_4 %}:</div>{{ country_translated | default: pool.country }}</div>
           <div class="pool__data pool__data--reward">
-            <div class="pool__row-header">Reward distribution:</div>
+            <div class="pool__row-header">{% t pools.header_5 %}:</div>
             <div class="d-inline-block text-nowrap">
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_pool }}% Pool fee">{{ pool.fee_pool }}%</span>
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_miner_finder }}% Block finder reward">{{ pool.fee_miner_finder }}%</span>
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_miner_contributor }}% Contributor reward">{{ pool.fee_miner_contributor }}%</span>
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_community }}% Community fund donation">{{ pool.fee_community }}%</span>
+              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_pool }}% {% t pools.distribution_pool %}">{{ pool.fee_pool }}%</span>
+              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_miner_finder }}% {% t pools.distribution_finder %}">{{ pool.fee_miner_finder }}%</span>
+              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_miner_contributor }}% {% t pools.distribution_contributor %}">{{ pool.fee_miner_contributor }}%</span>
+              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_community }}% {% t pools.distribution_community %}">{{ pool.fee_community }}%</span>
             </div>
           </div>
-          <div class="pool__data js-pool-state" data-state="{{ pool.state }}"><div class="pool__row-header">Network Status:</div>
-            <span class="pool__state-icon pool__state-icon--load xdag-tooltip" data-tooltip="Loading status...">
+          <div class="pool__data js-pool-state" data-state="{{ pool.state }}"><div class="pool__row-header">{% t pools.header_6 %}:</div>
+            <span class="pool__state-icon pool__state-icon--load xdag-tooltip" data-tooltip="{% t pools.loading %}">
               <i class="ion-md-sync"></i>
             </span>
           </div>
@@ -110,11 +102,19 @@
       {% endfor %}
     </div>
 
-    <p class="text-center">All the pools featured here donate a percentage of block rewards to the community fund.<br>
-      The complete list of community approved pools can be found on our <a href="https://github.com/XDagger/xdag/wiki/White-List">wiki</a>.</p>
+    <div class="text-center">{% tf pools/footer.md %}</div>
   </section>
 </main>
 {% include footer.html %}
-<script src="{{ 'assets/js/pools.js' | relative_url }}"></script>
+<script type="text/javascript">
+  var poolStatusMsg = {
+    on: '{% t pools.status_on %}',
+    sync: '{% t pools.status_sync %}',
+    init: '{% t pools.status_init %}',
+    down: '{% t pools.status_down %}',
+    unknown: '{% t pools.status_unknown %}'
+  };
+</script>
+<script src="{{ '/assets/js/pools.js' | absolute_url }}"></script>
 </body>
 </html>

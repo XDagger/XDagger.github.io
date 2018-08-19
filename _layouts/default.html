@@ -1,7 +1,7 @@
 {% include head.html %}
-    <link href="{{ 'assets/lib/owlcarousel/assets/owl.carousel.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/lib/lightbox/css/lightbox.min.css' | relative_url }}" rel="stylesheet">
-    <link href="{{ 'assets/css/home.css' | relative_url }}" rel="stylesheet">
+    <link href="{{ '/assets/lib/owlcarousel/assets/owl.carousel.min.css' | absolute_url }}" rel="stylesheet">
+    <link href="{{ '/assets/lib/lightbox/css/lightbox.min.css' | absolute_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/home.css' | absolute_url }}" rel="stylesheet">
 </head>
 
 <body>
@@ -11,65 +11,68 @@
     <div class="videoclose"><i class="ion-ios-close-circle-outline"></i></div>
     <iframe src="" frameborder="0" width="100%" height="100%"></iframe>
 </div>
-{% include bannerIndex.html %}
+{% include banner.html %}
 <main id="main">
     <section id="about">
         <div class="container">
             <header class="section-header">
-                <h3>{{ page.dag_title }}</h3>
-                <p>{{ page.dag_content }}</p>
+                <h3>{% t home.introduction %}</h3>
+                <p>{% t home.introduction_content %}</p>
             </header>
             <div class="row about-cols">
-                {% for d in site.data.dagger %}
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="{{d.delay}}">
+                {% for feature in site.translations[site.lang].home.features %}
+                {% assign feature_d = site.data.features[forloop.index0] %}
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="{{ feature_d.delay }}">
                     <div class="about-col">
                         <div class="img">
-                            <img src="{{ d.pic | relative_url }}" alt="" class="img-fluid">
+                            <img src="{{ feature_d.img | absolute_url }}" alt="" class="img-fluid">
                             <div class="icon"><i class="ion-ios-unlock"></i></div>
                         </div>
-                        <h2 class="title">{{ d.name }}</h2>
-                        <p>{{ d.content }}</p>
+                        <h2 class="title">{{ feature.title }}</h2>
+                        <p>{{ feature.content }}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </section>
-    <section id="services">
+    <section class="mining" id="{% t nav.mining %}">
         <div class="container">
             <header class="section-header wow fadeInUp">
-                <h3>{{ page.mine_title }}</h3>
-                <p>{{ page.mine_content }}</p>
+                <h3>{% t home.mining %}</h3>
+                <p>{% t home.mining_content %}</p>
             </header>
             <div class="row">
-                {% for d in site.data.mine %}
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="{{ d.delay }}">
-                    <div class="icon"><i class="{{ d.pic }}"></i></div>
+                {% for guide in site.translations[site.lang].home.mining_guides %}
+                {% assign guide_d = site.data.mining-guides[forloop.index0] %}
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="{{ guide_d.delay }}">
+                    <div class="icon"><i class="{{ guide_d.icon }}"></i></div>
                     <h4 class="title">
-                        {% if d.index == 0 %}<a href="#wallet">{{ d.name }}</a>{% endif%}
-                        {% if d.index == 1 %}<a class="playvideo">{{ d.name }}</a>{% endif%}
-                        {% if d.index == 2 %}<a class="pool" href="pools">{{ d.name }}</a>{% endif%}
+                        {% if forloop.index0 == 0 %}<a href="#{% t nav.wallet %}">{{ guide.title }}</a>{% endif %}
+                        {% if forloop.index0 == 1 %}<a class="playvideo">{{ guide.title }}</a>{% endif %}
+                        {% if forloop.index0 == 2 %}<a href="{% tl pools %}" class="pool">{{ guide.title }}</a>{% endif %}
                     </h4>
-                    <p class="description">{{ d.content }}</p>
+                    <p class="description">{{ guide.content }}</p>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </section>
-    <section id="wallet"  class="section-bg" >
+    <section id="{% t nav.wallet %}" class="wallets section-bg" >
         <div class="container">
             <header class="section-header">
-                <h3 class="section-title">{{ page.wallet_title }}</h3>
-                <p>{{ page.wallet_content }}</p>
+                <h3 class="section-title">{% t home.software %}</h3>
+                <p>{% t home.software_content %}</p>
             </header>
             <div class="row justify-content-center portfolio-container">
-                {% for d in site.data.wallet %}
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="{{ d.delay }}">
+                {% for software in site.translations[site.lang].home.software_links %}
+                {% assign software_d = site.data.software[forloop.index0] %}
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="{{ software_d.delay }}">
                     <div class="portfolio-wrap">
                         <div class="portfolio-info">
-                            <div class="icons"><i class="{{ d.pic }}"></i></div>
-                            <h4><a href="{{d.href}}" target="_blank">{{ d.name }}</a></h4>
-                            <p>{{ d.content }}</p>
+                            <div class="icons"><i class="{{ software_d.icon }}"></i></div>
+                            <h4><a href="{{ software_d.href }}" target="_blank">{{ software.title }}</a></h4>
+                            <p>{{ software.content }}</p>
                         </div>
                     </div>
                 </div>
@@ -78,24 +81,26 @@
         </div>
     </section>
     {% include roadmap.html %}
-    <section id="community" class="wow fadeInUp">
+    <section id="{% t nav.community %}" class="community wow fadeInUp">
         <div class="container">
             <header class="section-header">
-                <h3>Community</h3>
+                <h3>{% t home.community %}</h3>
             </header>
             <div class="owl-carousel clients-carousel">
                 {% for d in site.data.community %}
-                <a href="{{ d.href }}" class="owl-{{ d.alt }}" target="_blank"><img src="{{ d.pic | relative_url }}" alt="{{ d.alt }} community"></a>
+                <a href="{{ d.href }}" class="owl-{{ d.alt }}" target="_blank">
+                  <img src="{{ d.pic | absolute_url }}" alt="{{ d.alt }} community">
+                </a>
                 {% endfor %}
             </div>
         </div>
     </section>
 </main>
 {% include footer.html %}
-<script src="{{ 'assets/lib/waypoints/waypoints.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/owlcarousel/owl.carousel.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/lightbox/js/lightbox.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/lib/touchSwipe/jquery.touchSwipe.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/home.js' | relative_url }}"></script>
+<script src="{{ '/assets/lib/waypoints/waypoints.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/owlcarousel/owl.carousel.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/lightbox/js/lightbox.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/touchSwipe/jquery.touchSwipe.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/home.js' | absolute_url }}"></script>
 </body>
 </html>

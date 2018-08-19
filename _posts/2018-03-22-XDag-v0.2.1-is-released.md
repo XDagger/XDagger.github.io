@@ -1,5 +1,5 @@
 ---
-layout: postLayout
+layout: post
 author: Xdag.io
 ---
 

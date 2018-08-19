@@ -1,23 +1,23 @@
-- pic: assets/images/community/discord.jpg
+- pic: /assets/images/community/discord.jpg
   href: https://discord.gg/YxXUVQJ
   alt: discord
 
-- pic: assets/images/community/rd.jpg
+- pic: /assets/images/community/rd.jpg
   href: https://www.reddit.com/r/xdag/
   alt: reddit
 
-- pic: assets/images/community/github.jpg
+- pic: /assets/images/community/github.jpg
   href: https://github.com/orgs/XDagger
   alt: github
 
-- pic: assets/images/community/telegram.jpg
+- pic: /assets/images/community/telegram.jpg
   href: https://t.me/dagger_cryptocurrency
   alt: telegram
 
-- pic: assets/images/community/fb.jpg
+- pic: /assets/images/community/fb.jpg
   href: https://www.facebook.com/XDAG.Dagger.Community/
   alt: facebook
 
-- pic: assets/images/community/twt.jpg
+- pic: /assets/images/community/twt.jpg
   href: https://twitter.com/XDAG_Community
   alt: twitter
