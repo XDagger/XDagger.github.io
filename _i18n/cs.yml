@@ -1,0 +1,178 @@
+# Global
+
+global:
+  description: Nová kryptomìna založena na principu DAG
+  previous: Zpìt
+  next: Další
+
+nav:
+  home: Domù
+  get_started: Zaèínáme
+  wallet: Penìženka
+  mining: Tìžba
+  pools: Pooly
+  explorer: Block explorer
+  resources: Zdroje
+  whitepaper: Whitepaper
+  releases: Novì vydané
+  roadmap: Plán
+  news: Novinky
+  community: Komunita
+  social_channels: Sociální kanály
+  current_language: Čeština
+
+footer:
+  support: "Podpoø komunitu: Tato sí je spravována XDAG komunitou."
+  support_address_pre: Pøispìt XDAG
+  links: Užiteèné odkazy
+
+countries:
+  poland: Polsko
+  germany: Nìmecko
+  finland: Finsko
+  canada: Kanada
+  netherlands: Nizozemsko
+  japan: Japonsko
+  singapore: Singapur
+  russia: Rusko
+  china: Èína
+  lithuania: Litva
+  czechia: Èeská republika
+
+# Pages
+
+home:
+  meta_description: XDAG je novou aplikací založená na principu DAG (øízený acyklický graf), tato technologie øeší problémy, které jinak trápí v souèasné dobì technologii blockchain.
+  slides:
+    - title: "XDAG: Nová kryptomìna založena na principu DAG"
+      content: XDAG je novou aplikací založená na principu DAG (øízený acyklický graf), tato technologie øeší problémy, které jinak trápí v souèasné dobì technologii blockchain.
+    - title: První tìžitelný DAG 
+      content: |
+        Blok = transakce = adresa
+        Pùvodní nápad hlavního øetìzce
+        Tìžba nových mincí každých 64 sekund
+    - title: Žádná pre-mine nebo pøedprodej
+      content: XDAG nabízí bleeding edge technologii pro decentralizované øešení problémù, které trápí ostatní kryptomìny. XDAG nemá žádnou pre-mine nebo pøedprodej. Jedná se o projekt, jež øídí komunita, kterou pojí spoleèný cíl a inovativní vývojový team.
+  introduction: O Daggeru
+  introduction_content: Dagger je souèástí nové vlny projektù Distributed Ledger založených na struktuøe DAG. DAG, neboli øízený acyklický graf, je alternativní metoda pro zasílání dat mezi lidmi v distribuovaném, decentralizovaném prostøedí. Tohoto je docíleno bez použití blockchain technologie, což umožòuje vìtší škálovatelnost.
+  features:
+    - title: Tìžitelný pomoci CPU/GPU
+      content: XDAG je možné tìžit jak pomocí CPU, tak GPU. Je to první tìžitelný DAG projekt.
+    - title: Soukromí
+      content: XDAG pracuje na zaèlenìní vlastností soukromí. Je to souèást plánu pro rok 2018.
+    - title: Smart contracts
+      content: XDAG zkoumá možnosti zaèlenit fungování Smart contractù.
+  mining: Jak zaèít s tìžbou
+  mining_content: První tìžitelný DAG. Následujte instrukce uvedené níže. Pokud se nìkde zaseknete, navštivte náš sociální kanál pro pomoc, nejlépe na Discordu.
+  mining_guides:
+    - title: Stažení penìženky
+      content: Nejdøíve stáhnìte Dagger program pro tìžbu a penìženku pro Váš operaèním systém. Stiskni pro stažení.
+    - title: Informace o procesu
+      content: Dále shlédnìte a následujte jednoduchý video-manuál.
+    - title: Vyberte pool
+      content: Mùžete se pøipojit k vybranému poolu a nebo navštivte naší wiki pro kompletní list schválených poolù.
+  software: Software
+  software_content: Adresy pro stažení aplikací, které interagují se sítí XDAG.
+  software_links: 
+    - title: Penìženka pro Windows 64-bit
+      content: 64-bitová Windows konzole a GUI rozhraní (x64).
+    - title: Penìženka pro Windows 32-bit
+      content: 32-bitová Windows konzole a GUI rozhraní (x86).
+    - title: Windows GPU miner
+      content: GPU miner vytvoøený uživatelem Jonano pro Windows (pouze 64-bitová verze).
+    - title: MacOS penìženka
+      content: MacOS penìženka s textovým rozhraním.
+    - title: MacOS GPU miner
+      content: GPU miner vytvoøený uživatelem Jonano MacOS.
+    - title: Android penìženka
+      content: Pro Android 5.0 a novìjší.
+    - title: Zdrojové kódy
+      content: Zdrojové kódy pro XDAG software.    
+  roadmap: Plán
+  roadmap_content:
+    - timeframe: Q3 2017
+      dates: 
+        - date: Prosinec 2017
+          events:
+            - Textové rozhraní pro Windows a Linux
+            - Miner, full node a pool zveøejnìní
+            - Spuštìní Testnetu
+    - timeframe: Q1 2018
+      dates: 
+        - date: Leden 2018
+          events:
+            - Hlavní spuštìní
+            - Grafická penìženka integrována spoleènì s minerem pro Windows
+        - date: Únor 2018
+          events:
+            - Komunita vytvoøila Block explorer založený na pùvodním kódu vývojaøe
+            - Pùvodní vývojaø pøedal vlastnictví projektu do rukou komunity
+            - Xdag.org je plnì v provozu
+            - Pùvodní kód je postupnì upravován/zpøehledòován
+        - date: Bøezen 2018
+          events:
+            - Vypuštìní XDAG penìženky verze 0.2.0
+            - Vypuštìní XDAG penìženky verze 0.2.1 s podporou pro MAC
+            - Zcela nové webové stránky pro doménu xdag.io
+    - timeframe: Q2 2018
+      dates: 
+        - date: Kvìten 2018
+          events:
+            - Vypuštìní XDAG penìženky verze 0.2.2
+            - XDAG zaèlenìn do seznamu na burze bbx.com
+            - Vypuštìní XDAG penìženky verze 0.2.3
+        - date: Èerven 2018
+          events:
+            - Vypuštìní XDAG penìženky verze 0.2.4
+    - timeframe: Q3 2018
+      dates: 
+        - date: Èervenec 2018
+          events:
+            - Vypuštìní XDAG penìženky verze 0.2.5 s vylepšeným výkonem
+            - Vypuštìní grafického mineru 0.3.0 s podporou pro MAC
+            - Aktualizace vizuální stránky a výkonu Block exploreru
+        - date: Srpen 2018
+          events:
+            - Vypuštìní XDAG penìženky pro Android a iOS
+    - timeframe: Do budoucna
+      dates: 
+        - date: pøedbìžnì pro 2018
+          events:
+            - Po vytvoøení RPC penìženky bude snaha komunity zaèlenit XDAG na burzy
+        - date: Plány do budoucna
+          events:
+            - Rozšíøení vývojaøského teamu
+            - Sociální média a marketing
+  community: Komunita
+
+
+news:
+  title: Novinky
+  description: Nejnovìjší zprávy o XDAGu.
+
+
+pools:
+  title: Pools
+  description: Vybrané XDAG tìžební pooly.
+  distribution: |
+    Odmìna 
+    distribuce
+  distribution_pool: Poplatek pro pool
+  distribution_finder: Odmìna pro nálezce Blocku
+  distribution_contributor: Odmìna pro pøispìvatele
+  distribution_community: Dar pro komunitní fond
+  loading: Naèítání...
+  status_on: v provozu
+  status_sync: Synchronizace
+  status_init: Zahajování
+  status_down: Offline
+  status_unknown: Bez odezvy
+  header_1: Pool
+  header_2: Majitel
+  header_3: Adresa
+  header_4: Lokace
+  header_5: |
+      Odmìna 
+      distribuce
+  header_6: Stav sítì
+# continues in pools/reward-distribution.md

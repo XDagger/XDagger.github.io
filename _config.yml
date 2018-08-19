@@ -60,5 +60,5 @@ facebook:
       
 ## Translations
 
-languages: ["en", "se", "es", "fr"]
+languages: ["en", "se", "es", "fr", "cs"]
 exclude_from_localizations: ["assets", "blog", "CNAME", "README.md", "feed.xml", "_posts"]
