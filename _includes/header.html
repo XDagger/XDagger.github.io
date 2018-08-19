@@ -1,7 +1,7 @@
 <header id="header" class="js-header">
     <div id="logo">
         <a href="{% tl home %}">
-            <img src="{{ '/assets/images/logo.svg' | prepend: site.baseurl_root }}" height="70" alt="Dagger" />
+            <img src="{{ '/assets/images/logo.svg' | absolute_url }}" height="70" alt="Dagger" />
         </a>
     </div>
     <input class="display-toggle js-nav-main-toggle" type="checkbox" id="nav-main-toggle">
@@ -33,7 +33,7 @@
                 </ul>
             </li>
             <li class="js-nav-no-sublevel">
-                <a href="{{ '/blog' | prepend: site.baseurl_root }}">{% t nav.news %}{% include lang-warn.html %}</a>
+                <a href="{{ '/blog' | absolute_url }}">{% t nav.news %}{% include lang-warn.html %}</a>
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-community-toggle">
@@ -53,11 +53,12 @@
                   </li>
                 {% for lang in site.languages %}
                   <li>
-                  {% if page.translated_url %}
-                    {% capture translated_url %}{{page.namespace}} {{ lang }}{% endcapture %}
-                    <a href="{{ site.url }}{% tl translated_url %}">{{ site.translations[lang].nav.current_language }}</a>
+                  {% capture language %}{{ site.translations[lang].nav.current_language }}{% endcapture %}
+                  {% if page.translated %}
+                    {% capture namespace %}{{ page.namespace }} {{ lang }}{% endcapture %}
+                    <a href="{{ site.url }}{% tl namespace %}">{{ language }}</a>
                   {% else %}
-                    <a href="/{% if lang != 'en' %}{{ lang }}{% endif %}">{{ site.translations[lang].nav.current_language }}</a>
+                    <a href="{% localize_absolute_url {{ '/index.html' }} {{ lang }} %}">{{ language }}</a>
                   {% endif %}
                   </li>
                 {% endfor %} 

@@ -1,5 +1,5 @@
 {% include head.html %}
-    <link href="{{ '/assets/css/news.css' | prepend: site.baseurl_root }}" rel="stylesheet">
+    <link href="{{ '/assets/css/news.css' | absolute_url }}" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                 {% for post in paginator.posts  %}
                     <li>
                         <div class="lft post-content">
-                            <div class="tit"> <a href="{{ post.url | relative_url }}">{{ post.title }}</a><i class="ion-ios-arrow-down js-toggle-content"></i></div>
+                            <div class="tit"> <a href="{{ post.url | absolute_url }}">{{ post.title }}</a><i class="ion-ios-arrow-down js-toggle-content"></i></div>
                             <div class="cont all">{{ post.content }}</div>
                             <div class="cont h60 top">{{ post.summary | default: post.excerpt | strip_html }}</div>
                         </div>
@@ -32,7 +32,7 @@
                 {% if paginator.total_pages > 1 %}
                 <div class="pagination">
                     {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">Previous</a>
+                    <a href="{{ paginator.previous_page_path | absolute_url }}" class="prev">Previous</a>
                     {% else %}
                     <span>Previous</span>
                     {% endif %}
@@ -42,15 +42,15 @@
                         {% if page == paginator.page %}
                         <em>{{ page }}</em>
                         {% elsif page == 1 %}
-                        <a href="{{ '/blog/index.html' | relative_url }}">{{ page }}</a>
+                        <a href="{{ '/blog/index.html' | absolute_url }}">{{ page }}</a>
                         {% else %}
-                        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+                        <a href="{{ site.paginate_path | absolute_url | replace: ':num', page }}">{{ page }}</a>
                         {% endif %}
                         {% endfor %}
                     </div>
 
                     {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+                    <a href="{{ paginator.next_page_path | absolute_url }}">Next</a>
                     {% else %}
                     <span>Next</span>
                     {% endif %}
@@ -62,7 +62,7 @@
     </section>
 </main>
 {% include footer.html %}
-<script src="{{ '/assets/js/news.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/lazysizes/lazysizes.min.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{ '/assets/js/news.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/lazysizes/lazysizes.min.js' | absolute_url }}"></script>
 </body>
 </html>

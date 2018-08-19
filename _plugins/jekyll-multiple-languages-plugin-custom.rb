@@ -106,8 +106,9 @@ module Jekyll
       self.config[        'lang'] = languages.first          # Current language being processed
       self.config['baseurl_root'] = baseurl_org              # Baseurl of website root (without the appended language code)
       self.config['translations'] = self.parsed_translations # Hash that stores parsed translations read from YAML files. Exposes this hash to Liquid.
+      self.config['absolute_url'] = self.config['url'] + self.config['baseurl']
 
-      # Load all translations to site.translations to access all languages at any moment in the build process
+      # Load all translations to site.translations to access all translated strings at any moment in the build process
       languages.drop(1).each do |lang|
         puts              "Loading translation from file #{self.source}/_i18n/#{lang}.yml"
         self.parsed_translations[lang] = YAML.load_file("#{self.source}/_i18n/#{lang}.yml")
@@ -130,7 +131,8 @@ module Jekyll
         
         # Language specific config/variables
         @dest                  = dest_org    + "/" + lang
-        self.config['baseurl'] = baseurl_org + "/" + lang
+        #self.config['baseurl'] = baseurl_org + "/" + lang
+        self.config['baseurl'] = baseurl_org
         self.config['lang']    =                     lang
 
         # Custom Blurb code
@@ -147,7 +149,7 @@ module Jekyll
       end
       
       # Revert to initial Jekyll configurations (necessary for regeneration)
-      self.config[ 'baseurl' ] = baseurl_org  # Baseurl set on _config.yml
+      # self.config[ 'baseurl' ] = baseurl_org  # Baseurl set on _config.yml
       @dest                    = dest_org     # Destination folder where the website is generated
       
       puts 'Build complete'
@@ -399,6 +401,49 @@ module Jekyll
     end
   end
 
+  ##############################################################################
+  # class LocalizeAbsoluteUrl
+  ##############################################################################
+  class LocalizeAbsoluteUrl < Liquid::Tag
+
+    #======================================
+    # initialize
+    #======================================
+    def initialize(tag_name, key, tokens)
+      super
+      @key = key
+    end
+
+    #======================================
+    # render
+    #======================================
+    def render(context)
+      if      "#{context[@key]}" != "" # Check for page variable
+        key = "#{context[@key]}"
+      else
+        key = @key
+      end
+      
+      key = Liquid::Template.parse(key).render(context)  # Parses and renders some Liquid syntax on arguments (allows expansions)
+      
+      site = context.registers[:site] # Jekyll site object
+
+      key = key.split
+      string = key[0]
+      lang = key[1] || site.config['lang']
+      default_lang = site.config['default_lang']
+      absolute_url = site.config['absolute_url']
+      
+      if default_lang != lang
+        absolute_url = absolute_url + "/" + lang
+      end
+
+      absolute_url = absolute_url + string
+
+      absolute_url
+    end
+  end
+
 
 
   ##############################################################################
@@ -504,3 +549,4 @@ Liquid::Template.register_tag('tf',             Jekyll::Tags::LocalizeInclude)
 Liquid::Template.register_tag('translate_file', Jekyll::Tags::LocalizeInclude)
 Liquid::Template.register_tag('tl',             Jekyll::LocalizeLink         )
 Liquid::Template.register_tag('translate_link', Jekyll::LocalizeLink         )
+Liquid::Template.register_tag('localize_absolute_url', Jekyll::LocalizeAbsoluteUrl)

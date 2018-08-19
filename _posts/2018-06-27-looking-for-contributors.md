@@ -3,6 +3,7 @@ layout: post
 date: "2018-06-27 22:00:00"
 title: Looking for New Contributors
 image: /assets/images/posts/join-the-dagger-side.png
+summary: As a community run project Dagger is always looking for new contributors to improve and drive the project forwards. Right now we're specifically looking for developers with C, C++ and blockchain knowledge. 
 ---
 
 <div class="text-center mb-5 bg-black" markdown="0">

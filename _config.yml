@@ -16,7 +16,6 @@ community_wallets:
 url: https://xdag.io
 baseurl: ""
 
-permalink: /blog/:categories/:year/:month/:day/:title
 paginate: 7
 paginate_path: "/blog/page:num"
 
@@ -51,7 +50,9 @@ social:
     - https://github.com/orgs/XDagger
 
 twitter:
-  card: summary_large_image
+  card: 
+    regular: summary
+    image: summary_large_image
   username: XDAG_Community
 
 facebook:
@@ -60,4 +61,4 @@ facebook:
 ## Translations
 
 languages: ["en", "se", "es", "fr"]
-exclude_from_localizations: ["assets", "blog", "CNAME", "README.md", "feed.xml"]
+exclude_from_localizations: ["assets", "blog", "CNAME", "README.md", "feed.xml", "_posts"]

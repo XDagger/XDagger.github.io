@@ -1,0 +1,9 @@
+{% assign images = include.images | split: ", " %}
+
+<div class="img-gallery mb-5">
+  {% for image in images %}
+  <a class="img-gallery__item" href="{{ image | absolute_url}}" data-lightbox="{{ include.group }}">
+    <div class="img-gallery__img" style="background-image: url({{ image | absolute_url }})"></div>
+  </a>
+  {% endfor %}
+</div>

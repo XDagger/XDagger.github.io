@@ -1,7 +1,7 @@
 {% include head.html %}
-    <link href="{{ '/assets/lib/owlcarousel/assets/owl.carousel.min.css' | prepend: site.baseurl_root }}" rel="stylesheet">
-    <link href="{{ '/assets/lib/lightbox/css/lightbox.min.css' | prepend: site.baseurl_root }}" rel="stylesheet">
-    <link href="{{ '/assets/css/home.css' | prepend: site.baseurl_root }}" rel="stylesheet">
+    <link href="{{ '/assets/lib/owlcarousel/assets/owl.carousel.min.css' | absolute_url }}" rel="stylesheet">
+    <link href="{{ '/assets/lib/lightbox/css/lightbox.min.css' | absolute_url }}" rel="stylesheet">
+    <link href="{{ '/assets/css/home.css' | absolute_url }}" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 <div class="col-md-4 wow fadeInUp" data-wow-delay="{{ feature_d.delay }}">
                     <div class="about-col">
                         <div class="img">
-                            <img src="{{ feature_d.img }}" alt="" class="img-fluid">
+                            <img src="{{ feature_d.img | absolute_url }}" alt="" class="img-fluid">
                             <div class="icon"><i class="ion-ios-unlock"></i></div>
                         </div>
                         <h2 class="title">{{ feature.title }}</h2>
@@ -89,7 +89,7 @@
             <div class="owl-carousel clients-carousel">
                 {% for d in site.data.community %}
                 <a href="{{ d.href }}" class="owl-{{ d.alt }}" target="_blank">
-                  <img src="{{ d.pic | prepend: site.baseurl_root }}" alt="{{ d.alt }} community">
+                  <img src="{{ d.pic | absolute_url }}" alt="{{ d.alt }} community">
                 </a>
                 {% endfor %}
             </div>
@@ -97,10 +97,10 @@
     </section>
 </main>
 {% include footer.html %}
-<script src="{{ '/assets/lib/waypoints/waypoints.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/owlcarousel/owl.carousel.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/lightbox/js/lightbox.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/touchSwipe/jquery.touchSwipe.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/js/home.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{ '/assets/lib/waypoints/waypoints.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/owlcarousel/owl.carousel.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/lightbox/js/lightbox.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/touchSwipe/jquery.touchSwipe.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/home.js' | absolute_url }}"></script>
 </body>
 </html>

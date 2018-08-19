@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-6 footer-info">
-                    <img src="{{ '/assets/images/logo.svg' | prepend: site.baseurl_root }}" height="60" alt="Dagger, by the community" />
+                    <img src="{{ '/assets/images/logo.svg' | absolute_url }}" height="60" alt="Dagger, by the community" />
                     <div class="community_wallets">
                         <p class="mb-3">{% t footer.support %}</p>
                         {% for wallet in site.community_wallets %}
@@ -25,8 +25,8 @@
                         <li><a href="http://explorer.xdag.io/" target="_blank">{% t nav.explorer %}{% include lang-warn.html %}</a></li>
                         <li><a href="{% tl home %}#{% t nav.mining %}">{% t nav.mining %}</a></li>
                         <li><a href="{% tl home %}#{% t nav.wallet %}">{% t nav.wallet %}</a></li>
-                        <li><a href="{{ '/news' | prepend: site.baseurl_root }}">{% t nav.news %}{% include lang-warn.html %}</a></li>
-                        <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md">{% t nav.whitepaper %}{% include lang-warn.html %}</a></li>
+                        <li><a href="{{ '/blog' | absolute_url }}">{% t nav.news %}{% include lang-warn.html %}</a></li>
+                        <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">{% t nav.whitepaper %}{% include lang-warn.html %}</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,10 +34,10 @@
     </div>
 </footer>
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<script src="{{ '/assets/lib/jquery/jquery.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/jquery/jquery-migrate.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/bootstrap/js/bootstrap.bundle.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/easing/easing.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/lib/wow/wow.min.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/js/superfish.custom.js' | prepend: site.baseurl_root }}"></script>
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{ '/assets/lib/jquery/jquery.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/jquery/jquery-migrate.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/bootstrap/js/bootstrap.bundle.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/easing/easing.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/wow/wow.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/superfish.custom.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/main.js' | absolute_url }}"></script>

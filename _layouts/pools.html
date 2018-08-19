@@ -1,12 +1,12 @@
 {% include head.html %}
-    <link href="{{ '/assets/css/pools.css' | prepend: site.baseurl_root }}" rel="stylesheet">
+    <link href="{{ '/assets/css/pools.css' | absolute_url }}" rel="stylesheet">
 </head>
 
 <body>
 {% include header.html %}
 <main id="main">
   <section class="pool">
-    <img class="pool__graphic pool__graphic--bg" src="{{ '/assets/images/banner/2.png' | prepend: site.baseurl_root }}">
+    <img class="pool__graphic pool__graphic--bg" src="{{ '/assets/images/banner/2.png' | absolute_url }}">
     <svg version="1.1" class="pool__graphic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 1920 1280" style="enable-background:new 0 0 1920 1280;" xml:space="preserve">
       <polyline points="1541.7,546 1511.7,514 1478.3,518.7 1418.3,493.3 1346.3,433.3 1284,480 1249,444.5 
@@ -115,6 +115,6 @@
     unknown: '{% t pools.status_unknown %}'
   };
 </script>
-<script src="{{ '/assets/js/pools.js' | prepend: site.baseurl_root }}"></script>
+<script src="{{ '/assets/js/pools.js' | absolute_url }}"></script>
 </body>
 </html>
