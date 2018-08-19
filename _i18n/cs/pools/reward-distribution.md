@@ -1,8 +1,8 @@
-Když tìžíte XDAG v poolu a je nalezen block, odmìna z tohoto blocku (1024 XDAGù) je rozprostøena podle nastavení daného poolu. Procentní hodnoty jsou zobrazené níže a pøedstavují, jak velká èást komu pøipadne:
+Když těžíte XDAG v poolu a je nalezen block, odměna z tohoto blocku (1024 XDAG) je rozprostřena podle nastavení daného poolu. Procentní hodnoty jsou zobrazené níže a představují, jak velká část komu připadne:
 
 * Poplatek poolu
-* Odmìna nálezci blocku
-* Odmìna tìžitelùm, kteøí pomohli block najít
-* Pøíspìvek do komunitního fondu
+* Odměna nálezci blocku
+* Odměna těžitelům, kteří pomohli block najít
+* Příspěvek do komunitního fondu
 
-**Zbývající èástka** je vyplacena **každému** kdo tìží na poolu.
+**Zbývající částka** je vyplacena **každému** kdo těží na poolu.
