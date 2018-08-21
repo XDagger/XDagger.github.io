@@ -47,22 +47,24 @@
                 <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0">
                   <i class="ion-ios-globe nav-sublevel-icon"></i><span class="nav-sublevel-text">{{ site.translations[site.lang].nav.current_language }}</span>
                 </label>
-                <ul id="nav-lang" class="nav-sublevel js-nav-sublevel">
-                  <li>
-                    <a href="https://xdag.top">中文</a>
-                  </li>
-                {% for lang in site.languages %}
-                  <li>
-                  {% capture language %}{{ site.translations[lang].nav.current_language }}{% endcapture %}
-                  {% if page.translated %}
-                    {% capture namespace %}{{ page.namespace }} {{ lang }}{% endcapture %}
-                    <a href="{{ site.url }}{% tl namespace %}">{{ language }}</a>
-                  {% else %}
-                    <a href="{% localize_absolute_url {{ '/index.html' }} {{ lang }} %}">{{ language }}</a>
-                  {% endif %}
-                  </li>
-                {% endfor %} 
-                </ul>
+                <div id="nav-lang" class="sf-mega nav-sublevel js-nav-sublevel">
+                  <ul class="nav-sublevel-grid">
+                    <li>
+                      <a href="https://xdag.top">中文</a>
+                    </li>
+                    {%- for lang in site.languages -%}
+                      <li>
+                      {% capture language %}{{ site.translations[lang].nav.current_language }}{% endcapture %}
+                      {% if page.translated %}
+                        {% capture namespace %}{{ page.namespace }} {{ lang }}{% endcapture %}
+                        <a href="{{ site.url }}{% tl namespace %}">{{ language }}</a>
+                      {%- else -%}
+                        <a href="{% localize_absolute_url {{ '/index.html' }} {{ lang }} %}">{{ language }}</a>
+                      {%- endif -%}
+                      </li>
+                    {%- endfor -%} 
+                  </ul>
+                </div>
             </li>
         </ul>
     </nav>
