@@ -147,7 +147,7 @@ throttle("resize", "optimizedResize");
 
 var nav = (function() {
   // $nav-breakpoint in main.scss
-  var navBreakpoint = '1350px';
+  var navBreakpoint = '1300px';
   var navToggle = document.querySelector('.js-nav-main-toggle');
   var noSubItems = document.querySelectorAll('.js-nav-no-sublevel');
   var subItems = document.querySelectorAll('.js-nav-has-sublevel');
