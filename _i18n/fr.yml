@@ -19,7 +19,7 @@ nav:
   news: News
   community: Communité
   social_channels: Réseau Sociaux
-  current_language: "Le français"
+  current_language: Français
 
 footer:
   support: "Soutenez la communauté: Ce site est géré par la communauté XDAG."
@@ -61,7 +61,7 @@ home:
       content: Nous travailons actuellement pour incorporer des fonction de protection de la vie privée .Cela fait partie de notre feuille de route 2018.
     - title: Contrat intelligents
       content: Nous recherchons la possibilitée d'ajouter la fonction de contrats intelligents au réseau XDAG.
-  mining: Mining quick start
+  mining: Commencez a miner
   mining_content: La premiere monnaie basée sur le DAG que l'on peut miner. Suivez les instructions suivante. Si vous etes coincé, n'hésitez pas a nous rejoindre sur nos réseau sociaux, principalement sur Discord.
   mining_guides:
     - title: Télécharger le portefeuille
@@ -138,11 +138,11 @@ home:
         - date: ETA 2018
           events:
             - Dés que nous aurons finalisé le dévelopement de notre RPC, la comunautée vas faire les démarches pour etre listé sur d'autre échanges
-        - date: Future plans
+        - date: A venir
           events:
-            - Expansion of the development team
-            - Social media and marketing
-  community: Community
+            - Aggrandissement de l'équipe de dévelopeurs
+            - Réseau sociaux et marketing
+  community: Communauté
 
 
 news:
@@ -160,18 +160,18 @@ pools:
   distribution_finder: Récompense du mineur ayant résolu le bloc
   distribution_contributor: Récompense pour avoir contribué a miner le bloc
   distribution_community: Donation au fond de dévelopement
-  loading: Loading status...
-  status_on: Operational
-  status_sync: Synchronizing
-  status_init: Initializing
-  status_down: Offline
-  status_unknown: No response
+  loading: Chargement du statut...
+  status_on: Operationnel
+  status_sync: Synchronisation
+  status_init: Initialisation
+  status_down: Déconnecté
+  status_unknown: Pas de réponse
   header_1: Pool
-  header_2: Owner
-  header_3: Address
+  header_2: Propriétaire
+  header_3: Addresse
   header_4: Location
   header_5: |
-      Reward 
+      Recompense
       distribution
-  header_6: Network status
+  header_6: Statut du réseau
   # continues in pools/reward-distribution.md
