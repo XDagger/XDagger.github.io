@@ -145,3 +145,26 @@ jQuery(document).ready(function( $ ) {
     });
   }
 })();
+
+/*
+ * Exchanges
+ */
+
+(function() {
+
+  var exchangesList = document.querySelector('.js-exchange-list') 
+  var exchanges = exchangesList.querySelectorAll('.js-exchange');
+  var shuffledExchanges = Array.prototype.slice.call(exchanges).shuffle();
+  var fragment = document.createDocumentFragment();
+  var shuffledExchangesList = exchangesList.cloneNode(false);
+
+  Array.prototype.forEach.call(shuffledExchanges, function(exchange, i) {
+    exchange.classList.add('wow', 'fadeInUp');
+    exchange.dataset.wowDelay = '0.' + i + 's';
+    fragment.appendChild(exchange);
+  });
+
+  shuffledExchangesList.appendChild(fragment);
+  exchangesList.parentNode.replaceChild(shuffledExchangesList, exchangesList);
+
+})();

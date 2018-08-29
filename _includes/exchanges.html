@@ -1,0 +1,29 @@
+<section class="home-section">
+  <div class="container">
+    <header class="section-header wow fadeInUp">
+        <h3>{% t home.exchanges %}</h3>
+        <p>{% t home.exchanges_content %}</p>
+    </header>
+    <ul class="exchanges js-exchange-list">
+      {%- for exchange in site.data.exchanges -%}
+      <li class="exchanges__item js-exchange">
+          <figure class="exchanges__content">
+            <img class="exchanges__img" src="{{ exchange.logo | absolute_url }}">
+            <figcaption class="exchanges__caption">
+              <h6 class="exchanges__caption-title">{{ exchange.name }}</h6>
+              <p class="exchanges__caption-body">{% t home.exchanges_{{ forloop.index }}_description %}</p>
+              <div class="exchanges__meta">
+                <a class="button button--animated exchanges__button" href="{{ exchange.website }}">{% t global.trade %}</a>
+                <div class="exchanges__pairs">
+                  {% for pair in exchange.pairs %}
+                  <a class="exchanges__pair" href="{{ pair.link }}" target="_blank">XDAG / {{ pair.currency }}</a>
+                  {% endfor %}
+                </div>
+              </div>
+            </figcaption>
+          </figure> 
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

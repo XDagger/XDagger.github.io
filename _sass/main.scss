@@ -1,5 +1,6 @@
 @import "helpers/variables";
 @import "helpers/mixins";
+@import "components/button";
 
 /*--------------------------------------------------------------
 # General
@@ -761,6 +762,10 @@ $nav-breakpoint: 1300px;
   &:last-of-type {
     margin-right: 1em;
   }
+}
+
+.community_wallets__address {
+  word-break: break-word;
 }
 
 .mask {

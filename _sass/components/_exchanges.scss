@@ -1,0 +1,99 @@
+.exchanges {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.exchanges__item {
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 80px;
+  visibility: hidden;
+
+  @at-root .no-js {
+    visibility: visible;
+  }
+
+  &.animated {
+    visibility: visible;
+  }
+
+  @include bp-min(768px) {
+    width: 50%;
+
+    &:nth-child(odd) {
+      padding-right: 4vw;
+    }
+
+    &:nth-child(even) {
+      padding-left: 4vw;
+    }
+  }
+
+  @include bp-min(1100px) {
+    width: 25%;
+  }
+}
+
+.exchanges__link {
+  &:hover {
+    color: #333;
+  }
+}
+
+.exchanges__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+}
+
+.exchanges__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+
+  &--dark {
+    background-color: #2c2c2c;
+  }
+}
+
+.exchanges__caption {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.exchanges__caption-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0.2em;
+}
+
+.exchanges__caption-body {
+
+}
+
+.exchanges__meta {
+  display: flex;
+      margin-top: auto;
+}
+
+.exchanges__button {
+  align-self: flex-end;
+}
+
+.exchanges__pairs {
+  display: flex;
+  align-items: center;
+      flex-wrap: wrap;
+}
+
+.exchanges__pair {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px;
+}

@@ -4,6 +4,7 @@ global:
   description: A new DAG-based cryptocurrency
   previous: Previous
   next: Next
+  trade: Trade
 
 nav:
   home: Home
@@ -52,6 +53,7 @@ home:
         Mining new money every 64 seconds
     - title: No pre-mine or ICO
       content: XDAG offer bleeding edge technology to offer a decentralised solution to the problems facing other cryptocurrencies. XDAG has no pre-mine or ICO, and is a true community-driven project aligned by a common goal and innovative development team.
+  
   introduction: About Dagger
   introduction_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
   features:
@@ -61,6 +63,7 @@ home:
       content: XDAG is working on incorporating privacy features. These are part of the 2018 roadmap.
     - title: Smart contracts
       content: XDAG is researching the possibility to add smart contract functionality.
+
   mining: Mining quick start
   mining_content: The first mineable DAG. Follow the steps below. If you get stuck, check out our social channels for help, specifically Discord.
   mining_guides:
@@ -70,6 +73,7 @@ home:
       content: Next watch the easy to follow video setup guide.
     - title: Select a pool
       content: You can connect to a featured pool or visit our wiki for a complete list of approved pools.
+
   software: Software
   software_content: Download links for applications that interact with the XDAG network.
   software_links: 
@@ -86,7 +90,14 @@ home:
     - title: Android wallet
       content: For Android 5.0 and newer.
     - title: Sources
-      content: Sources for XDAG software and codebases.    
+      content: Sources for XDAG software and codebases.
+  
+  exchanges: Exchanges
+  exchanges_content: Buy, sell, trade XDAG.
+  exchanges_1_description: The leading cryptocurrency index contract trading platform. Multiple security mechanisms, industry-leading security.
+  exchanges_2_description: A global exchange established in Singapore. Committed to becoming a beacon of the cryptocurrency world. Transparent, fair and compliant.
+
+
   roadmap: Roadmap
   roadmap_content:
     - timeframe: Q3 2017
@@ -142,6 +153,7 @@ home:
           events:
             - Expansion of the development team
             - Social media and marketing
+  
   community: Community
 
 

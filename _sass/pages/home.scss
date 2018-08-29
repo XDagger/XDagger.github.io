@@ -1,9 +1,14 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "components/roadmap";
+@import "components/exchanges";
 
 .header-bg {
 	display: none;
+}
+
+.home-section {
+  padding: 60px 0;
 }
 
 /*--------------------------------------------------------------
