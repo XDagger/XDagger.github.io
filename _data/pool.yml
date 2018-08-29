@@ -208,3 +208,15 @@
     name: xdagme.com
     state: http://xdagme.com/state.txt
     country: Lithuania
+
+- owner: Dev Alex
+  pools: 
+  - address: xdag.coolmine.top:13654
+    fee_pool: 1
+    fee_miner_finder: 1
+    fee_miner_contributor: 1
+    fee_community: 1
+    website: http://xdag.coolmine.top/
+    name: xdag.coolmine.top
+    state: http://xdag.coolmine.top/state.txt
+    country: Singapore
