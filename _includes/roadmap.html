@@ -5,7 +5,7 @@
     <header class="roadmap__header section-header">
         <h3>{% t home.roadmap %}</h3>
     </header>
-    <nav class="roadmap__nav wow fadeInLeft">
+    <nav class="roadmap__nav">
         <ol class="roadmap__nav-list js-roadmap-nav">
             {% for timeframe in site.translations[site.lang].home.roadmap_content %}
             <li class="roadmap__nav-item {% if forloop.index <= progress_index %} roadmap__nav-item--progress {% endif %}">

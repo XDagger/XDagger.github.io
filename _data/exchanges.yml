@@ -1,0 +1,17 @@
+- logo: '/assets/images/exchanges/bbx.png'
+  name: BBX
+  website: https://bbx.com
+  pairs: 
+    - currency: USDT
+      link: https://www.bbx.com/exchange?coinPair=XDAG/USDT
+    - currency: ETH
+      link: https://www.bbx.com/exchange?coinPair=XDAG/ETH
+    - currency: BTC
+      link: https://www.bbx.com/exchange?coinPair=XDAG/BTC
+
+- logo: '/assets/images/exchanges/coinbat.svg'
+  name: Coinbat
+  website: https://www.coinbat.com/
+  pairs: 
+    - currency: CNYT
+      link: https://www.coinbat.com/trade/panel/xdag

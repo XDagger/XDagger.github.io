@@ -303,3 +303,18 @@ if (document.documentMode || /Edge/.test(navigator.userAgent)) {
            location.hostname === link.hostname;
   }
 })();
+
+/*
+ * Array Shuffle method
+ */
+
+Array.prototype.shuffle = function() {
+  const input = this;
+  for (let i = input.length-1; i >=0; i--) {
+    const randomIndex = Math.floor(Math.random()*(i+1));
+    let itemAtIndex = input[randomIndex];
+    input[randomIndex] = input[i];
+    input[i] = itemAtIndex;
+  }
+  return input;
+};

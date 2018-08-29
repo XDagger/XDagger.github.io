@@ -1,14 +1,3 @@
-Array.prototype.shuffle = function() {
-  const input = this;
-  for (let i = input.length-1; i >=0; i--) {
-    const randomIndex = Math.floor(Math.random()*(i+1));
-    let itemAtIndex = input[randomIndex];
-    input[randomIndex] = input[i];
-    input[i] = itemAtIndex;
-  }
-  return input;
-};
-
 (function() {
   var poolList = document.querySelector('.js-pool-list');
   var header = poolList.querySelector('.js-pool-header');

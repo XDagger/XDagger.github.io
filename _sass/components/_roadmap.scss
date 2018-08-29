@@ -82,7 +82,7 @@ $lg-screen: 1200px;
   position: relative;
   overflow: hidden;
   color: #333;
-  background: linear-gradient(to bottom, white, #f7f7f7);
+  background: #f7f7f7;
 
   @include bp-max($md-screen) {
     height: auto !important;
