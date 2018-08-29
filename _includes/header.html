@@ -49,9 +49,11 @@
                 </label>
                 <div id="nav-lang" class="sf-mega nav-sublevel js-nav-sublevel">
                   <ul class="nav-sublevel-grid">
+<!--
                     <li>
                       <a href="https://xdag.top">中文</a>
                     </li>
+-->
                     {%- for lang in site.languages -%}
                       <li>
                       {% capture language %}{{ site.translations[lang].nav.current_language }}{% endcapture %}
