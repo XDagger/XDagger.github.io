@@ -4,7 +4,7 @@ global:
   description: "XDAG: 基于DAG的全新数字加密货币"
   previous: 上一页
   next: 下一页
-  trade: Trade
+  trade: 交易
 
 nav:
   home: 首页
@@ -89,7 +89,7 @@ home:
     - title: 钱包源码
       content: XDAG 软件和代码库的源码  .
 
-  exchanges: Exchanges
+  exchanges: 推荐交易所
   exchanges_content: Buy, sell, trade XDAG.
   exchanges_1_description: The leading cryptocurrency index contract trading platform, also the world's first BTC perpetual contract trading platform which uses USDT as a margin.
   exchanges_2_description: A global exchange established in Singapore. Committed to becoming a beacon of the cryptocurrency world. Transparent, fair and compliant.
