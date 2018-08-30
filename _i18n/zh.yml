@@ -1,9 +1,10 @@
 # Global
 
 global:
-  description: XDAG: 基于DAG的全新数字加密货币
+  description: "XDAG: 基于DAG的全新数字加密货币"
   previous: 上一页
   next: 下一页
+  trade: Trade
 
 nav:
   home: 首页
@@ -44,13 +45,13 @@ home:
   meta_description: XDAG 是一种新的有向无环图（DAG）技术的应用，它解决了当前区块链技术面临的问题。
   slides:
     - title: "XDAG:一种新的基于DAG的数字加密货币"
-      content:XDAG 是一种新的有向无环图（DAG）技术的应用，它解决了当前区块链技术面临的问题。
+      content: XDAG 是一种新的有向无环图（DAG）技术的应用，它解决了当前区块链技术面临的问题。
     - title: 第一个可挖的DAG 
       content: |
         区块 = 交易 = 地址
         主链设计理念
         每64秒产出新的货币
-    - title:无预挖、无ICO
+    - title: 无预挖、无ICO
       content: XDAG提供了尖端技术，解决了其他加密货币遇到的问题提供了去中心化的解决方案。XDAG没有预挖、没有ICO，是一个真正社区驱动的项目，由一个有着共同目标和创新精神的开发团队开发。
   introduction: 关于 Dagger
   introduction_content: Dagger是基于DAG的新一代分布式分类账本. DAG,有向无环图, 是在分布式的分散环境中在人们中发送数据的另一种方法。这样做没有区块链，允许更大的可扩展性.
@@ -86,7 +87,13 @@ home:
     - title: Android 钱包
       content: 安卓5.0或以上系统
     - title: 钱包源码
-      content: XDAG 软件和代码库的源码  .    
+      content: XDAG 软件和代码库的源码  .
+
+  exchanges: Exchanges
+  exchanges_content: Buy, sell, trade XDAG.
+  exchanges_1_description: The leading cryptocurrency index contract trading platform, also the world's first BTC perpetual contract trading platform which uses USDT as a margin.
+  exchanges_2_description: A global exchange established in Singapore. Committed to becoming a beacon of the cryptocurrency world. Transparent, fair and compliant.
+
   roadmap: 路线图
   roadmap_content:
     - timeframe: 2017年第三季度
@@ -113,7 +120,7 @@ home:
             - XDAG 0.2.0版钱包发布
             - XDAG 0.2.1版钱包发布并增加支持MAC
             - 使用新域名XDAG.IO并上线全新网站
-    - timeframe:2018年第二季度
+    - timeframe: 2018年第二季度
       dates: 
         - date: 2018年5月
           events:
@@ -153,9 +160,7 @@ news:
 pools:
   title: 矿池
   description: XDAG重点矿池
-  distribution: |
-    奖励
-    分发
+  distribution: 奖励分发
   distribution_pool: 矿池费用
   distribution_finder: 爆块奖励
   distribution_contributor: 贡献者奖励
@@ -170,8 +175,6 @@ pools:
   header_2: 所有者
   header_3: 地址
   header_4: 位置
-  header_5: |
-      奖励
-      分发
+  header_5: 奖励分发
   header_6: 网络状态
   # continues in pools/reward-distribution.md
