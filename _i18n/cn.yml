@@ -1,177 +1,177 @@
 # Global
 
 global:
-  description: A new DAG-based cryptocurrency
-  previous: Previous
-  next: Next
+  description: XDAG: 基于DAG的全新数字加密货币
+  previous: 上一页
+  next: 下一页
 
 nav:
-  home: Home
-  get_started: Get started
-  wallet: Wallet
-  mining: Mining
-  pools: Pools
-  explorer: Block explorer
-  resources: Resources
-  whitepaper: Whitepaper
-  releases: Releases
-  roadmap: Roadmap
-  news: News
-  community: Community
-  social_channels: Social Channels
-  current_language: English
+  home: 首页
+  get_started: 开始
+  wallet: 钱包
+  mining: 挖矿
+  pools: 矿池
+  explorer: 浏览器
+  resources: 资源
+  whitepaper: 白皮书
+  releases: 最新发布
+  roadmap: 路线图
+  news: 新闻
+  community: 社区
+  social_channels: 社交频道
+  current_language: 中文
 
 footer:
-  support: "Support The Community: This site is managed by the XDAG community."
-  support_address_pre: Contribute XDAG
-  links: Useful links
+  support: "支持社区：该网站由XDAG社区管理。"
+  support_address_pre: 贡献 XDAG
+  links: 可用链接
 
 countries:
-  poland: Poland
-  germany: Germany
-  finland: Finland
-  canada: Canada
-  netherlands: Netherlands
-  japan: Japan
-  singapore: Singapore
-  russia: Russia
-  china: China
-  lithuania: Lithuania
+  poland: 波兰
+  germany: 德国
+  finland: 芬兰
+  canada: 加拿大
+  netherlands: 荷兰
+  japan: 日本
+  singapore: 新加坡
+  russia: 俄罗斯
+  china: 中国
+  lithuania: 立陶宛
 
 # Pages
 
 home:
-  meta_description: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
+  meta_description: XDAG 是一种新的有向无环图（DAG）技术的应用，它解决了当前区块链技术面临的问题。
   slides:
-    - title: "XDAG: A new DAG-based cryptocurrency"
-      content: XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.
-    - title: The first mineable DAG 
+    - title: "XDAG:一种新的基于DAG的数字加密货币"
+      content:XDAG 是一种新的有向无环图（DAG）技术的应用，它解决了当前区块链技术面临的问题。
+    - title: 第一个可挖的DAG 
       content: |
-        Block = transaction = address
-        Original main chain idea
-        Mining new money every 64 seconds
-    - title: No pre-mine or ICO
-      content: XDAG offer bleeding edge technology to offer a decentralised solution to the problems facing other cryptocurrencies. XDAG has no pre-mine or ICO, and is a true community-driven project aligned by a common goal and innovative development team.
-  introduction: About Dagger
-  introduction_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
+        区块 = 交易 = 地址
+        主链设计理念
+        每64秒产出新的货币
+    - title:无预挖、无ICO
+      content: XDAG提供了尖端技术，解决了其他加密货币遇到的问题提供了去中心化的解决方案。XDAG没有预挖、没有ICO，是一个真正社区驱动的项目，由一个有着共同目标和创新精神的开发团队开发。
+  introduction: 关于 Dagger
+  introduction_content: Dagger是基于DAG的新一代分布式分类账本. DAG,有向无环图, 是在分布式的分散环境中在人们中发送数据的另一种方法。这样做没有区块链，允许更大的可扩展性.
   features:
-    - title: CPU/GPU Mineable
-      content: XDAG is both CPU & GPU mineable. Making it the first mineable DAG project.
-    - title: Privacy
-      content: XDAG is working on incorporating privacy features. These are part of the 2018 roadmap.
-    - title: Smart contracts
-      content: XDAG is researching the possibility to add smart contract functionality.
-  mining: Mining quick start
-  mining_content: The first mineable DAG. Follow the steps below. If you get stuck, check out our social channels for help, specifically Discord.
+    - title: CPU/GPU 可开采
+      content: XDAG可以使用CPU、GPU开采，是第一个可开采的DAG项目。
+    - title: 隐私
+      content: XDAG致力于整合隐私特征。这是2018条路线图的一部分。
+    - title: 智能合约
+      content: XDAG正在探索添加智能合约。
+  mining: 挖矿快速入门
+  mining_content: 第一个可挖矿的DAG. 根据以下步骤，如果你需要任何问题，可以直接联系我们
   mining_guides:
-    - title: Download wallet
-      content: First, download the Dagger miner & wallet suitable for your operating system. Click to download.
-    - title: Learn about the process
-      content: Next watch the easy to follow video setup guide.
-    - title: Select a pool
-      content: You can connect to a featured pool or visit our wiki for a complete list of approved pools.
-  software: Software
-  software_content: Download links for applications that interact with the XDAG network.
+    - title: 下载钱包
+      content: 首先，下载适用于您的操作系统的Dagger miner & wallet。点击下载。
+    - title: 了解过程
+      content: 下一步观看易于学习的教学视频。
+    - title: 选择一个矿池
+      content: 可以安心使用以下列出的这些已认证的矿池.
+  software: 软件
+  software_content: 下载适用于XDAG网络的应用链接
   software_links: 
-    - title: Windows 64-bit wallet
-      content: 64 bit Windows Console and GUI executables (x64).
-    - title: Windows 32-bit wallet
-      content: 32 bit Windows Console and GUI executables (x86).
-    - title: Windows GPU miner
-      content: GPU miner by Jonano for Windows (x64).
-    - title: MacOS wallet
-      content: MacOS command line wallet.
-    - title: MacOS GPU miner
-      content: GPU Miner by Jonano for MacOS.
-    - title: Android wallet
-      content: For Android 5.0 and newer.
-    - title: Sources
-      content: Sources for XDAG software and codebases.    
-  roadmap: Roadmap
+    - title: Windows 64位钱包
+      content: 64位Windows控制台和GUI可执行文件(x64)。
+    - title: Windows 32位钱包
+      content: 32位Windows控制台和GUI可执行文件(x86)。
+    - title: Windows GPU 挖矿
+      content: MacOS命令行钱包。
+    - title: MacOS 钱包
+      content: MacOS命令行钱包。
+    - title: MacOS GPU 挖矿
+      content: GPU 由Jonano MacOS (x64)挖矿
+    - title: Android 钱包
+      content: 安卓5.0或以上系统
+    - title: 钱包源码
+      content: XDAG 软件和代码库的源码  .    
+  roadmap: 路线图
   roadmap_content:
-    - timeframe: Q3 2017
+    - timeframe: 2017年第三季度
       dates: 
-        - date: December 2017
+        - date: 2017年12月
           events:
-            - CLI for Windows and Linux
-            - Miner, full node and pool release
-            - Testnet launch
-    - timeframe: Q1 2018
+            - Windows和Linux的CLI
+            - 挖矿、全节点、矿池发布
+            - 测试网发布
+    - timeframe: 2018年第一季度
       dates: 
-        - date: January 2018
+        - date: 2018年1月
           events:
-            - Mainnet launch
-            - GUI wallet with integrated miner for Windows
-        - date: February 2018
+            - 主网上线
+            - GUI钱包集成Windows挖矿程序
+        - date: 2018年2月
           events:
-            - Community built a block explorer based on original developers code
-            - Original developer gives the ownership of the project to the community
-            - Xdag.org is fully operational
-            - The original code is being cleaned
-        - date: March 2018
+            - 社区基于源代码建立了区块浏览器
+            - 原作者移交项目所有权给社区
+            - Xdag.org 完全可以操作
+            - 整理源代码
+        - date: 2018年3月
           events:
-            - Release of XDAG wallet 0.2.0
-            - Release of XDAG wallet 0.2.1 with MAC support
-            - Brand new website for our new domain xdag.io
-    - timeframe: Q2 2018
+            - XDAG 0.2.0版钱包发布
+            - XDAG 0.2.1版钱包发布并增加支持MAC
+            - 使用新域名XDAG.IO并上线全新网站
+    - timeframe:2018年第二季度
       dates: 
-        - date: May 2018
+        - date: 2018年5月
           events:
-            - Release of XDAG wallet 0.2.2
-            - XDAG gets listed on the bbx.com cryptocurrency exchange
-            - Release of XDAG wallet 0.2.3
-        - date: June 2018
+            - XDAG 0.2.0版钱包发布
+            - XDAG 上线BBX 加密货币交易所
+            - XDAG 0.2.3版钱包发布
+        - date: 2018年6月
           events:
-            - Release of XDAG wallet 0.2.4
-    - timeframe: Q3 2018
+            - XDAG 0.2.4版钱包发布
+    - timeframe: 2018年第三季度
       dates: 
-        - date: July 2018
+        - date: 2018年7月
           events:
-            - Release of XDAG wallet 0.2.5 with major performance improvements
-            - GPU Miner 0.3.0 release with MAC support
-            - Block explorer visual and performance update
-        - date: August 2018
+            - XDAG 0.3.0版钱包发布，主要性能改进
+            - GPU挖矿0.3.0版本发布，支持MAC
+            - 区块浏览器视觉和性能更新
+        - date: 2018年8月
           events:
-            - Release of XDAG Android and iOS wallets
-    - timeframe: Future
+            - XDAG安卓和iOS钱包发布
+    - timeframe: 未来
       dates: 
         - date: ETA 2018
           events:
-            - After a wallet RPC is created, the community will push for exchange listing
-        - date: Future plans
+            - 在完成RPC的开发之后，社区将推动交易所上市
+        - date: 未来计划
           events:
-            - Expansion of the development team
-            - Social media and marketing
-  community: Community
+            - 在完成RPC的开发之后，社区将推动交易所上市
+            - 建立社交媒体和推广
+  community: 社区
 
 
 news:
-  title: News
-  description: The latest XDAG news.
+  title: 新闻
+  description: 最新XDAG新闻
 
 
 pools:
-  title: Pools
-  description: Featured XDAG mining pools.
+  title: 矿池
+  description: XDAG重点矿池
   distribution: |
-    Reward 
-    distribution
-  distribution_pool: Pool fee
-  distribution_finder: Block finder reward
-  distribution_contributor: Contributor reward
-  distribution_community: Community fund donation
-  loading: Loading status...
-  status_on: Operational
-  status_sync: Synchronizing
-  status_init: Initializing
-  status_down: Offline
-  status_unknown: No response
-  header_1: Pool
-  header_2: Owner
-  header_3: Address
-  header_4: Location
+    奖励
+    分发
+  distribution_pool: 矿池费用
+  distribution_finder: 爆块奖励
+  distribution_contributor: 贡献者奖励
+  distribution_community: 社区基金捐献
+  loading: 状态载入中......
+  status_on: 可操作的
+  status_sync: 同步中
+  status_init: 初始化中
+  status_down: 下线
+  status_unknown: 无回复
+  header_1: 矿池
+  header_2: 所有者
+  header_3: 地址
+  header_4: 位置
   header_5: |
-      Reward 
-      distribution
-  header_6: Network status
+      奖励
+      分发
+  header_6: 网络状态
   # continues in pools/reward-distribution.md
