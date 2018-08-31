@@ -1,0 +1,180 @@
+# Global
+
+global:
+  description: "XDAG: 基于DAG的全新数字加密货币"
+  previous: 上一页
+  next: 下一页
+  trade: 交易
+
+nav:
+  home: 首页
+  get_started: 开始
+  wallet: 钱包
+  mining: 挖矿
+  pools: 矿池
+  explorer: 浏览器
+  resources: 资源
+  whitepaper: 白皮书
+  releases: 最新发布
+  roadmap: 路线图
+  news: 新闻
+  community: 社区
+  social_channels: 社交频道
+  current_language: 中文
+
+footer:
+  support: "支持社区：该网站由XDAG社区管理。"
+  support_address_pre: 贡献 XDAG
+  links: 可用链接
+
+countries:
+  poland: 波兰
+  germany: 德国
+  finland: 芬兰
+  canada: 加拿大
+  netherlands: 荷兰
+  japan: 日本
+  singapore: 新加坡
+  russia: 俄罗斯
+  china: 中国
+  lithuania: 立陶宛
+
+# Pages
+
+home:
+  meta_description: XDAG 是一种新的有向无环图（DAG）技术的应用，它解决了当前区块链技术面临的问题。
+  slides:
+    - title: "XDAG:一种新的基于DAG的数字加密货币"
+      content: XDAG 是一种新的有向无环图（DAG）技术的应用，它解决了当前区块链技术面临的问题。
+    - title: 第一个可挖的DAG 
+      content: |
+        区块 = 交易 = 地址
+        主链设计理念
+        每64秒产出新的货币
+    - title: 无预挖、无ICO
+      content: XDAG提供了尖端技术，解决了其他加密货币遇到的问题提供了去中心化的解决方案。XDAG没有预挖、没有ICO，是一个真正社区驱动的项目，由一个有着共同目标和创新精神的开发团队开发。
+  introduction: 关于 Dagger
+  introduction_content: Dagger是基于DAG的新一代分布式分类账本. DAG,有向无环图, 是在分布式的分散环境中在人们中发送数据的另一种方法。这样做没有区块链，允许更大的可扩展性.
+  features:
+    - title: CPU/GPU 可开采
+      content: XDAG可以使用CPU、GPU开采，是第一个可开采的DAG项目。
+    - title: 隐私
+      content: XDAG致力于整合隐私特征。这是2018条路线图的一部分。
+    - title: 智能合约
+      content: XDAG正在探索添加智能合约。
+  mining: 挖矿快速入门
+  mining_content: 第一个可挖矿的DAG. 根据以下步骤，如果你需要任何问题，可以直接联系我们
+  mining_guides:
+    - title: 下载钱包
+      content: 首先，下载适用于您的操作系统的Dagger miner & wallet。点击下载。
+    - title: 了解过程
+      content: 下一步观看易于学习的教学视频。
+    - title: 选择一个矿池
+      content: 可以安心使用以下列出的这些已认证的矿池.
+  software: 软件
+  software_content: 下载适用于XDAG网络的应用链接
+  software_links: 
+    - title: Windows 64位钱包
+      content: 64位Windows控制台和GUI可执行文件(x64)。
+    - title: Windows 32位钱包
+      content: 32位Windows控制台和GUI可执行文件(x86)。
+    - title: Windows GPU 挖矿
+      content: MacOS命令行钱包。
+    - title: MacOS 钱包
+      content: MacOS命令行钱包。
+    - title: MacOS GPU 挖矿
+      content: GPU 由Jonano MacOS (x64)挖矿
+    - title: Android 钱包
+      content: 安卓5.0或以上系统
+    - title: 钱包源码
+      content: XDAG 软件和代码库的源码  .
+
+  exchanges: 推荐交易所
+  exchanges_content: 买, 卖, 交易XDAG
+  exchanges_1_description: 领先的加密货币指数交易平台, 同时也是全球第一支用USDT作保证金的BTC永续合约交易平台。
+  exchanges_2_description: 在新加坡建立的全球交易所。 致力于成为加密货币世界的灯塔。 透明，公平，合规。
+
+  roadmap: 路线图
+  roadmap_content:
+    - timeframe: 2017年第三季度
+      dates: 
+        - date: 2017年12月
+          events:
+            - Windows和Linux的CLI
+            - 挖矿、全节点、矿池发布
+            - 测试网发布
+    - timeframe: 2018年第一季度
+      dates: 
+        - date: 2018年1月
+          events:
+            - 主网上线
+            - GUI钱包集成Windows挖矿程序
+        - date: 2018年2月
+          events:
+            - 社区基于源代码建立了区块浏览器
+            - 原作者移交项目所有权给社区
+            - Xdag.org 完全可以操作
+            - 整理源代码
+        - date: 2018年3月
+          events:
+            - XDAG 0.2.0版钱包发布
+            - XDAG 0.2.1版钱包发布并增加支持MAC
+            - 使用新域名XDAG.IO并上线全新网站
+    - timeframe: 2018年第二季度
+      dates: 
+        - date: 2018年5月
+          events:
+            - XDAG 0.2.0版钱包发布
+            - XDAG 上线BBX 加密货币交易所
+            - XDAG 0.2.3版钱包发布
+        - date: 2018年6月
+          events:
+            - XDAG 0.2.4版钱包发布
+    - timeframe: 2018年第三季度
+      dates: 
+        - date: 2018年7月
+          events:
+            - XDAG 0.3.0版钱包发布，主要性能改进
+            - GPU挖矿0.3.0版本发布，支持MAC
+            - 区块浏览器视觉和性能更新
+        - date: 2018年8月
+          events:
+            - XDAG安卓和iOS钱包发布
+    - timeframe: 未来
+      dates: 
+        - date: ETA 2018
+          events:
+            - 在完成RPC的开发之后，社区将推动交易所上市
+        - date: 未来计划
+          events:
+            - 在完成RPC的开发之后，社区将推动交易所上市
+            - 建立社交媒体和推广
+  community: 社区
+
+
+news:
+  title: 新闻
+  description: 最新XDAG新闻
+
+
+pools:
+  title: 矿池
+  description: XDAG重点矿池
+  distribution: 奖励分发
+  distribution_pool: 矿池费用
+  distribution_finder: 爆块奖励
+  distribution_contributor: 贡献者奖励
+  distribution_community: 社区基金捐献
+  loading: 状态载入中......
+  status_on: 可操作的
+  status_sync: 同步中
+  status_init: 初始化中
+  status_down: 下线
+  status_unknown: 无回复
+  header_1: 矿池
+  header_2: 所有者
+  header_3: 地址
+  header_4: 位置
+  header_5: 奖励分发
+  header_6: 网络状态
+  # continues in pools/reward-distribution.md
