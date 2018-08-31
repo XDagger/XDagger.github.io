@@ -252,3 +252,15 @@
     name: xdag.coolmine.top
     state: http://xdag.coolmine.top/state.txt
     country: Singapore
+ 
+- owner: 水哥
+  pools: 
+  - address: feipool.xyz:13654
+    fee_pool: 1
+    fee_miner_finder: 0
+    fee_miner_contributor: 0
+    fee_community: 2
+    website: http://feipool.xyz/
+    name: Feipool
+    state: 117.27.159.97:5000/stats.txt
+    country: China
