@@ -255,7 +255,7 @@
  
 - owner: 水哥
   pools: 
-  - address: 117.27.159.97:5000
+  - address: feipool.xyz:13654
     fee_pool: 1
     fee_miner_finder: 0
     fee_miner_contributor: 0
