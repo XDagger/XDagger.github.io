@@ -105,17 +105,17 @@ $pool-bp: 1050px;
   width: 100%;
   margin-bottom: 60px;
 
+  @include bp-max($pool-bp) {
+    display: block;
+  }
+
   @include bp-min($pool-bp) {
-    display: table;
     border-collapse: collapse;
     margin-top: -30px;
   }
 }
 
 .pool__row-group {
-  padding-bottom: 1px;
-  box-shadow: inset 0 -1px 0 rgba(255,255,255, 0.2);
-
   @at-root .js & {
     opacity: 0;
 
@@ -124,64 +124,30 @@ $pool-bp: 1050px;
     }
   }
 
-  @include bp-min($pool-bp) {
-    display: table-row-group;
+  @include bp-max($pool-bp) {
+    display: block;
   }
+}
+
+.pool__row {
+  padding-bottom: 1px;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255, 0.2);
 
   @include bp-max($pool-bp) {
+    display: block;
     padding: 15px 0;
     margin-bottom: 15px;
     padding-top: 0;
   }
 
-  .pool__row:hover {
+  &:hover {
     background: rgba(0, 0, 0, 0.15);
   }
 }
 
-.pool__group-toggle {
-  width: 30px;
-  text-align: center;
-  float: right;
-  cursor: pointer;
-  color: #428bca;
-  font-size: 16px;
-
-  &:hover {
-    color: #428bca;
-  }
-}
-
-.pool__row {
-  @include bp-min($pool-bp) {
-    display: table-row;
-  }
-
-  &.collapse {
-    display: none;
-  }
-
-  &.show {
-    display: block;
-
-    @include bp-min($pool-bp) {
-      display: table-row;
-    }
-  }
-
-  &:not(:last-child) {
-    @include bp-max($pool-bp) {
-      padding: 15px 0;
-      padding-top: 0;
-    }
-  }
-}
-
 .pool__header-area {
-  display: none;
-
-  @include bp-min($pool-bp) {
-    display: table-header-group;
+  @include bp-max($pool-bp) {
+    display: none;
   }
 }
 
@@ -194,8 +160,6 @@ $pool-bp: 1050px;
 }
 
 .pool__list {
-  display:  table-row-group;
-
   @include bp-max($pool-bp) {
     display: block;
   }
@@ -203,7 +167,6 @@ $pool-bp: 1050px;
 
 .pool__data,
 .pool__header {
-  display: table-cell;
   padding: 10px 10px;
   vertical-align: top;
 
@@ -222,6 +185,9 @@ $pool-bp: 1050px;
 
   @include bp-max($pool-bp) {
     display: block;
+  }
+
+  @include bp-max($pool-bp) {
     padding: 3px 0;
   }
 
@@ -252,7 +218,7 @@ $pool-bp: 1050px;
   from {
     transform: rotateZ(0deg);
   } to {
-    transform: rotateZ(360deg);
+    transform: rotateZ(-360deg);
   }
 }
 
