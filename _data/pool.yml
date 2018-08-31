@@ -12,33 +12,65 @@
 
 - owner: kbs1
   pools: 
-    - address: pool.xdagpool.com:13654
+    - address: de1.xdag.org:13654
       fee_pool: 1
       fee_miner_finder: 0
       fee_miner_contributor: 0
       fee_community: 1
-      website: https://xdagpool.com/
-      name: xdagpool.com
-      state: https://xdagpool.com/status
+      website: https://xdag.org/
+      name: "xdag.org Germany #1"
+      state: https://xdag.org/status?pool=1
       country: Germany
-    - address: pool2.xdagpool.com:13655
+
+    - address: de2.xdag.org:13655
+      fee_pool: 1
+      fee_miner_finder: 98
+      fee_miner_contributor: 0
+      fee_community: 1
+      website: https://xdag.org/
+      name: "xdag.org Germany #2"
+      state: https://xdag.org/status?pool=2
+      country: Germany
+
+    - address: de3.xdag.org:13656
+      fee_pool: 1
+      fee_miner_finder: 33
+      fee_miner_contributor: 33
+      fee_community: 1
+      website: https://xdag.org/
+      name: "xdag.org Germany #3"
+      state: https://xdag.org/status?pool=3
+      country: Germany
+
+    - address: ca1.xdag.org:13654
       fee_pool: 1
       fee_miner_finder: 0
       fee_miner_contributor: 0
       fee_community: 1
-      website: https://pool2.xdagpool.com/
-      name: pool2.xdagpool.com
-      state: https://pool2.xdagpool.com/status
-      country: Germany
-    - address: pool3.xdagpool.com:13656
+      website: https://xdag.org/
+      name: "xdag.org Canada #1"
+      state: https://xdag.org/status?pool=4
+      country: Canada
+
+    - address: ca1.xdag.org:13655
       fee_pool: 1
-      fee_miner_finder: 7
-      fee_miner_contributor: 5
+      fee_miner_finder: 33
+      fee_miner_contributor: 33
       fee_community: 1
-      website: https://pool3.xdagpool.com/
-      name: pool3.xdagpool.com
-      state: https://pool3.xdagpool.com/status
-      country: Germany
+      website: https://xdag.org/
+      name: "xdag.org Canada #2"
+      state: https://xdag.org/status?pool=5
+      country: Canada
+      
+    - address: sg1.xdag.org:13655
+      fee_pool: 1
+      fee_miner_finder: 33
+      fee_miner_contributor: 33
+      fee_community: 1
+      website: https://xdag.org/
+      name: "xdag.org Singapore #1"
+      state: https://xdag.org/status?pool=6
+      country: Singapore
 
 - owner: Filipo
   pools: 
