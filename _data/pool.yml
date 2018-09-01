@@ -262,5 +262,5 @@
     fee_community: 2
     website: http://feipool.xyz/
     name: Feipool
-    state: 117.27.159.97:5000/stats.txt
+    state: 117.27.159.97:5000/state.txt
     country: China
