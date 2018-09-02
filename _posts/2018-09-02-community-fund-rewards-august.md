@@ -31,16 +31,14 @@ the following people are rewarded **20000 XDAG** (40000 in total):
 * [**Mathsw**](https://explorer.xdag.io/block/EeHSfeCV3BK6+Z1ixgSHFmnPP0FR0eS3)
 * [**Jimmy**](https://explorer.xdag.io/block/gUXmyyRaBU4JsAKdg9AjeIKqfjlYSJNM)
 
-For helping out others on our social channels, completing light development tasks, or generally contributing to the development of XDAG, the following people are rewarded **7500 XDAG** (52500 in total):
+For helping out others on our social channels, completing light development tasks, or generally contributing to the development of XDAG, the following people are rewarded **7500 XDAG** (45000 in total):
 * [**rubencm**](https://explorer.xdag.io/block/V4GJlr/SycF/Rak354BXmXTCmpoqxC84) (Discord help/light code task)
-* [**13ecause**](https://explorer.xdag.io/block/tpabTFgkpgHESGRijlCqDEjymWgtzPD) (Discord Mod/Instagram Maintainer/Publicist)
+* [**13ecause**](https://explorer.xdag.io/block//tpabTFgkpgHESGRijlCqDEjymWgtzPD) (Discord Mod/Instagram Maintainer/Publicist)
 * [**hughchiu**](https://explorer.xdag.io/block/b1K8er4ZckmmnWb239fX83EoYlZRoFbT) (Telegram maintainer)
 * [**merklin**](https://explorer.xdag.io/block/OfQUyRDWFQq6a8QxcP9CRhwClNHihpiD) (Discord help)
 * [**cyan_inf**](https://explorer.xdag.io/block/Tc0Y7nxDNmvIf8pfiGjM1oAlMx8N5mGN) (Facebook page maintainer)
 * [**One8zero3**](https://explorer.xdag.io/block/PHBbOLw0AY/11ABtipeE7YrillULuHBa) (Discord Mod/Marketing)
 
-
-
-Combined total: **215833 XDAG**.  
+Combined total: **208333 XDAG**.  
 Thank you everyone for being a part of the community and contributing to XDAG's progress.
 
