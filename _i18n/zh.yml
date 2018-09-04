@@ -170,7 +170,8 @@ pools:
   status_sync: 同步中
   status_init: 初始化中
   status_down: 下线
-  status_unknown: 无回复
+  status_unknown: 未知
+  status_no_response: 无回复
   header_1: 矿池
   header_2: 所有者
   header_3: 地址

@@ -165,7 +165,8 @@ pools:
   status_sync: Sincronizando
   status_init: Inicializando
   status_down: Desconectado
-  status_unknown: No response
+  status_unknown: Desconocido
+  status_no_response: No response
   header_1: Pool
   header_2: Propietario
   header_3: Dirección

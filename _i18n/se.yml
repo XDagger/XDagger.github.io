@@ -163,7 +163,8 @@ pools:
   status_sync: Synkroniserar
   status_init: Initierar
   status_down: Offline
-  status_unknown: Inget svar
+  status_unknown: Okänd
+  status_no_response: Inget svar
   header_1: Pool
   header_2: Ägare
   header_3: Adress
