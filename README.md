@@ -4,7 +4,7 @@ The website of XDAG, built with [Jekyll](https://jekyllrb.com/docs/home/).
 ## News Posts guidelines
 
 ### Setup
-News posts are placed in `_i18n/en/_posts/`. 
+News posts are placed in `_posts/`.
 
 The filename must use the following format:
 ````
@@ -28,7 +28,8 @@ date: "YYYY-MM-DD hh:mm:ss"
 ---
 ````
 Optional YAML tags:
-* `image:` Path to an image file. Displayed with the post link on platforms that support it (Facebook, Twitter, Reddit...). Example format for an internal image: `"/assets/images/posts/community-fund-rewards.jpg"`
+* `image:` Path to an image file. Displayed on platforms that support Open Graph Markup. Example format for an internal image: `"/assets/images/posts/community-fund-rewards.jpg"`
+* `summary:` Summary of the post content. Displayed on search engine results and platforms that support Open Graph Markup. By default, the first line from post content is used.
 
 ### Writing
 Markdown is used for rich text formatting, you can find examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
