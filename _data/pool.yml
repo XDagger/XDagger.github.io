@@ -130,7 +130,7 @@
     fee_community: 1
     website: https://xdag.signal2noi.se/
     name: xdag.signal2noi.se
-    state: http://pool1.xdag.signal2noi.se/state.txt
+    state: https://xdag.signal2noi.se/status
     country: Germany
 
 - owner: Frozen

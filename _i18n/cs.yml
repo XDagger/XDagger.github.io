@@ -166,7 +166,8 @@ pools:
   status_sync: Synchronizace
   status_init: Zahajování
   status_down: Offline
-  status_unknown: Bez odezvy
+  status_unknown: Neznámý
+  status_no_response: Bez odezvy
   header_1: Pool
   header_2: Majitel
   header_3: Adresa

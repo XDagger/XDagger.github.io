@@ -9,9 +9,12 @@
   var proxyFallback = 'https://cors-anywhere.herokuapp.com/';
   var rowReadyClass = 'pool__row-group--ready';
   var stateReadyClass = 'pool__data--ready';
-  var messages = [
+  var messageIcons = [
     {
-      text: 'Synchronized with the main network. Normal operation.',
+      text: [
+        'Synchronized with the main network. Normal operation.',
+        'Waiting for transfer to complete.'
+      ],
       icon: function() {
         return createIconNode(poolStatusMsg.on, 'up', 'ion-md-checkmark')
       }
@@ -35,6 +38,9 @@
       }
     }
   ];
+  var messageNoResponseIcon = function() {
+    return createIconNode(poolStatusMsg.noResponse, 'unknown', 'ion-md-help');
+  }
   var messageFallbackIcon = function() {
     return createIconNode(poolStatusMsg.unknown, 'unknown', 'ion-md-help');
   }
@@ -81,11 +87,22 @@
     $.ajax({
       url: proxy + url,
       type: 'GET',
+
       success: function(res) {
         res = res.state ? res.state : res;
         
-        var message = messages.find(function(message) {
-          return res.indexOf(message.text) > -1;
+        var message = messageIcons.find(function(message) {
+          var found;
+
+          if (Array.isArray(message.text)) {
+            found = message.text.find(function(groupedMessage) {
+              return res.indexOf(groupedMessage) > -1;
+            });
+          } else {
+            found = res.indexOf(message.text) > -1;
+          }
+
+          return found;
         });
 
         if (message !== undefined) {
@@ -96,12 +113,13 @@
 
         stateNode.classList.add(stateReadyClass);
       },
+
       error: function(res) {
         if (firstRun) {
           proxy = proxyFallback;
           handleStateCheck(url, stateNode, false);
         } else {
-          stateNode.appendChild(messageFallbackIcon());
+          stateNode.appendChild(messageNoResponseIcon());
           stateNode.classList.add(stateReadyClass);
         }
       }

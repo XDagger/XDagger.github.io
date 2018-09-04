@@ -177,7 +177,8 @@ pools:
   status_sync: Synchronizing
   status_init: Initializing
   status_down: Offline
-  status_unknown: No response
+  status_unknown: Unknown
+  status_no_response: No response
   header_1: Pool
   header_2: Owner
   header_3: Address
