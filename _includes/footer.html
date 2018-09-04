@@ -1,37 +1,47 @@
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-6 footer-info">
-                    <img src="{{ '/assets/images/logo.svg' | absolute_url }}" height="60" alt="Dagger, by the community" />
-                    <div class="community_wallets">
-                        <p class="mb-3">{% t footer.support %}</p>
-                        {% for wallet in site.community_wallets %}
-                        <div>
-                          <p class="community_wallets__item community_wallets__item">
-                            <span class="community_wallets__currency">{{ wallet.currency }}</span>
-                            <i class=" community_wallets__arrow community_wallets__arrow--i{{ forloop.index }} ion-ios-arrow-back"></i>
-                            <i class=" community_wallets__arrow community_wallets__arrow--i{{ forloop.index }} ion-ios-arrow-forward"></i>
-                            <span class="community_wallets__address">{{ wallet.address }}</span>
-                          </p>  
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 footer-links">
-                    <h4>{% t footer.links %}</h4>
-                    <ul>
-                        <li><a href="{% tl home %}">{% t nav.home %}</a></li>
-                        <li><a href="http://explorer.xdag.io/" target="_blank">{% t nav.explorer %}{% include lang-warn.html %}</a></li>
-                        <li><a href="{% tl home %}#{% t nav.mining %}">{% t nav.mining %}</a></li>
-                        <li><a href="{% tl home %}#{% t nav.wallet %}">{% t nav.wallet %}</a></li>
-                        <li><a href="{{ '/blog' | absolute_url }}">{% t nav.news %}{% include lang-warn.html %}</a></li>
-                        <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">{% t nav.whitepaper %}{% include lang-warn.html %}</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<footer id="footer" class="main-footer">
+    <div class="main-footer__section main-footer__info col-lg-6 col-md-12">
+        <img class="mb-3" src="{{ '/assets/images/logo.svg' | absolute_url }}" height="60" alt="Dagger, by the community" />
+        <ul class="community_wallets main-footer__text">
+            <p class="mb-3">{% t footer.support %}</p>
+            {% for wallet in site.community_wallets %}
+            <li>
+              <p class="community_wallets__item">
+                <span class="community_wallets__currency">{{ wallet.currency }}</span>
+                <i class="community_wallets__arrow community_wallets__arrow--i{{ forloop.index }} ion-ios-arrow-back"></i>
+                <i class="community_wallets__arrow community_wallets__arrow--i{{ forloop.index }} ion-ios-arrow-forward"></i>
+                <span class="community_wallets__address">{{ wallet.address }}</span>
+              </p>  
+            </li>
+            {% endfor %}
+        </ul>
     </div>
+    <div class="main-footer__section col-lg-3 col-md-6 col-sm-6">
+        <h4 class="main-footer__heading">{% t footer.links %}</h4>
+        <ul class="main-footer__links">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="{% tl home %}">{% t nav.home %}</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="http://explorer.xdag.io/" target="_blank">{% t nav.explorer %}{% include lang-warn.html %}</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="{% tl home %}#mining">{% t nav.mining %}</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="{% tl home %}#wallet">{% t nav.wallet %}</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="{{ '/blog' | absolute_url }}">{% t nav.news %}{% include lang-warn.html %}</a></li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">{% t nav.whitepaper %}{% include lang-warn.html %}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-footer__section col-lg-3 col-md-6 col-sm-6">
+      <h4 class="main-footer__heading">{% t footer.available_in %}</h4>
+      {% include lang-nav.html class="nav-lang--footer" %}
+    </div>
+
 </footer>
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 <script src="{{ '/assets/lib/jquery/jquery.min.js' | absolute_url }}"></script>

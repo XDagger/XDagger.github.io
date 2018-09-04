@@ -42,31 +42,12 @@
                     <li><a href="{% tl home %}#community">{% t nav.social_channels %}</a></li>
                 </ul>
             </li>
-            <li class="js-nav-has-sublevel nav-lang">
+            <li class="js-nav-has-sublevel sublevel-lang">
                 <input class="display-toggle" type="checkbox" id="nav-lang-toggle">
                 <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0">
-                  <i class="ion-ios-globe nav-sublevel-icon"></i><span class="nav-sublevel-text">{{ site.translations[site.lang].nav.current_language }}</span>
+                  <i class="nav-sublevel-icon"></i>
                 </label>
-                <div id="nav-lang" class="sf-mega nav-sublevel js-nav-sublevel">
-                  <ul class="nav-sublevel-grid">
-<!--
-                    <li>
-                      <a href="https://xdag.top">中文</a>
-                    </li>
--->
-                    {%- for lang in site.languages -%}
-                      <li>
-                      {% capture language %}{{ site.translations[lang].nav.current_language }}{% endcapture %}
-                      {% if page.translated %}
-                        {% capture namespace %}{{ page.namespace }} {{ lang }}{% endcapture %}
-                        <a href="{{ site.url }}{% tl namespace %}">{{ language }}</a>
-                      {%- else -%}
-                        <a href="{% localize_absolute_url {{ '/index.html' }} {{ lang }} %}">{{ language }}</a>
-                      {%- endif -%}
-                      </li>
-                    {%- endfor -%} 
-                  </ul>
-                </div>
+                {% include lang-nav.html id="main-nav-lang" class="nav-lang--main sf-mega nav-sublevel js-nav-sublevel" %}
             </li>
         </ul>
     </nav>

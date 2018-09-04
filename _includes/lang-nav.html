@@ -1,0 +1,15 @@
+<nav {% if include.id %} id="{{ include.id }}" {% endif %} class="nav-lang {{ include.class }}">
+  <ul class="nav-lang__list">
+    {%- for lang in site.languages -%}
+    <li class="nav-lang__item">
+    {% capture lang_text %}{{ site.translations[lang].nav.current_language }}{% endcapture %}
+    {% if page.translated %}
+      {% capture namespace %}{{ page.namespace }} {{ lang }}{% endcapture %}
+      <a class="nav-lang__link" href="{{ site.url }}{% tl namespace %}">{{ lang_text }}</a>
+    {%- else -%}
+      <a class="nav-lang__link" href="{% localize_absolute_url {{ '/index.html' }} {{ lang }} %}">{{ lang_text }}</a>
+    {%- endif -%}
+    </li>
+    {%- endfor -%} 
+  </ul> 
+</nav>
