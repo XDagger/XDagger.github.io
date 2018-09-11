@@ -83,6 +83,8 @@ home:
       content: MacOS textbaserad användargränssnitts plånbok.
     - title: MacOS GPU miner
       content: GPU Miner av Jonano för MacOS.
+    - title: iOS wallet
+      content: Beta version.
     - title: Android plånbok
       content: För Android 5.0 och nyare versioner.
     - title: Källkod

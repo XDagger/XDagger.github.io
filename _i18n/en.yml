@@ -88,6 +88,8 @@ home:
       content: MacOS command line wallet.
     - title: MacOS GPU miner
       content: GPU Miner by Jonano for MacOS.
+    - title: iOS wallet
+      content: Beta version.
     - title: Android wallet
       content: For Android 5.0 and newer.
     - title: Sources
