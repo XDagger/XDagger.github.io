@@ -7,11 +7,11 @@
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
-		<string>https://xdag.io/apps/xdag-ios.ipa</string>
+		<string>https://xdag.io/assets/apps/xdag-ios.ipa</string>
 		<key>displayImageURL</key>
-		<string>https://xdag.io/apps/image.57x57.png</string>
+		<string>https://xdag.io/assets/apps/image.57x57.png</string>
 		<key>fullSizeImageURL</key>
-		<string>https://xdag.io/apps/image.512x512.png</string>
+		<string>https://xdag.io/assets/apps/image.512x512.png</string>
 	</dict>
 	<key>method</key>
 	<string>enterprise</string>
