@@ -19,7 +19,7 @@
   delay: 0.4s
 
 - icon: ion-logo-apple
-  href: "itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://xdag.io/assets/apps/mainfest.plist"
+  href: "itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://xdag.io/assets/apps/manifest.plist"
   delay: 0.6s
 
 - icon: ion-logo-android
