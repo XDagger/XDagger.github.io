@@ -1,0 +1,24 @@
+{% include head.html %}
+  <link href="{{ '/assets/css/privacy.css' | absolute_url }}" rel="stylesheet">
+</head>
+
+<body>
+{% include header.html %}
+<main id="main">
+    <div class="container pt-5">
+        <div class="section-header wow fadeInUp">
+            <h3>{{ page.title }}</h3>
+            <p>{{ page.description }}</p>
+        </div>
+        <div>
+          <section class="privacy-section">
+            <h4 class="privacy-title">Android wallet</h4>
+            <p>XDAG Android Wallet offered by XDAG Community is a standalone application, there is no backend to process any kind of user information including device information or user information.</p>
+          </section>
+
+        </div>
+    </div>
+</main>
+{% include footer.html %}
+</body>
+</html>
