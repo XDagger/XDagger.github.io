@@ -84,6 +84,8 @@ home:
       content: MacOS peněženka s textovým rozhraním.
     - title: MacOS GPU miner
       content: GPU miner vytvořený uživatelem Jonano MacOS.
+    - title: iOS wallet
+      content: Beta version.
     - title: Android peněženka
       content: Pro Android 5.0 a novější.
     - title: Zdrojové kódy
