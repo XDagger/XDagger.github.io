@@ -1,6 +1,6 @@
 - owner: AnotherYou
   pools: 
-  - address: 109.196.45.218:443
+  - address: xdag.corpopool.com:443
     fee_pool: 1
     fee_miner_finder: 1
     fee_miner_contributor: 1
