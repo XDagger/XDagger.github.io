@@ -264,3 +264,17 @@
     name: Feipool
     state: 117.27.159.97:5000/state.txt
     country: China
+
+- owner: Nobody
+  pools:
+  - address: 
+      - amgpool.com:13654
+      - bmwpool.com:13654
+    fee_pool: 1
+    fee_miner_finder: 5
+    fee_miner_contributor: 5
+    fee_community: 1
+    website: http://amgpool.com/
+    name: amgpool.com
+    state: http://amgpool.com/state.txt
+    country: Germany
