@@ -48,7 +48,7 @@
                 <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="{{ guide_d.delay }}">
                     <div class="icon"><i class="{{ guide_d.icon }}"></i></div>
                     <h4 class="title">
-                        {% if forloop.index0 == 0 %}<a href="#{% t nav.wallet %}">{{ guide.title }}</a>{% endif %}
+                        {% if forloop.index0 == 0 %}<a href="#wallet">{{ guide.title }}</a>{% endif %}
                         {% if forloop.index0 == 1 %}<a class="playvideo">{{ guide.title }}</a>{% endif %}
                         {% if forloop.index0 == 2 %}<a href="{% tl pools %}" class="pool">{{ guide.title }}</a>{% endif %}
                     </h4>
