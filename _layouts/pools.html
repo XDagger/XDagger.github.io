@@ -64,16 +64,16 @@
           <th class="pool__header">{% t pools.header_6 %}</th>
         </tr>
       </thead>
-      {% for pool_owner in site.data.pool %}
+      {% for pool_group in site.data.pool %}
       <tbody class="pool__row-group js-pool-group">
-        {% for pool in pool_owner.pools %}
+        {% for pool in pool_group.pools %}
         <tr class="pool__row js-pool">
           <td class="pool__data pool__data--name"><div class="pool__row-header">{% t pools.header_1 %}:</div>
             {% if pool.website %}<a href="{{ pool.website }}" target="_blank">{% endif %}
               {{ pool.name }}
             {% if pool.website %}</a>{% endif %}
           </td>
-          <td class="pool__data"><div class="pool__row-header">{% t pools.header_2 %}:</div>{{ pool_owner.owner }}</td>
+          <td class="pool__data"><div class="pool__row-header">{% t pools.header_2 %}:</div>{{ pool.owner }}</td>
           <td class="pool__data"><div class="pool__row-header">{% t pools.header_3 %}:</div>{% for address in pool.address %}<span class="pool__address">{{ address }}</span>{% endfor %}</td>
           {% capture country_translated %}{% t countries.{{ pool.country | downcase }} %}{% endcapture %}
           <td class="pool__data"><div class="pool__row-header">{% t pools.header_4 %}:</div>{{ country_translated | default: pool.country }}</td>
