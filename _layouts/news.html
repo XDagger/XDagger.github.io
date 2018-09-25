@@ -15,6 +15,7 @@
                 <ul class="news">
 
                 {% for post in paginator.posts  %}
+                    {% unless post.draft %}
                     <li>
                         <div class="lft post-content">
                             <div class="tit"> <a href="{{ post.url | absolute_url }}">{{ post.title }}</a><i class="ion-ios-arrow-down js-toggle-content"></i></div>
@@ -27,6 +28,7 @@
                             <div class="year">{{post.date | date: "%Y"}}</div>
                         </div>
                     </li>
+                    {% endunless %}
                 {% endfor %}
                 </ul>
                 {% if paginator.total_pages > 1 %}
