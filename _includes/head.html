@@ -3,7 +3,7 @@
 {%- endcapture -%}
 
 {%- capture description -%}
-  {% if page.description and page.translated %}{% t page.description %}{% elsif page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip | xml_escape }}{% endif %}
+  {% if page.description and page.translated %}{% t page.description %}{% elsif page.description %}{{ page.description }}{% else %}{{ page.summary | default: page.excerpt | strip_html | strip | xml_escape }}{% endif %}
 {%- endcapture -%}
 
 {%- capture og_page_url -%}

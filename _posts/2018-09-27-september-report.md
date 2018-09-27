@@ -2,7 +2,7 @@
 layout: post
 title: September report
 date: "2018-09-27 15:00:00"
-image: 
+image: "/assets/images/posts/september-report.jpg"
 summary: Exchanges, marketing, giveaways and development. A report on XDAG's progress in September 2018.
 ---
 
