@@ -12,6 +12,22 @@ em.underline {
 }
 
 .post-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:not(:first-of-type) {
+      margin-top: 2.5em;
+    }
+  }
+
+  h2 {
+    font-size: 2em;
+    //margin-top: 2em;
+  }
+
   pre {
     color: #000000;
     background: #f1f1f1;
@@ -85,6 +101,11 @@ em.underline {
   li {
     padding: 0;
     margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
   }
 }
 
