@@ -1,8 +1,20 @@
 {% assign images = include.images | split: ", " %}
+{% assign hrefs = include.image_links | split: ", " %}
+{% assign labels = include.image_labels | split: ", " %}
 
-<div class="img-gallery mb-5">
+{%- capture block_class -%}
+  img-gallery mb-5 {% if include.class_modifier %}{{ include.class_modifier }} {%- endif -%}
+{%- endcapture -%}
+
+{%- capture lightbox_group -%}
+  {%- if include.lightbox_group -%} data-lightbox="{{ include.lightbox_group }}" {%- endif -%}
+{%- endcapture -%}
+
+<div class="{{ block_class }}">
   {% for image in images %}
-  <a class="img-gallery__item" href="{{ image | absolute_url}}" data-lightbox="{{ include.group }}">
+  {% assign href = hrefs[forloop.index0] %}
+  {% assign label = labels[forloop.index0] %}
+  <a class="img-gallery__item" href="{{ href }}" {{ lightbox_group }}>
     <div class="img-gallery__img" style="background-image: url({{ image | absolute_url }})"></div>
   </a>
   {% endfor %}

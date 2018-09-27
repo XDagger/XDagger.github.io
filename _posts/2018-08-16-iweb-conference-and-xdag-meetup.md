@@ -19,7 +19,7 @@ A special thank you to all who contributed XDAG so Airdrops could be made possib
 
 {% include image-gallery.html 
   images="/assets/images/posts/iweb2018/conf_1.jpg, /assets/images/posts/iweb2018/conf_2.jpg, /assets/images/posts/iweb2018/conf_3.jpg" 
-  group="conf"
+  lightbox_group="conf"
 %}
 
 #### XDAG Meetup
@@ -42,5 +42,5 @@ The community would like to say many thanks for representing us this weekend as 
 
 {% include image-gallery.html 
   images="/assets/images/posts/iweb2018/meetup_1.jpg, /assets/images/posts/iweb2018/meetup_2.jpg, /assets/images/posts/iweb2018/meetup_3.jpg, /assets/images/posts/iweb2018/meetup_4.jpg, /assets/images/posts/iweb2018/meetup_5.jpg" 
-  group="meetup"
+  lightbox_group="meetup"
 %}
