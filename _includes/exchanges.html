@@ -1,5 +1,4 @@
 <section class="home-section">
-  <div class="container">
     <header class="section-header wow fadeInUp">
         <h3>{% t home.exchanges %}</h3>
         <p>{% t home.exchanges_content %}</p>
@@ -13,7 +12,7 @@
               <h6 class="exchanges__caption-title">{{ exchange.name }}</h6>
               <p class="exchanges__caption-body">{% t home.exchanges_{{ forloop.index }}_description %}</p>
               <div class="exchanges__meta">
-                <a class="button button--animated exchanges__button" href="{{ exchange.website }}">{% t global.trade %}</a>
+                <a class="button button--animated exchanges__button" href="{{ exchange.website }}" target="_blank">{% t global.trade %}</a>
                 <div class="exchanges__pairs">
                   {% for pair in exchange.pairs %}
                   <a class="exchanges__pair" href="{{ pair.link }}" target="_blank">XDAG / {{ pair.currency }}</a>
@@ -25,5 +24,4 @@
       </li>
       {% endfor %}
     </ul>
-  </div>
 </section>

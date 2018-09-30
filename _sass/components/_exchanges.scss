@@ -2,7 +2,7 @@
   display: flex;
   list-style: none;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0 10vw;
 }
 
 .exchanges__item {
@@ -21,14 +21,7 @@
 
   @include bp-min(768px) {
     width: 50%;
-
-    &:nth-child(odd) {
-      padding-right: 4vw;
-    }
-
-    &:nth-child(even) {
-      padding-left: 4vw;
-    }
+    padding: 0 2vw;
   }
 
   @include bp-min(1100px) {
