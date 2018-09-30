@@ -15,3 +15,10 @@
   pairs: 
     - currency: CNYT
       link: https://www.coinbat.com/trade/panel/xdag
+
+- logo: '/assets/images/exchanges/fexpro.png'
+  name: Fexpro
+  website: https://fexpro.io/
+  pairs: 
+    - currency: USDT
+      link: https://fexpro.io/Home/Exchange?type=XDAG/USDT&buytype=USDT
