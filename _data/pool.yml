@@ -76,17 +76,6 @@
       name: "xdag.org Canada #1"
       state: https://xdag.org/status?pool=4
       country: Canada
-      
-    - address: sg1.xdag.org:443
-      owner: kbs1
-      fee_pool: 1
-      fee_miner_finder: 0
-      fee_miner_contributor: 0
-      fee_community: 1
-      website: https://xdag.org/
-      name: "xdag.org Singapore #1"
-      state: https://xdag.org/status?pool=6
-      country: Singapore
 
 - pools: 
   - address: 142.44.143.234:777
