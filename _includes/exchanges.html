@@ -10,7 +10,7 @@
             <img class="exchanges__img" src="{{ exchange.logo | absolute_url }}">
             <figcaption class="exchanges__caption">
               <h6 class="exchanges__caption-title">{{ exchange.name }}
-                <span class="exchanges__language-container">{% t footer.available_in %}: {{ exchange.interface_lang }}</span>
+                <span class="exchanges__language-container">{{ exchange.interface_lang }}</span>
               </h6>
               <p class="exchanges__caption-body">{% t home.exchanges_{{ forloop.index }}_description %}</p>
               <div class="exchanges__meta">

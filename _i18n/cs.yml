@@ -96,7 +96,7 @@ home:
   exchanges_content: Nákup, prodej a obchod s XDAGem.
   exchanges_1_description: Vedoucí platforma v oblasti obchodování s kryptoměnami. Tato platforma také drží světové prvenství v nepřetržítém obchodování s BTC, kdy užívá USDT jako marži.
   exchanges_2_description: Globální burza založena v Singapuru odhodlaná stát se jedničkou v oblasti kryptoměn. Upřímně, férově a ochotně.
-  exchanges_3_description: Fex.hk, platforma pro digitální obchodnování na jednom místě. Burza podporuje více hlavních, běžných digitálních měn.
+  #exchanges_3_description: Fex.hk, platforma pro digitální obchodnování na jednom místě. Burza podporuje více hlavních, běžných digitálních měn.
          
   roadmap: Plán
   roadmap_content:
