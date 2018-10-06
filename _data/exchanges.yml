@@ -1,5 +1,6 @@
 - logo: '/assets/images/exchanges/bbx.png'
   name: BBX
+  interface_lang: English, 中文
   website: https://bbx.com
   pairs: 
     - currency: USDT
@@ -11,14 +12,24 @@
 
 - logo: '/assets/images/exchanges/coinbat.svg'
   name: Coinbat
+  interface_lang: 中文
   website: https://www.coinbat.com/
   pairs: 
     - currency: CNYT
       link: https://www.coinbat.com/trade/panel/xdag
 
-- logo: '/assets/images/exchanges/fexpro.png'
-  name: Fexpro
-  website: https://fexpro.io/
+- logo: '/assets/images/exchanges/firefoxotc.png'
+  name: Firefox OTC
+  interface_lang: 中文
+  website: https://firefoxotc.com/
   pairs: 
-    - currency: USDT
-      link: https://fexpro.io/Home/Exchange?type=XDAG/USDT&buytype=USDT
+    - currency: FFC
+      link: https://firefoxotc.com/exchange
+
+- logo: '/assets/images/exchanges/vbitex.png'
+  name: VBitEX
+  interface_lang: 中文
+  website: http://www.vbitex.com/
+  pairs: 
+    - currency: VB
+      link: http://www.vbitex.com/Home/Qcorders/index/currency/XDAG.html

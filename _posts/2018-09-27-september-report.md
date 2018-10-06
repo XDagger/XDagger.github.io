@@ -12,7 +12,7 @@ We want to ensure people that we continue working on being added to new exchange
 
 {% include image-gallery.html
   class_modifier="img-gallery--small img-gallery--equal-size"
-  images="/assets/images/exchanges/bbx.png, /assets/images/exchanges/fexpro.jpg, /assets/images/exchanges/coinbat.svg, /assets/images/exchanges/vbitex.jpg" 
+  images="/assets/images/exchanges/bbx.png, /assets/images/exchanges/fexpro.jpg, /assets/images/exchanges/coinbat.svg, /assets/images/exchanges/vbitex.png" 
   image_links="https://www.bbx.com/, https://fexpro.io/, https://coinbat.com/, http://www.vbitex.com/"
 %}
 
