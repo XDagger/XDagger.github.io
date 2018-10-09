@@ -96,7 +96,9 @@ home:
   exchanges_content: Nákup, prodej a obchod s XDAGem.
   exchanges_1_description: Vedoucí platforma v oblasti obchodování s kryptoměnami. Tato platforma také drží světové prvenství v nepřetržítém obchodování s BTC, kdy užívá USDT jako marži.
   exchanges_2_description: Globální burza založena v Singapuru odhodlaná stát se jedničkou v oblasti kryptoměn. Upřímně, férově a ochotně.
-  #exchanges_3_description: Fex.hk, platforma pro digitální obchodnování na jednom místě. Burza podporuje více hlavních, běžných digitálních měn.
+  exchanges_3_description: Firefox je bezplatné a spolehlivé místo pro OTC obchod. Tato digitální platforma pro digitální transakce si globálně získala přízeň a důvěru uživatelů, kterým zaručuje bezpečnost a zajímavé výhody.
+  exchanges_4_description: Posláním společnosti VBitEx je poskytování profesionálních mezinárodních obchodních služeb a finančních produktů široké škále nadšenců obchodujícími s digitálními aktivy a investorům po celém světě, aniž by došlo k porušení příslušných regionálních zákonů.
+  #exchanges_5_description: Fex.hk, platforma pro digitální obchodnování na jednom místě. Burza podporuje více hlavních, běžných digitálních měn.
          
   roadmap: Plán
   roadmap_content:
