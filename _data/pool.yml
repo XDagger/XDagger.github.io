@@ -90,18 +90,6 @@
     country: Canada
 
 - pools: 
-  - address: 148.251.139.197:443
-    owner: asdSd1n23ffd
-    fee_pool: 1
-    fee_miner_finder: 5
-    fee_miner_contributor: 2
-    fee_community: 1
-    website: https://xdag.poolaroid.com/
-    name: xdag.poolaroid.com
-    state: https://xdag.poolaroid.com/rawstats/state
-    country: Netherlands
-
-- pools: 
   - address: 172.105.216.53:3355
     owner: Khaak
     fee_pool: 1
@@ -137,18 +125,6 @@
     name: pool.xdag.us
     state: http://pool.xdag.us/state.txt
     country: Japan
-
-- pools: 
-  - address: 78.46.82.220:13654
-    owner: Maximous
-    fee_pool: 1
-    fee_miner_finder: 10
-    fee_miner_contributor: 5
-    fee_community: 1
-    website: https://xdagmining.com/
-    name: xdagmining.com
-    state: https://xdagmining.com/state.txt
-    country: Germany
   
 - pools: 
   - address: xdag.yourspool.com:443
