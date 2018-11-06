@@ -119,8 +119,8 @@
     owner: Frozen
     fee_pool: 2
     fee_miner_finder: 10
-    fee_miner_contributor: 5
-    fee_community: 1
+    fee_miner_contributor: 10
+    fee_community: 5
     website: http://pool.xdag.us/
     name: pool.xdag.us
     state: http://pool.xdag.us/state.txt
