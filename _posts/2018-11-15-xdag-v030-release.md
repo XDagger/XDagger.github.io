@@ -1,3 +1,4 @@
+---
 layout: post
 title: XDAG v 0.3.0 release notes
 date: "2018-11-15 19:00:00"
