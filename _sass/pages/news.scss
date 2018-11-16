@@ -35,6 +35,17 @@ em.underline {
     border-radius: 3px;
   }
 
+  li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+
   ul, ol {
     margin: 0 0 30px 0;
     padding: 0 0 0 20px;
@@ -100,16 +111,6 @@ em.underline {
     ol li::before {
       content: none;
     }
-  }
-
-  li {
-    padding: 0;
-    margin: 0;
-  }
-
-  img {
-    max-width: 100%;
-    width: auto;
   }
 }
 
