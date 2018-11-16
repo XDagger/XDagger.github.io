@@ -1,9 +1,9 @@
 - icon: ion-logo-windows
-  href: https://github.com/XDagger/xdag/files/2186514/XDag.x64.zip
+  href: https://github.com/XDagger/xdag/files/2586909/XDag.x64.zip
   delay: 0s
 
 - icon: ion-logo-windows
-  href: https://github.com/XDagger/xdag/files/2186515/XDag.x86.zip
+  href: https://github.com/XDagger/xdag/files/2586912/XDag.x86.zip
   delay: 0.1s
 
 - icon: ion-logo-windows
@@ -11,7 +11,7 @@
   delay: 0.2s
   
 - icon: ion-logo-apple
-  href: https://github.com/XDagger/xdag/files/2180609/xdag.0.2.5.zip
+  href: https://github.com/XDagger/xdag/files/2586967/xdag.0.3.0.zip
   delay: 0.3s
 
 - icon: ion-logo-apple
