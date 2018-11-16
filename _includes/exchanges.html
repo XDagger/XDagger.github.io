@@ -14,10 +14,10 @@
               </h6>
               <p class="exchanges__caption-body">{% t home.exchanges_{{ forloop.index }}_description %}</p>
               <div class="exchanges__meta">
-                <a class="button button--animated exchanges__button" href="{{ exchange.website }}" target="_blank">{% t global.trade %}</a>
+                <a class="button button--animated exchanges__button" href="{{ exchange.website }}" target="_blank" rel="noopener">{% t global.trade %}</a>
                 <div class="exchanges__pairs">
                   {% for pair in exchange.pairs %}
-                  <a class="exchanges__pair" href="{{ pair.link }}" target="_blank">XDAG / {{ pair.currency }}</a>
+                  <a class="exchanges__pair" href="{{ pair.link }}" target="_blank" rel="noopener">XDAG / {{ pair.currency }}</a>
                   {% endfor %}
                 </div>
               </div>
