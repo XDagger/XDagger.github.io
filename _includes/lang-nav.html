@@ -1,8 +1,5 @@
 <nav {% if include.id %} id="{{ include.id }}" {% endif %} class="nav-lang {{ include.class }}">
   <ul class="nav-lang__list">
-    <li class="nav-lang__item">
-      <a class="nav-lang__link" href="http://xdag.top">中文</a>
-    </li>
     {%- for lang in site.languages -%}
     <li class="nav-lang__item">
     {% capture lang_text %}{{ site.translations[lang].nav.current_language }}{% endcapture %}
