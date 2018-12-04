@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "https://gems.ruby-china.com/"
 ruby RUBY_VERSION
 
 gem "rake", "~> 12" # for Travis CI
