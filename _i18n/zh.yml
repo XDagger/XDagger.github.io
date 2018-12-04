@@ -26,7 +26,7 @@ footer:
   support: "支持社区：该网站由XDAG社区维护和管理"
   support_address_pre: 捐献XDAG
   links: 可用链接
-  available_in: Available in
+  available_in: 在如下地区可用
 
 countries:
   poland: 波兰
@@ -56,8 +56,8 @@ home:
         每64秒产出新的货币
     - title: 无预挖、无ICO
       content: XDAG采用尖端技术，解决了其他加密货币遇到的问题提供了去中心化的解决方案。XDAG没有预挖、没有ICO，是一个真正社区驱动的项目，由一个有着共同目标和创新精神的开发团队开发。
-  introduction: 关于 Dagger
-  introduction_content: Dagger是基于DAG的新一代分布式分类账本. DAG,有向无环图, 是在分布式的分散环境中在人们中发送数据的另一种方法。这样做没有区块链，允许更大的可扩展性.
+  introduction: 关于 XDAG
+  introduction_content: XDAG是基于DAG的新一代分布式分类账本. DAG,有向无环图, 是在分布式的分散环境中在人们中发送数据的另一种方法。这样做没有区块链，允许更大的可扩展性.
   features:
     - title: CPU/GPU 可开采
       content: XDAG可以使用CPU、GPU开采，是第一个可挖矿的DAG项目。
@@ -69,7 +69,7 @@ home:
   mining_content: 第一个可挖矿的DAG. 根据以下步骤，如果你需要任何问题，可以直接联系我们
   mining_guides:
     - title: 钱包下载
-      content: 首先，下载适用于您的操作系统的Dagger miner & wallet。点击下载。
+      content: 首先，下载适用于您的操作系统的挖矿软件和钱包。点击下载。
     - title: 如何使用
       content: 下一步观看易于学习的教学视频。
     - title: 选择一个矿池
@@ -81,14 +81,14 @@ home:
       content: 64位Windows可执行文件(x64)。
     - title: Windows 32位钱包
       content: 32位Windows可执行文件(x86)。
-    - title: Windows GPU 挖矿
+    - title: Windows GPU 挖矿软件
       content: MacOS命令行钱包。
     - title: MacOS 钱包
       content: MacOS命令行钱包。
-    - title: MacOS GPU 挖矿
-      content: MacOS GPU 挖矿
-    - title: iOS wallet
-      content: Beta version. Users have to accept F&F INTERNATIONAL TRADING CO., LTD as a trusted source.
+    - title: MacOS GPU 挖矿软件
+      content: MacOS GPU 挖矿软件
+    - title: iOS 钱包
+      content: Beta版本. 请在设置->通用->描述文件与设备管理中信任 F&F INTERNATIONAL TRADING CO., LTD (我们的发布证书)
     - title: Android 钱包
       content: 安卓5.0或以上系统
     - title: 源代码
@@ -98,9 +98,9 @@ home:
   exchanges_content: 交易XDAG
   exchanges_1_description: 领先的加密货币指数交易平台, 同时也是全球第一支用USDT作保证金的BTC永续合约交易平台。
   exchanges_2_description: 在新加坡建立的全球交易所。 致力于成为加密货币世界的灯塔。 透明，公平，合规。
-  exchanges_3_description: Firefox is a free and reliable OTC platform for trading. Its digital asset over-the-counter trading platform has won the favor and trust of global users with its professional, safe and convenient advantages.
-  exchanges_4_description: VBitEX's mission is to provide professional international trading platforms and financial products to a wide range of digital asset enthusiasts and investors around the world without violating relevant regional laws.
-
+  exchanges_3_description: 火狐狸网FirefoxOTC是一个自由买卖安全可信赖的OTC平台。我们希望人们交易和使用数字币变得更加简单。
+  exchanges_4_description: VBitEX致力于在当地法律法规要求下为广大加密货币爱好者和投资者提供多种金融产品和国际化的交易平台。
+  
   roadmap: 路线图
   roadmap_content:
     - timeframe: 2017年第三季度
