@@ -26,6 +26,7 @@ footer:
   support: "支持社区：该网站由XDAG社区维护和管理"
   support_address_pre: 捐献XDAG
   links: 可用链接
+  available_in: Available in
 
 countries:
   poland: 波兰
@@ -38,6 +39,8 @@ countries:
   russia: 俄罗斯
   china: 中国
   lithuania: 立陶宛
+  usa: 美国
+  australia: 澳大利亚
 
 # Pages
 
@@ -84,6 +87,8 @@ home:
       content: MacOS命令行钱包。
     - title: MacOS GPU 挖矿
       content: MacOS GPU 挖矿
+    - title: iOS wallet
+      content: Beta version. Users have to accept F&F INTERNATIONAL TRADING CO., LTD as a trusted source.
     - title: Android 钱包
       content: 安卓5.0或以上系统
     - title: 源代码
@@ -93,6 +98,8 @@ home:
   exchanges_content: 交易XDAG
   exchanges_1_description: 领先的加密货币指数交易平台, 同时也是全球第一支用USDT作保证金的BTC永续合约交易平台。
   exchanges_2_description: 在新加坡建立的全球交易所。 致力于成为加密货币世界的灯塔。 透明，公平，合规。
+  exchanges_3_description: Firefox is a free and reliable OTC platform for trading. Its digital asset over-the-counter trading platform has won the favor and trust of global users with its professional, safe and convenient advantages.
+  exchanges_4_description: VBitEX's mission is to provide professional international trading platforms and financial products to a wide range of digital asset enthusiasts and investors around the world without violating relevant regional laws.
 
   roadmap: 路线图
   roadmap_content:
