@@ -17,10 +17,24 @@
   }
 }
 
+.link {
+  background: #17142e !important;
+}
+
+#main {
+  min-height: 100vh;
+  background: #0f0c29;
+}
+
+#header.header-scrolled {
+  background: rgba(15, 12, 41, 0.7);
+}
+
 .header-bg {
-  background: #111;
+  background: #0f0c29;
 }
 
 #footer {
   position: relative;
+  background: #17142e;
 }

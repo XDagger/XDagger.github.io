@@ -1,116 +1,20 @@
 {% include head.html %}
     <link href="{{ '/assets/css/pools.css' | absolute_url }}" rel="stylesheet">
+    <link href="{{ '/assets/widgets/network/main.bundle.css' | absolute_url }}" rel="stylesheet">
 </head>
 
 <body>
 {% include header.html %}
 <main id="main">
-  <section class="pool">
-    <img class="pool__graphic pool__graphic--bg" src="{{ '/assets/images/banner/2.png' | absolute_url }}">
-    <svg version="1.1" class="pool__graphic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 1920 1280" style="enable-background:new 0 0 1920 1280;" xml:space="preserve">
-      <polyline points="1541.7,546 1511.7,514 1478.3,518.7 1418.3,493.3 1346.3,433.3 1284,480 1249,444.5 
-        1161.7,426.7 1101,434.7 1059.7,452 1013,461.3 997.7,488.7 974.3,488.7 951.7,489.3 933.7,478.7 907,448 882.3,470 887,484.7 
-        873.7,507.3 859,509.3 845.7,500 829.7,502.7 817,515.3 809,537.3 "/>
-      <polyline points="531,1123.3 554.3,1067.3 531,1044.7 534.3,1016 589,960 589,919.3 627,919.3 
-        661,947.3 643.7,870 629.7,839.3 611,839.3 607,794 623,782.7 648.3,769.3 605.7,740 545.7,727.3 535.7,745.3 525,727.3 "/>
-      <polyline points="229,298 252.3,364 217.7,349.3 235,402.7 206.3,436 225.7,455.3 296.3,447.3 
-        351,422.7 393,491.3 454.3,478.7 502.3,491.3 502.3,508 517.7,499.3 535.7,505.3 529.7,513.3 529.7,524.7 533,539.3 519,558.7 
-        508.3,576 491.7,576 495.7,590.7 "/>
-      <polyline points="931.7,682 900.3,682 869,689.3 855.7,656 813,652.7 776.3,658 765.7,608.7 
-        741.7,627.3 "/>
-      <polyline points="981.7,962 963,934 989.7,911.3 967.7,888 942.3,869.3 931.7,841.3 915.7,798 
-        925.7,776 955.7,753.3 973.7,737.3 983.7,711.3 966.3,658.7 989.7,640 1016.3,624 1063.7,601.3 1085.7,561.3 1085.7,523.3 
-        1063.7,517.3 "/>
-      <polyline points="1278.3,732.7 1292.3,692.7 1278.3,662 1264.3,640 1292.3,626 1330.3,571.3 
-        1389.7,608.7 1481.7,566 1491.7,585.3 1501,619.3 1527.7,586.7 "/>
-      <polyline points="874,373 892.5,366 903,378 920,340.7 966.3,314 989.7,314 981,349.3 989.7,401.3 
-        980.3,432.7 965,460.7 "/>
-      <polyline points="1541.7,994 1550.3,946 1527.7,904 1559,926.7 1589,937.3 1629.7,953.3 1653.7,935.3 
-        1682.3,977.3 1708.3,986 "/>
-      <polyline points="248,514.7 260.5,556 276,548.5 294,556 302,542 337.5,562.5 322.5,590.7 349,595 
-        361,626 382,640 371,670 377.5,687.5 423.5,687.5 "/>
-      <polyline points="1487,322.7 1527.7,297.3 1564.3,328.7 1609,341.3 1665,306 1701,297.3 1729.7,317.3 
-        1767.7,334 1800.3,372.7 "/>
-      <polyline points="1461,697.3 1402.3,672 1416.3,636.7 1389.7,608.7 1418.3,493.3 1510.3,474 1535,397.3 
-        "/>
-      <polyline points="624,151.5 667.5,183.5 667.7,219.3 663.7,288.7 711,321 781.5,305 762.7,278.3 "/>
-    </svg>
 
-    <header class="section-header">
-      <h3>{% t pools.title %}</h3>
-      <p>{% t pools.description %}</p>
-    </header>
-
-    <div class="text-center">
-      <div class="pool__info-header" data-toggle="collapse" href="#reward" role="button" aria-expanded="false" aria-controls="payment">
-        <i class="pool__reward-icon ion-md-information-circle-outline"></i><p>{{ site.translations[site.lang].pools.distribution | newline_to_br }}</p>
-      </div>
-    </div>
-    <div class="collapse" id="reward">
-      <div class="pool__info container">{% tf pools/reward-distribution.md %}</div>
-    </div>
-
-    <table class="pool__table js-pool-list">
-      <thead class="pool__header-area js-pool-header">
-        <tr>
-          <th class="pool__header">{% t pools.header_1 %}</th>
-          <th class="pool__header">{% t pools.header_2 %}</th>
-          <th class="pool__header">{% t pools.header_3 %}</th>
-          <th class="pool__header">{% t pools.header_4 %}</th>
-          <th class="pool__header text-right">
-            <i class="pool__reward-icon ion-md-information-circle-outline" data-toggle="collapse" href="#reward" role="button" aria-expanded="false" aria-controls="reward"></i>{{ site.translations[site.lang].pools.header_5 | newline_to_br }}
-          </th>
-          <th class="pool__header">{% t pools.header_6 %}</th>
-        </tr>
-      </thead>
-      {% for pool_group in site.data.pool %}
-      <tbody class="pool__row-group js-pool-group">
-        {% for pool in pool_group.pools %}
-        <tr class="pool__row js-pool">
-          <td class="pool__data pool__data--name"><div class="pool__row-header">{% t pools.header_1 %}:</div>
-            {% if pool.website %}<a href="{{ pool.website }}" target="_blank">{% endif %}
-              {{ pool.name }}
-            {% if pool.website %}</a>{% endif %}
-          </td>
-          <td class="pool__data"><div class="pool__row-header">{% t pools.header_2 %}:</div>{{ pool.owner }}</td>
-          <td class="pool__data"><div class="pool__row-header">{% t pools.header_3 %}:</div>{% for address in pool.address %}<span class="pool__address">{{ address }}</span>{% endfor %}</td>
-          {% capture country_translated %}{% t countries.{{ pool.country | downcase }} %}{% endcapture %}
-          <td class="pool__data"><div class="pool__row-header">{% t pools.header_4 %}:</div>{{ country_translated | default: pool.country }}</td>
-          <td class="pool__data pool__data--reward">
-            <div class="pool__row-header">{% t pools.header_5 %}:</div>
-            <div class="d-inline-block text-nowrap">
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_pool }}% {% t pools.distribution_pool %}">{{ pool.fee_pool }}%</span>
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_miner_finder }}% {% t pools.distribution_finder %}">{{ pool.fee_miner_finder }}%</span>
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_miner_contributor }}% {% t pools.distribution_contributor %}">{{ pool.fee_miner_contributor }}%</span>
-              <span class="pool__reward xdag-tooltip" data-tooltip="{{ pool.fee_community }}% {% t pools.distribution_community %}">{{ pool.fee_community }}%</span>
-            </div>
-          </td>
-          <td class="pool__data js-pool-state" data-state="{{ pool.state }}"><div class="pool__row-header">{% t pools.header_6 %}:</div>
-            <span class="pool__state-icon pool__state-icon--load xdag-tooltip" data-tooltip="{% t pools.loading %}">
-              <i class="ion-md-sync"></i>
-            </span>
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-      {% endfor %}
-    </table>
-
-    <div class="text-center">{% tf pools/footer.md %}</div>
-  </section>
+  <div id="network"></div>
 </main>
 {% include footer.html %}
+<script src="{{ '/assets/widgets/network/main.bundle.js' | absolute_url }}"></script>
 <script type="text/javascript">
-  var poolStatusMsg = {
-    on: '{% t pools.status_on %}',
-    sync: '{% t pools.status_sync %}',
-    init: '{% t pools.status_init %}',
-    down: '{% t pools.status_down %}',
-    unknown: '{% t pools.status_unknown %}',
-    noResponse: '{% t pools.status_no_response %}'
-  };
+  xdagNetwork.default({
+    rootNodeId: 'network'
+  });
 </script>
-<script src="{{ '/assets/js/pools.js' | absolute_url }}"></script>
 </body>
 </html>

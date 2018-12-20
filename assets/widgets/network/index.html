@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>XDAG network</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+    </style>
+  <link href="/assets/widgets/network/main.bundle.css" rel="stylesheet"><script type="text/javascript" src="/assets/widgets/network/main.bundle.js"></script></head>
+  <body>
+    <div id="network"></div>
+    <script type="text/javascript" async>
+      xdagNetwork.default({
+        rootNodeId: 'network',
+        i18n: {
+          states: {
+            ON: 'Operational',
+            DOWN: 'Offline',
+            SYNC: 'Synchronizing',
+            MAINTENANCE: 'Under maintenance',
+            NO_RESPONSE: 'No response',
+            UNKNOWN: 'Unknown'
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
