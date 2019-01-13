@@ -49,7 +49,7 @@ home:
   slides:
     - title: "XDAG: Nová kryptoměna založena na principu DAG"
       content: XDAG je novou aplikací, která je založena na principu DAG (řízený acyklický graf), tato technologie řeší problémy, které jinak trápí v současné době technologii blockchain.
-    - title: První těžitelný DAG 
+    - title: První těžitelný DAG
       content: |
         Blok = Transakce = Adresa
         Původní nápad hlavního řetězce
@@ -76,7 +76,7 @@ home:
       content: Můžete se připojit k vybranému poolu a nebo navštivte naší wiki pro kompletní list schválených poolů.
   software: Software
   software_content: Adresy pro stažení aplikací, které interagují se sítí XDAG.
-  software_links: 
+  software_links:
     - title: Peněženka pro Windows 64-bit
       content: 64-bitová Windows konzole a GUI rozhraní (x64).
     - title: Peněženka pro Windows 32-bit
@@ -93,7 +93,7 @@ home:
       content: Pro Android 5.0 a novější.
     - title: Zdrojové kódy
       content: Zdrojové kódy pro XDAG software.
-      
+
       exchanges: Online burzy
   exchanges_content: Nákup, prodej a obchod s XDAGem.
   exchanges_1_description: Vedoucí platforma v oblasti obchodování s kryptoměnami. Tato platforma také drží světové prvenství v nepřetržítém obchodování s BTC, kdy užívá USDT jako marži.
@@ -101,18 +101,18 @@ home:
   exchanges_3_description: Firefox je bezplatné a spolehlivé místo pro OTC obchod. Tato digitální platforma pro digitální transakce si globálně získala přízeň a důvěru uživatelů, kterým zaručuje bezpečnost a zajímavé výhody.
   exchanges_4_description: Posláním společnosti VBitEx je poskytování profesionálních mezinárodních obchodních služeb a finančních produktů široké škále nadšenců obchodujícími s digitálními aktivy a investorům po celém světě, aniž by došlo k porušení příslušných regionálních zákonů.
   #exchanges_5_description: Fex.hk, platforma pro digitální obchodnování na jednom místě. Burza podporuje více hlavních, běžných digitálních měn.
-         
+
   roadmap: Plán
   roadmap_content:
     - timeframe: Q3 2017
-      dates: 
+      dates:
         - date: Prosinec 2017
           events:
             - Textové rozhraní pro Windows a Linux
             - Miner, full node a pool zveřejnění
             - Spuštění Testnetu
     - timeframe: Q1 2018
-      dates: 
+      dates:
         - date: Leden 2018
           events:
             - Hlavní spuštění
@@ -129,7 +129,7 @@ home:
             - Vypuštění XDAG peněženky verze 0.2.1 s podporou pro MAC
             - Zcela nové webové stránky pro doménu xdag.io
     - timeframe: Q2 2018
-      dates: 
+      dates:
         - date: Květen 2018
           events:
             - Vypuštění XDAG peněženky verze 0.2.2
@@ -139,7 +139,7 @@ home:
           events:
             - Vypuštění XDAG peněženky verze 0.2.4
     - timeframe: Q3 2018
-      dates: 
+      dates:
         - date: červenec 2018
           events:
             - Vypuštění XDAG peněženky verze 0.2.5 s vylepšeným výkonem
@@ -148,22 +148,38 @@ home:
         - date: Srpen 2018
           events:
             - Vypuštění XDAG peněženky pro Android a iOS
-    - timeframe: Do budoucna
-      dates: 
-        - date: předběžně pro 2018
+    - timeframe: 4. čtvrtletí 2018
+      dates:
+        - date: Listopad 2018
           events:
-            - Po vytvoření RPC peněženky bude snaha komunity začlenit XDAG na burzy
+            - Vypuštění XDAG peněženky verze 0.3.0
+    - timeframe: 1. čtvrtletí 2019
+      dates:
+        - date: Leden 2019
+          events:
+            - XDAG uveden na 8 burzách
+            - Práce na vývoji Golang verze a anonymní směňování
+    - timeframe: Do budoucna
+      dates:
+        - date: Přibližně v 1. čtvrtletí 2019
+          events:
+            - Vývoj RPC
+            - Úprava Hash algoritmu
+            - Úplná peněženka
+        - date: Přibližně ve 2. čtvrtletí 2019
+          events:
+            - Anonymní směňování
         - date: Plány do budoucna
           events:
-            - Rozšíření vývojařského teamu
-            - Sociální média a marketing
-  community: Komunita
+            - Smart Contracts
+            - Rozšiřování vývojařského teamu
+            - Sociální a mediální marketing
 
+community: Komunita
 
 news:
   title: Novinky
   description: Nejnovější zprávy o XDAGu.
-
 
 pools:
   title: Pools
@@ -187,7 +203,7 @@ pools:
   header_3: Adresa
   header_4: Lokace
   header_5: |
-      Odměna 
-      distribuce
+    Odměna 
+    distribuce
   header_6: Stav sítě
 # continues in pools/reward-distribution.md
