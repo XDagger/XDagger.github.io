@@ -163,11 +163,7 @@ home:
             - Development on Golang Version and Anonymous Trading
     - timeframe: Future
       dates:
-<<<<<<< HEAD
         - date: ETA 2019 Q1
-=======
-        - date: ETA 2018
->>>>>>> Release network page V1
           events:
             - RPC Development
             - Hash algorithm adjustment
@@ -181,11 +177,7 @@ home:
             - Expansion of the development team
             - Social media and marketing
 
-<<<<<<< HEAD
 community: Community
-=======
-  community: Community
->>>>>>> Release network page V1
 
 news:
   title: News
