@@ -1,15 +1,18 @@
 {% include head.html %}
     <link href="{{ '/assets/css/pools.css' | absolute_url }}" rel="stylesheet">
     <link href="{{ '/assets/widgets/network/main.bundle.css' | absolute_url }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
 </head>
 
 <body>
 {% include header.html %}
 <main id="main">
-
   <div id="network"></div>
 </main>
 {% include footer.html %}
+<script type="text/javascript">
+  window.networkBundlePath = '/assets/widgets/network/';
+</script>
 <script src="{{ '/assets/widgets/network/main.bundle.js' | absolute_url }}"></script>
 <script type="text/javascript">
   xdagNetwork.default({

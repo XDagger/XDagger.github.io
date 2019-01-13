@@ -98,7 +98,7 @@ home:
       content: Sources for XDAG software and codebases.
 
   exchanges: exchanges
-  exchanges_content: Buy, sell, trade XDAG.
+  exchanges content: Buy, sell, trade XDAG.
   exchanges_1_description: The leading cryptocurrency index contract trading platform, also the world's first BTC perpetual contract trading platform which uses USDT as a margin.
   exchanges_2_description: A global exchange established in Singapore. Committed to becoming a beacon of the cryptocurrency world. Transparent, fair and compliant.
   exchanges_3_description: Firefox is a free and reliable OTC platform for trading. Its digital asset over-the-counter trading platform has won the favor and trust of global users with its professional, safe and convenient advantages.
@@ -163,7 +163,11 @@ home:
             - Development on Golang Version and Anonymous Trading
     - timeframe: Future
       dates:
+<<<<<<< HEAD
         - date: ETA 2019 Q1
+=======
+        - date: ETA 2018
+>>>>>>> Release network page V1
           events:
             - RPC Development
             - Hash algorithm adjustment
@@ -177,7 +181,11 @@ home:
             - Expansion of the development team
             - Social media and marketing
 
+<<<<<<< HEAD
 community: Community
+=======
+  community: Community
+>>>>>>> Release network page V1
 
 news:
   title: News
