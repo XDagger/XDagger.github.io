@@ -17,10 +17,29 @@
   }
 }
 
+.link {
+  padding: 10px;
+  background: hsla(247, 39%, 23%, 1) !important;
+}
+
+#main {
+  background: #0f0c29;
+}
+
+#network {
+  display: flex;
+  min-height: calc(100vh - 92px);
+}
+
+#header.header-scrolled {
+  background: rgba(15, 12, 41, 0.7);
+}
+
 .header-bg {
-  background: #111;
+  background: #0f0c29;
 }
 
 #footer {
   position: relative;
+  background: #17142e;
 }
