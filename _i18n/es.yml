@@ -77,6 +77,8 @@ home:
   software_links: 
     - title: Cartera Windows 64-bit
       content: Aplicación de consola e interfaz gráfica para Windows de 64 bit (x64).
+    - title: Windows 64-bit wallet (alternative)
+      content: Microsoft WPF based GUI executable.
     - title: Cartera Windows 32-bit
       content: Aplicación de consola e interfaz gráfica para Windows de 32 bit (x86).
     - title: Miner de GPU para Windows

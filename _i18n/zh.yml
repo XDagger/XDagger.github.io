@@ -79,6 +79,8 @@ home:
   software_links: 
     - title: Windows 64位钱包
       content: 64位Windows可执行文件(x64)。
+    - title: Windows 64-bit wallet (alternative)
+      content: Microsoft WPF based GUI executable.
     - title: Windows 32位钱包
       content: 32位Windows可执行文件(x86)。
     - title: Windows GPU 挖矿软件
