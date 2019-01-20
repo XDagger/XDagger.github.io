@@ -77,7 +77,7 @@ home:
   software_links: 
     - title: Portefeuille pour Windows 64-bit 
       content: 64 bit Windows Console and GUI executables (x64).
-    - title: Windows 64-bit wallet (alternative)
+    - title: Windows 64-bit GUI wallet
       content: Microsoft WPF based GUI executable.
     - title: Portefeuille pour Windows 32-bit 
       content: 32 bit Windows Console and GUI executables (x86).

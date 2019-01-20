@@ -67,7 +67,7 @@
             <div class="row justify-content-center portfolio-container">
                 {% for software in site.translations[site.lang].home.software_links %}
                 {% assign software_d = site.data.software[forloop.index0] %}
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="{{ software_d.delay }}">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.{{ forloop.index }}s">
                     <div class="portfolio-wrap">
                         <div class="portfolio-info">
                             <div class="icons"><i class="{{ software_d.icon }}"></i></div>

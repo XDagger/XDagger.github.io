@@ -79,7 +79,7 @@ home:
   software_links:
     - title: Peněženka pro Windows 64-bit
       content: 64-bitová Windows konzole a GUI rozhraní (x64).
-    - title: Windows 64-bit wallet (alternative)
+    - title: Windows 64-bit GUI wallet
       content: Microsoft WPF based GUI executable.
     - title: Peněženka pro Windows 32-bit
       content: 32-bitová Windows konzole a GUI rozhraní (x86).

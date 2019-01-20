@@ -77,7 +77,7 @@ home:
   software_links: 
     - title: Windows 64-bit plånbok
       content: 64 bit Windows Console och GUI exekverbara filer (x64).
-    - title: Windows 64-bit wallet (alternative)
+    - title: Windows 64-bit GUI wallet
       content: Microsoft WPF based GUI executable.
     - title: Windows 32-bit wallet
       content: 32 bit Windows Console och GUI exekverbara filer (x86).
