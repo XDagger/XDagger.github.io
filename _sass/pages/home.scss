@@ -623,9 +623,11 @@
 }
 
 .wallets .portfolio-wrap {
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 12px rgba(0,0,0,0.08);
   transition: 0.3s;
-  margin-bottom: 20px;
+  background: #fff;
+  height: 100%;
+  border-radius: 0 0 3px 3px;
 }
 
 .wallets .portfolio-wrap:hover {
@@ -634,8 +636,7 @@
 
 .wallets .portfolio-item {
   position: relative;
-  //height: 360px;
-  overflow: hidden;
+  margin-bottom: 20px;
 }
 .wallets .portfolio-item svg{
   width:35px;
@@ -702,16 +703,13 @@
 }
 
 .wallets .portfolio-item .portfolio-info {
-  background: #fff;
   text-align: center;
   padding: 30px;
-  height:210px;
-  border-radius: 0 0 3px 3px;
 }
 
 .wallets .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  line-height: 1px;
+  line-height: 1;
   font-weight: 700;
   margin-bottom: 18px;
   padding-bottom: 0;
