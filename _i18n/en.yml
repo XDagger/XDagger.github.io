@@ -83,7 +83,7 @@ home:
     - title: Windows 64-bit wallet
       content: 64 bit Windows Console and GUI executables (x64).
     - title: Windows 64-bit GUI wallet
-      content: Microsoft WPF based GUI executable.
+      content: Microsoft .NET based GUI executable.
     - title: Windows 32-bit wallet
       content: 32 bit Windows Console and GUI executables (x86).
     - title: Windows GPU miner
