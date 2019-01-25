@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Monthly report 
-date: "2018-01-23 17:00:00"
-image: ""
+date: "2019-01-24 17:00:00"
 ---
 
 Hello everyone, the time has come to share some recent news about what is happening in the XDAG community. 
@@ -49,7 +48,7 @@ Finally, thanks to Gui Cai for providing an arena for this meetup.
 
 The following is photographs of this Meetup in Beijing.
 
-image link =>> https://drive.google.com/open?id=1jIqqs9Fe2ufEHOHGP4mqvmdHoKoc9a6D
+<https://drive.google.com/open?id=1jIqqs9Fe2ufEHOHGP4mqvmdHoKoc9a6D>
 
 # Android 0.2.5 release.
 
@@ -67,9 +66,9 @@ If you find any new bugs, please submit an issue at: <https://github.com/XDagger
 
 In our goal to be present on as many social platforms as possible, we have decided to create a forum to interact with each other. You can find the forum at <http://forum.xdag.us/>
 
-You can also find us at IRC: [chat.freenode.net #xdag](irc://chat.freenode.net/#xdag). For more information on how to connect, freenode has a [wiki entry detailing how to connect to freenode’s IRC server. ](https://freenode.net/kb/answer/chat). 
+You can also find us at IRC: [chat.freenode.net #xdag](irc://chat.freenode.net/#xdag). For more information on how to connect, freenode has a [wiki entry detailing how to connect to freenode's IRC server. ](https://freenode.net/kb/answer/chat). 
 
-You can also find the rest of our community’s social platforms on our website. 
+You can also find the rest of our community's social platforms on our website. 
 
 # Whitelist cleaning
 
