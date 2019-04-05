@@ -33,3 +33,11 @@
   pairs: 
     - currency: VB
       link: https://www.vbitex.com/Home/Trade/index?id=5
+
+- logo: '/assets/images/exchanges/vinex.jpg'
+  name: Vinex
+  interface_lang: English, French, Tiếng Việt, Русский, 中文, 한국어
+  website: https://vinex.network/
+  pairs: 
+    - currency: BTC
+      link: https://vinex.network/market/BTC_XDAG
