@@ -23,9 +23,9 @@ Development is currently focused on storage issues, as well as on switching the 
 # Fundraising
 We are fundraising BTC and ETH to pay bounties for XDAG code milestones. The goal is to reach 1 BTC, and currently 0.75 BTC has been raised. If you’d like to donate either XDAG, BTC, or ETH, you can find our fund addresses here.
 
-_XDAG:_ FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
-_BTC:_   3Jqe2zEtz3ADXWAqyMzzUysVZjYVnAntXr
-_ETH:_  0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1
+* **XDAG:** FQglVQtb60vQv2DOWEUL7yh3smtj7g1s
+* **BTC:**  3Jqe2zEtz3ADXWAqyMzzUysVZjYVnAntXr
+* **ETH:**  0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1
 
 # Whitelist cleaning
 We still continue to remove closed pools from our whitelist.
