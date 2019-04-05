@@ -41,3 +41,5 @@
   pairs: 
     - currency: BTC
       link: https://vinex.network/market/BTC_XDAG
+    - currency: USDT
+      link: https://vinex.network/market/USDT_XDAG
