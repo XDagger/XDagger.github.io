@@ -1,9 +1,3 @@
-# Add your pool using the same yaml formatting
-# as you see below.
-#
-# Verify that the yaml is properly formatted, then
-# submit a PR to add your pool to this list.
-# Your PR will be merged once reviewed.
 - 
   pools: 
     - 
