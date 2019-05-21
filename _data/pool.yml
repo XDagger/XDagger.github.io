@@ -87,3 +87,29 @@
       owner: 水哥
       state: "117.27.159.97:5000/state.txt"
       website: "http://feipool.xyz/"
+- 
+  pools: 
+    - 
+      address: "xdagmine.com:13654"
+      country: China
+      fee_community: 2
+      fee_miner_contributor: 0
+      fee_miner_finder: 0
+      fee_pool: 1
+      name: info.xdagmine.com
+      owner: Edwards
+      state: "http://136.243.57.79/state.txt"
+      website: "info.xdagmine.com"
+- 
+  pools: 
+    - 
+      address: "node.xdag.club:13655"
+      country: France
+      fee_community: 1
+      fee_miner_contributor: 0
+      fee_miner_finder: 0
+      fee_pool: 1
+      name: xdag.club
+      owner: Tony-1240645041
+      state: "http://xdag.club/state.txt"
+      website: "http://xdag.club/"
