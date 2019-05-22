@@ -1,89 +1,158 @@
-- 
-  pools: 
-    - 
-      address: "solo.xdag.org:13655"
-      country: Germany
-      fee_community: 1
-      fee_miner_contributor: 0
-      fee_miner_finder: 98
-      fee_pool: 1
-      name: "xdag.org Germany Solo"
-      owner: kbs1
-      state: "https://xdag.org/status?pool=2"
-      website: "https://xdag.org/"
-    - 
-      address: "equal.xdag.org:13656"
-      country: Germany
-      fee_community: 1
-      fee_miner_contributor: 33
-      fee_miner_finder: 33
-      fee_pool: 1
-      name: "xdag.org Germany Equal"
-      owner: kbs1
-      state: "https://xdag.org/status?pool=3"
-      website: "https://xdag.org/"
-- 
-  pools: 
-    - 
-      address: "142.44.143.234:777"
-      country: Canada
-      fee_community: 1
-      fee_miner_contributor: 1
-      fee_miner_finder: 1
-      fee_pool: 1
-      name: xdag.pool.ga
-      owner: RamsesIII
-      state: "http://xdag.pool.ga/info/state.txt"
-      website: "http://xdag.pool.ga/"
-- 
-  pools: 
-    - 
-      address: "139.99.124.23:13654"
-      country: Singapore
-      fee_community: 1
-      fee_miner_contributor: 5
-      fee_miner_finder: 10
-      fee_pool: 1
-      name: vspool.com
-      owner: Thomasab
-      state: "http://139.99.124.23/state.txt"
-      website: "https://www.vspool.com/xdag/"
-- 
-  pools: 
-    - 
-      address: "xdag.uupool.cn:13654"
-      country: China
-      fee_community: 2
-      fee_miner_contributor: 0
-      fee_miner_finder: 0
-      fee_pool: 2
-      name: uupool.cn
-      owner: HelloTony
-      state: "http://47.100.202.206:56601/state.txt"
-      website: "http://www.uupool.cn/xdag"
-- 
-  pools: 
-    - 
-      address: "xdag.coolmine.top:13654"
-      country: Singapore
-      fee_community: 1
-      fee_miner_contributor: 1
-      fee_miner_finder: 1
-      fee_pool: 1
-      name: xdag.coolmine.top
-      owner: "Dev Alex"
-      state: "http://xdag.coolmine.top/state.txt"
-      website: "http://xdag.coolmine.top/"
-- 
-  pools: 
-    - 
-      address: "feipool.xyz:13654"
-      country: China
-      fee_community: 2
-      fee_miner_contributor: 0
-      fee_miner_finder: 0
-      fee_pool: 1
-      name: Feipool
-      owner: 水哥
-      state: "117.27.159.97:5000/state.txt"
-      website: "http://feipool.xyz/"
+# Entry format
+#
+# NOTICE. Payment values served through urls utilizing openXDAGpool JSON format take priority over the ones listed here.
+#
+# id: 36 characters long unique UUIDv4 string. Required. Used for database relationships. You can generate one using https://www.uuidgenerator.net/
+# name: String. Required. Usually a cleaned up version of the pools website address
+# miningAddress: String or a list of strings. Required.
+# stateUrl: String. Required. HTTP(S) address which serves pool's state.txt file. Supports OpenXDAGPool JSON format.
+# statsUrl: String. Required. HTTP(S) address which serves pool's stats.txt file. Supports OpenXDAGPool JSON format.
+# paymentPool: Number between 0 and 100. Required. Supports up to 2 decimals. Percentage of block rewards which the pool takes as a fee
+# paymentFinder: Number between 0 and 100. Required. Supports up to 2 decimals. Percentage of block rewards which go the miner who found the block
+# paymentContributor: Number between 0 and 100. Required. Supports up to 2 decimals.  Percentage of block rewards which go to miners who contributed to finding a block
+# paymentCommunity: Number between 0 and 100. Required. Supports up to 2 decimals. Percentage of block rewards which go to the community fund
+# website: String. Optional. Pool's HTTP(S) website address
+# location: String. Optional. A country where the pool is located in
+# locationCoordinate: Point (x, y). Optional. Pool location in longitude and latitude. For example: (139.6917, 35.6895)
+
+# Contact: kbs1
+- id: 350fe4ec-5c6f-49aa-a381-5a135d8ea39e
+  name: 'xdag.org Germany Solo'
+  miningAddress: solo.xdag.org:13655
+  stateUrl: https://xdag.org/status/?pool=2
+  statsUrl: https://xdag.org/status/?pool=2
+  paymentPool: 2
+  paymentFinder: 98
+  paymentContributor: 0
+  paymentCommunity: 0
+  website: https://xdag.org/
+  location: Germany
+  locationCoordinate: (11.6012, 48.3233)
+
+# Contact: kbs1
+- id: 5ff7aaf1-4a55-4bc6-b835-d54c3ed2fdde
+  name: 'xdag.org Germany Equal'
+  miningAddress: equal.xdag.org:13656
+  stateUrl: https://xdag.org/status/?pool=3
+  statsUrl: https://xdag.org/status/?pool=3
+  paymentPool: 2
+  paymentFinder: 33
+  paymentContributor: 33
+  paymentCommunity: 0
+  website: https://xdag.org/
+  location: Germany
+  locationCoordinate: (13.4105, 52.5244)
+
+# Contact: RamsesIII
+- id: cb579c00-da9d-451c-acd8-ea3baf2d290f
+  name: xdag.pool.ga
+  miningAddress: 142.44.143.234:777
+  stateUrl: http://xdag.pool.ga/info/state.txt
+  statsUrl: http://xdag.pool.ga/info/stats.txt
+  paymentPool: 1
+  paymentFinder: 1
+  paymentContributor: 1
+  paymentCommunity: 1
+  website: http://xdag.pool.ga/
+  location: Canada
+  locationCoordinate: (-73.5878, 45.5088)
+
+# Contact: Gribbly
+- id: 96859ef8-812b-4391-9837-0bf1b3f4ca3b
+  name: xdag.signal2noi.se
+  miningAddress:
+    - 'pool1.xdag.signal2noi.se:443'
+    - 'pool1.xdag.signal2noi.se:13655'
+  stateUrl: https://xdag.signal2noi.se/status
+  statsUrl: https://xdag.signal2noi.se/status
+  paymentPool: 0
+  paymentFinder: 20
+  paymentContributor: 10
+  paymentCommunity: 1
+  website: https://xdag.signal2noi.se/
+  location: United States
+  locationCoordinate: (-74.4590, 40.5515)
+
+# Contact: Thomasab
+- id: ab65f55f-10f0-41a7-afab-992433e82a8c
+  name: vspool.com
+  miningAddress: 139.99.124.23:13654
+  stateUrl: http://139.99.124.23/state.txt
+  statsUrl: http://139.99.124.23/stats.txt
+  paymentPool: 1
+  paymentFinder: 10
+  paymentContributor: 5
+  paymentCommunity: 1
+  website: https://www.vspool.com/xdag/
+  location: Singapore
+  locationCoordinate: (103.8501, 1.2897)
+
+# Contact: HelloTony
+- id: 5b55634f-b2d9-431f-a2f8-9e1a5d20260f
+  name: uupool.cn
+  miningAddress: xdag.uupool.cn:13654
+  stateUrl: http://47.100.202.206:56601/state.txt
+  statsUrl: http://47.100.202.206:56601/stats.txt
+  paymentPool: 2
+  paymentFinder: 0
+  paymentContributor: 0
+  paymentCommunity: 2
+  website: http://www.uupool.cn/xdag
+  location: China
+  locationCoordinate: (120.1614, 30.2936)
+
+# Contact: Dev Alex
+- id: 53df5b25-9a8e-4eef-a4bf-ecb560bea4d3
+  name: xdag.coolmine.top
+  miningAddress: xdag.coolmine.top:13654
+  stateUrl: http://xdag.coolmine.top/state.txt
+  statsUrl: http://xdag.coolmine.top/stats.txt
+  paymentPool: 1
+  paymentFinder: 1
+  paymentContributor: 1
+  paymentCommunity: 1
+  website: https://xdagme.com/
+  location: Singapore
+  locationCoordinate: (103.8501, 1.2897)
+
+#Contact: 水哥
+- id: f1bdaa80-4b92-4300-afa9-237c6bd49f75
+  name: feipool.xyz
+  miningAddress: feipool.xyz:13654
+  stateUrl: 117.27.159.97:5000/state.txt
+  statsUrl: 117.27.159.97:5000/stats.txt
+  paymentPool: 1
+  paymentFinder: 0
+  paymentContributor: 0
+  paymentCommunity: 2
+  website: http://feipool.xyz/
+  location: China
+  locationCoordinate: (119.3061, 26.0614)
+
+# Contact: Tony-1240645041
+- id: 0a935eb0-453e-4456-a5ff-662d0962f039
+  name: xdag.club
+  miningAddress: node.xdag.club:13655
+  stateUrl: http://xdag.club/state.txt
+  statsUrl: http://xdag.club/stats.txt
+  paymentPool: 1
+  paymentFinder: 0
+  paymentContributor: 0
+  paymentCommunity: 1
+  website: http://xdag.club/
+  location: France
+  locationCoordinate: (50.6942, 3.1746)
+
+# Contact: Edward
+- id: ef7bff10-8999-41a0-9843-13675e99fe71
+  name: info.xdagmine.com
+  miningAddress: xdagmine.com:13654
+  stateUrl: http://136.243.57.79/state.txt
+  statsUrl: http://136.243.57.79/stats.txt
+  paymentPool: 1
+  paymentFinder: 0
+  paymentContributor: 0
+  paymentCommunity: 2
+  website: http://info.xdagmine.com
+  location: China
+  locationCoordinate: (116.3972, 39.9075)
