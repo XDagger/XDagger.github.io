@@ -115,17 +115,17 @@
   location: Singapore
   locationCoordinate: (103.8501, 1.2897)
 
-#Contact: 水哥
+#Contact: amwsffgu
 - id: f1bdaa80-4b92-4300-afa9-237c6bd49f75
   name: feipool.xyz
-  miningAddress: feipool.xyz:13654
-  stateUrl: 117.27.159.97:5000/state.txt
-  statsUrl: 117.27.159.97:5000/stats.txt
+  miningAddress: xdag.feipool.xyz:13654
+  stateUrl: xdag.feipool.xyz/state.txt
+  statsUrl: xdag.feipool.xyz/stats.txt
   paymentPool: 1
   paymentFinder: 0
   paymentContributor: 0
   paymentCommunity: 2
-  website: http://feipool.xyz/
+  website: http://xdag.feipool.xyz/
   location: China
   locationCoordinate: (119.3061, 26.0614)
 
