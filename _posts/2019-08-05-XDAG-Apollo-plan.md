@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XDAG Community Proposal: Apollo
+title: XDAG Community Proposal Apollo
 date: "2019-08-05 17:00:00"
 image: ""
 ---
