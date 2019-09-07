@@ -27,8 +27,8 @@ We have 1 topic for now to be voted, and any new topics are welcome if you have.
 
 我们有1个议题需要进行投票，同时如果你有新的想法是非常欢迎的。
 
-Please read these topics carefully, and vote on [ vote link ]. If you have any question please discuss in public channels such as Discord. 
-请仔细阅读各个议题，并且在[ vote link ]上进行投票。如果有任何疑问，请在公开场合如Discord进行讨论。
+Please read these topics carefully, and vote on [https://www.tricider.com/brainstorming/2SN875RYF5B](https://www.tricider.com/brainstorming/2SN875RYF5B). If you have any question please discuss in public channels such as Discord. 
+请仔细阅读各个议题，并且在[https://www.tricider.com/brainstorming/2SN875RYF5B](https://www.tricider.com/brainstorming/2SN875RYF5B)上进行投票。如果有任何疑问，请在公开场合如Discord进行讨论。
 
 ## Topic List: / 议题列表: 
 ### Topic 1: Reduction. / 议题 1: 减产 
