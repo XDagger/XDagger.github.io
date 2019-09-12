@@ -1,7 +1,7 @@
 ---
 layout: post
 title: XDAG Community Re-Voting
-date: "2019-09-12 20:30:00"
+date: "2019-09-12 09:30:00"
 ---
 
 
