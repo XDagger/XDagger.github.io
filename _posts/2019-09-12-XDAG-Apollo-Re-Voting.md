@@ -92,6 +92,6 @@ Option C Address: / 方案 C 投票地址：**9Qc8KiWJoN7jgg/vYC/iGODe15NvyZjd**
 
 ### Feedback / 反馈方式 
 
-If you have any problem, please connect XDAG_iGod@126.com
+If you have any problem, please contact iGod throught igod@xdag.io
 
-有问题可联系XDAG_iGod@126.com
+有问题可以通过邮箱 igod@xdag.io 联系iGod。
