@@ -5,9 +5,9 @@ date: "2019-09-12 20:30:00"
 ---
 
 
-Because of someone voted fraudulently, the vote for the reduction scheme was invalidated. After urgent consultations, the community decided to use the method of voting by donating XDAG coins. The "doing evil" behavior can be monitored by using the open, transparent, and traceable features of the XDAG blockchain browser. Donated XDAG coins will be given to XDAG developers. The account will be managed by Frozen and Sofar temporally. Please read the rules carefully to avoid invalid votes:  
+Because of someone voted fraudulently, the vote for the reduction scheme was invalidated. After urgent consultations, the community decided to use the method of voting by donating XDAG coins. The "doing evil" behavior can be monitored by using the open, transparent, and traceable features of the XDAG blockchain browser. Donated XDAG coins will be given to XDAG developers. The account will be managed by Sofar temporally. Please read the rules carefully to avoid invalid votes:  
 
-由于个别成员利用投票系统漏洞作恶，导致减产方案投票失效。社区成员在紧急磋商后，决定采用捐币投票的方式，利用XDAG区块链浏览器公开、透明、可追溯的特点来监控“ 作恶” 的行为。此次投票收集的所有XDAG都将捐赠给开发者，暂由Frozen/Sofar管理。请社区成员仔细阅读以下内容，以免投出无效票。
+由于个别成员利用投票系统漏洞作恶，导致减产方案投票失效。社区成员在紧急磋商后，决定采用捐币投票的方式，利用XDAG区块链浏览器公开、透明、可追溯的特点来监控“ 作恶” 的行为。此次投票收集的所有XDAG都将捐赠给开发者，暂由Sofar管理。请社区成员仔细阅读以下内容，以免投出无效票。
 
 
 ### Rules：/ 投票规则：
