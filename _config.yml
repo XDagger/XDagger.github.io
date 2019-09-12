@@ -62,3 +62,4 @@ facebook:
 
 languages: ["en", "zh", "sv", "es", "fr", "cs"]
 exclude_from_localizations: ["assets", "blog", "CNAME", "README.md", "feed.xml", "_posts"]
+exclude: [vendor]
