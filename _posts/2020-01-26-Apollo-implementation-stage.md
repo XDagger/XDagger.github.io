@@ -1,7 +1,7 @@
 ---
 layout: post
-title: XDAG Apollo - First Upgrade Announcement
 date: "2020-01-26 13:00:00"
+title: XDAG Apollo First Upgrade Announcement
 ---
 
 Hello dear community members, on September 15th, the community officially adopted every detail of the Apollo plan. The plan has now entered the implementation stage, a series of optimization and upgrades will be carried out on XDAG to achieve the expected goals.
@@ -10,14 +10,14 @@ Recently the community wanted to solve the problem of long reloading time before
 
 The community will carry out the first upgrade as planned, detailed steps are:
 
-##A. The production reduction time:
+## A. The production reduction time:
 January 30, 2020  00: 00 (UTC)
 
-##B. The upgrade content:
+## B. The upgrade content:
 1. Reduce each block reward from 1024 XDAG to 128 XDAG.
 2. Enable RPC.
 
-##C. Coordination matters:
+## C. Coordination matters:
 All mining pools should complete the upgrade of the new version (0.3.1) before January 30, 2020.
 
 XDAG阿波罗计划第一次升级公告
