@@ -35,4 +35,5 @@ Optional YAML tags:
 Markdown is used for rich text formatting, you can find examples [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ### Build
+Run command `bundle install` to install all dependency.
 Run command `bundle exec jekyll serve` you will see the website at http://127.0.0.1:4000/
