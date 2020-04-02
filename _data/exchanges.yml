@@ -10,14 +10,6 @@
     - currency: BTC
       link: https://www.bbx.com/exchange?coinPair=XDAG/BTC
 
-- logo: '/assets/images/exchanges/coinbat.svg'
-  name: Coinbat
-  interface_lang: 中文
-  website: https://www.coinbat.com/
-  pairs: 
-    - currency: CNYT
-      link: https://www.coinbat.com/trade/panel/xdag
-
 - logo: '/assets/images/exchanges/firefoxotc.png'
   name: Firefox OTC
   interface_lang: 中文
@@ -25,14 +17,6 @@
   pairs: 
     - currency: FFC
       link: https://firefoxotc.com/exchange
-
-- logo: '/assets/images/exchanges/vbitex.png'
-  name: VBitEX
-  interface_lang: 中文
-  website: http://www.vbitex.com/
-  pairs: 
-    - currency: VB
-      link: https://www.vbitex.com/Home/Trade/index?id=5
 
 - logo: '/assets/images/exchanges/vinex.jpg'
   name: Vinex
