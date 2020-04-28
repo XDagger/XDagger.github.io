@@ -1,10 +1,10 @@
 ---
 layout: post
+date: "2020-04-28 12:00:00"
 title: XDAG Project Briefing
-date: "2020-04-28 23:00:00"
 ---
 
-# XDAG Project Briefing
+## XDAG Project Briefing
 Issue 1, 2020
 
 XDAGers, we meet again.
@@ -23,11 +23,10 @@ In response to this issue, the community has completed development work on the R
 2. Drastically reduce the memory consumption of the mining pool (about 300M).
 3. The full-node wallet (mining pool) reload time is reduced to seconds.
 
-
-![alt text](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/img%20ann%20meet12020.jpg)
+![RocksDB](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/img%20ann%20meet12020.jpg)
 ### Comparison between 0.3.1 and RocksDB versions
 
-| Version | Data storage  | Memory Consumption | Reload time |
+| Version | Data storage  | Memory consumption | Reload time |
 | --- | --- | --- | --- |
 | 0.3.1   | Memory | 50G | 20 hours |
 | RocksDB version | RocksDB | 300MB | Seconds |
@@ -72,7 +71,7 @@ Older versions: too many bytes transferred over the network, too long synchroniz
 ### New version
 Optimizes the data structure of the network transmission, reduces the network communication bandwidth, and plans to adopt DHT network distributed hash tables, completely removing whitelisting restrictions.
 
-![alt text](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/img2%20meet12020.jpg)
+![RocksDB 2](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/img2%20meet12020.jpg)
 The XDAG fans are never gone, the pace of progress never stops, and XDAG is destined to continue the road to decentralization and eventually reach the "other side" of fairness...
 
 Thank you to Bill, Swordlet, kbs1, the many contributors who have been quietly contributing, and to you who are following XDAG!
