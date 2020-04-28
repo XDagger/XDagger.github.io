@@ -23,7 +23,7 @@ In response to this issue, the community has completed development work on the R
 2. Drastically reduce the memory consumption of the mining pool (about 300M).
 3. The full-node wallet (mining pool) reload time is reduced to seconds.
 
-![RocksDB](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/img%20ann%20meet12020.jpg)
+![RocksDB](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/rocks-db-1.jpg)
 ### Comparison between 0.3.1 and RocksDB versions
 
 | Version | Data storage  | Memory consumption | Reload time |
@@ -71,7 +71,8 @@ Older versions: too many bytes transferred over the network, too long synchroniz
 ### New version
 Optimizes the data structure of the network transmission, reduces the network communication bandwidth, and plans to adopt DHT network distributed hash tables, completely removing whitelisting restrictions.
 
-![RocksDB 2](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/img2%20meet12020.jpg)
+![RocksDB 2](https://github.com/XDagger/XDagger.github.io/blob/develop/assets/images/posts/rocks-db-2.jpg)
+
 The XDAG fans are never gone, the pace of progress never stops, and XDAG is destined to continue the road to decentralization and eventually reach the "other side" of fairness...
 
 Thank you to Bill, Swordlet, kbs1, the many contributors who have been quietly contributing, and to you who are following XDAG!
