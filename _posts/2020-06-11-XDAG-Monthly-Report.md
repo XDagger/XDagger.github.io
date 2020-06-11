@@ -19,6 +19,7 @@ Also XDAG is happy to be added on walletinvestor.com where we can feature our ma
 
 ## Telegram community contests 
 ![Telegram Contest](/assets/images/posts/telegram contest.jpg)"/assets/images/posts/telegram contest.jpg"
+
 We just launched a telegram contest among our telegram community users and we can say a lot of interest has risen as a result of this contest, we're raising and adopting new users to the XDAG community which is a right step in the Right direction. 
 
 The community experienced a boom that has never occurred before. That means, more people will have the tools to plug into the XDAG cryptocurrency ecosystem
