@@ -166,7 +166,7 @@ $header-bp: 1400px;
 # Main navigation
 --------------------------------------------------------------*/
 
-// navBreakpoint in main.js 
+// navBreakpoint in main.js
 $nav-breakpoint: 1300px;
 
 .nav-overlay-active {
@@ -311,7 +311,7 @@ $nav-breakpoint: 1300px;
 
   @include bp-min($nav-breakpoint) {
     margin-top: 0;
-    margin-left: 60px !important; 
+    margin-left: 60px !important;
   }
 
   .nav-sublevel-icon {
@@ -364,7 +364,7 @@ $nav-breakpoint: 1300px;
 .nav-sublevel {
   display: none;
   opacity: 0;
-  
+
   @include bp-min($nav-breakpoint) {
     position: absolute;
     top: calc(100% + 13px);
@@ -492,7 +492,7 @@ $nav-breakpoint: 1300px;
 
       .nav-lang__item {
         @include bp-min($nav-breakpoint) {
-          margin: 0 10px !important; 
+          margin: 0 10px !important;
         }
       }
 
@@ -674,7 +674,7 @@ $nav-breakpoint: 1300px;
 @keyframes community_wallets__color {
   0% {
     color: #588ee9;
-  } 
+  }
   50% {
     color: #2ad4de;
   }
@@ -698,11 +698,11 @@ $nav-breakpoint: 1300px;
   animation: community_wallets__color 10s ease infinite;
 
   &--i2 {
-    animation-delay: -3.666s 
+    animation-delay: -3.666s
   }
 
   &--i3 {
-    animation-delay: -6.333s 
+    animation-delay: -6.333s
   }
 
   &:last-of-type {
@@ -755,6 +755,10 @@ $nav-breakpoint: 1300px;
     padding: 0;
     margin: 0;
     list-style: none;
+  }
+  a{
+    color: #ffffff;
+    font-size: 18px;
   }
   li{
     float: left;
