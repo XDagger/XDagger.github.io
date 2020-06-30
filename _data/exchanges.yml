@@ -2,19 +2,15 @@
   name: BBX
   interface_lang: English, 中文
   website: https://bbx.com
-  pairs: 
+  pairs:
     - currency: USDT
       link: https://www.bbx.com/exchange?coinPair=XDAG/USDT
-    - currency: ETH
-      link: https://www.bbx.com/exchange?coinPair=XDAG/ETH
-    - currency: BTC
-      link: https://www.bbx.com/exchange?coinPair=XDAG/BTC
 
 - logo: '/assets/images/exchanges/firefoxotc.png'
   name: Firefox OTC
   interface_lang: 中文
   website: https://firefoxotc.com/
-  pairs: 
+  pairs:
     - currency: FFC
       link: https://firefoxotc.com/exchange
 
@@ -22,7 +18,7 @@
   name: Vinex
   interface_lang: English, French, Tiếng Việt, Русский, 中文, 한국어
   website: https://vinex.network/
-  pairs: 
+  pairs:
     - currency: BTC
       link: https://vinex.network/market/BTC_XDAG
     - currency: USDT
