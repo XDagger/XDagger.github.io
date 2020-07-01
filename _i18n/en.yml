@@ -107,76 +107,70 @@ home:
 
   roadmap: Roadmap
   roadmap_content:
-    - timeframe: Q3 2017
+    - timeframe: 2017
       dates:
-        - date: December 2017
+        - date: Q3 2017
           events:
             - CLI for Windows and Linux
             - Miner, full node and pool release
             - Testnet launch
-    - timeframe: Q1 2018
+    - timeframe: 2018
       dates:
-        - date: January 2018
+        - date: Q1 2018
           events:
             - Mainnet launch
             - GUI wallet with integrated miner for Windows
-        - date: February 2018
-          events:
             - Community built a block explorer based on original developers code
             - Original developer gives the ownership of the project to the community
             - Xdag.org is fully operational
             - The original code is being cleaned
-        - date: March 2018
-          events:
             - Release of XDAG wallet 0.2.0
             - Release of XDAG wallet 0.2.1 with MAC support
             - Brand new website for our new domain xdag.io
-    - timeframe: Q2 2018
-      dates:
-        - date: May 2018
+        - date: Q2 2018
           events:
             - Release of XDAG wallet 0.2.2
             - XDAG gets listed on the bbx.com cryptocurrency exchange
             - Release of XDAG wallet 0.2.3
-        - date: June 2018
-          events:
             - Release of XDAG wallet 0.2.4
-    - timeframe: Q3 2018
-      dates:
-        - date: July 2018
+        - date: Q3 2018
           events:
             - Release of XDAG wallet 0.2.5 with major performance improvements
             - GPU Miner 0.3.0 release with MAC support
             - Block explorer visual and performance update
-        - date: August 2018
-          events:
             - Release of XDAG Android and iOS wallets
-    - timeframe: Q4 2018
-      dates:
-        - date: November 2018
+        - date: Q4 2018
           events:
             - Release of XDAG wallet 0.3.0
-    - timeframe: Q1 2019
+    - timeframe: 2019
       dates:
-        - date: January 2019
+        - date: Q1 2019
           events:
             - XDAG listed on 8 exchanges
             - Development on Golang Version and Anonymous Trading
-    - timeframe: Future
+        - date: Q3 2019
+          events:
+            - Make Apollo plan
+        - date: Q4 2019
+          events:
+            - Implement production reduction
+    - timeframe: 2020
       dates:
-        - date: ETA 2019 Q1
+        - date: Q1 2020
           events:
-            - RPC Development
-            - Hash algorithm adjustment
-            - Full Wallet
-        - date: ETA 2019 Q2
+            - Release 0.3.1 version
+        - date: Q2 2020
           events:
-            - Anonymous Trading
-        - date: Future plans
+            - Release new PC and android wallet
+        - date: ETA Q3 2020
           events:
-            - Smart Contract
-            - Expansion of the development team
-            - Social media and marketing
+            - Introduce rocksdb to solve the slow loading issue
+            - Switch from sha256d to randomx for mining algorithm
+        - date: ETA Q4 2020
+          events:
+            - Compress persistent storage files
+            - Jave version
+            - Replace dnet with decentralized transmit protocol
 
 community: Community
 
@@ -188,7 +182,7 @@ pools:
   title: Pools
   description: Featured XDAG mining pools.
   distribution: |
-    Reward 
+    Reward
     distribution
   distribution_pool: Pool fee
   distribution_finder: Block finder reward
@@ -206,7 +200,7 @@ pools:
   header_3: Address
   header_4: Location
   header_5: |
-    Reward 
+    Reward
     distribution
   header_6: Network status
   # continues in pools/reward-distribution.md

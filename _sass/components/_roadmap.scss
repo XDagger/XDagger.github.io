@@ -167,7 +167,7 @@ $lg-screen: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 100px;
+  padding: 0 20px 100px;
 
 
   @include bp-max($md-screen) {
@@ -215,7 +215,7 @@ $lg-screen: 1200px;
 }
 
 .roadmap__content {
-  $spacing: $hline-circle-width / 2 + $hline-spacing;
+  $spacing: $hline-circle-width / 2 ;
   $half: $hline-width / 2;
 
   position: relative;
@@ -448,7 +448,7 @@ $lg-screen: 1200px;
         }
       }
     }
-  } 
+  }
 
   &:not(:nth-child(3n - 1)) .roadmap__vline {
     @include bp-max($md-screen) {
