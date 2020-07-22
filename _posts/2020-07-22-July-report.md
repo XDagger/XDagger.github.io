@@ -1,3 +1,4 @@
+---
 layout: post
 title: XDAG Monthly Report
 image: /assets/images/posts/xdagprogressreport.jpg
