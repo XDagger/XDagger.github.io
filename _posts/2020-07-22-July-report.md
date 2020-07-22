@@ -1,8 +1,8 @@
---- 
-date: "2020-07-22 01:04:00"
-image: /assets/images/posts/xdagprogressreport.jpg
 layout: post
-title: "XDAG Monthly Report"
+title: XDAG Monthly Report
+image: /assets/images/posts/xdagprogressreport.jpg
+date: "2020-07-22 01:04:00"
+---
 
 
 ![Progress Report Image](/assets/images/posts/xdagprogressreport.jpg)
