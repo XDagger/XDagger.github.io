@@ -162,7 +162,7 @@ home:
         - date: Q2 2020
           events:
             - Release new PC and android wallet
-        - date: ETA Q3 2020
+        - date: Q3 2020
           events:
             - Introduce rocksdb to solve the slow loading issue
             - Switch from sha256d to randomx for mining algorithm

@@ -49,7 +49,7 @@ home:
   slides:
     - title: "XDAG:一种新的基于DAG的数字加密货币"
       content: XDAG 是一种新的有向无环图（DAG）技术的加密货币，它解决了当前区块链技术面临的问题。
-    - title: 第一个可挖矿的DAG 
+    - title: 第一个可挖矿的DAG
       content: |
         区块 = 交易 = 地址
         主链设计理念
@@ -76,7 +76,7 @@ home:
       content: 可以安心使用以下列出的这些已认证的矿池.
   software: 软件
   software_content: 下载适用于XDAG网络的应用链接
-  software_links: 
+  software_links:
     - title: Windows 64位钱包
       content: 64位Windows可执行文件(x64)。
     - title: Windows 32位钱包
@@ -100,62 +100,73 @@ home:
   exchanges_2_description: 在新加坡建立的全球交易所。 致力于成为加密货币世界的灯塔。 透明，公平，合规。
   exchanges_3_description: 火狐狸网FirefoxOTC是一个自由买卖安全可信赖的OTC平台。我们希望人们交易和使用数字币变得更加简单。
   exchanges_4_description: VBitEX致力于在当地法律法规要求下为广大加密货币爱好者和投资者提供多种金融产品和国际化的交易平台。
-  
+
   roadmap: 路线图
   roadmap_content:
-    - timeframe: 2017年第三季度
-      dates: 
-        - date: 2017年12月
+    - timeframe: 2017年
+      dates:
+        - date: 2017年第三季度
           events:
             - Windows和Linux的CLI
             - 挖矿、全节点、矿池发布
             - 测试网发布
-    - timeframe: 2018年第一季度
-      dates: 
-        - date: 2018年1月
+    - timeframe: 2018年
+      dates:
+        - date: 2018年第一季度
           events:
             - 主网上线
             - GUI钱包集成Windows挖矿程序
-        - date: 2018年2月
-          events:
             - 社区基于源代码建立区块浏览器
             - 原作者移交项目所有权给社区
             - xdag.org上线
             - 整理源代码
-        - date: 2018年3月
-          events:
             - XDAG 0.2.0版钱包发布
             - XDAG 0.2.1版钱包发布并增加支持MAC
             - 使用新域名xdag.io并上线全新网站
-    - timeframe: 2018年第二季度
-      dates: 
-        - date: 2018年5月
+        - date: 2018年第二季度
           events:
             - XDAG 0.2.0版钱包发布
             - XDAG 上线BBX加密货币交易所
             - XDAG 0.2.3版钱包发布
-        - date: 2018年6月
-          events:
             - XDAG 0.2.4版钱包发布
-    - timeframe: 2018年第三季度
-      dates: 
-        - date: 2018年7月
+        - date: 2018年第三季度
           events:
-            - XDAG 0.3.0版钱包发布
+            - XDAG 0.2.5版钱包发布，包含主性能改造
             - GPU挖矿0.3.0版本发布，支持MAC
             - 区块浏览器更新
-        - date: 2018年8月
-          events:
             - XDAG安卓和iOS钱包发布
-    - timeframe: 未来
-      dates: 
-        - date: ETA 2018
+        - date: 2018年第四季度
           events:
-            - 在完成RPC的开发之后，社区将推动交易所上市
-        - date: 未来计划
+            - XDAG 0.3.0版钱包发
+    - timeframe: 2019
+      dates:
+        - date: Q1 2019
           events:
-            - 在完成RPC的开发之后，社区将推动交易所上市
-            - 建立社交媒体和推广
+            - XDAG在8家交易所上市
+            - 开发golang版本及匿名交易
+        - date: Q3 2019
+          events:
+            - 制定阿波罗方案
+        - date: Q4 2019
+          events:
+            - 实施减产
+    - timeframe: 2020
+      dates:
+        - date: 2020年第一季度
+          events:
+            - 发布0.3.1版本
+        - date: 2020年第二季度
+          events:
+            - 发布新版PC及安卓钱包
+        - date: 2020第三季度
+          events:
+            - 发布0.4.0（rocksdb）
+            - 发布RandomX算法版本
+        - date: 未来2020第四季度
+          events:
+            - 缩减XDAG存储空间
+            - 发布JAVA版本
+            - 去白名单
   community: 社区
 
 
