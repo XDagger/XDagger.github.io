@@ -38,7 +38,7 @@ default_image: /assets/images/default-card.png
 author:
   name: Xdag.io
   twitter: XDAG_Community
-  email: communitymanager@xdag.io 
+  email: communitymanager@xdag.io
 
 social:
   links:
@@ -50,16 +50,18 @@ social:
     - https://github.com/orgs/XDagger
 
 twitter:
-  card: 
+  card:
     regular: summary
     image: summary_large_image
   username: XDAG_Community
 
 facebook:
   publisher: https://www.facebook.com/XDAG.Dagger.Community/
-      
+
 ## Translations
 
-languages: ["en", "zh", "sv", "es", "fr", "cs"]
+languages: ["en", "zh"]
+##languages: ["en", "zh", "sv", "es", "fr", "cs"]
+
 exclude_from_localizations: ["assets", "blog", "CNAME", "README.md", "feed.xml", "_posts"]
 exclude: [vendor]
