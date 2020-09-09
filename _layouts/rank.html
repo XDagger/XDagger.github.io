@@ -1,0 +1,35 @@
+{% include head.html %}
+  <link href="{{ '/assets/css/rank.css' | absolute_url }}" rel="stylesheet">
+</head>
+
+<body>
+{% include header.html %}
+<main id="main">
+    <div class="container pt-5">
+        <div class="section-header wow fadeInUp">
+            <h3>{{ page.title }}</h3>
+            <p>{{ page.description }}</p>
+        </div>
+        <div>
+          <section class="privacy-section">
+              <table width="100%" cellpadding="0" cellspacing="0" class="ques-list">
+                  <tr>
+                      <th></th>
+                      <th>ADDRESS</th>
+                      <th>ACCOUNT</th>
+                  </tr>
+                  <tbody id="rankbody">
+
+                  </tbody>
+              </table>
+          </section>
+
+        </div>
+    </div>
+</main>
+{% include footer.html %}
+<script src="{{ '/assets/lib/xlsx/jquery-2.1.1.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/lib/xlsx/xlsx.core.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/xlsx.js' | absolute_url }}"></script>
+</body>
+</html>
