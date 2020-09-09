@@ -17,8 +17,7 @@ function readWorkbook(workbook) {
     var sheetNames = workbook.SheetNames;
     var worksheet = workbook.Sheets[sheetNames[0]];
     var csv = XLSX.utils.sheet_to_csv(worksheet);
-
-    let arr = csv.split(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,")
+    let arr = csv.split("\n")
     let brr = arr.slice(0,101)
     console.log(brr)
     let htmltxt = [];
