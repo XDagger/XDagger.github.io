@@ -1,5 +1,6 @@
 .ques-list{
   margin-bottom: 100px;
+
   th{
     padding: 0 20px;
     background: #f5f5f5;
@@ -10,6 +11,10 @@
      padding: 0 20px;
      border-bottom: 1px solid #eee;
    }
+  tr td:nth-child(2){
+    word-break:break-all;
+    word-wrap:break-word;
+  }
   tr:hover td{
     background: #fbfbfb;
   }
