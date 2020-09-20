@@ -3,7 +3,7 @@ layout: post
 title: XDAG Monthly Report
 date: "2020-09-197 01:04:00"
 ---
-"/assets/images/posts/xdagprogressreport.jpg"
+![Progress Report Image](/assets/images/posts/xdagprogressreport.jpg)
 
 
 # XDAG Monthly Report
