@@ -25,13 +25,13 @@ XDAG community launchs twitter daily check in activity, community members who su
 Community members who meet the requirements, share your last tweet link and XDAG wallet address to @XDAG_Community, the rewards will be sent after confirmation.
 
 
-##JAVA IMPLEMENTATION 
+## JAVA IMPLEMENTATION 
 
 We just recently implement XDAGJ. 
 XDAGJ is a Java implementation of XDAG. It is rebuilt on the basis of C Version XDAG. Kindly read full details on this link:
 https://github.com/XDagger/xdagj
 
-##EXPLORER
+## EXPLORER
 Xdag explorer has just been updated you can view through this link: https://github.com/XDagger/explorer
 
 Also the community just made a list of XDAG Wallet Rank of TOP100, you can check them out here:
