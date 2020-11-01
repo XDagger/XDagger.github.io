@@ -1,7 +1,7 @@
 ---
 layout: post
 title: XDAG Monthly Report
-date: "2020-11-01 00:00:00"
+date: "2020-11-01 08:00:00"
 ---
 
 
@@ -45,7 +45,7 @@ Random X development is done, when it is fully reviewed we are going to launch i
 
 ![almost there image](/assets/images/posts/photo_2020-10-30_07-20-40.jpg)
 
-Briefly let talk about the ìOctober effectî Bitcoinís apparent effect has given more impression to still be the largest cryptocurrency by market capitalization and daily trading volume. 
+Briefly let talk about the ‚ÄúOctober effect‚Äù Bitcoin‚Äôs apparent effect has given more impression to still be the largest cryptocurrency by market capitalization and daily trading volume. 
 Xdag also hit a new ATH price up too in the month of October, which is a very great edge for the community, we're almost there, it's only a matter of time XDAG adoption will surely be global.
 
 
