@@ -3,9 +3,9 @@ layout: post
 title: XDAG November Monthly Report
 date: "2020-11-28 12:00:00"
 ---
-"/assets/images/posts/photo_2020-11-28_15-07-19.jpg" 
+![Monthly report image]"/assets/images/posts/photo_2020-11-28_15-07-19.jpg" 
 
-#A NEW BEGINNING (FRESH START)
+# A NEW BEGINNING (FRESH START)
 
 It's a season of new dawn and great progress for us all in XDAG community, 
 
@@ -17,26 +17,26 @@ We appreciate everyone support.
 
 
 
-#Exchange Listing
+# Exchange Listing
 
-"/assets/images/posts/photo_2020-11-28_15-07-26.jpg"
+![Listing image]"/assets/images/posts/photo_2020-11-28_15-07-26.jpg"
 
 We're glad to be listed on CoinEx as we made the official announcement of the listing on  26th of November 2020,  trading activities already started with a XDAG/USDT Pair. 
 
 We've been in top gainers on arrival :
 
-"/assets/images/posts/photo_2020-11-28_15-07-31.jpg"
+![Rank image]"/assets/images/posts/photo_2020-11-28_15-07-31.jpg"
 
-Here is the link to the announcement: [Announcement](https://announcement.coinex.com/hc/en-us/articles/360053006431)
+Here is the link to the announcement: [>> Announcement <<](https://announcement.coinex.com/hc/en-us/articles/360053006431)
 
 
-#Technical Update
+# Technical Update
 
 Our next release 0.4.0 is still in review, we really miss more dev to watch our code, the more we are, faster development will goes forward.
 Random X last stage is now completed, but still under review to avoid ambiguities,It will be deployed in our 0.5.0 rev.
 
 
-#Marketing and community
+# Marketing and community
 
 More marketing strategy are already in place, we will be having upcoming Community AMA Series and also more promption campaign in the future, announcements regarding this will be communicated at the right time. 
 We worked also to update all website where our stats and metrics are displayed, so CoinmarketCap/coinguecko and coinpaprika at least should display good information now.
@@ -46,7 +46,7 @@ Our community users based are increasing daily, happy to see more enthusiast are
 Lastly this report won't be complete without adding the most recent and informative AMA we just did in the CoinEx community, Titled "Walk into the originator of [DAG+POW] XDAG" 
 It was a mind blowing session, kindly see the link to check out the Recap :
 
-[AMA Recap](https://docs.google.com/document/d/1__rQXs8Nss8Syh8-Q-BxMGq0ZzHYQ7sOM_b7-7pTtdU/edit?usp=sharing)
+[>> AMA Recap <<](https://docs.google.com/document/d/1__rQXs8Nss8Syh8-Q-BxMGq0ZzHYQ7sOM_b7-7pTtdU/edit?usp=sharing)
 
 
 In conclusion we are still in pursuit of bringing Unique technologies for all and making sure XDAG stand out admist all, together we can make it possible, more goodnews will still be shared in the community.
