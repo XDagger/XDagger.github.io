@@ -3,7 +3,7 @@ layout: post
 title: XDAG November Monthly Report
 date: "2020-11-28 12:00:00"
 ---
-![Monthly report image](/assets/images/posts/photo_2020-11-28_15-07-19.jpg")
+![Monthlyreport image](/assets/images/posts/photo_2020-11-28_15-07-19.jpg)
 
 # A NEW BEGINNING (FRESH START)
 
