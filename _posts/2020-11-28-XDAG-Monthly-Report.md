@@ -3,7 +3,7 @@ layout: post
 title: XDAG November Monthly Report
 date: "2020-11-28 12:00:00"
 ---
-![Monthly report image]"/assets/images/posts/photo_2020-11-28_15-07-19.jpg" 
+![Monthly report image](/assets/images/posts/photo_2020-11-28_15-07-19.jpg")
 
 # A NEW BEGINNING (FRESH START)
 
@@ -19,13 +19,13 @@ We appreciate everyone support.
 
 # Exchange Listing
 
-![Listing image]"/assets/images/posts/photo_2020-11-28_15-07-26.jpg"
+![Listing image](/assets/images/posts/photo_2020-11-28_15-07-26.jpg)
 
 We're glad to be listed on CoinEx as we made the official announcement of the listing on  26th of November 2020,  trading activities already started with a XDAG/USDT Pair. 
 
 We've been in top gainers on arrival :
 
-![Rank image]"/assets/images/posts/photo_2020-11-28_15-07-31.jpg"
+![Rank image](/assets/images/posts/photo_2020-11-28_15-07-31.jpg)
 
 Here is the link to the announcement: [>> Announcement <<](https://announcement.coinex.com/hc/en-us/articles/360053006431)
 
