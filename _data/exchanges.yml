@@ -1,3 +1,11 @@
+- logo: '/assets/images/exchanges/coinex.png'
+  name: CoinEx
+  interface_lang: English, 中文
+  website: https://www.coinex.co
+  pairs:
+    - currency: USDT
+      link: https://www.coinex.co/exchange/XDAG-USDT
+
 - logo: '/assets/images/exchanges/bbx.png'
   name: BBX
   interface_lang: English, 中文
