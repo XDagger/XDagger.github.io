@@ -4,6 +4,8 @@
 <dict>
 	<key>compileBitcode</key>
 	<true/>
+	<key>destination</key>
+	<string>export</string>
 	<key>manifest</key>
 	<dict>
 		<key>appURL</key>
@@ -18,10 +20,10 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>io.xdag.wallet</key>
-		<string>in-house-xdag</string>
+		<string>xdag</string>
 	</dict>
 	<key>signingCertificate</key>
-	<string>iPhone Distribution</string>
+	<string>Apple Distribution</string>
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>stripSwiftSymbols</key>
