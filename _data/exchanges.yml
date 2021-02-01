@@ -14,14 +14,6 @@
     - currency: USDT
       link: https://www.bbx.com/exchange?coinPair=XDAG/USDT
 
-- logo: '/assets/images/exchanges/firefoxotc.png'
-  name: Firefox OTC
-  interface_lang: 中文
-  website: https://firefoxotc.com/
-  pairs:
-    - currency: FFC
-      link: https://firefoxotc.com/exchange
-
 - logo: '/assets/images/exchanges/vinex.jpg'
   name: Vinex
   interface_lang: English, French, Tiếng Việt, Русский, 中文, 한국어
