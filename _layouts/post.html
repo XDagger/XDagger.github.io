@@ -26,5 +26,13 @@
 {% include footer.html %}
 <script src="{{ '/assets/lib/lazysizes/lazysizes.min.js' | absolute_url }}"></script>
 <script src="{{ '/assets/lib/lightbox/js/lightbox.min.js' | absolute_url }}"></script>
+<script>
+    $(document).ready(function() {
+        //为超链接加上target='_blank'属性
+        $('.post-content a[href^="http"]').each(function() {
+            $(this).attr('target', '_blank');
+        });
+    });
+</script>
 </body>
 </html>

@@ -13,11 +13,10 @@ At the same time, the 300,000 XDAGs from the initial crowdfunding will be awarde
 
 
 
-##The new algorithm will bring the following advantages to the community:
+#### The new algorithm will bring the following advantages to the community:
 
-#1. The new algorithm will first support CPU mining, which will solve the problem of XDAG mining fairness.
-
-#2. The new algorithm will attract more miners to join as it become easier to mine and the growing team of miners will greatly improve the stability of the XDAG network.
+###### 1. The new algorithm will first support CPU mining, which will solve the problem of XDAG mining fairness.
+###### 2. The new algorithm will attract more miners to join as it become easier to mine and the growing team of miners will greatly improve the stability of the XDAG network.
 
 
 
