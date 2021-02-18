@@ -20,7 +20,8 @@ This opens up a wide field of possibilities for mining, and we hope to convince 
 
 # Technical 
 
-We already have a minor ready for use, it is for the moment a pre-release, there are no major changes other than the algo.
+We already have a miner ready for use, there are no major changes other than the algo.
+
 This miner does not require files wallet.dat and dnet_key.dat. Storage folder is still necessary.
 
 You can find it at this adress: https://github.com/XDagger/XdagRandomxMiner/releases/tag/v0.4
