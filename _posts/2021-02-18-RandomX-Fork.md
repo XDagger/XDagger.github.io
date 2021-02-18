@@ -1,7 +1,7 @@
 ---
 layout: post
 title: XDAG Fork for RandomX deployment
-date: "2021-02-18 12:00:00"
+date: "2021-02-18 16:35:00"
 ---
 ![RandomXdag image](/assets/images/posts/randomXdag.jpg)  
 
