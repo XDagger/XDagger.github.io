@@ -4,11 +4,12 @@ title: XDAG RandomX Deployement
 date: "2021-02-11 01:00:00"
 ---
 "/assets/images/posts/xdaglaptop.jpg" 
+![xdaglaptop.jpg](/assets/images/posts/xdaglaptop.jpg)
 
 
 The community is happy to announce that according to the Apollo program planning, after the developer's unremitting efforts, the new mining algorithm of XDAG is now ready.
 We'll release a new version and switch to the new algorithm (RandomX) online in the near future.
-At the same time, the 300,000 XDAGs from the initial crowdfunding will be awarded to the relevant contributors ( https://xdag.io/task#community )
+At the same time, the 300,000 XDAGs from the initial crowdfunding will be awarded to the relevant contributors ([https://xdag.io/task#community](https://xdag.io/task#community) )
 
 
 
