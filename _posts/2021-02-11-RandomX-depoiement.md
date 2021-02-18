@@ -3,7 +3,7 @@ layout: post
 title: XDAG RandomX Deployement
 date: "2021-02-11 01:00:00"
 ---
-"/assets/images/posts/xdaglaptop.jpg" 
+
 ![xdaglaptop.jpg](/assets/images/posts/xdaglaptop.jpg)
 
 
