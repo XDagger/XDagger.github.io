@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "bundle exec jekyll serve",
+    "username": "git config user.name wendychaung",
+    "email": "git config user.email 117485655@qq.com"
   },
   "repository": {
     "type": "git",

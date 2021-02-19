@@ -132,36 +132,111 @@
   background-image: url("../images/icon-body.png");
 }
 
-.task-list {
-  border: 1px solid #eee;
-  margin-bottom: 40px;
 
-  th {
-    padding: 0 20px;
-    background: #f5f5f5;
-    line-height: 70px;
-    border: 1px solid #eee;
+
+.tasklist {
+  img{
+    width: 35px;
+    display: inline-block;
+    padding-right: 10px;
   }
 
   td {
     background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+
+  }
+
+  &>tr td:nth-child(2) {
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+
+  tr:hover td {
+    background: #fbfbfb;
+  }
+
+  tr:nth-child(even) td {
+    background:#f5f5f5;
+    border-bottom: 0;
+  }
+  .nowrap{
+
+    .total{
+      border: 1px solid #eee;
+      border-bottom: 0;
+      font-size: 12px;
+      text-align: center;
+      padding:15px 20px;
+      span{
+        font-size: 16px;
+        font-weight: bold;
+        white-space:nowrap;
+        color: #428bca;
+      }
+    }
+    button{
+      display: inline-block;
+      white-space:nowrap;
+      color:  #428bca;
+      border: 1px solid #428bca;
+      width: 100%;
+      font-size: 12px;
+      background: #fff;
+      outline: none;
+      text-align: center;
+    }
+  }
+}
+.task-list {
+  border: 1px solid #eee;
+  margin-bottom: 40px;
+  .fwb{
+    //font-weight: bold;
+    text-align: center;
+    background: #f5f5f5!important;
+  }
+
+  td {
+    background: #fff!important;
     padding: 10px 20px;
     border: 1px solid #eee;
+    word-wrap:break-word!important;
+
+    word-break:normal!important;
+
   }
 
   tr:nth-child(1) td {
     text-align: center;
-    font-weight: bold;
+    //font-weight: bold;
     padding: 20px 0;
+    background: #f5f5f5!important;
   }
 
-  //tr:hover td{
-  //  background: #fbfbfb;
-  //}
-  //tbody tr:nth-child(1) td, tbody tr:nth-child(2) td, tbody tr:nth-child(3) td{
-  //  padding: 20px;
-  //}
-  //tbody tr:nth-child(1):hover td, tbody tr:nth-child(2):hover td, tbody tr:nth-child(3):hover td{
-  //  background: #ecf3fa;
-  //}
+}
+.gray{
+  background:#f5f5f5;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 769px) {
+  .tdnowrap{
+    white-space:nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .task-list {
+
+    td{
+      word-break: break-all!important;
+      word-wrap: break-word!important;
+      padding:5px!important;
+    }
+  }
+  .tdnowrap{
+    word-break: break-all!important;
+    word-wrap: break-word!important;
+  }
 }

@@ -1,0 +1,43 @@
+- task: Change the existing mining algorithm of XDAG to RandomX to solve the problem of unfair mining distribution in the community.
+  index: 1
+  deliverables: Submit RandomX code, XDAG mining algorithm is successfully changed to RadomX
+  acceptance: Passed test + code review + successfully launched
+  total: 300,000 XDAG
+  foundation: 150,000 XDAG
+  community: 150,000 XDAG,
+  address: 3oQtj/YtlIl8PGNWtqFR0QNo0dXJ+FDq
+  priority: High
+  remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
+
+- task: Solve the problem of slow local loading of XDAG nodes. At present, when the XDAG loading process reaches the height of 490,000 to 620,000 main blocks, the loading speed will be extremely slow. It is necessary to analyze the loading code and data structure to solve the loading speed problem.
+  index: 2
+  deliverables: Find the problem and submit the resolved code
+  acceptance: Pass the main network data test + code review + successfully launched
+  total: 200,000 XDAG
+  foundation: 100,000 XDAG
+  community: 100,000 XDAG
+  address: hmzpclQfTlB7Vt00/yTOHtgg1VrQDskB
+  priority: High
+  remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
+
+- task: The communication module with libp2p as the bottom layer is implemented in XDAG, and NAT penetration function and node discovery function are added. The libp2p communication protocol has high reliability and security, and is a must for mainstream blockchain projects to build a P2P environment. The realization of this agreement will greatly facilitate the future expansion of XDAG's network scale, enhance network stability, and pave the way for XDAG to remove the whitelist.
+  index: 3
+  deliverables: Submit relevant code
+  acceptance: Passed test + code review + successfully launched
+  total: 1,000,000 XDAG  <br>(Or USDT、BTC、ETH in same value)
+  foundation: 500,000 XDAG
+  community: 500,000 XDAG
+  address: /7GiV9ukjtm4oydaeKyW1PRRtK+neU7o
+  priority: High
+  remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
+
+- task: Cross-chain solution. Develop XDAG cross-chain solutions and implement code, and assist XDAG to be listed on decentralized exchanges such as Uniswap.
+  index: 4
+  deliverables: Cross-chain solution + code
+  acceptance: Passed test + code review + successfully launched
+  total: 300,000 XDAG
+  foundation: 150,000 XDAG
+  community: 150,000 XDAG
+  address: udT6qIYiCrbOCmLiqdIVVf1m8MZbyjPF
+  priority: High
+  remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
