@@ -1,6 +1,6 @@
-- task: Change the existing mining algorithm of XDAG to RandomX to solve the problem of unfair mining distribution in the community.
+- task: [Successfully funded] Change the existing mining algorithm of XDAG to RandomX to solve the problem of unfair mining distribution in the community.
   index: 1
-  deliverables: Submit RandomX code, XDAG mining algorithm is successfully changed to RadomX
+  deliverables: Submit RandomX code, XDAG mining algorithm is successfully changed to RandomX
   acceptance: Passed test + code review + successfully launched
   total: 300,000 XDAG
   foundation: 150,000 XDAG
@@ -9,7 +9,7 @@
   priority: High
   remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
 
-- task: Solve the problem of slow local loading of XDAG nodes. At present, when the XDAG loading process reaches the height of 490,000 to 620,000 main blocks, the loading speed will be extremely slow. It is necessary to analyze the loading code and data structure to solve the loading speed problem.
+- task: [Funding in progress] Solve the problem of slow local loading of XDAG nodes. At present, when the XDAG loading process reaches the height of 490,000 to 620,000 main blocks, the loading speed will be extremely slow. It is necessary to analyze the loading code and data structure to solve the loading speed problem.
   index: 2
   deliverables: Find the problem and submit the resolved code
   acceptance: Pass the main network data test + code review + successfully launched
@@ -20,7 +20,7 @@
   priority: High
   remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
 
-- task: The communication module with libp2p as the bottom layer is implemented in XDAG, and NAT penetration function and node discovery function are added. The libp2p communication protocol has high reliability and security, and is a must for mainstream blockchain projects to build a P2P environment. The realization of this agreement will greatly facilitate the future expansion of XDAG's network scale, enhance network stability, and pave the way for XDAG to remove the whitelist.
+- task: [Funding in progress] The communication module with libp2p as the bottom layer is implemented in XDAG, and NAT penetration function and node discovery function are added. The libp2p communication protocol has high reliability and security, and is a must for mainstream blockchain projects to build a P2P environment. The realization of this agreement will greatly facilitate the future expansion of XDAG's network scale, enhance network stability, and pave the way for XDAG to remove the whitelist.
   index: 3
   deliverables: Submit relevant code
   acceptance: Passed test + code review + successfully launched
@@ -31,7 +31,7 @@
   priority: High
   remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
 
-- task: Cross-chain solution. Develop XDAG cross-chain solutions and implement code, and assist XDAG to be listed on decentralized exchanges such as Uniswap.
+- task: [Funding in progress] Cross-chain solution. Develop XDAG cross-chain solutions and implement code, and assist XDAG to be listed on decentralized exchanges such as Uniswap.
   index: 4
   deliverables: Cross-chain solution + code
   acceptance: Passed test + code review + successfully launched
