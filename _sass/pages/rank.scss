@@ -204,6 +204,9 @@
     border: 1px solid #eee;
     word-wrap:break-word!important;
     word-break:normal!important;
+    span{
+      color: #4c8dfc ;
+    }
   }
 
   tr:nth-child(1) td {
@@ -237,4 +240,11 @@
     word-break: break-all!important;
     word-wrap: break-word!important;
   }
+}
+.progressbg{
+  background: #1edb89;
+  color: #ffffff!important;
+  display: inline-block;
+  padding: 0 5px;
+  margin-right: 10px;
 }
