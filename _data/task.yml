@@ -46,7 +46,7 @@
   priority: X
   remarks: You can tell us in Remark wich 2 pair you prefer, the ones with more comment wil be chosen.
 
-- task: Change the existing mining algorithm of XDAG to RandomX to solve the problem of unfair mining distribution in the community.
+- task: FUNDED Change the existing mining algorithm of XDAG to RandomX to solve the problem of unfair mining distribution in the community.
   index: 5
   progress: Successfully funded
   deliverables: Submit RandomX code, XDAG mining algorithm is successfully changed to RandomX
@@ -54,7 +54,7 @@
   total: 300,000 XDAG
   foundation: 150,000 XDAG
   community: 150,000 XDAG
-  address: 3oQtj/YtlIl8PGNWtqFR0QNo0dXJ+FDq
+  address: 
   priority: High
   remarks: You can record your donation name or code in the transfer remark, and the community will  express appreciation.
 
