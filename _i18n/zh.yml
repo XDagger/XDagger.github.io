@@ -168,6 +168,25 @@ home:
             - 缩减XDAG存储空间
             - 发布JAVA版本
             - 去白名单
+    - timeframe: 2021
+      dates:
+        - date: 2021年第一阶段
+          events:
+            - 补充各种功能单元测试，完善白盒测试。
+            - 优化共识流程。
+            - 优化同步协议。
+            - 使用 randomx 替换当前的挖矿算法。
+            - 使用libp2p替换当前网络。
+        - date: 2021年第二阶段
+          events:
+            - 开放api接口，提供黑盒测试。
+            - 优化地址数据结构，增加块状费用。
+        - date: 2021年第三阶段
+          events:
+            - 探索使用neo4j作为存储层的可能性。
+            - 探索在XDAG中实现智能合约。
+            - 使用 Flutter 或 React Native 实现 XDAG 钱包。
+
   community: 社区
 
 
