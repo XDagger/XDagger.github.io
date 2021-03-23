@@ -166,29 +166,11 @@ home:
           events:
             - Introduce rocksdb to solve the slow loading issue
             - Switch from sha256d to randomx for mining algorithm
-        - date: Q4 2020
+        - date: ETA Q4 2020
           events:
             - Compress persistent storage files
             - Jave version
             - Replace dnet with decentralized transmit protocol
-    - timeframe: 2021
-      dates:
-        - date: phase1 2021
-          events:
-            - Supplement various functional unit tests and improve white box testing.
-            - Optimize the consensus process.
-            - Optimize synchronization protocol.
-            - Use randomx to replace the current mining algorithm.
-            - Use libp2p to replace current network.
-        - date: phase2 2021
-          events:
-            - Open api interface and provide black box testing.
-            - Optimize address data structure, add block fee.
-        - date: phase3 2021
-          events:
-            - Explore the possibility of using neo4j as storage layer.
-            - Explore the implementation of smart contracts in XDAG.
-            - Use Flutter or React Native to implement XDAG wallet.
 
 community: Community
 
