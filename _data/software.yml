@@ -7,7 +7,7 @@
   delay: 0.1s
 
 - icon: ion-logo-windows
-  href: https://github.com/jonano614/DaggerGpuMiner/files/2186569/DaggerGpuMiner.0.3.0.zip
+  href: https://github.com/XDagger/XdagRandomxMiner/releases
   delay: 0.2s
 
 - icon: ion-logo-apple
@@ -15,18 +15,14 @@
   delay: 0.3s
 
 - icon: ion-logo-apple
-  href: https://github.com/jonano614/DaggerGpuMiner/files/2180530/GpuMiner.0.3.0.zip
-  delay: 0.4s
-
-- icon: ion-logo-apple
   href: "itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://xdag.io/assets/apps/manifest.plist"
-  delay: 0.5s
+  delay: 0.4s
 
 - icon: ion-logo-android
   href: https://github.com/XDagger/android-wallet/releases/download/release_0.2.7/android_wallet_release_v0.2.7.apk
-  delay: 0.6s
+  delay: 0.5s
 
 - icon: ion-ios-color-filter
   href: https://github.com/XDagger
-  delay: 0.7s
+  delay: 0.6s
 

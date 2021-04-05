@@ -83,12 +83,10 @@ home:
       content: 64位Windows可执行文件(x64)。
     - title: Windows 32位钱包
       content: 32位Windows可执行文件(x86)。
-    - title: Windows GPU 挖矿软件
-      content: MacOS命令行钱包。
+    - title: CPU 钱包
+      content: 64位Windows RandomX CPU 挖坑(x64)。
     - title: MacOS 钱包
       content: MacOS命令行钱包。
-    - title: MacOS GPU 挖矿软件
-      content: MacOS GPU 挖矿软件
     - title: iOS 钱包
       content: Beta版本. 请在设置->通用->描述文件与设备管理中信任 F&F INTERNATIONAL TRADING CO., LTD (我们的发布证书)
     - title: Android 钱包

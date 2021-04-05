@@ -86,12 +86,10 @@ home:
       content: 64 bit Windows Console and GUI executables (x64).
     - title: Windows 32-bit wallet
       content: 32 bit Windows Console and GUI executables (x86).
-    - title: Windows GPU miner
-      content: GPU miner by Jonano for Windows (x64).
+    - title: XDAG CPU wallet
+      content: XDAG RandomX CPU Miner Windows X64
     - title: MacOS wallet
       content: MacOS command line wallet.
-    - title: MacOS GPU miner
-      content: GPU Miner by Jonano for MacOS.
     - title: iOS wallet
       content: Beta version. Users have to accept F&F INTERNATIONAL TRADING CO., LTD as a trusted source.
     - title: Android wallet
