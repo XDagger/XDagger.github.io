@@ -62,8 +62,8 @@ home:
   introduction: About Dagger
   introduction_content: Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.
   features:
-    - title: CPU/GPU Mineable
-      content: XDAG is both CPU & GPU mineable. Making it the first mineable DAG project.
+    - title: CPU Mineable
+      content: XDAG is CPU mineable. Making it the first mineable DAG project.
     - title: Privacy
       content: XDAG is working on incorporating privacy features. These are part of the 2018 roadmap.
     - title: Smart contracts
@@ -86,7 +86,7 @@ home:
       content: 64 bit Windows Console and GUI executables (x64).
     - title: Windows 32-bit wallet
       content: 32 bit Windows Console and GUI executables (x86).
-    - title: XDAG CPU wallet
+    - title: XDAG CPU miner
       content: XDAG RandomX CPU Miner Windows X64
     - title: MacOS wallet
       content: MacOS command line wallet.

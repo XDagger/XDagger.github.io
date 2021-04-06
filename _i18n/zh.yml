@@ -61,8 +61,8 @@ home:
   introduction: 关于 XDAG
   introduction_content: XDAG是基于DAG的新一代分布式分类账本. DAG,有向无环图, 是在分布式的分散环境中在人们中发送数据的另一种方法。这样做没有区块链，允许更大的可扩展性.
   features:
-    - title: CPU/GPU 可开采
-      content: XDAG可以使用CPU、GPU开采，是第一个可挖矿的DAG项目。
+    - title: CPU 可开采
+      content: XDAG可以使用CPU开采，是第一个可挖矿的DAG项目。
     - title: 隐私
       content: XDAG致力于整合隐私特征。这是2018条路线图的一部分。
     - title: 智能合约
@@ -83,7 +83,7 @@ home:
       content: 64位Windows可执行文件(x64)。
     - title: Windows 32位钱包
       content: 32位Windows可执行文件(x86)。
-    - title: CPU 钱包
+    - title: CPU 挖坑软件
       content: 64位Windows RandomX CPU 挖坑(x64)。
     - title: MacOS 钱包
       content: MacOS命令行钱包。
