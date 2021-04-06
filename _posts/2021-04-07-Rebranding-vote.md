@@ -19,12 +19,12 @@ For this vote we will again use the wallet system with 1 XDAG = 1 vote, the wall
 
 Here are the 6 wallet addresses, from 1 to 6 according to the order of the pdf.
 
-1: OpWDV70/zKvWPbfDCBvNP+5jJkYMUU58
-2: N7qug+TQUUbtMlY+LcZBQZiSpJoqevmL
-3: iDbvXS84km4widnAfhcuz/2YzsRRVHeh
-4: jwEfsbIUG4rNJ1pCZh+jKCyim4AHoQYv
-5: RC2m//hv2mUxx5NfvLkJT1t56w6VTKMY
-6: U3AQzfxFb0Zr78XuYaBKvJjV0Oja2MCg
+1. OpWDV70/zKvWPbfDCBvNP+5jJkYMUU58
+2. N7qug+TQUUbtMlY+LcZBQZiSpJoqevmL
+3. iDbvXS84km4widnAfhcuz/2YzsRRVHeh
+4. jwEfsbIUG4rNJ1pCZh+jKCyim4AHoQYv
+5. RC2m//hv2mUxx5NfvLkJT1t56w6VTKMY
+6. U3AQzfxFb0Zr78XuYaBKvJjV0Oja2MCg
 
 Here is the pdf with the different logos : https://drive.google.com/file/d/1ILZepVX-2i7NmamfhH6aYy0X5WWcXmnu/view?usp=sharing
 
