@@ -1,7 +1,7 @@
 ---
 layout: post
 title: XDAG Rebranding result
-date: "2021-04-18 00:02:00"
+date: "2021-04-18 17:28:00"
 ---
 
 Hello everyone
