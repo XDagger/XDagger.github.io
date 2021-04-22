@@ -83,8 +83,8 @@ home:
       content: 64位Windows可执行文件(x64)。
     - title: Windows 32位钱包
       content: 32位Windows可执行文件(x86)。
-    - title: CPU 挖坑软件
-      content: 64位Windows RandomX CPU 挖坑(x64)。
+    - title: CPU 挖矿软件
+      content: 64位Windows RandomX CPU 挖矿(x64)。
     - title: MacOS 钱包
       content: MacOS命令行钱包。
     - title: iOS 钱包
