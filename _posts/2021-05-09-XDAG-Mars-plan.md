@@ -113,4 +113,4 @@ and promotes the evolution of XDAG to a new height; on the other hand, it uses t
  with XDAG fans, so stay tuned.
 
 
-#####**-By XDAG Community**
+##### -By XDAG Community
