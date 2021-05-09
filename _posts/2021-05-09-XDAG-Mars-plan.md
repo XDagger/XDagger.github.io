@@ -85,8 +85,8 @@ added to the development plan.
    
 ### 5. Time estimation
 
-|1| Phase | Name | Time(months) | Difficulty |
-|----|----|----|----|----|
+|1| Phase | Time(months) | Difficulty |
+|----|----|----|----|
 |2|Exploration phase|1-3|Middle|
 |3|Landing phase|3-6|High|
 |4|Expansion phase|3-6|Very High|
