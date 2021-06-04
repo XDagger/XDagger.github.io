@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script type="text/javascript">
+      document.documentElement.className = "js";
+    </script>
+    <title>XDAG v.0.2.2 Release & Change List | XDAG - A new DAG-based cryptocurrency</title>
+    <meta name="description" content="We are pleased to announce that XDAG v0.2.2 is released.">
+    <meta property="og:title" content="XDAG v.0.2.2 Release & Change List | XDAG - A new DAG-based cryptocurrency">
+    <meta property="og:description" content="We are pleased to announce that XDAG v0.2.2 is released.">
+    <meta property="og:locale" content="en">
+    <meta property="og:url" content="https://xdag.io/2018/05/18/XDAG-update.html">
+    <meta property="og:site_name" content="XDAG">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://xdag.io/assets/images/posts/v022.png"><meta property="article:published_time" content="2018-05-18T00:00:00+00:00"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@XDAG_Community">
+    <meta name="twitter:creator" content="@XDAG_Community">
+    <meta property="article:publisher" content="https://www.facebook.com/XDAG.Dagger.Community/">
+    <link rel="canonical" href="https://xdag.io/2018/05/18/XDAG-update.html"><meta name="google-site-verification" content="BVvyrWkqGXmUuXZAMk7v5Gz24N2Skarlms5MtVSF3Yw">
+    <script type="application/ld+json">
+    { 
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "XDAG Community",
+      "url": "https://xdag.io",
+      "image": "https://xdag.io/assets/images/logo-xdag.png",
+      "sameAs": [
+        "https://www.facebook.com/XDAG.Dagger.Community/",
+        "https://twitter.com/xdag_community",
+        "https://www.instagram.com/Xdag_community/",
+        "https://t.me/dagger_cryptocurrency",
+        "https://discord.gg/YxXUVQJ",
+        "https://www.reddit.com/r/xdag/",
+        "https://github.com/orgs/XDagger"
+      ]
+    }
+    </script>
+    <link href="https://xdag.io/assets/images/fav/favicon.png" rel="icon">
+    <link href="https://xdag.io/assets/images/fav/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://xdag.io/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/animate/animate.css" rel="stylesheet" >
+    <link href="https://xdag.io/assets/css/main.css" rel="stylesheet">
+
+    <link href="https://xdag.io/assets/css/news.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+</head>
+
+<body>
+<header id="header" class="js-header">
+    <div id="logo">
+        <a href="/">
+            <img src="https://xdag.io/assets/images/logo2.png" height="45" alt="Dagger" />
+        </a>
+    </div>
+    <input class="display-toggle js-nav-main-toggle" type="checkbox" id="nav-main-toggle">
+    <label class="nav-main-icon" for="nav-main-toggle"></label>
+    <nav class="nav-main-container" role="navigation">
+        <ul class="nav-main js-nav-main">
+            <li class="js-nav-no-sublevel">
+                <a href="/">Home</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-getstarted-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-getstarted-toggle" tabindex="0">Get started</label>
+                <ul id="nav-getstarted" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="/#wallet">Wallet</a></li>
+                    <li><a href="/#mining">Mining</a></li>
+<!--                    <li><a href="/pools">Pools</a></li>-->
+<!--                    <li><a href="">Pools</a></li>-->
+                </ul>
+            </li>
+            <li class="js-nav-no-sublevel">
+                <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-resources-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-resources-toggle" tabindex="0">Resources</label>
+                <ul id="nav-resources" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a></li>
+                    <li><a href="https://github.com/XDagger/xdag/releases" target="_blank">Releases</a></li>
+                    <li><a href="/#roadmap">Roadmap</a></li>
+                </ul>
+            </li>
+            <li class="js-nav-no-sublevel">
+                <a href="https://xdag.io/blog">News</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-community-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-community-toggle" tabindex="0">Community</label>
+                <ul id="nav-community" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="/#community">Social Channels</a></li>
+                    <li><a href="/rank">Wallet Rank</a></li>
+                    <li><a href="/task">Reward Tasks</a></li>
+                    <li><a href="/hashrate">Hashrate Statistics</a></li>
+                </ul>
+            </li>
+            <li class="js-nav-has-sublevel sublevel-lang">
+                <input class="display-toggle" type="checkbox" id="nav-lang-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0">
+                  <i class="nav-sublevel-icon"></i>
+                </label>
+                <nav  id="main-nav-lang"  class="nav-lang nav-lang--main sf-mega nav-sublevel js-nav-sublevel">
+  <ul class="nav-lang__list"><li class="nav-lang__item">
+    
+    <a class="nav-lang__link" href="https://xdag.io/index.html">English</a></li><li class="nav-lang__item">
+    
+    <a class="nav-lang__link" href="https://xdag.io/zh/index.html">中文</a></li></ul> 
+</nav>
+
+            </li>
+        </ul>
+    </nav>
+    <div class="nav-overlay"></div>
+</header>
+<div class="header-bg"></div>
+
+<main id="main">
+    <section id="news">
+        <div class="container">
+            <div class="section-header wow fadeInUp">
+                <div class="tit"><h3>XDAG v.0.2.2 Release & Change List</h3></div>
+            </div>
+
+            <div class="news" align="pull-left">
+                <section class="post-wrapper">
+                    <p class="post-date"><div class="month"><span>05</span>-<span>18</span></div><div class="year">2018</div></p>
+                </section>
+                <article class="post-content">
+                    <p>We are pleased to announce that XDAG v0.2.2 is released.</p>
+
+<ol>
+  <li><a href="https://github.com/XDagger/xdag/releases/tag/0.2.2">XDag v0.2.2 release</a></li>
+  <li><a href="https://github.com/XDagger/xdag">Github</a></li>
+</ol>
+
+<p><strong>Change list:</strong></p>
+<ul>
+  <li>Transaction address is shown in the console version, you can track the status of your transaction in the block explorer.</li>
+  <li>New field “State” was added to the output of the “block” command. See description below.</li>
+  <li>A bug in DNET which could break synchronization between pools is fixed.</li>
+  <li>A bug in block validation logic which could lead to divergence of balances between pools is fixed.</li>
+  <li>Large changes to mining:
+    <ul>
+      <li>Unpaid shares are paid even if miner is disconnected.</li>
+      <li>Miners who use several rigs with one wallet address recieve only one total payment, not several payments corresponding to the number of connections. It should help to decrease network load.</li>
+      <li>Restriction on count of connections with the same address was added. This count can be configured, see description below.</li>
+      <li>Count of shares per task from one connection was restricted to 20, if count of shares exceeds 20 (during one minute) miner is disconnected. It was made with the purpose to protect pool againnst DDOS and cheating with shares.</li>
+      <li>If you use several connections with the same address you can no longer send the same shares. All shares must be unique.</li>
+      <li>Output of the miners command was changed. See description below.</li>
+      <li>Max count of connections was increased to 8192.</li>
+    </ul>
+  </li>
+  <li>Small update in the GUI wallet.</li>
+  <li>Draft version of JSON-RPC. Not ready for exchanges at the moment.</li>
+  <li>Some log messages are disabled during the loading process of the storage. It can help to decrease count of disk I/O operations and speed up the loading of storage folder.</li>
+  <li>DAG takes too much space in memory. Pools use temporary files for swapping in order to decrease memory usage. A new configuration “-z” was added:
+    <ul>
+      <li>-z <path>  - you can set path to temp-file folder.</path></li>
+      <li>-z RAM - use RAM instead of temp-files. It can speed up loading of storage and make the pool faster, but demands large amout of free memory.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Transaction address:
+After a transfer, you will see this message, “Transaction address is xxxxxxxxxxxxxx, it will take several minutes to complete the transaction.”. Example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xdag&gt; xfer 5 EnTkFVTGB+J4oKHHTQIay3Q3Zc1a8s0u
+Password:
+Xfer: transferred 5.000000000 XDAG to the address EnTkFVTGB+J4oKHHTQIay3Q3Zc1a8s0u.
+Transaction address is ksk5SsT5PqLhAwCUhqtBFNPB6WizsDk0, it will take several minutes to complete the transaction.
+</code></pre></div></div>
+<p>You can use that address to track your transaction, for example: https://explorer.xdag.io/block/ksk5SsT5PqLhAwCUhqtBFNPB6WizsDk0</p>
+
+<p>Currently you can use field “Flags” to find out the state of the transaction (block):
+0 - block is just recieved.
+10 - block is in processing.
+1c - block is accepted.
+1F - it is main block.
+18 - block is rejected. It can be caused by insufficient balance or synchronization problems.</p>
+
+<p>New version has a new field “state” with the following values:</p>
+<ul>
+  <li>Pending</li>
+  <li>Accepted</li>
+  <li>Rejected</li>
+  <li>Main</li>
+</ul>
+
+<p>Example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xdag&gt; block  gkileoNyIQ+24I82gBKXcsm1wZSKHIVd
+      time: 2018-05-18 01:59:27.916
+ timestamp: 16bf8253fab
+     flags: 0
+     state: Pending
+  file pos: 200
+      hash: 0c93950ebed441c95d851c8a94c1b5c972971280368fe0b60f2172837aa54882
+difficulty: 00000001c7a2f05a0
+   balance: gkileoNyIQ+24I82gBKXcsm1wZSKHIVd           0.000000000
+-------------------------------------------------------------------------------------------
+                               block as transaction: details
+ direction  address                                    amount
+-------------------------------------------------------------------------------------------
+       fee: NjVnGThQVNPsMnMwgRPTJQWvmsBNSCTB           0.000000000
+    output: CtuR8NizlQHSb09T8fV3bURYCEmQ/jcN           0.000000000
+     input: CtuR8NizlQHSb09T8fV3bURYCEmQ/jcN       50000.000000000
+    output: XUSGrE0EHNLZ1OMZqv7pvbBa4YRA+zKp       50000.000000000
+-------------------------------------------------------------------------------------------
+                                 block as address: details
+ direction  transaction                                amount       time
+-------------------------------------------------------------------------------------------
+</code></pre></div></div>
+<p>Existing block explorers can use this field to show the block state.</p>
+
+<p><strong>For pool owners:</strong> The configuration for pool was updated. A new parameter “maxconn - maximum allowed number of miners with the same address” was added. Also parameters were reordered.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-P ip:port:CFG - run the pool, bind to ip:port, CFG is miners:maxip:maxconn:fee:reward:direct:fund
+                     miners - maximum allowed number of miners,
+                     maxip - maximum allowed number of miners connected from single ip,
+                     maxconn - maximum allowed number of miners with the same address,
+                     fee - pool fee in percent,
+                     reward - reward to miner who got a block in percent,
+                     direct - reward to miners participated in earned block in percent,
+                     fund - community fund fee in percent
+</code></pre></div></div>
+
+<p>Example of command line for starting pool (for test net):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xdag -t -p 213.21.5.18:3366 -P 213.21.5.18:454:1000:100:60:1:1:1:1
+</code></pre></div></div>
+
+<p>Output of miners command was changed. Example:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xdag&gt; miners
+List of miners:
+ NN  Address for payment to            Status   IP and port            in/out bytes      nopaid shares
+------------------------------------------------------------------------------------------------------
+ -1. EacdO89D9vDursfUP4dsPHvHu1mnKdHP  fee      -                      -                 0.000000
+  0. XUSGrE0EHNLZ1OMZqv7pvbBa4YRA+zKp  active   -                      -                 34.238053
+ C1. -                                 -        127.0.0.1:50013        9568/4800         34.238053
+ C2. -                                 -        127.0.0.1:50634        576/96            0.135454
+  1. CtuR8NizlQHSb09T8fV3bURYCEmQ/jcN  active   -                      -                 31.848017
+ C1. -                                 -        127.0.0.1:50024        10944/4640        31.848017
+  2. qJ4ytVsbjyiuDP57XaLo1ia323XeHFS8  archive  -                      -                 13.180378
+------------------------------------------------------------------------------------------------------
+Total 2 active miners.
+</code></pre></div></div>
+
+<p>Now all connections with the same address are grouped. Disconnected miners are marked with “archived” state. Archive miners are removed from the list when all shares are paid. In order to see the list in the old format, you can use command “miners conn.”</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xdag&gt; miners conn
+List of miners:
+ NN  Address for payment to            Status   IP and port            in/out bytes      nopaid shares
+------------------------------------------------------------------------------------------------------
+  0. XUSGrE0EHNLZ1OMZqv7pvbBa4YRA+zKp  active   127.0.0.1:50013        9600/4800         34.238053
+  1. CtuR8NizlQHSb09T8fV3bURYCEmQ/jcN  active   127.0.0.1:50024        10976/4640        31.848017
+  2. XUSGrE0EHNLZ1OMZqv7pvbBa4YRA+zKp  active   127.0.0.1:50634        576/96            0.135454
+------------------------------------------------------------------------------------------------------
+Total 3 active miners.
+</code></pre></div></div>
+
+<p>This list shows only active connections. The new version no longer has “archive connections”.</p>
+
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="link">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">Friends links：</div>
+            <div class="col-md-10">
+                <ul>
+                    <li><a href="http://xdag.top" target="_blank" >xdag.top</a></li>
+                    <li><a href="https://www.coinbase.com/price/xdag" target="_blank" >Coinbase</a></li>
+                    <li><a href="http://walletinvestor.com/currency/xdag" target="_blank" >Walletinvestor</a></li>
+                    <li><a href="https://coinmarketcap.com/currencies/xdag/" target="_blank" >CMC</a></li>
+                    <li><a href="https://coinpaprika.com/fr/coin/xdag-dagger/" target="_blank" >Coinpaprika</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer id="footer" class="main-footer">
+
+    <div class="main-footer__section main-footer__info col-lg-6 col-md-12">
+        <img class="mb-3" src="https://xdag.io/assets/images/logo2.png" height="45" alt="Dagger, by the community" />
+        <ul class="community_wallets main-footer__text">
+            <p class="mb-3">Support The Community: This site is managed by the XDAG community.</p>
+            
+            <li>
+              <p class="community_wallets__item">
+                <span class="community_wallets__currency">XDAG</span>
+                <i class="community_wallets__arrow community_wallets__arrow--i1 ion-ios-arrow-back"></i>
+                <i class="community_wallets__arrow community_wallets__arrow--i1 ion-ios-arrow-forward"></i>
+                <span class="community_wallets__address">FQglVQtb60vQv2DOWEUL7yh3smtj7g1s</span>
+              </p>
+            </li>
+            
+            <li>
+              <p class="community_wallets__item">
+                <span class="community_wallets__currency">BTC</span>
+                <i class="community_wallets__arrow community_wallets__arrow--i2 ion-ios-arrow-back"></i>
+                <i class="community_wallets__arrow community_wallets__arrow--i2 ion-ios-arrow-forward"></i>
+                <span class="community_wallets__address">39QyFnyoW45dWMReaZtcoRHP2S4DqU8xQG</span>
+              </p>
+            </li>
+            
+            <li>
+              <p class="community_wallets__item">
+                <span class="community_wallets__currency">ETH</span>
+                <i class="community_wallets__arrow community_wallets__arrow--i3 ion-ios-arrow-back"></i>
+                <i class="community_wallets__arrow community_wallets__arrow--i3 ion-ios-arrow-forward"></i>
+                <span class="community_wallets__address">0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1</span>
+              </p>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="main-footer__section col-lg-3 col-md-6 col-sm-6">
+        <h4 class="main-footer__heading">Useful links</h4>
+        <ul class="main-footer__links">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="/">Home</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="http://explorer.xdag.io/" target="_blank">Block explorer</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="/#mining">Mining</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="/#wallet">Wallet</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="https://xdag.io/blog">News</a></li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-footer__section col-lg-3 col-md-6 col-sm-6">
+      <h4 class="main-footer__heading">Available in</h4>
+      <nav  class="nav-lang nav-lang--footer">
+  <ul class="nav-lang__list"><li class="nav-lang__item">
+    
+    <a class="nav-lang__link" href="https://xdag.io/index.html">English</a></li><li class="nav-lang__item">
+    
+    <a class="nav-lang__link" href="https://xdag.io/zh/index.html">中文</a></li></ul> 
+</nav>
+
+    </div>
+
+</footer>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<script src="https://xdag.io/assets/lib/jquery/jquery.min.js"></script>
+<script src="https://xdag.io/assets/lib/jquery/jquery-migrate.min.js"></script>
+<script src="https://xdag.io/assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://xdag.io/assets/lib/easing/easing.min.js"></script>
+<script src="https://xdag.io/assets/lib/wow/wow.min.js"></script>
+<script src="https://xdag.io/assets/js/superfish.custom.js"></script>
+<script src="https://xdag.io/assets/js/main.js"></script>
+
+<script src="https://xdag.io/assets/lib/lazysizes/lazysizes.min.js"></script>
+<script src="https://xdag.io/assets/lib/lightbox/js/lightbox.min.js"></script>
+<script>
+    $(document).ready(function() {
+        //为超链接加上target='_blank'属性
+        $('.post-content a[href^="http"]').each(function() {
+            $(this).attr('target', '_blank');
+        });
+    });
+</script>
+</body>
+</html>

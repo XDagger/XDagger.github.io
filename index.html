@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script type="text/javascript">
+      document.documentElement.className = "js";
+    </script>
+    <title>XDAG | A new DAG-based cryptocurrency</title>
+    <meta name="description" content="XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.">
+    <meta property="og:title" content="XDAG | A new DAG-based cryptocurrency">
+    <meta property="og:description" content="XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.">
+    <meta property="og:locale" content="en">
+    <meta property="og:url" content="https://xdag.io/">
+    <meta property="og:site_name" content="XDAG">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://xdag.io/assets/images/default-card.png"><meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@XDAG_Community">
+    <meta name="twitter:creator" content="@XDAG_Community">
+    <meta property="article:publisher" content="https://www.facebook.com/XDAG.Dagger.Community/">
+    <link rel="canonical" href="https://xdag.io/">
+      
+      
+      <link rel="alternate" hreflang="x-default" href="https://xdag.io/">
+      
+      
+      <link rel="alternate" hreflang="zh" href="https://xdag.io/zh/"><meta name="google-site-verification" content="BVvyrWkqGXmUuXZAMk7v5Gz24N2Skarlms5MtVSF3Yw">
+    <script type="application/ld+json">
+    { 
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "XDAG Community",
+      "url": "https://xdag.io",
+      "image": "https://xdag.io/assets/images/logo-xdag.png",
+      "sameAs": [
+        "https://www.facebook.com/XDAG.Dagger.Community/",
+        "https://twitter.com/xdag_community",
+        "https://www.instagram.com/Xdag_community/",
+        "https://t.me/dagger_cryptocurrency",
+        "https://discord.gg/YxXUVQJ",
+        "https://www.reddit.com/r/xdag/",
+        "https://github.com/orgs/XDagger"
+      ]
+    }
+    </script>
+    <link href="https://xdag.io/assets/images/fav/favicon.png" rel="icon">
+    <link href="https://xdag.io/assets/images/fav/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://xdag.io/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/animate/animate.css" rel="stylesheet" >
+    <link href="https://xdag.io/assets/css/main.css" rel="stylesheet">
+
+    <link href="https://xdag.io/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://xdag.io/assets/css/home.css" rel="stylesheet">
+</head>
+
+<body>
+<header id="header" class="js-header">
+    <div id="logo">
+        <a href="/">
+            <img src="https://xdag.io/assets/images/logo2.png" height="45" alt="Dagger" />
+        </a>
+    </div>
+    <input class="display-toggle js-nav-main-toggle" type="checkbox" id="nav-main-toggle">
+    <label class="nav-main-icon" for="nav-main-toggle"></label>
+    <nav class="nav-main-container" role="navigation">
+        <ul class="nav-main js-nav-main">
+            <li class="js-nav-no-sublevel">
+                <a href="/">Home</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-getstarted-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-getstarted-toggle" tabindex="0">Get started</label>
+                <ul id="nav-getstarted" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="/#wallet">Wallet</a></li>
+                    <li><a href="/#mining">Mining</a></li>
+<!--                    <li><a href="/pools">Pools</a></li>-->
+<!--                    <li><a href="">Pools</a></li>-->
+                </ul>
+            </li>
+            <li class="js-nav-no-sublevel">
+                <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-resources-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-resources-toggle" tabindex="0">Resources</label>
+                <ul id="nav-resources" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a></li>
+                    <li><a href="https://github.com/XDagger/xdag/releases" target="_blank">Releases</a></li>
+                    <li><a href="/#roadmap">Roadmap</a></li>
+                </ul>
+            </li>
+            <li class="js-nav-no-sublevel">
+                <a href="https://xdag.io/blog">News</a>
+            </li>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-community-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-community-toggle" tabindex="0">Community</label>
+                <ul id="nav-community" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="/#community">Social Channels</a></li>
+                    <li><a href="/rank">Wallet Rank</a></li>
+                    <li><a href="/task">Reward Tasks</a></li>
+                    <li><a href="/hashrate">Hashrate Statistics</a></li>
+                </ul>
+            </li>
+            <li class="js-nav-has-sublevel sublevel-lang">
+                <input class="display-toggle" type="checkbox" id="nav-lang-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0">
+                  <i class="nav-sublevel-icon"></i>
+                </label>
+                <nav  id="main-nav-lang"  class="nav-lang nav-lang--main sf-mega nav-sublevel js-nav-sublevel">
+  <ul class="nav-lang__list"><li class="nav-lang__item">
+    
+    
+      
+      <a class="nav-lang__link" href="https://xdag.io/">English</a></li><li class="nav-lang__item">
+    
+    
+      
+      <a class="nav-lang__link" href="https://xdag.io/zh/">中文</a></li></ul> 
+</nav>
+
+            </li>
+        </ul>
+    </nav>
+    <div class="nav-overlay"></div>
+</header>
+<div class="header-bg"></div>
+
+<div class="mask"></div>
+<div class="playbrdr">
+    <div class="videoclose"><i class="ion-ios-close-circle-outline"></i></div>
+    <iframe src="" frameborder="0" width="100%" height="100%"></iframe>
+</div>
+<section id="intro">
+    <div class="intro-container">
+        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators"></ol>
+            <div class="carousel-inner" role="listbox"> 
+                
+                
+                <div class="carousel-item  active" style="background-image: url(/assets/images/banner/1.jpg);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>XDAG: A new DAG-based cryptocurrency</h2>
+                            <p>XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="carousel-item " style="background-image: url(/assets/images/banner/2.png);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>The first mineable DAG</h2>
+                            <p>Block = transaction = address<br />
+Original main chain idea<br />
+Mining new money every 64 seconds<br />
+</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="carousel-item " style="background-image: url(/assets/images/banner/3.jpg);">
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <h2>No pre-mine or ICO</h2>
+                            <p>XDAG offer bleeding edge technology to offer a decentralised solution to the problems facing other cryptocurrencies. XDAG has no pre-mine or ICO, and is a true community-driven project aligned by a common goal and innovative development team.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon ion-ios-arrow-back" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon ion-ios-arrow-forward" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+<main id="main">
+    <section id="about">
+        <div class="container">
+            <header class="section-header">
+                <h3>About Dagger</h3>
+                <p>Dagger is part of a new wave of Distributed Ledger projects based on a DAG infrastructure. DAG, or Directed acyclic graph, is an alternative method for sending data amongst people within a distributed, decentralized environment. This is done without a blockchain, allowing for greater scalability.</p>
+            </header>
+            <div class="row about-cols">
+                
+                
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0s">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="https://xdag.io/assets/images/about-mining.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-unlock"></i></div>
+                        </div>
+                        <h2 class="title">CPU Mineable</h2>
+                        <p>XDAG is CPU mineable. Making it the first mineable DAG project.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="https://xdag.io/assets/images/about-mission.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-unlock"></i></div>
+                        </div>
+                        <h2 class="title">Privacy</h2>
+                        <p>XDAG is working on incorporating privacy features.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="about-col">
+                        <div class="img">
+                            <img src="https://xdag.io/assets/images/about-plan.jpg" alt="" class="img-fluid">
+                            <div class="icon"><i class="ion-ios-unlock"></i></div>
+                        </div>
+                        <h2 class="title">Smart contracts</h2>
+                        <p>XDAG is researching the possibility to add smart contract functionality.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="mining" id="mining">
+        <div class="container">
+            <header class="section-header wow fadeInUp">
+                <h3>Mining quick start</h3>
+                <p>The first mineable DAG. Follow the steps below. If you get stuck, check out our social channels for help, specifically Discord.</p>
+            </header>
+            <div class="row">
+                
+                
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                    <div class="icon"><i class="ion-ios-cloud-download"></i></div>
+                    <h4 class="title">
+                        <a href="#wallet">Download wallet</a>
+                        
+                        
+                    </h4>
+                    <p class="description">First, download the Dagger miner & wallet suitable for your operating system. Click to download.</p>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.5s">
+                    <div class="icon"><i class="ion-ios-videocam"></i></div>
+                    <h4 class="title">
+                        
+                        <a class="playvideo">Learn about the process</a>
+                        
+                    </h4>
+                    <p class="description">Next watch the easy to follow video setup guide.</p>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.6s">
+                    <div class="icon"><i class="ion-ios-paper"></i></div>
+                    <h4 class="title">
+                        
+                        
+                        <a href="/pools" class="pool">Select a pool</a>
+                    </h4>
+                    <p class="description">You can connect to a featured pool or visit our wiki for a complete list of approved pools.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="wallet" class="wallets section-bg" >
+        <div class="container">
+            <header class="section-header">
+                <h3 class="section-title">Software</h3>
+                <p>Download links for applications that interact with the XDAG network.</p>
+            </header>
+            <div class="row justify-content-center portfolio-container">
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <div class="icons"><i class="ion-logo-windows"></i></div>
+                            <h4><a href="https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWalletWin_v0.3.1_x64.zip" target="_blank">Windows 64-bit wallet</a></h4>
+                            <p>64 bit Windows Console and GUI executables (x64).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <div class="icons"><i class="ion-logo-windows"></i></div>
+                            <h4><a href="https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWalletWin_v0.3.1_x86.zip" target="_blank">Windows 32-bit wallet</a></h4>
+                            <p>32 bit Windows Console and GUI executables (x86).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <div class="icons"><i class="ion-logo-windows"></i></div>
+                            <h4><a href="https://github.com/XDagger/XdagRandomxMiner/releases" target="_blank">XDAG CPU miner</a></h4>
+                            <p>XDAG RandomX CPU Miner Windows X64</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <div class="icons"><i class="ion-logo-apple"></i></div>
+                            <h4><a href="https://github.com/XDagger/xdag/files/2586967/xdag.0.3.0.zip" target="_blank">MacOS wallet</a></h4>
+                            <p>MacOS command line wallet.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <div class="icons"><i class="ion-logo-apple"></i></div>
+                            <h4><a href="itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://xdag.io/assets/apps/manifest.plist" target="_blank">iOS wallet</a></h4>
+                            <p>Beta version. Users have to accept F&F INTERNATIONAL TRADING CO., LTD as a trusted source.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <div class="icons"><i class="ion-logo-android"></i></div>
+                            <h4><a href="https://github.com/XDagger/android-wallet/releases/download/release_0.2.7/android_wallet_release_v0.2.7.apk" target="_blank">Android wallet</a></h4>
+                            <p>For Android 5.0 and newer.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-info">
+                            <div class="icons"><i class="ion-ios-color-filter"></i></div>
+                            <h4><a href="https://github.com/XDagger" target="_blank">Sources</a></h4>
+                            <p>Sources for XDAG software and codebases.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="home-section">
+  <header class="section-header wow fadeInUp">
+    <h3>exchanges</h3>
+    <p></p>
+  </header>
+  <ul class="exchanges js-exchange-list"><li class="exchanges__item js-exchange">
+      <figure class="exchanges__content">
+        <img class="exchanges__img" src="https://xdag.io/assets/images/exchanges/coinex.png" />
+        <figcaption class="exchanges__caption">
+          <h6 class="exchanges__caption-title">
+            CoinEx
+            <span class="exchanges__language-container">English, 中文</span>
+          </h6>
+          <p class="exchanges__caption-body">
+            CoinEx core team members are from world leading internet and finance companies, including the earliest adopters/professionals of cryptocurrency who boast rich experience in R&D, global operations and services in the industry
+          </p>
+          <div class="exchanges__meta">
+            <a
+              class="button button--animated exchanges__button"
+              href="https://www.coinex.co"
+              target="_blank"
+              rel="noopener"
+              >Trade</a
+            >
+            <div class="exchanges__pairs">
+              
+              <a
+                class="exchanges__pair"
+                href="https://www.coinex.co/exchange/XDAG-USDT"
+                target="_blank"
+                rel="noopener"
+                >XDAG / USDT</a
+              >
+              
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="exchanges__item js-exchange">
+      <figure class="exchanges__content">
+        <img class="exchanges__img" src="https://xdag.io/assets/images/exchanges/bbx.png" />
+        <figcaption class="exchanges__caption">
+          <h6 class="exchanges__caption-title">
+            BBX
+            <span class="exchanges__language-container">English, 中文</span>
+          </h6>
+          <p class="exchanges__caption-body">
+            The leading cryptocurrency index contract trading platform, also the world's first BTC perpetual contract trading platform which uses USDT as a margin.
+          </p>
+          <div class="exchanges__meta">
+            <a
+              class="button button--animated exchanges__button"
+              href="https://bbx.com"
+              target="_blank"
+              rel="noopener"
+              >Trade</a
+            >
+            <div class="exchanges__pairs">
+              
+              <a
+                class="exchanges__pair"
+                href="https://www.bbx.com/exchange?coinPair=XDAG/USDT"
+                target="_blank"
+                rel="noopener"
+                >XDAG / USDT</a
+              >
+              
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="exchanges__item js-exchange">
+      <figure class="exchanges__content">
+        <img class="exchanges__img" src="https://xdag.io/assets/images/exchanges/vinex.jpg" />
+        <figcaption class="exchanges__caption">
+          <h6 class="exchanges__caption-title">
+            Vinex
+            <span class="exchanges__language-container">English, French, Tiếng Việt, Русский, 中文, 한국어</span>
+          </h6>
+          <p class="exchanges__caption-body">
+            Vinex key features is High performance trading, 30 trading pairs and increasing to 50, extensive APIs, 24/7 support, leaderboard as Social Trading Functionality.
+          </p>
+          <div class="exchanges__meta">
+            <a
+              class="button button--animated exchanges__button"
+              href="https://vinex.network/"
+              target="_blank"
+              rel="noopener"
+              >Trade</a
+            >
+            <div class="exchanges__pairs">
+              
+              <a
+                class="exchanges__pair"
+                href="https://vinex.network/market/BTC_XDAG"
+                target="_blank"
+                rel="noopener"
+                >XDAG / BTC</a
+              >
+              
+              <a
+                class="exchanges__pair"
+                href="https://vinex.network/market/USDT_XDAG"
+                target="_blank"
+                rel="noopener"
+                >XDAG / USDT</a
+              >
+              
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+    </li>
+    
+  </ul>
+</section>
+
+     
+
+<section id="roadmap" class="roadmap js-roadmap">
+  <header class="roadmap__header section-header">
+    <h3>Roadmap</h3>
+  </header>
+  <nav class="roadmap__nav">
+    <ol class="roadmap__nav-list js-roadmap-nav">
+      
+      <li
+        class="roadmap__nav-item  roadmap__nav-item--progress "
+      >
+        <div class="roadmap__vline"></div>
+        <div
+          class="roadmap__nav-link js-roadmap-link "
+        >
+          2017
+        </div>
+      </li>
+      
+      <li
+        class="roadmap__nav-item  roadmap__nav-item--progress "
+      >
+        <div class="roadmap__vline"></div>
+        <div
+          class="roadmap__nav-link js-roadmap-link "
+        >
+          2018
+        </div>
+      </li>
+      
+      <li
+        class="roadmap__nav-item  roadmap__nav-item--progress "
+      >
+        <div class="roadmap__vline"></div>
+        <div
+          class="roadmap__nav-link js-roadmap-link "
+        >
+          2019
+        </div>
+      </li>
+      
+      <li
+        class="roadmap__nav-item  roadmap__nav-item--progress "
+      >
+        <div class="roadmap__vline"></div>
+        <div
+          class="roadmap__nav-link js-roadmap-link "
+        >
+          2020
+        </div>
+      </li>
+      
+      <li
+        class="roadmap__nav-item  roadmap__nav-item--progress "
+      >
+        <div class="roadmap__vline"></div>
+        <div
+          class="roadmap__nav-link js-roadmap-link roadmap__nav-link--active"
+        >
+          2021
+        </div>
+      </li>
+      
+    </ol>
+  </nav>
+  <ol class="roadmap__timeline js-roadmap-timeline owl-carousel wow fadeInUp">
+    
+    <li class="roadmap__timeframe js-roadmap-timeframe">
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q3 2017</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">CLI for Windows and Linux</li>
+          
+          <li class="roadmap__event">Miner, full node and pool release</li>
+          
+          <li class="roadmap__event">Testnet launch</li>
+          
+        </ul>
+      </div>
+       
+    <li class="roadmap__timeframe js-roadmap-timeframe">
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q1 2018</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Mainnet launch</li>
+          
+          <li class="roadmap__event">GUI wallet with integrated miner for Windows</li>
+          
+          <li class="roadmap__event">Community built a block explorer based on original developers code</li>
+          
+          <li class="roadmap__event">Original developer gives the ownership of the project to the community</li>
+          
+          <li class="roadmap__event">Xdag.org is fully operational</li>
+          
+          <li class="roadmap__event">The original code is being cleaned</li>
+          
+          <li class="roadmap__event">Release of XDAG wallet 0.2.0</li>
+          
+          <li class="roadmap__event">Release of XDAG wallet 0.2.1 with MAC support</li>
+          
+          <li class="roadmap__event">Brand new website for our new domain xdag.io</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q2 2018</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Release of XDAG wallet 0.2.2</li>
+          
+          <li class="roadmap__event">XDAG gets listed on the bbx.com cryptocurrency exchange</li>
+          
+          <li class="roadmap__event">Release of XDAG wallet 0.2.3</li>
+          
+          <li class="roadmap__event">Release of XDAG wallet 0.2.4</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q3 2018</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Release of XDAG wallet 0.2.5 with major performance improvements</li>
+          
+          <li class="roadmap__event">GPU Miner 0.3.0 release with MAC support</li>
+          
+          <li class="roadmap__event">Block explorer visual and performance update</li>
+          
+          <li class="roadmap__event">Release of XDAG Android and iOS wallets</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q4 2018</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Release of XDAG wallet 0.3.0</li>
+          
+        </ul>
+      </div>
+       
+    <li class="roadmap__timeframe js-roadmap-timeframe">
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q1 2019</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">XDAG listed on 8 exchanges</li>
+          
+          <li class="roadmap__event">Development on Golang Version and Anonymous Trading</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q3 2019</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Make Apollo plan</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q4 2019</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Implement production reduction</li>
+          
+        </ul>
+      </div>
+       
+    <li class="roadmap__timeframe js-roadmap-timeframe">
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q1 2020</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Release 0.3.1 version</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q2 2020</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Release new PC and android wallet</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q3 2020</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Introduce rocksdb to solve the slow loading issue</li>
+          
+          <li class="roadmap__event">Switch from sha256d to randomx for mining algorithm</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">Q4 2020</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Compress persistent storage files</li>
+          
+          <li class="roadmap__event">Jave version</li>
+          
+          <li class="roadmap__event">Replace dnet with decentralized transmit protocol</li>
+          
+        </ul>
+      </div>
+       
+    <li class="roadmap__timeframe js-roadmap-timeframe">
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">phase1 2021</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Supplement various functional unit tests and improve white box testing.</li>
+          
+          <li class="roadmap__event">Optimize the consensus process.</li>
+          
+          <li class="roadmap__event">Optimize synchronization protocol.</li>
+          
+          <li class="roadmap__event">Use randomx to replace the current mining algorithm.</li>
+          
+          <li class="roadmap__event">Use libp2p to replace current network.</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">phase2 2021</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Open api interface and provide black box testing.</li>
+          
+          <li class="roadmap__event">Optimize address data structure, add block fee.</li>
+          
+        </ul>
+      </div>
+      
+      <div class="roadmap__content">
+        <h6 class="roadmap__date">ETA phase3 2021</h6>
+        <svg
+          class="roadmap__swirly"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+          <path d="M4,96C4,32.5,96,68.3,96,4" />
+        </svg>
+        <ul class="roadmap__events">
+          
+          <li class="roadmap__event">Explore the possibility of using neo4j as storage layer.</li>
+          
+          <li class="roadmap__event">Explore the implementation of smart contracts in XDAG.</li>
+          
+          <li class="roadmap__event">Use Flutter or React Native to implement XDAG wallet.</li>
+          
+        </ul>
+      </div>
+       
+    </li>
+  </ol>
+</section>
+
+    <section id="community" class="community wow fadeInUp">
+        <div class="container">
+            <header class="section-header">
+                <h3></h3>
+            </header>
+            <div class="owl-carousel clients-carousel">
+                
+                <a href="https://discord.gg/YxXUVQJ" class="owl-discord" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/discord.jpg" alt="discord community">
+                </a>
+                
+                <a href="https://www.reddit.com/r/xdag/" class="owl-reddit" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/rd.jpg" alt="reddit community">
+                </a>
+                
+                <a href="https://github.com/orgs/XDagger" class="owl-github" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/github.jpg" alt="github community">
+                </a>
+                
+                <a href="https://t.me/dagger_cryptocurrency" class="owl-telegram" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/telegram.jpg" alt="telegram community">
+                </a>
+                
+                <a href="https://www.linkedin.com/company/xdag/" class="owl-Linked in" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/linkedin.png" alt="Linked in community">
+                </a>
+                
+                <a href="https://www.facebook.com/XDAG.Dagger.Community/" class="owl-facebook" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/fb.jpg" alt="facebook community">
+                </a>
+                
+                <a href="https://twitter.com/XDAG_Community" class="owl-twitter" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/twt.jpg" alt="twitter community">
+                </a>
+                
+                <a href="http://qm.qq.com/cgi-bin/qm/qr?k=6chDn2xPq0JrVY_TwkkyFp9TZ5XfkuyO" class="owl-QQ" target="_blank">
+                  <img src="https://xdag.io/assets/images/community/qq.png" alt="QQ community">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+</main>
+<div class="link">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">Friends links：</div>
+            <div class="col-md-10">
+                <ul>
+                    <li><a href="http://xdag.top" target="_blank" >xdag.top</a></li>
+                    <li><a href="https://www.coinbase.com/price/xdag" target="_blank" >Coinbase</a></li>
+                    <li><a href="http://walletinvestor.com/currency/xdag" target="_blank" >Walletinvestor</a></li>
+                    <li><a href="https://coinmarketcap.com/currencies/xdag/" target="_blank" >CMC</a></li>
+                    <li><a href="https://coinpaprika.com/fr/coin/xdag-dagger/" target="_blank" >Coinpaprika</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer id="footer" class="main-footer">
+
+    <div class="main-footer__section main-footer__info col-lg-6 col-md-12">
+        <img class="mb-3" src="https://xdag.io/assets/images/logo2.png" height="45" alt="Dagger, by the community" />
+        <ul class="community_wallets main-footer__text">
+            <p class="mb-3">Support The Community: This site is managed by the XDAG community.</p>
+            
+            <li>
+              <p class="community_wallets__item">
+                <span class="community_wallets__currency">XDAG</span>
+                <i class="community_wallets__arrow community_wallets__arrow--i1 ion-ios-arrow-back"></i>
+                <i class="community_wallets__arrow community_wallets__arrow--i1 ion-ios-arrow-forward"></i>
+                <span class="community_wallets__address">FQglVQtb60vQv2DOWEUL7yh3smtj7g1s</span>
+              </p>
+            </li>
+            
+            <li>
+              <p class="community_wallets__item">
+                <span class="community_wallets__currency">BTC</span>
+                <i class="community_wallets__arrow community_wallets__arrow--i2 ion-ios-arrow-back"></i>
+                <i class="community_wallets__arrow community_wallets__arrow--i2 ion-ios-arrow-forward"></i>
+                <span class="community_wallets__address">39QyFnyoW45dWMReaZtcoRHP2S4DqU8xQG</span>
+              </p>
+            </li>
+            
+            <li>
+              <p class="community_wallets__item">
+                <span class="community_wallets__currency">ETH</span>
+                <i class="community_wallets__arrow community_wallets__arrow--i3 ion-ios-arrow-back"></i>
+                <i class="community_wallets__arrow community_wallets__arrow--i3 ion-ios-arrow-forward"></i>
+                <span class="community_wallets__address">0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1</span>
+              </p>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="main-footer__section col-lg-3 col-md-6 col-sm-6">
+        <h4 class="main-footer__heading">Useful links</h4>
+        <ul class="main-footer__links">
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="/">Home</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="http://explorer.xdag.io/" target="_blank">Block explorer</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="/#mining">Mining</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="/#wallet">Wallet</a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="https://xdag.io/blog">News</a></li>
+            <li class="main-footer__item">
+              <a class="main-footer__link" href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-footer__section col-lg-3 col-md-6 col-sm-6">
+      <h4 class="main-footer__heading">Available in</h4>
+      <nav  class="nav-lang nav-lang--footer">
+  <ul class="nav-lang__list"><li class="nav-lang__item">
+    
+    
+      
+      <a class="nav-lang__link" href="https://xdag.io/">English</a></li><li class="nav-lang__item">
+    
+    
+      
+      <a class="nav-lang__link" href="https://xdag.io/zh/">中文</a></li></ul> 
+</nav>
+
+    </div>
+
+</footer>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<script src="https://xdag.io/assets/lib/jquery/jquery.min.js"></script>
+<script src="https://xdag.io/assets/lib/jquery/jquery-migrate.min.js"></script>
+<script src="https://xdag.io/assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://xdag.io/assets/lib/easing/easing.min.js"></script>
+<script src="https://xdag.io/assets/lib/wow/wow.min.js"></script>
+<script src="https://xdag.io/assets/js/superfish.custom.js"></script>
+<script src="https://xdag.io/assets/js/main.js"></script>
+
+<script src="https://xdag.io/assets/lib/waypoints/waypoints.min.js"></script>
+<script src="https://xdag.io/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://xdag.io/assets/lib/lightbox/js/lightbox.min.js"></script>
+<script src="https://xdag.io/assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+<script src="https://xdag.io/assets/js/home.js"></script>
+</body>
+</html>
