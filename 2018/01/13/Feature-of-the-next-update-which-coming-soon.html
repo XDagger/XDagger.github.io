@@ -87,8 +87,15 @@
 <!--                    <li><a href="">Pools</a></li>-->
                 </ul>
             </li>
-            <li class="js-nav-no-sublevel">
-                <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-explorer-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-explorer-toggle" tabindex="0">Block explorer</label>
+                <ul id="nav-explorer" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="http://explorer.xdag.io/" target="_blank">Main net</a></li>
+                    <li><a href="https://testexplorer.xdag.io/" target="_blank">Test net</a></li>
+                </ul>
+
+<!--                <a href="http://explorer.xdag.io/" target="_blank">Block explorer</a>-->
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-resources-toggle">

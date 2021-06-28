@@ -80,8 +80,15 @@
 <!--                    <li><a href="">矿池</a></li>-->
                 </ul>
             </li>
-            <li class="js-nav-no-sublevel">
-                <a href="http://explorer.xdag.io/" target="_blank">浏览器<span class="lang-warn">EN</span></a>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-explorer-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-explorer-toggle" tabindex="0">浏览器</label>
+                <ul id="nav-explorer" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="http://explorer.xdag.io/" target="_blank">主网</a></li>
+                    <li><a href="https://testexplorer.xdag.io/" target="_blank">测试网</a></li>
+                </ul>
+
+<!--                <a href="http://explorer.xdag.io/" target="_blank">浏览器<span class="lang-warn">EN</span></a>-->
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-resources-toggle">
@@ -385,7 +392,7 @@
           <div class="exchanges__meta">
             <a
               class="button button--animated exchanges__button"
-              href="https://www.coinex.co"
+              href="https://www.coinex.com"
               target="_blank"
               rel="noopener"
               >交易</a
@@ -394,7 +401,7 @@
               
               <a
                 class="exchanges__pair"
-                href="https://www.coinex.co/exchange/XDAG-USDT"
+                href="https://www.coinex.com/exchange/XDAG-USDT"
                 target="_blank"
                 rel="noopener"
                 >XDAG / USDT</a
