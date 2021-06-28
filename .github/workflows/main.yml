@@ -16,7 +16,7 @@ jobs:
         with:
           ref: develop
       - uses: actions/cache@v2
-        with: 
+        with:
           path: ~/.cache
           key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: ${{ runner.os }}-gems-
@@ -42,7 +42,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: "${{ github.token }}"
-          publish_branch: main
+          publish_branch: master
           publish_dir: _site
           enable_jekyll: true
           cname: xdag.io
