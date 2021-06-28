@@ -13,6 +13,8 @@ nav:
   mining: Mining
   pools: Pools
   explorer: Block explorer
+  mainnet: Main net
+  testExplorer: Test net
   resources: Resources
   whitepaper: Whitepaper
   releases: Releases

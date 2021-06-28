@@ -1,8 +1,8 @@
 - logo: '/assets/images/exchanges/coinex.png'
   name: CoinEx
   interface_lang: English, 中文
-  website: https://www.coinex.co
+  website: https://www.coinex.com
   pairs:
     - currency: USDT
-      link: https://www.coinex.co/exchange/XDAG-USDT
+      link: https://www.coinex.com/exchange/XDAG-USDT
 

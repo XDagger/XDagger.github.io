@@ -13,6 +13,8 @@ nav:
   mining: 挖矿
   pools: 矿池
   explorer: 浏览器
+  mainnet: 主网
+  testExplorer: 测试网
   resources: 资源
   whitepaper: 白皮书
   releases: 版本信息

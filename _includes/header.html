@@ -21,8 +21,15 @@
 <!--                    <li><a href="{% tl team %}">{% t nav.pools %}</a></li>-->
                 </ul>
             </li>
-            <li class="js-nav-no-sublevel">
-                <a href="http://explorer.xdag.io/" target="_blank">{% t nav.explorer %}{% include lang-warn.html %}</a>
+            <li class="js-nav-has-sublevel">
+                <input class="display-toggle" type="checkbox" id="nav-explorer-toggle">
+                <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-explorer-toggle" tabindex="0">{% t nav.explorer %}</label>
+                <ul id="nav-explorer" class="nav-sublevel js-nav-sublevel">
+                    <li><a href="http://explorer.xdag.io/" target="_blank">{% t nav.mainnet %}</a></li>
+                    <li><a href="https://testexplorer.xdag.io/" target="_blank">{% t nav.testExplorer %}</a></li>
+                </ul>
+
+<!--                <a href="http://explorer.xdag.io/" target="_blank">{% t nav.explorer %}{% include lang-warn.html %}</a>-->
             </li>
             <li class="js-nav-has-sublevel">
                 <input class="display-toggle" type="checkbox" id="nav-resources-toggle">
