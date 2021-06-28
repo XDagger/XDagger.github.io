@@ -1,0 +1,49 @@
+name: Ruby
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: [2.3.1]
+    steps:
+      - name: Check out develop
+        uses: actions/checkout@v2
+        with:
+          ref: develop
+      - uses: actions/cache@v2
+        with: 
+          path: ~/.cache
+          key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: ${{ runner.os }}-gems-
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+
+      - name: gem update
+        run: gem update --system
+
+      - name: Set up Bundler
+        run: gem install bundler
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Run tests
+        run: bundle exec rake
+
+      - name: Create GitHub deployment
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: "${{ github.token }}"
+          publish_branch: main
+          publish_dir: _site
+          enable_jekyll: true
+          cname: xdag.io
+
