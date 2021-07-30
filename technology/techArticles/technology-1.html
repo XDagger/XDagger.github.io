@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="author" content=""/>
+<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+<title>XDAG | A new DAG-based cryptocurrency</title>
+
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css"/>
+
+<!-- fonts style -->
+<link href="/assets/css/poppins.css" rel="stylesheet">
+
+<!-- font awesome style -->
+<link href="/assets/css/font-awesome.min.css" rel="stylesheet"/>
+
+<!-- Custom styles for this template -->
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<!-- responsive style -->
+<link href="/assets/css/responsive.css" rel="stylesheet"/>
+<!--    <link href="css/timeline.css" rel="stylesheet"/>-->
+<link href="/assets/css/home.css" rel="stylesheet"/>
+<link href="/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+
+</head>
+
+<body class="sub_page">
+<div class="hero_area">
+    <div class="hero_bg_box">
+        <img src="/assets/images/img4.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container">
+            <div class="container">
+    <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand " href="index.html">
+            <span>
+              <img src="/assets/images/logo.png" alt="" class="logo">
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Block Explorer
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://explorer.xdag.io/" target="_blank">Main net</a>
+                        <a class="dropdown-item" href="https://testexplorer.xdag.io/" target="_blank">Test net</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="Resources" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Resources">
+                        <a class="dropdown-item" href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a>
+                        <a class="dropdown-item" href="https://github.com/XDagger/xdag/releases" target="_blank">Releases</a>
+                        <a class="dropdown-item" href="/index.html#roadmap">Roadmap</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="news" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="news">
+                        <a class="dropdown-item" href="/news">News</a>
+                        <a class="dropdown-item" href="/technology">Technology</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="Community" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Community
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Community">
+                        <a class="dropdown-item" href="/rank">Wallet Rank</a>
+                        <a class="dropdown-item" href="/task">Reward Tasks</a>
+                        <a class="dropdown-item" href="/hashrate">Hashrate Statistics</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.coinex.com/exchange/XDAG-USDT" target="_blank">Exchanges </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+        </div>
+    </header>
+    <!-- end header section -->
+</div>
+
+
+
+<div class="blog-details-area padding-top-120 padding-bottom-90">
+    <div class="s-shape1 "></div>
+    <div class="s-shape2"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- single-blog-post-item -->
+                <article class="single-blog-list-item mb-30">
+                    <div class="blog-details">
+                        <div class="blog-title mt-20">
+                            <h2>XDAG技术详解1-概要</h2>
+                        </div>
+                        <div class="blog-meta border-0 mt-0 pt-1 pb-15">
+                            <span class="mr-0 border-0"><i class="fa fa-calendar"></i> 2019-10-17</span>
+                        </div>
+                        <div class="blog-content">
+                            <h1 id="xdag技术详解1-概要">XDAG技术详解1-概要</h1>
+
+<p>作者：社区成员Larry</p>
+
+<h2 id="xdag是什么">xdag是什么</h2>
+
+<p>根据社区网站xdag.io介绍，xdag是一种依据DAG模型实现的加密货币。</p>
+
+<h2 id="xdag的目的">xdag的目的</h2>
+
+<p>在比特币模式的区块链系统中，为了解决一致性问题，强制要求任一时刻只能有单个算力胜出块有效，导致系统吞吐量放在了一个单点上，其他并行跑的算力结点工作浪费了。</p>
+
+<p>虽然这个单点可以变化，也可以增强，但是单点始终存在，对一个分布式系统来说，无法并行交易，对吞吐量来说是很致命的。</p>
+
+<p>为了解决这个单点问题，业界提了很多方案，包括增大出块速度、加大块长、DAG模型。xdag是DAG模型中比较有特色的一个项目。</p>
+
+<p>xdag项目有很多值得学习的地方，但是这个项目文档写的比较简单，很多特色概念都只是简单的讲了几句，很少有资料描述的比较清楚。本文的目的，就是把我自己学习中了解到的知识都整理出来，促进大家更快更好的了解xdag。</p>
+
+<h2 id="xdag模型">xdag模型</h2>
+
+<p>在看xdag模型之前，我们先看一个传统的交易模型。</p>
+
+<p><img src="../images/1-1.png" alt="1-1" /></p>
+
+<p>传统的交易模型非常好理解，一个transaction是从accout1向account2的一次转账。</p>
+
+<p>在传统交易模型中，account与transacion是两个不同的概念，account是资金容器，transaction是转账流水。xdag创新性的把这两个概念合二为一，transaction就是account，或者说transaction的id可以当做account的id用。这样就导致上面的模型变成了下面的样子。</p>
+
+<p><img src="../images/1-2.png" alt="1-2" /></p>
+
+<p>这个模型简称为<strong>交易即账户</strong>：</p>
+
+<ol>
+  <li>
+    <p>每一个transanction在不同场景下有不同的角色。</p>
+
+    <p>tx1和tx2是在tx3之前就存在的。</p>
+
+    <p>在tx3创建的时候，tx1和tx2是account角色。</p>
+
+    <p>在先前生成tx1和tx2的过程中，tx1和tx2本身是transaction角色。</p>
+  </li>
+  <li>
+    <p>transaction作为account角色时的余额从哪来？这有好几种情况会产生余额，拿tx3举例。</p>
+
+    <ol>
+      <li>在tx3生成过程中，如果in的金额比out的金额大，那么in-out留下的金额，会加入到tx3作为account角色下的余额里去。</li>
+      <li>在tx3生成后，tx3从此会多了一个account角色，也就是说从此以后，tx3的id可以作为out的目标接收其他交易的转账了，这些转账的金额会加入到tx3作为account角色的余额里去。</li>
+      <li>还有一种特殊情况，如果tx3被系统判定为主块（挖矿导致的难度最大块），那么会被系统自动增加一个固定的金额到tx3作为account角色的余额里去。</li>
+    </ol>
+  </li>
+</ol>
+
+<p><strong>交易即账户</strong>模型，是一个比较难理解的概念，与UTXO模型相同点是，新的交易需要把先前的UTXO交易当做输入，但不同点在于：</p>
+
+<ol>
+  <li>比特币中的账户地址是独立的，与UTXO无关，xdag中直接用了交易块地址当做账户地址。</li>
+  <li>比特币的UTXO模型要求，in和out必须相等，xdag要求in大于out+fee，多出来的就属于这个transanction账户。</li>
+  <li>比特币中新的交易要用先前的UTXO做输入，但输出用的是账户地址，xdag需要先前的交易账户做输出。</li>
+</ol>
+
+<p>所以在xdag中的，多个交易完成后的模型变成了下面这样：</p>
+
+<p><img src="../images/1-3.png" alt="1-3" /></p>
+
+<p>在xdag中，属于自己的交易块地址才是账户地址，归属关系的判断与秘钥有关。用户可以有多个秘钥，也可以只有一个，不需要因为需要多个地址，就生成多个秘钥。</p>
+
+
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <aside class="widgets-area">
+
+                    <div class="widget widget-search mb-40">
+                        <h4 class="title">Search Here</h4>
+                        <div class="single-search-inner">
+                            <input type="text" placeholder="Search here...">
+                            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="qq"  tabindex="-1" >
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="qqBg">
+                    <dl>
+                        <dt><img src="/assets/images/wechatQrcode.jpg" alt=""></dt>
+                        <dd>Wechat</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="/assets/images/qqQrcode.jpg" alt=""></dt>
+                        <dd>QQ Group</dd>
+                    </dl>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<section class="info_section ">
+
+    <div class="container">
+        <div class="info_top ">
+            <div class="row ">
+                <div class="col-md-7 col-lg-8">
+                    <div class="info_detail">
+                        <a href="index.html">
+                            <h4>
+                                XDAG
+                            </h4>
+                        </a>
+                        <p>
+                            Support The Community: This site is managed by the XDAG community.
+                        </p>
+                        <ul class="community_wallets">
+                            <li>
+                                <p class="community_wallets__item">
+                                    <i class="fa fa-check"></i>
+                                    <span class="community_wallets__currency">XDAG</span>
+                                    <span class="community_wallets__address">FQglVQtb60vQv2DOWEUL7yh3smtj7g1s</span>
+                                    <i class="fa fa-copy" onclick="copyAddress('FQglVQtb60vQv2DOWEUL7yh3smtj7g1s')" data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="community_wallets__item">
+                                    <i class="fa fa-check"></i>
+                                    <span class="community_wallets__currency">BTC</span>
+                                    <span class="community_wallets__address">39QyFnyoW45dWMReaZtcoRHP2S4DqU8xQG</span>
+                                    <i class="fa fa-copy" onclick="copyAddress('39QyFnyoW45dWMReaZtcoRHP2S4DqU8xQG')"  data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="community_wallets__item">
+                                    <i class="fa fa-check"></i>
+                                    <span class="community_wallets__currency">ETH</span>
+                                    <span class="community_wallets__address">0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1</span>
+                                    <i class="fa fa-copy" onclick="copyAddress('0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1')"  data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i>
+                                </p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 col-xl-3 mx-auto">
+                    <h4>
+                        Contact us
+                    </h4>
+                    <p>
+                        You can find us in the following channels
+                    </p>
+
+                    <div class="social_box">
+
+                        <a  target="_blank"  data-toggle="modal" data-target="#qq">
+                            <i class="fa fa-qq" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/XDAG_Community" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.reddit.com/r/xdag/" target="_blank">
+                            <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/orgs/XDagger" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://t.me/dagger_cryptocurrency" target="_blank">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/xdag/" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/XDAG.Dagger.Community/" target="_blank">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://discord.gg/YxXUVQJ" class="discord" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="55" viewBox="0 0 71 55" fill="none"><script xmlns=""/>
+                                <g clip-path="url(#clip0)">
+                                    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="71" height="55" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row links">
+                <div class="col-md-2">Friends links：</div>
+                <div class="col-md-10">
+                        <a href="https://www.coinbase.com/price/xdag" target="_blank" >Coinbase</a>
+                       <a href="http://walletinvestor.com/currency/xdag" target="_blank" >Walletinvestor</a>
+                        <a href="https://coinmarketcap.com/currencies/xdag/" target="_blank" >CMC</a>
+                        <a href="https://coinpaprika.com/fr/coin/xdag-dagger/" target="_blank" >Coinpaprika</a>
+                       <a href="http://www.xdagui.top " target="_blank" >XDAGUI</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/assets/js/jquery-3.4.1.min.js"></script>
+
+<script src="/assets/js/popper.min.js"></script>
+
+<script src="/assets/js/bootstrap.js"></script>
+
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

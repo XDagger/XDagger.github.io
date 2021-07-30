@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="author" content=""/>
+<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+<title>XDAG | A new DAG-based cryptocurrency</title>
+
+<!-- bootstrap core css -->
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css"/>
+
+<!-- fonts style -->
+<link href="/assets/css/poppins.css" rel="stylesheet">
+
+<!-- font awesome style -->
+<link href="/assets/css/font-awesome.min.css" rel="stylesheet"/>
+
+<!-- Custom styles for this template -->
+<link href="/assets/css/style.css" rel="stylesheet"/>
+<!-- responsive style -->
+<link href="/assets/css/responsive.css" rel="stylesheet"/>
+<!--    <link href="css/timeline.css" rel="stylesheet"/>-->
+<link href="/assets/css/home.css" rel="stylesheet"/>
+<link href="/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+
+</head>
+
+<body class="sub_page">
+<div class="hero_area">
+    <div class="hero_bg_box">
+        <img src="/assets/images/img4.jpg" alt="">
+    </div>
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container">
+            <div class="container">
+    <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand " href="index.html">
+            <span>
+              <img src="/assets/images/logo.png" alt="" class="logo">
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Block Explorer
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://explorer.xdag.io/" target="_blank">Main net</a>
+                        <a class="dropdown-item" href="https://testexplorer.xdag.io/" target="_blank">Test net</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="Resources" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Resources">
+                        <a class="dropdown-item" href="https://github.com/XDagger/xdag/blob/master/WhitePaper.md" target="_blank">Whitepaper</a>
+                        <a class="dropdown-item" href="https://github.com/XDagger/xdag/releases" target="_blank">Releases</a>
+                        <a class="dropdown-item" href="/index.html#roadmap">Roadmap</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="news" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Articles
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="news">
+                        <a class="dropdown-item" href="/news">News</a>
+                        <a class="dropdown-item" href="/technology">Technology</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="Community" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Community
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Community">
+                        <a class="dropdown-item" href="/rank">Wallet Rank</a>
+                        <a class="dropdown-item" href="/task">Reward Tasks</a>
+                        <a class="dropdown-item" href="/hashrate">Hashrate Statistics</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.coinex.com/exchange/XDAG-USDT" target="_blank">Exchanges </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+        </div>
+    </header>
+    <!-- end header section -->
+</div>
+
+
+
+<div class="blog-details-area padding-top-120 padding-bottom-90">
+    <div class="s-shape1 "></div>
+    <div class="s-shape2"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- single-blog-post-item -->
+                <article class="single-blog-list-item mb-30">
+                    <div class="blog-details">
+                        <div class="blog-title mt-20">
+                            <h2>XDAG技术详解7-挖矿POW</h2>
+                        </div>
+                        <div class="blog-meta border-0 mt-0 pt-1 pb-15">
+                            <span class="mr-0 border-0"><i class="fa fa-calendar"></i> 2019-12-05</span>
+                        </div>
+                        <div class="blog-content">
+                            <h1 id="xdag技术详解7-挖矿pow">XDAG技术详解7-挖矿POW</h1>
+
+<p>作者：社区成员Larry</p>
+
+<h2 id="难度与算力">难度与算力</h2>
+
+<ol>
+  <li>
+    <p>难度</p>
+
+    <p>根据block hash计算所得：<code class="language-plaintext highlighter-rouge">(power(2, 128)-1)/(little-endian-int(hash) / power(2, 160))</code>。</p>
+  </li>
+  <li>
+    <p>算力</p>
+
+    <p>单节点的算力是直接统计出来的hash次数。</p>
+
+    <p>全网算力是根据难度值转换出来的，难度取的是4个小时的平均值。</p>
+  </li>
+</ol>
+
+<h2 id="挖矿流程">挖矿流程</h2>
+
+<p>下面是pool和miner之间的挖矿交互流程。</p>
+
+<p><img src="..\images\7-1.png" alt="7-1" /></p>
+
+<p>image-20191201134454086.png</p>
+
+<p><strong>pool端：</strong></p>
+
+<ol>
+  <li>
+    <p>每个周期（64s）开始时，pool创建一个主块。</p>
+
+    <p>这个主块会尽可能更多的链接截至当时已知的孤块（个数不超过可用的field），有可能无法链接完所有当前的孤块，则多出来的孤块只能等待下个周期的主块继续链接，也就是有部分交易的确认时间会延长。</p>
+
+    <p>为了使得每个周期的孤块尽可能的被尽早链接（确认交易），链接块起到了关键作用，如果链接块生成的足够快且足够多，使得整个图收敛到足够小的宽度上，比如孤块顶点小于12，则原则上可以一次都被主块链接。</p>
+  </li>
+  <li>
+    <p>计算前15个field的hash累加中间值（hash state），并发送给各个矿机。</p>
+
+    <p>pool发送任务给各个矿机时，并不是直接把整个block内容发送出去，而是只发送了前15个field计算的hash中间变量，这里叫hash-state。</p>
+
+    <p>这个hash-state，加上一个lastfield再计算一次hash，效果等同于一次计算16个field的hash结果，不会因为没有原始的前15个field而不同。这样pool就只需要发送一个中间变量给矿机，发送的字节数会大大减少，同时又不影响计算结果。之所以可以这样发送，是由hash算法的特性决定的，后面单独说明。</p>
+  </li>
+  <li>
+    <p>发送完成后，pool进入等待提交状态。</p>
+
+    <p>pool进入等待期后，各个矿机会不断周期性的提交自己探索出的lastfield。</p>
+
+    <p>pool每次收到新的lastfield，都跟当前miner已知的最小进行比较，如果更小则保存在miner状态中。</p>
+  </li>
+  <li>
+    <p>周期结束，pool打包生成主块。</p>
+
+    <p>在周期结束时刻，pool把各个矿机提交的lastfield拿出来，一个个跟hash-state做一次合并计算，看谁提交的lastfield能得到最小的hash，也就是最大的难度，谁的提交就胜出。pool就用这个lastfield完成主块的组装，然后加上自己的签名，提交到网络上去。</p>
+
+    <p>至此，一个新的主块就产生了，但是每个pool都会用同样的方法产生一个自己的主块，所以最终只能有一个主块竞争胜出，成为真正的链上主块。</p>
+  </li>
+  <li>
+    <p>主块与周期的关系</p>
+
+    <p>通过前面的分析可以看出，主块时间戳与自身链接的交易周期实际上差了一个周期。</p>
+  </li>
+</ol>
+
+<p><img src="..\images\7-2.png" alt="7-2" /></p>
+
+<p>image-20191204130023570.png</p>
+
+<p>如上图所示，t5作为<code class="language-plaintext highlighter-rouge">Time Frame2</code>周期的主块，链接的是<code class="language-plaintext highlighter-rouge">Time Frame2</code>周期的交易，但是t5真正打包成功生成主块的时间戳是<code class="language-plaintext highlighter-rouge">Time Frame4</code>周期的起点，或者说<code class="language-plaintext highlighter-rouge">Time Frame3</code>周期的终点。</p>
+
+<p>也就是说，主块时间戳所在的周期，是主块中交易所在周期的下一个周期。</p>
+
+<p><strong>miner端：</strong></p>
+
+<ol>
+  <li>
+    <p>miner接收到一个新的task</p>
+
+    <p>task包含一个hash-state。</p>
+  </li>
+  <li>
+    <p>miner不断探索最小hash</p>
+
+    <p>不断生成随机数，填充组成一个新的lastfield，尝试跟hash-state组合后计算hash。</p>
+
+    <p>在一个固定周期中，选择上面多次计算中结果中最小的一个，提交给pool。这个固定周期通常至少要小于32s，以此保证一个64s中至少提交过一次。通常会尽可能短，这样能把因跨周期计算的算力浪费最小化。但不能过于频繁的提交，浪费资源。</p>
+  </li>
+</ol>
+
+<h2 id="hash算法">Hash算法</h2>
+
+<p>前面提到，挖矿中pool并不需要把block的全部数据发给miner，只需要发送前15个field累加出的hash-state，miner找到lastfield后直接与hash-state组合就可以得到真正的block hash。之所以可以这么做，与hash算法特点有关。</p>
+
+<p>假设总block是512字节，hash结果是32字节，我们定义一种叫Stupid-Hash的算法，算法过程如下：</p>
+
+<ol>
+  <li>先设置一个32字节的最终数组，result-array。</li>
+  <li>把block的第一个32字节先复制到result-array。</li>
+  <li>接着把第二个32字节按照某种累加运算法则，与当前的result-array运算一次，结果放回result-array。</li>
+  <li>后面每一个32字节都按照相同的思路与result-array运算并把结果放回result-array。</li>
+  <li>直到最后一个32字节迭代计算完成，最后一次得到的result-array就是最后的hash结果。</li>
+</ol>
+
+<p>在Stupid-Hash算法下，对一个很长的二进制数据做hash，可以把累加到中间任意步骤的result-array保存起来，发送给另一个机器，另一个机器用result-array加上剩下的数据继续这个hash算法，得到的结果与第一个机器把这个计算一直进行到底得到的结果是一致的。</p>
+
+<p>xdag中hash算法的思路与这个Stupid-Hash的思路是一致的，只不过真实hash算法（sha256）中间的运算过程更复杂一些，但是整体计算思路没有不同。</p>
+
+<h2 id="mining收益分配">mining收益分配</h2>
+
+<p>单个pool链接了众多miner，当挖矿成功后，需要在各个miner间分配收益。</p>
+
+<p>分配基本策略主要是依据各个miner在当前周期中探索到的最大难度，比如有三个 miner，各自在当前task周期的最大难度是1、2、3，最终给第一个miner的比例就是1/(1+2+3)。</p>
+
+<p>在这个基本分配策略之外，增加了一些特殊分配。</p>
+
+<ol>
+  <li>给基金会账户一个固定比例的分成。</li>
+  <li>给pool账户一个固定比例的分成。</li>
+  <li>给找到最小hash的miner一个其难度比例之外的特殊分成。</li>
+</ol>
+
+<p>上面这些分配比例可以在pool启动的时候自由配置。</p>
+
+<p>T周期对T-15周期的挖矿进行分配。</p>
+
+<h2 id="钱包与pool的交互">钱包与pool的交互</h2>
+
+<p>在当前的实现中，对pool来说，钱包实际上与miner角色一样，pool对两者的处理策略一致。差别在于钱包不做挖矿，也不提交计算。</p>
+
+<p>pool会周期性的向钱包推送钱包账户的余额下去，钱包并不向pool去查询余额，只查看本地存储已知的账本。</p>
+
+
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <aside class="widgets-area">
+
+                    <div class="widget widget-search mb-40">
+                        <h4 class="title">Search Here</h4>
+                        <div class="single-search-inner">
+                            <input type="text" placeholder="Search here...">
+                            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="qq"  tabindex="-1" >
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="qqBg">
+                    <dl>
+                        <dt><img src="/assets/images/wechatQrcode.jpg" alt=""></dt>
+                        <dd>Wechat</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="/assets/images/qqQrcode.jpg" alt=""></dt>
+                        <dd>QQ Group</dd>
+                    </dl>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<section class="info_section ">
+
+    <div class="container">
+        <div class="info_top ">
+            <div class="row ">
+                <div class="col-md-7 col-lg-8">
+                    <div class="info_detail">
+                        <a href="index.html">
+                            <h4>
+                                XDAG
+                            </h4>
+                        </a>
+                        <p>
+                            Support The Community: This site is managed by the XDAG community.
+                        </p>
+                        <ul class="community_wallets">
+                            <li>
+                                <p class="community_wallets__item">
+                                    <i class="fa fa-check"></i>
+                                    <span class="community_wallets__currency">XDAG</span>
+                                    <span class="community_wallets__address">FQglVQtb60vQv2DOWEUL7yh3smtj7g1s</span>
+                                    <i class="fa fa-copy" onclick="copyAddress('FQglVQtb60vQv2DOWEUL7yh3smtj7g1s')" data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="community_wallets__item">
+                                    <i class="fa fa-check"></i>
+                                    <span class="community_wallets__currency">BTC</span>
+                                    <span class="community_wallets__address">39QyFnyoW45dWMReaZtcoRHP2S4DqU8xQG</span>
+                                    <i class="fa fa-copy" onclick="copyAddress('39QyFnyoW45dWMReaZtcoRHP2S4DqU8xQG')"  data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p class="community_wallets__item">
+                                    <i class="fa fa-check"></i>
+                                    <span class="community_wallets__currency">ETH</span>
+                                    <span class="community_wallets__address">0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1</span>
+                                    <i class="fa fa-copy" onclick="copyAddress('0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1')"  data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i>
+                                </p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 col-xl-3 mx-auto">
+                    <h4>
+                        Contact us
+                    </h4>
+                    <p>
+                        You can find us in the following channels
+                    </p>
+
+                    <div class="social_box">
+
+                        <a  target="_blank"  data-toggle="modal" data-target="#qq">
+                            <i class="fa fa-qq" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/XDAG_Community" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.reddit.com/r/xdag/" target="_blank">
+                            <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/orgs/XDagger" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://t.me/dagger_cryptocurrency" target="_blank">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/xdag/" target="_blank">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/XDAG.Dagger.Community/" target="_blank">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://discord.gg/YxXUVQJ" class="discord" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="55" viewBox="0 0 71 55" fill="none"><script xmlns=""/>
+                                <g clip-path="url(#clip0)">
+                                    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="71" height="55" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row links">
+                <div class="col-md-2">Friends links：</div>
+                <div class="col-md-10">
+                        <a href="https://www.coinbase.com/price/xdag" target="_blank" >Coinbase</a>
+                       <a href="http://walletinvestor.com/currency/xdag" target="_blank" >Walletinvestor</a>
+                        <a href="https://coinmarketcap.com/currencies/xdag/" target="_blank" >CMC</a>
+                        <a href="https://coinpaprika.com/fr/coin/xdag-dagger/" target="_blank" >Coinpaprika</a>
+                       <a href="http://www.xdagui.top " target="_blank" >XDAGUI</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/assets/js/jquery-3.4.1.min.js"></script>
+
+<script src="/assets/js/popper.min.js"></script>
+
+<script src="/assets/js/bootstrap.js"></script>
+
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
