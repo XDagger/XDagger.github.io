@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body class="sub_page">
+{% include tophead.html %}
+
+<div class="ranklist">
+  <div class="s-shape1 "></div>
+  <div class="s-shape2"></div>
+  <div class="container topP">
+    <div class="heading_container heading_center">
+      <h2>
+        REWARD TASKS
+      </h2>
+
+    </div>
+    <div class="row reward">
+
+      {% for d in site.data.task %}
+      <div class="col-xl-4 col-md-6">
+
+        <div class="text-center service-item2 mb-80">
+          <div class="icon-box2">
+            <img src="{{site.url}}/assets/images/prize/{{ d.index % 6}}.png" alt="">
+          </div>
+          <h3>{{ d.total | split:' '| first}} XDAG</h3>
+          <p class="mb-0">{{ d.task}}</p>
+          <div>
+            <button class="more" data-toggle="modal" data-target="#index_{{ d.index}}">
+              <i class="fa fa-angle-double-right"></i> read me <i class="fa fa-angle-double-left"></i>
+            </button>
+            <div class="modal fade" id="index_{{ d.index}}" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><img src="{{site.url}}/assets/images/prize/{{ d.index % 6}}.png" alt="" >Reward: {{ d.total | split:' '| first}} XDAG</h5>
+                    <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </span>
+                  </div>
+                  <div class="modal-body">
+
+                    <table width="100%" cellpadding="0" cellspacing="0" class="task-list">
+                      <tr>
+                        <td class="tdnowrap">Stage</td>
+                        <td colspan="2" class="tdnowrap">Details</td>
+                        <td class="tdnowrap">Priority</td>
+                        <td class="tdnowrap">Remarks</td>
+                      </tr>
+                      <tr>
+                        <td class="tdnowrap fwb">Task</td>
+                        <td colspan="2"><span class="progressbg">{{ d.progress}}</span>{{ d.task}}</td>
+                        <td rowspan="9">{{ d.priority}}</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="tdnowrap fwb">Deliverables</td>
+                        <td colspan="2">{{ d.deliverables}}</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td class="tdnowrap fwb">Technical<br> acceptance</td>
+                        <td colspan="2">{{ d.acceptance}}</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6" class="tdnowrap fwb">Rewards</td>
+                        <td colspan="2">{{ d.total}}</td>
+                        <td rowspan="6">{{ d.remarks}}</td>
+                      </tr>
+                      <tr>
+                        <td>Foundation funding</td>
+                        <td>Community crowdfunding</td>
+                      </tr>
+                      <tr>
+                        <td><span>{{ d.foundation}}</span></td>
+                        <td><span>{{ d.community}}</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">Crowdfunding XDAG address:</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="tdnowrap"><span>{{ d.address}}</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"></td>
+                      </tr>
+                    </table>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
+
+</body>
+
+</html>

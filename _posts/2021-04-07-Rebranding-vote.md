@@ -2,6 +2,7 @@
 layout: post
 title: XDAG Rebranding
 date: "2021-04-07 08:00:00"
+image: "/assets/images/posts/rebranding.jpg"
 ---
 
 ![Rebranding image](/assets/images/posts/rebranding.jpg)

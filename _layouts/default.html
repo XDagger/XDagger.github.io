@@ -1,107 +1,227 @@
-{% include head.html %}
-    <link href="{{ '/assets/lib/owlcarousel/assets/owl.carousel.min.css' | absolute_url }}" rel="stylesheet">
-    <link href="{{ '/assets/lib/lightbox/css/lightbox.min.css' | absolute_url }}" rel="stylesheet">
-    <link href="{{ '/assets/css/home.css' | absolute_url }}" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+    <script src="{{site.url}}/assets/js/aframe22.min.js"></script>
 </head>
 
 <body>
-{% include header.html %}
-<div class="mask"></div>
-<div class="playbrdr">
-    <div class="videoclose"><i class="ion-ios-close-circle-outline"></i></div>
-    <iframe src="" frameborder="0" width="100%" height="100%"></iframe>
-</div>
 {% include banner.html %}
-<main id="main">
-    <section id="about">
-        <div class="container">
-            <header class="section-header">
-                <h3>{% t home.introduction %}</h3>
-                <p>{% t home.introduction_content %}</p>
-            </header>
-            <div class="row about-cols">
-                {% for feature in site.translations[site.lang].home.features %}
-                {% assign feature_d = site.data.features[forloop.index0] %}
-                <div class="col-md-4 wow fadeInUp" data-wow-delay="{{ feature_d.delay }}">
-                    <div class="about-col">
-                        <div class="img">
-                            <img src="{{ feature_d.img | absolute_url }}" alt="" class="img-fluid">
-                            <div class="icon"><i class="ion-ios-unlock"></i></div>
+
+<section class="service_section layout_padding">
+    <div class="service_container">
+        <div class="container ">
+            <div class="heading_container heading_center">
+                <h2>
+                    Our Software
+                </h2>
+                <p>
+                    Download links for applications that interact with the XDAG network.
+                </p>
+            </div>
+            <div class="row rowTable">
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="box ">
+                        <div class="img-box">
+                            <!--                            <img src="images/s1.png" alt="">-->
+                            <i class="fa fa-windows"></i>
                         </div>
-                        <h2 class="title">{{ feature.title }}</h2>
-                        <p>{{ feature.content }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-    <section class="mining" id="mining">
-        <div class="container">
-            <header class="section-header wow fadeInUp">
-                <h3>{% t home.mining %}</h3>
-                <p>{% t home.mining_content %}</p>
-            </header>
-            <div class="row">
-                {% for guide in site.translations[site.lang].home.mining_guides %}
-                {% assign guide_d = site.data.mining-guides[forloop.index0] %}
-                <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="{{ guide_d.delay }}">
-                    <div class="icon"><i class="{{ guide_d.icon }}"></i></div>
-                    <h4 class="title">
-                        {% if forloop.index0 == 0 %}<a href="#wallet">{{ guide.title }}</a>{% endif %}
-                        {% if forloop.index0 == 1 %}<a class="playvideo">{{ guide.title }}</a>{% endif %}
-                        {% if forloop.index0 == 2 %}<a href="{% tl pools %}" class="pool">{{ guide.title }}</a>{% endif %}
-                    </h4>
-                    <p class="description">{{ guide.content }}</p>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-    <section id="wallet" class="wallets section-bg" >
-        <div class="container">
-            <header class="section-header">
-                <h3 class="section-title">{% t home.software %}</h3>
-                <p>{% t home.software_content %}</p>
-            </header>
-            <div class="row justify-content-center portfolio-container">
-                {% for software in site.translations[site.lang].home.software_links %}
-                {% assign software_d = site.data.software[forloop.index0] %}
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="{{ software_d.delay }}">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-info">
-                            <div class="icons"><i class="{{ software_d.icon }}"></i></div>
-                            <h4><a href="{{ software_d.href }}" target="_blank">{{ software.title }}</a></h4>
-                            <p>{{ software.content }}</p>
+                        <div class="detail-box">
+                            <h5>
+                                Windows wallet
+                            </h5>
+                            <p>
+                                WINDOWS CONSOLE AND GUI EXECUTABLES.
+
+                            </p>
+                            <a href="{{site.data.software.windows64}}">
+                                Windows 64-bit wallet (X64)
+                            </a>
+                            <a href="{{site.data.software.windows32}}">
+                                Windows 32-bit wallet (X86)
+                            </a>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="box ">
+                        <div class="img-box">
+                            <i class="fa fa-android"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Android wallet
+                            </h5>
+                            <p>
+                                It is suitable for Android 5.0 and newer device
+                            </p>
+                            <a href="{{site.data.software.android}}">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="box ">
+                        <div class="img-box">
+                            <i class="fa fa-apple"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                iOS wallet
+                            </h5>
+                            <p>
+                                USERS HAVE TO ACCEPT F&F INTERNATIONAL TRADING CO., LTD AS A TRUSTED SOURCE.
+                            </p>
+                            <a href="{{site.data.software.ios}}">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="box ">
+                        <div class="img-box">
+                            <i class="fa fa-desktop"></i>
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                MacOS wallet
+                            </h5>
+                            <p>
+                                MACOS COMMAND LINE WALLET.
+                            </p>
+                            <a href="{{site.data.software.mac}}">
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    {% include exchanges.html %}
-    {% include roadmap.html %}
-    <section id="community" class="community wow fadeInUp">
-        <div class="container">
-            <header class="section-header">
-                <h3>{% t home.community %}</h3>
-            </header>
-            <div class="owl-carousel clients-carousel">
-                {% for d in site.data.community %}
-                <a href="{{ d.href }}" class="owl-{{ d.alt }}" target="_blank">
-                  <img src="{{ d.pic | absolute_url }}" alt="{{ d.alt }} community">
-                </a>
-                {% endfor %}
+    </div>
+</section>
+
+
+<section class="about_section about_section1 layout_padding-bottom">
+    <div class="container  ">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <div class="img-box">
+                    <img src="{{site.url}}/assets/images/img4.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 miners">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h2>
+                            Mining <span>Software</span>
+                        </h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="iconBrdr">
+                                <span>
+                                   <i class="fa fa-windows"></i>
+                                </span>
+
+                            </div>
+                            <div>
+                                <div class="Mtitle">
+                                    <a href="">XDAG CPU miner</a>
+                                </div>
+                                <div>
+                                    Download the XDAG RANDOMX CPU MINER for XDAG . It support Windows Linux and MAC OS.
+                                </div>
+                            </div>
+
+                        </li>
+                        <li data-toggle="modal" data-target="#pools" class="pools">
+                            <div class="iconBrdr">
+                                <span>
+                                     <i class="fa fa-list-ul"></i>
+                                </span>
+
+                            </div>
+                            <div>
+                                <div class="Mtitle"><span >POOL</span ></div>
+                                <div>
+                                    You can connect to a featured pool or check the available Pools’information.
+                                </div>
+
+                            </div>
+
+
+                        </li>
+                    </ul>
+
+                    <div class="modal fade" id="pools" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel"><img src="{{site.url}}/assets/images/prize/{{ d.index % 6}}.png" alt="" >POOLS LIST</h5>
+                                    <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </span>
+                                </div>
+                                <div class="modal-body">
+
+                                    <table width="100%" cellpadding="0" cellspacing="0" class="task-list">
+                                        <tr>
+                                            <td class="tdnowrap">Name</td>
+                                            <td class="tdnowrap">Website</td>
+                                            <td class="tdnowrap">POOL Address</td>
+                                            <td class="tdnowrap">Fee</td>
+                                            <td class="tdnowrap">Mode</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td rowspan="2">Worldwide pool</td>
+                                            <td rowspan="2"><a href="https://xdag.org" target="_blank">https://xdag.org</a></td>
+                                            <td>equal.xdag.org:13656<i class="fa fa-copy" onclick="copyAddress('equal.xdag.org:13656')"  data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i></td>
+                                            <td rowspan="2">2%</td>
+                                            <td>equal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>solo.xdag.org:13655<i class="fa fa-copy" onclick="copyAddress('solo.xdag.org:13655')"  data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i></td>
+                                            <td>solo</td>
+                                        </tr>
+                                        <tr>
+                                            <td >Doctor Wang</td>
+                                            <td><a href="http://info.xdagmine.com" target="_blank">http://info.xdagmine.com</a></td>
+                                            <td>xdagmine.com:13654<i class="fa fa-copy" onclick="copyAddress('xdagmine.com:13654')"  data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i></td>
+                                            <td>3%</td>
+                                            <td>equal</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
+
+{% include roadmap.html %}
+
+{% include task.html %}
+
 {% include footer.html %}
-<script src="{{ '/assets/lib/waypoints/waypoints.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/lib/owlcarousel/owl.carousel.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/lib/lightbox/js/lightbox.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/lib/touchSwipe/jquery.touchSwipe.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/js/home.js' | absolute_url }}"></script>
+<script src="{{site.url}}/assets/js/particles.min.js"></script>
+<!-- custom js -->
+<script src="{{site.url}}/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="{{site.url}}/assets/lib/easing/easing.min.js"></script>
+<script src="{{site.url}}/assets/js/custom.js"></script>
+
+<script>
+    particlesJS.load('particles-js', '{{site.url}}/assets/js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
 </body>
+
 </html>

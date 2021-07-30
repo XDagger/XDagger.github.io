@@ -1,67 +1,15 @@
-# Site configuration
 
-devNum: 28
-
-community_wallets:
-  - currency: XDAG
-    address: "FQglVQtb60vQv2DOWEUL7yh3smtj7g1s"
-  - currency: BTC
-    address: "39QyFnyoW45dWMReaZtcoRHP2S4DqU8xQG"
-  - currency: ETH
-    address: "0xb5F34fEb083186AfcB1DB1eFdE41eDA1f9BD9fB1"
-
-# Jekyll configuration
-
-
-url: https://xdag.io
+title: XDAG | A new DAG-based cryptocurrency
+description: A new DAG-based cryptocurrency
 baseurl: ""
+url: ""
 
-paginate: 7
-paginate_path: "/blog/page:num"
-
-sass:
-  style: compressed
+paginate: 6
+paginate_path: 'news/:num'
 
 plugins:
   - jekyll-paginate
 
-## Exclude files from build folder
-exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'package.json', 'package-lock.json']
+exclude: ['Gemfile', 'Gemfile.lock', 'package.json', 'package-lock.json', 'vendor']
 
-## SEO
 
-title: XDAG
-description: A new DAG-based cryptocurrency
-logo: /assets/images/logo.png
-default_image: /assets/images/default-card.png
-
-author:
-  name: Xdag.io
-  twitter: XDAG_Community
-  email: communitymanager@xdag.io
-
-social:
-  links:
-    - https://t.me/dagger_cryptocurrency
-    - https://www.facebook.com/XDAG.Dagger.Community/
-    - https://twitter.com/XDAG_Community
-    - https://discord.gg/YxXUVQJ
-    - https://www.reddit.com/r/xdag/
-    - https://github.com/orgs/XDagger
-
-twitter:
-  card:
-    regular: summary
-    image: summary_large_image
-  username: XDAG_Community
-
-facebook:
-  publisher: https://www.facebook.com/XDAG.Dagger.Community/
-
-## Translations
-
-languages: ["en", "zh"]
-##languages: ["en", "zh", "sv", "es", "fr", "cs"]
-
-exclude_from_localizations: ["assets", "blog", "CNAME", "README.md", "feed.xml", "_posts"]
-exclude: [vendor]

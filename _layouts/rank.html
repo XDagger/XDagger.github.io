@@ -1,35 +1,47 @@
-{% include head.html %}
-  <link href="{{ '/assets/css/rank.css' | absolute_url }}" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include head.html %}
 </head>
 
-<body>
-{% include header.html %}
-<main id="main">
-    <div class="container pt-5">
-        <div class="section-header wow fadeInUp">
-            <h3>{{ page.title }}</h3>
-            <p>{{ page.description }}</p>
-        </div>
-        <div>
-          <section class="privacy-section">
-              <table width="100%" cellpadding="0" cellspacing="0" class="ques-list">
-                  <tr>
-                      <th></th>
-                      <th>ADDRESS</th>
-                      <th>ACCOUNT</th>
-                  </tr>
-                  <tbody id="rankbody">
+<body class="sub_page">
+{% include tophead.html %}
 
-                  </tbody>
-              </table>
-          </section>
 
-        </div>
+
+<div class="ranklist ranklistbg padding-top-120 padding-bottom-90">
+  <div class="s-shape1 "></div>
+  <div class="s-shape2"></div>
+  <div class="container">
+    <div class="heading_container heading_center">
+      <h2>
+        RANK LIST TOP100
+      </h2>
     </div>
-</main>
+    <div class="row ">
+      <section class="col-12 top100">
+        <table width="100%" cellpadding="0" cellspacing="0" class="ques-list">
+          <tbody><tr>
+            <th></th>
+            <th>ADDRESS</th>
+            <th>ACCOUNT</th>
+          </tr>
+          </tbody><tbody id="rankbody">
+
+      </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</div>
+
+
 {% include footer.html %}
-<script src="{{ '/assets/lib/xlsx/jquery-2.1.1.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/lib/xlsx/xlsx.core.min.js' | absolute_url }}"></script>
-<script src="{{ '/assets/js/xlsx.js' | absolute_url }}"></script>
+<script src="{{site.url}}/assets/lib/xlsx/xlsx.core.min.js"></script>
+<script src="{{site.url}}/assets/js/xlsx.js"></script>
+
+
 </body>
+
 </html>

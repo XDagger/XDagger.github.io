@@ -1,28 +1,7 @@
-- icon: ion-logo-windows
-  href: https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWalletWin_v0.3.1_x64.zip
-  delay: 0s
+windows64: https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWalletWin_v0.3.1_x64.zip
+windows32: https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWalletWin_v0.3.1_x86.zip
 
-- icon: ion-logo-windows
-  href: https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWalletWin_v0.3.1_x86.zip
-  delay: 0.1s
+android: https://github.com/XDagger/android-wallet/releases/download/release_0.2.7/android_wallet_release_v0.2.7.apk
 
-- icon: ion-logo-windows
-  href: https://github.com/XDagger/XdagRandomxMiner/releases
-  delay: 0.2s
-
-- icon: ion-logo-apple
-  href: https://github.com/XDagger/xdag/files/2586967/xdag.0.3.0.zip
-  delay: 0.3s
-
-- icon: ion-logo-apple
-  href: "itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://xdag.io/assets/apps/manifest.plist"
-  delay: 0.4s
-
-- icon: ion-logo-android
-  href: https://github.com/XDagger/android-wallet/releases/download/release_0.2.7/android_wallet_release_v0.2.7.apk
-  delay: 0.5s
-
-- icon: ion-ios-color-filter
-  href: https://github.com/XDagger
-  delay: 0.6s
-
+mac: https://github.com/XDagger/xdag/files/2586967/xdag.0.3.0.zip
+ios: "itms-services://?action=download-manifest&url=itms-services://?action=download-manifest&url=https://xdag.io/assets/apps/manifest.plist"

@@ -1,0 +1,76 @@
+<section class="client_section layout_padding">
+    <div class="container ">
+        <div class="heading_container heading_center">
+            <h2>
+                XDAG REWARD TASKS
+            </h2>
+            <hr>
+        </div>
+        <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                {% for d in site.data.task %}
+                <div class="carousel-item {% if d.index == 1 %} active{% endif %}">
+
+
+                    <div class="row">
+                        <div class="col-lg-7 col-md-9 mx-auto">
+                            <div class="client_container ">
+                                <div class="detail-box">
+                                    <div class="p">
+                                        <div class="tail">
+                                            <i>{{ d.index}}.</i>   <a href="{{ '/task' | absolute_url }}">{{ d.task}} </a>
+                                        </div>
+
+                                        <span>
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                      </span>
+                                    </div>
+                                </div>
+                                <div class="client_id row">
+
+                                    <div class="col-md-12 col-lg-5 imgBrdr">
+                                        <div class="img-box">
+                                            <img src="{{site.url}}/assets/images/5.png" alt="">
+                                        </div>
+                                        <div class="client_name">
+                                            <h5>
+                                                {{ d.total | split:' '| first}}
+                                            </h5>
+                                            <h6>
+                                                XDAG
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    {% if d.address %}
+                                    <div class="col-md-12 col-lg-7 address">
+                                        <div class="tp">donate XDAG for this task: </div>
+                                        <div> {{ d.address}} <i class="fa fa-copy" data-address="{{ d.address}}"  onclick="copyLft(this)" data-toggle="tooltip" data-placement="top" title="Address copied to Clipboard" data-trigger="click"></i></div>
+
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {% endfor %}
+            </div>
+            <div class="carousel_btn-box">
+                <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
+            <span>
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
+            <span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

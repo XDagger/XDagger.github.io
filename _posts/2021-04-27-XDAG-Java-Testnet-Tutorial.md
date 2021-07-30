@@ -2,6 +2,7 @@
 layout: post
 title: XDAGJ v0.4.0 Testnet
 date: "2021-04-27 00:00:00"
+image: "/assets/images/posts/mmexport1619538583244.jpg"
 ---
 
 Hello to all,

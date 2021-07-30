@@ -1,7 +1,7 @@
 ---
 layout: post
 title: XDAG Benefits
-date: "2020-06-24 01:04:00"
+image: "/assets/images/photo_2020-06-24_22-17-06.jpg"
 ---
 ![xdag banner](/assets/images/photo_2020-06-24_22-17-06.jpg)
 

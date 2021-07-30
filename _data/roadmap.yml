@@ -1,0 +1,84 @@
+roadmap: Roadmap
+roadmap_content:
+  - timeframe: 2017
+    dates:
+      - date: Q3 2017
+        events:
+          - CLI for Windows and Linux
+          - Miner, full node and pool release
+          - Testnet launch
+  - timeframe: 2018
+    dates:
+      - date: Q1 2018
+        events:
+          - Mainnet launch
+          - GUI wallet with integrated miner for Windows
+          - Community built a block explorer based on original developers code
+          - Original developer gives the ownership of the project to the community
+          - Xdag.org is fully operational
+          - The original code is being cleaned
+          - Release of XDAG wallet 0.2.0
+          - Release of XDAG wallet 0.2.1 with MAC support
+          - Brand new website for our new domain xdag.io
+      - date: Q2 2018
+        events:
+          - Release of XDAG wallet 0.2.2
+          - XDAG gets listed on the bbx.com cryptocurrency exchange
+          - Release of XDAG wallet 0.2.3
+          - Release of XDAG wallet 0.2.4
+      - date: Q3 2018
+        events:
+          - Release of XDAG wallet 0.2.5 with major performance improvements
+          - GPU Miner 0.3.0 release with MAC support
+          - Block explorer visual and performance update
+          - Release of XDAG Android and iOS wallets
+      - date: Q4 2018
+        events:
+          - Release of XDAG wallet 0.3.0
+  - timeframe: 2019
+    dates:
+      - date: Q1 2019
+        events:
+          - XDAG listed on 8 exchanges
+          - Development on Golang Version and Anonymous Trading
+      - date: Q3 2019
+        events:
+          - Make Apollo plan
+      - date: Q4 2019
+        events:
+          - Implement production reduction
+  - timeframe: 2020
+    dates:
+      - date: Q1 2020
+        events:
+          - Release 0.3.1 version
+      - date: Q2 2020
+        events:
+          - Release new PC and android wallet
+      - date: Q3 2020
+        events:
+          - Introduce rocksdb to solve the slow loading issue
+          - Switch from sha256d to randomx for mining algorithm
+      - date: Q4 2020
+        events:
+          - Compress persistent storage files
+          - Jave version
+          - Replace dnet with decentralized transmit protocol
+  - timeframe: 2021
+    dates:
+      - date: phase1 2021
+        events:
+          - Supplement various functional unit tests and improve white box testing.
+          - Optimize the consensus process.
+          - Optimize synchronization protocol.
+          - Use randomx to replace the current mining algorithm.
+          - Use libp2p to replace current network.
+      - date: phase2 2021
+        events:
+          - Open api interface and provide black box testing.
+          - Optimize address data structure, add block fee.
+      - date: ETA phase3 2021
+        events:
+          - Explore the possibility of using neo4j as storage layer.
+          - Explore the implementation of smart contracts in XDAG.
+          - Use Flutter or React Native to implement XDAG wallet.

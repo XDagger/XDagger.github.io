@@ -2,6 +2,7 @@
 layout: post
 date: "2020-04-28 12:00:00"
 title: XDAG Project Briefing
+image: "/assets/images/posts/rocks-db-1.jpg"
 ---
 
 ## XDAG Project Briefing

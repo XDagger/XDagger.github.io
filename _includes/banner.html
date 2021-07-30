@@ -1,29 +1,38 @@
-<section id="intro">
-    <div class="intro-container">
-        <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators"></ol>
-            <div class="carousel-inner" role="listbox"> 
-                {% for slide in site.translations[site.lang].home.slides %}
-                {% assign slide_d = site.data.banner[forloop.index0] %}
-                <div class="carousel-item {% if forloop.index == 1 %} active{% endif %}" style="background-image: url({{ slide_d.img | prepend: site.baseurl_root }});">
-                    <div class="carousel-container">
-                        <div class="carousel-content">
-                            <h2>{{ slide.title | newline_to_br }}</h2>
-                            <p>{{ slide.content | newline_to_br }}</p>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
+<div class="hero_area">
+    <div class="hero_bg_box">
+        <img src="{{site.url}}/assets/images/banner.jpg" alt="">
+    </div>
+    <header class="header_section">
+        {% include nav.html %}
+    </header>
+
+    <div>
+        <div class="topText">
+            <div class="topTitle">
+                <h1>
+                    XDAG: A DAG-based cryptocurrency
+                </h1>
             </div>
-            <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon ion-ios-arrow-back" aria-hidden="true"></span>
-                <span class="sr-only">{% t global.previous %}</span>
-            </a>
-            <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon ion-ios-arrow-forward" aria-hidden="true"></span>
-                <span class="sr-only">{% t global.next %}</span>
-            </a>
+            <span>XDAG is a novel application of Directed Acyclic Graph (DAG) technology that solves the issues currently facing blockchain technology.</span>
+            <div>
+                <a href="https://github.com/XDagger" target="_blank"><button class="bannerBtn2">source <i class="fa fa-angle-double-right"></i></button></a>
+                <a href="https://bitcointalk.org/index.php?topic=2552368.0" target="_blank"><button class="bannerBtn">BitcoinTalk</button></a>
+            </div>
 
         </div>
+        <a-scene fog="type: linear; color: #A00;"  vr-mode-ui="false" embedded  loading-screen="dotsColor: white; backgroundColor: black">
+            <a-assets>
+                <img id="earth" src="{{site.url}}/assets/images/earth.png">
+            </a-assets>
+            <a-entity>
+
+                <a-sphere position="0 2 -5" src="#earth"  rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 30000;easing:linear" radius="2.5" opacity="0.96"  ></a-sphere>
+            </a-entity>
+            <a-entity
+                    position="0 1.6 0"
+                    camera look-controls="magicWindowTrackingEnabled: false; touchEnabled: false; mouseEnabled: false">
+            </a-entity>
+        </a-scene>
+        <div id="particles-js"></div>
     </div>
-</section>
+</div>

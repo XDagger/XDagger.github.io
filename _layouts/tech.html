@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head.html %}
+</head>
+
+<body class="sub_page">
+{% include tophead.html %}
+
+
+<section class="news_section layout_padding">
+    <div class="s-shape1 "></div>
+    <div class="s-shape2"></div>
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                technology
+            </h2>
+        </div>
+        <div class="row tech">
+            {% assign postsByYear = site.pages | sort:"date"| reverse %}
+            {% for d in postsByYear%}
+                {% if d.url contains 'techArticles' %}
+                <div class="col-12 col-lg-6">
+                    <div class="box">
+                        <div class="img-box">
+                            {% if d.image%}
+                            <img src="{{d.image}}" alt="">
+                            {% else %}
+                            <img src="{{site.url}}/assets/images/posts/LOGO-01-2.png" alt="">
+                            {% endif%}
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                {{ d.title}}
+                            </h5>
+                            <div class="news_info">
+                                <h6 class="news_date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> {{ d.date}}
+                                </h6>
+                            </div>
+                            <a href="{{ d.url}}">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+
+{% include footer.html %}
+<script src="{{site.url}}/assets/js/news.js"></script>
+</body>
+
+</html>

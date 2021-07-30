@@ -1,2 +1,0 @@
-All the pools featured here donate a percentage of block rewards to the community fund.  
-The complete list of community approved pools can be found on our [wiki](https://github.com/XDagger/xdag/wiki/White-List).

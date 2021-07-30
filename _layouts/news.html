@@ -1,70 +1,88 @@
-{% include head.html %}
-    <link href="{{ '/assets/css/news.css' | absolute_url }}" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% include head.html %}
 </head>
 
-<body>
-{% include header.html %}
-<main id="main">
-    <section id="news">
-        <div class="container">
-            <div class="section-header wow fadeInUp">
-                <h3>{{ page.title }}</h3>
-                <p>{{ page.description }}</p>
-            </div>
-            <div class="row">
-                <ul class="news">
+<body class="sub_page">
+{% include tophead.html %}
 
-                {% for post in paginator.posts  %}
-                    {% unless post.draft %}
-                    <li>
-                        <div class="lft post-content">
-                            <div class="tit"> <a href="{{ post.url | absolute_url }}">{{ post.title }}</a><i class="ion-ios-arrow-down js-toggle-content"></i></div>
-                            <div class="cont all">{{ post.content }}</div>
-                            <div class="cont h60 top">{{ post.summary | default: post.excerpt | strip_html }}</div>
-                        </div>
-                        <div class="rht">
-                            <i class="ion-ios-arrow-down js-toggle-content"></i>
-                            <div class="month"><span>{{post.date | date: "%m"}}</span>-<span>{{post.date | date: "%d"}}</span></div>
-                            <div class="year">{{post.date | date: "%Y"}}</div>
-                        </div>
-                    </li>
-                    {% endunless %}
-                {% endfor %}
-                </ul>
-                {% if paginator.total_pages > 1 %}
-                <div class="pagination">
-                    {% if paginator.previous_page %}
-                    <a href="{{ paginator.previous_page_path | absolute_url }}" class="prev">Previous</a>
-                    {% else %}
-                    <span>Previous</span>
-                    {% endif %}
-                    
-                    <div class="page-numbers">
-                        {% for page in (1..paginator.total_pages) %}
-                        {% if page == paginator.page %}
-                        <em>{{ page }}</em>
-                        {% elsif page == 1 %}
-                        <a href="{{ '/blog/index.html' | absolute_url }}">{{ page }}</a>
-                        {% else %}
-                        <a href="{{ site.paginate_path | absolute_url | replace: ':num', page }}">{{ page }}</a>
-                        {% endif %}
-                        {% endfor %}
-                    </div>
 
-                    {% if paginator.next_page %}
-                    <a href="{{ paginator.next_page_path | absolute_url }}">Next</a>
-                    {% else %}
-                    <span>Next</span>
-                    {% endif %}
-
-                </div>
-                {% endif %}
-            </div>
+<section class="news_section layout_padding">
+    <div class="s-shape1 "></div>
+    <div class="s-shape2"></div>
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Latest news
+            </h2>
         </div>
-    </section>
-</main>
+        <div class="row newTop">
+
+            {% for post in paginator.posts  %}
+            <div class="col-md-6 col-lg-4 mx-auto newsCont">
+                <div class="box">
+                    <div class="img-box">
+
+                        {% if post.image%}
+                        <img src="{{post.image}}" alt="">
+                        {% else %}
+                        <img src="{{site.url}}/assets/images/posts/LOGO-01-2.png" alt="">
+                        {% endif%}
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            {{ post.title }}
+                        </h5>
+                        <p>
+                            {{ post.content | strip_html}}
+                        </p>
+                        <div class="news_info">
+                            <h6 class="news_date">
+                                <i class="fa fa-calendar" aria-hidden="true"></i> {{post.date | date:"%Y-%m-%d "}}
+                            </h6>
+                        </div>
+                        <a href="{{ post.url}}">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | absolute_url }}" class="prev">Previous</a>
+            {% else %}
+            <span>Previous</span>
+            {% endif %}
+
+            <div class="page-numbers">
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <em>{{ page }}</em>
+                {% elsif page == 1 %}
+                <a href="{{ '/news' | absolute_url }}">{{ page }}</a>
+                {% else %}
+                <a href="{{ site.paginate_path | absolute_url | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | absolute_url }}">Next</a>
+            {% else %}
+            <span>Next</span>
+            {% endif %}
+
+        </div>
+        {% endif %}
+    </div>
+</section>
 {% include footer.html %}
-<script src="{{ '/assets/js/news.js' | absolute_url }}"></script>
-<script src="{{ '/assets/lib/lazysizes/lazysizes.min.js' | absolute_url }}"></script>
+<script src="{{site.url}}/assets/js/news.js"></script>
 </body>
+
 </html>

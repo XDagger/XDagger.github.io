@@ -1,2 +1,0 @@
-Toutes les pools présentées ici reverse un pourcentage de leur récompense a notre fond de dévelopement.  
-La liste complete de toutes les pools approuvée peut etre trouvée sur notre [wiki](https://github.com/XDagger/xdag/wiki/White-List).

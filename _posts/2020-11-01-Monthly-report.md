@@ -2,6 +2,7 @@
 layout: post
 title: XDAG Monthly Report
 date: "2020-11-01 08:00:00"
+image: "/assets/images/posts/photo_2020-10-30_07-20-42.jpg"
 ---
 
 

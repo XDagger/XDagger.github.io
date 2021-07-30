@@ -1,48 +1,48 @@
 {% assign progress_index = 5 %} {% assign show_first_index = 5 %}
+<section class="contact_section ">
+    <div>
+        <div class="row">
+            <section id="roadmap" class="roadmap js-roadmap">
+                <header class=" roadmap__header">
+                    <h2>{{site.data.roadmap.roadmap}}</h2>
+                </header>
+                <nav class="roadmap__nav">
+                    <ol class="roadmap__nav-list js-roadmap-nav">
+                        {% for timeframe in site.data.roadmap.roadmap_content %}
+                        <li class="roadmap__nav-item  {% if forloop.index <= progress_index %} roadmap__nav-item--progress {% endif %} ">
+                            <div class="roadmap__vline"></div>
+                            <div class="roadmap__nav-link js-roadmap-link {% if forloop.index == show_first_index %}roadmap__nav-link--active{% endif %}">
+                                {{ timeframe.timeframe }}
+                            </div>
+                        </li>
+                        {% endfor %}
 
-<section id="roadmap" class="roadmap js-roadmap">
-  <header class="roadmap__header section-header">
-    <h3>{% t home.roadmap %}</h3>
-  </header>
-  <nav class="roadmap__nav">
-    <ol class="roadmap__nav-list js-roadmap-nav">
-      {% for timeframe in site.translations[site.lang].home.roadmap_content %}
-      <li
-        class="roadmap__nav-item {% if forloop.index <= progress_index %} roadmap__nav-item--progress {% endif %}"
-      >
-        <div class="roadmap__vline"></div>
-        <div
-          class="roadmap__nav-link js-roadmap-link {% if forloop.index == show_first_index %}roadmap__nav-link--active{% endif %}"
-        >
-          {{ timeframe.timeframe }}
+                    </ol>
+                </nav>
+                <ol class="roadmap__timeline js-roadmap-timeline owl-carousel wow fadeInUp" >
+
+                    {% for timeframe in site.data.roadmap.roadmap_content %}
+                    <li class="roadmap__timeframe js-roadmap-timeframe">
+                        {% for date in timeframe.dates %}
+                        <div class="roadmap__content">
+                            <h6 class="roadmap__date">{{ date.date }}</h6>
+                            <svg class="roadmap__swirly" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 100 100">
+                                <path d="M4,96C4,32.5,96,68.3,96,4"></path>
+                                <path d="M4,96C4,32.5,96,68.3,96,4"></path>
+                            </svg>
+                            <ul class="roadmap__events">
+
+                                {% for event in date.events %}
+                                <li class="roadmap__event">{{ event }}</li>
+                                {% endfor %}
+
+                            </ul>
+                        </div>
+                        {% endfor %}
+                    </li>
+                    {% endfor %}
+                </ol>
+            </section>
         </div>
-      </li>
-      {% endfor %}
-    </ol>
-  </nav>
-  <ol class="roadmap__timeline js-roadmap-timeline owl-carousel wow fadeInUp">
-    {% for timeframe in site.translations[site.lang].home.roadmap_content %}
-    <li class="roadmap__timeframe js-roadmap-timeframe">
-      {% for date in timeframe.dates %}
-      <div class="roadmap__content">
-        <h6 class="roadmap__date">{{ date.date }}</h6>
-        <svg
-          class="roadmap__swirly"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 100"
-        >
-          <path d="M4,96C4,32.5,96,68.3,96,4" />
-          <path d="M4,96C4,32.5,96,68.3,96,4" />
-        </svg>
-        <ul class="roadmap__events">
-          {% for event in date.events %}
-          <li class="roadmap__event">{{ event }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endfor %} {% endfor %}
-    </li>
-  </ol>
+    </div>
 </section>

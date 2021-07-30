@@ -2,6 +2,7 @@
 layout: post
 title: XDAG Rebranding result
 date: "2021-04-18 00:00:00"
+image: "/assets/images/posts/LOGO-01-2.png"
 ---
 
 Hello everyone

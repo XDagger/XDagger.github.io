@@ -19,7 +19,6 @@ function readWorkbook(workbook) {
     var csv = XLSX.utils.sheet_to_csv(worksheet);
     let arr = csv.split("\n")
     let brr = arr.slice(0,101)
-    console.log(brr)
     let htmltxt = [];
     brr.map((item,index)=> {
         if(index){
@@ -39,7 +38,7 @@ function readWorkbook(workbook) {
                             </div>
                             </td>
                             <td width="100%">${str[1]}</td>
-                        <td>${str[2]}</td>
+                        <td>${toThousands(str[2])}</td>
                 </tr>`
             )
         }
@@ -56,4 +55,14 @@ function loadRemoteFile(url) {
     readWorkbookFromRemoteFile(url, function(workbook) {
         readWorkbook(workbook);
     });
+}
+function toThousands(num) {
+    var result = [ ], counter = 0;
+    num = (num || 0).toString().split('');
+    for (var i = num.length - 1; i >= 0; i--) {
+        counter++;
+        result.unshift(num[i]);
+        if (!(counter % 3) && i != 0) { result.unshift(','); }
+    }
+    return result.join('');
 }
