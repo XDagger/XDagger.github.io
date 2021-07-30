@@ -35,8 +35,8 @@ jobs:
       - name: Install dependencies
         run: bundle install
 
-      - name: Run tests
-        run: bundle exec rake
+      - name: jekyll build
+        run: bundle exec jekyll build --drafts
 
       - name: Create GitHub deployment
         uses: peaceiris/actions-gh-pages@v3
