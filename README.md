@@ -6,9 +6,14 @@ The website of XDAG, built with [Jekyll](https://jekyllrb.com/docs/home/).
 ### Setup
 News posts are placed in `_posts/`. Articles of technology are place in `/technology/techArticles`(Articles of technology is sorted by name in reverse order )
 
-The filename must use the following format:
+The news filename must use the following format:
 ````
 YYYY-MM-DD-title.md
+````
+
+The technology filename must use the following format:
+````
+technology-num.md
 ````
 
 Where YYYY is the year (4 digits), MM the month (2 digits), DD the day (2 digits), and .md is the file extension representing the format used in the file. The following are examples of valid post filenames:
