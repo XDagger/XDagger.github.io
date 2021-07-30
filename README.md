@@ -4,7 +4,7 @@ The website of XDAG, built with [Jekyll](https://jekyllrb.com/docs/home/).
 ## News Posts guidelines
 
 ### Setup
-News posts are placed in `_posts/`.
+News posts are placed in `_posts/`. Articles of technology are place in `/technology/techArticles`(Articles of technology is sorted by name in reverse order )
 
 The filename must use the following format:
 ````
