@@ -201,7 +201,7 @@
   .service_section .box .detail-box p {
     min-height: auto!important;
   }
-  #qq .modal-content{
+  #qq .modal-content,#weibo .modal-content{
     margin: 0 !important;
   }
 }
