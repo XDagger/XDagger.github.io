@@ -872,10 +872,13 @@ a:focus {
   /*width: 40px;*/
   height: 40px;
   /*border: 1px solid #ffffff;*/
-  width: 25%;
+  width: 20%;
   color: #ffffff;
   font-size: 30px;
   margin-bottom: 20px;
+}
+.info_section .social_box a img{
+  width: 30px;
 }
 
 .info_section .social_box a:hover {
@@ -1811,7 +1814,7 @@ ul.community_wallets,.community_wallets li{
   margin-left: 10px;
   color: #17b978;
 }
-#qq .modal-content{
+#qq .modal-content,#weibo .modal-content{
   margin: 0 200px;
   background: transparent;
   border: 0;
@@ -1820,16 +1823,20 @@ ul.community_wallets,.community_wallets li{
   display: flex;
   justify-content: space-between;
 }
-#qq .qqBg dl{
+#weibo .qqBg{
+  display: flex;
+  justify-content: center;
+}
+#qq .qqBg dl,#weibo .qqBg dl{
   width: 46%;
   padding: 0 2%;
   text-align: center;
   color: #ffffff;
 }
-#qq .qqBg dl dd{
+#qq .qqBg dl dd,#weibo .qqBg dl dd{
   text-shadow:2px 2px 2px #000;
 }
-#qq .qqBg img{
+#qq .qqBg img,#weibo .qqBg img{
   width: 100%;
   padding-bottom: 10px;
 }
