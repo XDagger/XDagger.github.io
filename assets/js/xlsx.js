@@ -56,13 +56,34 @@ function loadRemoteFile(url) {
         readWorkbook(workbook);
     });
 }
-function toThousands(num) {
-    var result = [ ], counter = 0;
-    num = (num || 0).toString().split('');
-    for (var i = num.length - 1; i >= 0; i--) {
-        counter++;
-        result.unshift(num[i]);
-        if (!(counter % 3) && i != 0) { result.unshift(','); }
+function toThousands(str) {
+    var newStr = "";
+    var count = 0;
+    // 当数字是整数
+    if (str.indexOf(".") == -1) {
+        for (var i = str.length - 1; i >= 0; i--) {
+            if (count % 3 == 0 && count != 0) {
+                newStr = str.charAt(i) + "," + newStr;
+            } else {
+                newStr = str.charAt(i) + newStr;
+            }
+            count++;
+        }
+        str = newStr ; //自动补小数点后两位
+        return str;
     }
-    return result.join('');
+    // 当数字带有小数
+    else {
+        for (var i = str.indexOf(".") - 1; i >= 0; i--) {
+            if (count % 3 == 0 && count != 0) {
+                newStr = str.charAt(i) + "," + newStr;
+            } else {
+                newStr = str.charAt(i) + newStr; //逐个字符相接起来
+            }
+            count++;
+        }
+        str = newStr + (str + "00").substr((str + "00").indexOf("."), 3);
+        return str;
+    }
+    // return result.join('');
 }
