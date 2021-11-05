@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <link href="/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" hreflang="en" />
-  <updated>2021-11-05T14:00:28+00:00</updated>
+  <updated>2021-11-05T14:11:52+00:00</updated>
   <id>/</id>
   <title type="html">XDAG | A new DAG-based cryptocurrency</title>
   <subtitle>A new DAG-based cryptocurrency</subtitle>
@@ -10,6 +10,29 @@
       <name></name>
       <email></email>
   </author><entry xml:lang="en">
+      <title type="html">XDAG 0.4.0 Go Wallet released</title>
+      <link href="/2021/11/05/XDAG-Go-Wallet-0.4.0-officially-released.html" rel="alternate" type="text/html" title="XDAG 0.4.0 Go Wallet released" />
+      <published>2021-11-05T00:00:00+00:00</published>
+      <updated>2021-11-05T00:00:00+00:00</updated>
+      <id>/2021/11/05/XDAG%20Go%20Wallet%200.4.0%20officially%20released</id>
+      <content type="html" xml:base="/2021/11/05/XDAG-Go-Wallet-0.4.0-officially-released.html">The new version of XDAG wallet (0.4.0) has been officially released.
+
+
+
+XDAG’s community members can try to download 0.4.0 wallet with this link : https://github.com/XDagger/goXdagWallet/releases
+0.4.0 the wallet has been adjusted in terms of design style, adding functions such as QR code, transfer address record,
+conditional searching transfer details, improving compatibility and user experience.
+
+This wallet have been developed by one of our long time supporter and developers Swordlet.
+Community rewarded him 150000 XDAG for this good work, feel free to tip him on his adress to encourage him : 2muaPxu3kgDQX0MFzQEul3/7VLdnFay8
+
+7. Bug bounty
+
+If you find a bug, please visit[https://github.com/XDagger/goXdagWallet/issues/new/choose]
+Submit a bug and leave your XDAG address. After we review, we will reward 1000XDAG to this address if a bug is found.
+
+#####-By XDAG Community</content><author>
+          <name></name></author><summary type="html">The new version of XDAG wallet (0.4.0) has been officially released. XDAG’s community members can try to download 0.4.0 wallet with this link : https://github.com/XDagger/goXdagWallet/releases 0.4.0 the wallet has been adjusted in terms of design style, adding functions such as QR code, transfer address record, conditional searching transfer details, improving compatibility and user experience. This wallet have been developed by one of our long time supporter and developers Swordlet. Community rewarded him 150000 XDAG for this good work, feel free to tip him on his adress to encourage him : 2muaPxu3kgDQX0MFzQEul3/7VLdnFay8 7. Bug bounty If you find a bug, please visit[https://github.com/XDagger/goXdagWallet/issues/new/choose] Submit a bug and leave your XDAG address. After we review, we will reward 1000XDAG to this address if a bug is found. #####-By XDAG Community</summary></entry><entry xml:lang="en">
       <title type="html">XDAG Mars Project</title>
       <link href="/2021/05/09/XDAG-Mars-plan.html" rel="alternate" type="text/html" title="XDAG Mars Project" />
       <published>2021-05-09T00:00:00+00:00</published>
@@ -440,41 +463,4 @@ Also the community just made a list of XDAG Wallet Rank of TOP100, you can check
 https://xdag.io/rank#community
 
 As you all know we offer a bleeding edge technology solution, let keep supporting xdag and we assure you that we will make you proud as the engine of cryptocurrency mass adoption is creating a big wave.</content><author>
-          <name></name></author><summary type="html">XDAG Monthly Report At XDAG Community support makes XDAG grow stronger which we always acknowledge. We just want to assure you that we have a lot of update that will be coming as we’re cooking up great things for the project. We are not here in the space for the hype but to give solution to the existing problem in the space and which we have not deviate from. We keep our focus on and surely we make the best. In the past week the development ofXDAG had been progressive the developer are working on the product and how to make it a great success. Twitter community contests XDAG community launchs twitter daily check in activity, community members who successfully finish the activity will get 10000 XDAG each person (total 1 million XDAG, send by time sequence). Detailed rules: Send tweet daily, contents: #XDAG# day x. (x from 1 to 100) Tweets send 100 days fully. Community members who meet the requirements, share your last tweet link and XDAG wallet address to @XDAG_Community, the rewards will be sent after confirmation. JAVA IMPLEMENTATION We just recently implement XDAGJ. XDAGJ is a Java implementation of XDAG. It is rebuilt on the basis of C Version XDAG. Kindly read full details on this link: https://github.com/XDagger/xdagj EXPLORER Xdag explorer has just been updated you can view through this link: https://github.com/XDagger/explorer Also the community just made a list of XDAG Wallet Rank of TOP100, you can check them out here: https://xdag.io/rank#community As you all know we offer a bleeding edge technology solution, let keep supporting xdag and we assure you that we will make you proud as the engine of cryptocurrency mass adoption is creating a big wave.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/posts/xdagprogressreport.jpg" /></entry><entry xml:lang="en">
-      <title type="html">Java Version</title>
-      <link href="/2020/07/23/Java.html" rel="alternate" type="text/html" title="Java Version" />
-      <published>2020-07-23T00:00:00+00:00</published>
-      <updated>2020-07-23T00:00:00+00:00</updated>
-      <id>/2020/07/23/Java</id>
-      <content type="html" xml:base="/2020/07/23/Java.html">We’re pleased to officially announce that XDAG has now been implemented in Java, which indeed is a great call for the community, more developer are needed to support this great cause in other to help simplify the difficulty of technology advancement.
-
-Why XDAG choose Java:
-
-We want our community to experience something more different than C, we understand the power behind huge community support and we’re committed to make bigger implementation.
-
-Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
-
-
-  
-    It is one of the most popular programming language in the world
-  
-  
-    It is easy to learn and simple to use
-  
-  
-    It also an open-source and its free
-  
-  
-    It is secure, fast and powerful
-  
-  
-    Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs.
-  
-
-
-The above are the reason why  we took advantage of the java version so our community can benefit.
-
-Lastly with the new implementation of XDAG in Java will call out for more developer to join our community. Together we can achieve a lot as a community project.
-
-Link of the repositories : https://github.com/XDagger/xdagj</content><author>
-          <name></name></author><summary type="html">We’re pleased to officially announce that XDAG has now been implemented in Java, which indeed is a great call for the community, more developer are needed to support this great cause in other to help simplify the difficulty of technology advancement. Why XDAG choose Java: We want our community to experience something more different than C, we understand the power behind huge community support and we’re committed to make bigger implementation. Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.) It is one of the most popular programming language in the world It is easy to learn and simple to use It also an open-source and its free It is secure, fast and powerful Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs. The above are the reason why we took advantage of the java version so our community can benefit. Lastly with the new implementation of XDAG in Java will call out for more developer to join our community. Together we can achieve a lot as a community project. Link of the repositories : https://github.com/XDagger/xdagj</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/photo_2020-07-22_20-48-19.jpg" /></entry></feed>
+          <name></name></author><summary type="html">XDAG Monthly Report At XDAG Community support makes XDAG grow stronger which we always acknowledge. We just want to assure you that we have a lot of update that will be coming as we’re cooking up great things for the project. We are not here in the space for the hype but to give solution to the existing problem in the space and which we have not deviate from. We keep our focus on and surely we make the best. In the past week the development ofXDAG had been progressive the developer are working on the product and how to make it a great success. Twitter community contests XDAG community launchs twitter daily check in activity, community members who successfully finish the activity will get 10000 XDAG each person (total 1 million XDAG, send by time sequence). Detailed rules: Send tweet daily, contents: #XDAG# day x. (x from 1 to 100) Tweets send 100 days fully. Community members who meet the requirements, share your last tweet link and XDAG wallet address to @XDAG_Community, the rewards will be sent after confirmation. JAVA IMPLEMENTATION We just recently implement XDAGJ. XDAGJ is a Java implementation of XDAG. It is rebuilt on the basis of C Version XDAG. Kindly read full details on this link: https://github.com/XDagger/xdagj EXPLORER Xdag explorer has just been updated you can view through this link: https://github.com/XDagger/explorer Also the community just made a list of XDAG Wallet Rank of TOP100, you can check them out here: https://xdag.io/rank#community As you all know we offer a bleeding edge technology solution, let keep supporting xdag and we assure you that we will make you proud as the engine of cryptocurrency mass adoption is creating a big wave.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/images/posts/xdagprogressreport.jpg" /></entry></feed>
