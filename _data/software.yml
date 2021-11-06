@@ -3,7 +3,7 @@ windows32: https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWal
 
 android: https://github.com/XDagger/android-wallet/releases/download/release_0.2.7/android_wallet_release_v0.2.7.apk
 
-mac: https://github.com/XDagger/xdag/files/2586967/xdag.0.3.0.zip
+mac: https://github.com/XDagger/goXdagWallet/releases/download/0.4.0/wallet_mac.zip
 ios: https://github.com/XDagger/xdag-ios/releases
 
 linux: https://github.com/XDagger/goXdagWallet/releases/download/0.4.0/wallet_linux_x64.zip
