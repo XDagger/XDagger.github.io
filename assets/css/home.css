@@ -717,3 +717,20 @@
 .roadmap__swirly path:nth-of-type(2) {
     stroke: #17b978!important
 }
+
+
+.bgTop {
+    position: relative;
+}
+
+.SubmitTitle{
+    right: 0;
+    top: 48%;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #000;
+}
