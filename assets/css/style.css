@@ -989,10 +989,15 @@ a-scene {
 }
 .topTitle .introMid a{
   display: inline-block;
-  width: 100px;
+  width: 90px;
   height: 40px;
   color: #ffffff;
     opacity: 0.6;
+  text-decoration: underline;
+  /*border: 1px solid #fff;*/
+  /*text-align: center;*/
+  /*line-height: 40px;*/
+  /*border-radius: 6px;*/
 }
 .bannerBtn,.bannerBtn2{
   display: inline-block;
