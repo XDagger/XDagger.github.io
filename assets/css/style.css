@@ -982,6 +982,18 @@ a-scene {
   /*color:#fff;*/
   text-shadow: 1px 4px 6px #000, 0 0 0 #66303a, 1px 4px 6px #000!important;
 }
+.topTitle .introMid{
+  display: block;
+  text-align: center;
+
+}
+.topTitle .introMid a{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  color: #ffffff;
+    opacity: 0.6;
+}
 .bannerBtn,.bannerBtn2{
   display: inline-block;
   margin:auto 10px;
