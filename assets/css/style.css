@@ -1838,7 +1838,7 @@ ul.community_wallets,.community_wallets li{
 }
 #qq .qqBg{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 #weibo .qqBg{
   display: flex;
