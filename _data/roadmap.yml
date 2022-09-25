@@ -82,3 +82,9 @@ roadmap_content:
           - Explore the possibility of using neo4j as storage layer.
           - Explore the implementation of smart contracts in XDAG.
           - Use Flutter or React Native to implement XDAG wallet.
+  - timeframe: 2022
+     dates:
+       -date: Q3 2022
+       events: 
+          - Improve the address block structure and increase the handling fee
+          - Lower the threshold of mining pool users and gradually open the whitelist to achieve complete decentralization
