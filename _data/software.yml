@@ -1,7 +1,7 @@
-windows64: https://github.com/XDagger/goXdagWallet/releases/download/0.5.1/wallet_xdagj_win64_0.5.1.zip
+windows64: https://github.com/XDagger/goXdagWallet/releases/tag/0.5.2
 windows32: https://github.com/XDagger/win-wallet/releases/download/0.3.1/XDagWalletWin_v0.3.1_x86.zip
 
-android: https://github.com/XDagger/android-wallet/releases
+android: https://github.com/XDagger/android-wallet/releases/tag/release_0.2.8
 
 mac: https://github.com/XDagger/goXdagWallet/releases/download/0.4.1/wallet_mac_0.4.1.zip
 ios: 

@@ -77,14 +77,40 @@ roadmap_content:
         events:
           - Open api interface and provide black box testing.
           - Optimize address data structure, add block fee.
-      - date: ETA phase3 2021
+      - date: phase3 2021
         events:
           - Explore the possibility of using neo4j as storage layer.
           - Explore the implementation of smart contracts in XDAG.
           - Use Flutter or React Native to implement XDAG wallet.
   - timeframe: 2022
-     dates:
-       -date: Q3 2022
-       events: 
+    dates:
+      - date: phase1 2022
+        events:
+          - Deploy XDAGJ test network environment, open beta
+          - Implement the RandomX algorithm.
+          - Implement the libp2p network protocol.
+          - Testnet blockchain browser.
+          - Test coin acquisition.
+
+      - date:  phase2 2022
+        events:
+          - Add test cases,write test cases for existing functions.
+          - Add log functions, provide a relatively complete log service to facilitate trouble shooting.
+          - Optimize synchronization protocol,ameliorate the existing synchronization protocol and improve synchronization efficiency.
+          - Implement the snapshot function, reduce the cost of runing a mining pool and boost the loading process.
+          - Implement the RPC function, access to Web3j, realize the standardization of the interface.
+          - Introduce the Stratum protocol for miners.
+          - Lightweight wallet application,connect to MateMask, join the browser wallet.
+          - Standardize the format of public and private keys, follow the BIPXX specification, and add mnemonic words to generate public and private key pairs.
+      - date: phase3 2022
+        events:
           - Improve the address block structure and increase the handling fee
-          - Lower the threshold of mining pool users and gradually open the whitelist to achieve complete decentralization
+          - Optimize and improve mobile wallets to improve user experience.
+          - Support smart contracts, implement EVM that supports Solidity, and be compatible with Ethereum smart contracts.
+          - Lower the threshold of mining pool users and gradually open the whitelist to achieve complete decentralization.
+          -
+      - date: phase4 2022
+        events:
+          - Implement cross-chain protocols, compatible with access to multiple blockchain systems, to achieve intercommunication between XDAG and other chain worlds
+          - Implement the oracle function.
+          - Join a distributed exchange.
