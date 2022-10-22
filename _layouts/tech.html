@@ -19,6 +19,40 @@
             </h2>
         </div>
         <div class="row tech">
+
+
+
+            {% for d in site.data.news %}
+            <div class="col-12 col-lg-6">
+                <div class="box">
+                    <div class="img-box">
+                        {% if d.image%}
+                        <img src="{{d.image}}" alt="">
+                        {% endif%}
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            {{ d.title}}
+                        </h5>
+                        <div class="news_info">
+                            <h6 class="news_date">
+<!--                                <i class="fa fa-calendar" aria-hidden="true"></i> {{ d.date}}-->
+                            </h6>
+                        </div>
+                        <a href="{{ d.link}}" target="_blank">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+
+
+
+
+
+
             {% assign postsByYear = site.pages | sort:"date"| reverse %}
             {% for d in postsByYear%}
                 {% if d.url contains 'techArticles' %}
@@ -48,6 +82,8 @@
                 </div>
                 {% endif %}
             {% endfor %}
+
+
         </div>
 
     </div>
