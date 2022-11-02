@@ -1,11 +1,19 @@
+- title: XDAGJ part 1 : Install Ubuntu Server
+  link: https://medium.com/@fsol/xdagj-part-1-install-ubuntu-server-f1c9e6f328c2
+  image: https://miro.medium.com/max/720/1*NWv18ny8LUHVP-z09wUYmw.png
+
+- title: How to compile XDAG miner for Windows
+  link: https://medium.com/@fsol/compile-xmrig-miner-for-windows-4ae98b456df
+  image: https://miro.medium.com/max/720/1*e1ZMGYMph7aNc8cnyNbFbA.png
+
 - title: How to compile XDAG wallet for Windows
-  link: https://medium.com/@benzibulle/compile-xdag-wallet-for-windows-8ea4fbfd3ac9
+  link: https://medium.com/@fsol/compile-xdag-wallet-for-windows-8ea4fbfd3ac9
   image: https://miro.medium.com/max/820/1*2QhmZFfaAvlOyxf8NuwPUg.png
 
-- title: How to compile miner for Mac intel
-  link: https://medium.com/@benzibulle/compile-xdag-miner-for-mac-intel-78571a447fa6
+- title: How to compile XDAG miner for Mac intel
+  link: https://medium.com/@fsol/compile-xdag-miner-for-mac-intel-78571a447fa6
   image: https://miro.medium.com/max/1400/1*ygEkoZXCqas4lYlBuJETaA.png
 
-- title: How to compile xdag proxy for Mac intel
-  link: https://medium.com/@benzibulle/compile-xdag-proxy-for-mac-intel-8e010b862462
+- title: How to compile XDAG proxy for Mac intel
+  link: https://medium.com/@fsol/compile-xdag-proxy-for-mac-intel-8e010b862462
   image: https://miro.medium.com/max/720/1*lkK7yfbWOpYerkbl5tny9Q.png
