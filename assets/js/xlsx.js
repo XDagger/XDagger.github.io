@@ -18,7 +18,7 @@ function readWorkbook(workbook) {
     var worksheet = workbook.Sheets[sheetNames[0]];
     var csv = XLSX.utils.sheet_to_csv(worksheet);
     let arr = csv.split("\n")
-    let brr = arr.slice(0,101)
+    let brr = arr.slice(0,201)
     let htmltxt = [];
     brr.map((item,index)=> {
         if(index){
