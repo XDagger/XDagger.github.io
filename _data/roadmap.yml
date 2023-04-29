@@ -108,9 +108,28 @@ roadmap_content:
           - Optimize and improve mobile wallets to improve user experience.
           - Support smart contracts, implement EVM that supports Solidity, and be compatible with Ethereum smart contracts.
           - Lower the threshold of mining pool users and gradually open the whitelist to achieve complete decentralization.
-          -
+
       - date: phase4 2022
         events:
           - Implement cross-chain protocols, compatible with access to multiple blockchain systems, to achieve intercommunication between XDAG and other chain worlds
           - Implement the oracle function.
           - Join a distributed exchange.
+  - timeframe: 2023
+    dates:
+      - date: phase1 2023
+        events:
+          - Improve address block structure
+          - Release XDAG New Generation Wallet
+
+      - date: phase2 2023
+        events:
+          - Separate mining pools from XDAG node
+          - Add txfer fee and main block donate rate to increase miners' reward and build community
+
+      - date: phase3 2023
+        events:
+          - Support Smart feature
+
+      - date: phase4 2023
+        events:
+          - Optimize network performance and Open whitelist
