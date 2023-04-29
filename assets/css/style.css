@@ -1076,7 +1076,7 @@ a-scene {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .miners li:first-child{
   /*border-bottom: 1px solid #aaa;*/
