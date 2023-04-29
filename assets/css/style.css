@@ -445,8 +445,9 @@ a:focus {
 }
 .service_section .box .detail-box p {
   display: inline-block;
-  text-transform: uppercase;
-  min-height: 72px;
+  /*text-transform: uppercase;*/
+  /*min-height: 72px;*/
+  width: 80%;
 }
 
 .service_section .box .detail-box a {
@@ -1065,6 +1066,7 @@ a-scene {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .miners ul,.miners li{
   padding: 0;
@@ -1080,7 +1082,7 @@ a-scene {
 }
 .miners li:first-child{
   /*border-bottom: 1px solid #aaa;*/
-  padding-bottom: 20px;
+  padding-bottom:10px;
   margin-top: 30px;
 }
 .miners .iconBrdr{
