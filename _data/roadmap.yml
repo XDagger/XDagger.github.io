@@ -133,3 +133,19 @@ roadmap_content:
       - date: phase4 2023
         events:
           - Optimize network performance and Open whitelist
+
+  - timeframe: 2024
+    dates:
+      - date: phase1 2024
+        events:
+          - Introduce a fixed fee per transaction
+          - Separate the mining pools from nodes
+
+      - date: phase2 2024
+        events:
+          - Upgrade fixed fee to be variable
+          - Transactions sorted by variable fee
+
+      - date: phase3 2024
+        events:
+          - Introduce the XRC-20 protocol
