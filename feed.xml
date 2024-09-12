@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <link href="/feed.xml" rel="self" type="application/atom+xml" />
   <link href="/blog/" rel="alternate" type="text/html" hreflang="en" />
-  <updated>2024-09-12T14:43:15+00:00</updated>
+  <updated>2024-09-12T14:47:37+00:00</updated>
   <id>/</id>
   <title type="html">XDAG | A new DAG-based cryptocurrency</title>
   <subtitle>A new DAG-based cryptocurrency</subtitle>
