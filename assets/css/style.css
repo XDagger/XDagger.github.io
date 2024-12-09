@@ -956,7 +956,7 @@ a-scene {
 }
 .topText span{
   display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   height: 20vh;
   width: 550px;
   max-width: 80%;
