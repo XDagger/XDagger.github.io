@@ -1134,7 +1134,7 @@ ul.community_wallets,.community_wallets li{
   max-width: 85vw;
 }
 .community_wallets__currency{
-  width: 70px;
+  width: auto;
   display: inline-block;
   padding-left: 10px;
 
