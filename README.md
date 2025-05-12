@@ -42,4 +42,4 @@ Markdown is used for rich text formatting, you can find examples [here](https://
 
 ### Build
 Run command `bundle install` to install all dependency.
-Run command `bundle exec jekyll serve` you will see the website at http://127.0.0.1:4000/
+Run command `bundle exec jekyll serve --host=localhost` you will see the website at http://localhost:4000/
