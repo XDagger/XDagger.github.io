@@ -149,3 +149,15 @@ roadmap_content:
       - date: phase3 2024
         events:
           - Introduce the XRC-20 protocol
+
+  - timeframe: 2025
+    dates:
+      - date: phase1 2025
+        events:
+          - Add transaction nonce to transaction blocks
+          - Adapt to the original Xmrig mining software
+          - Upgraded RandomX algorithm version to 0.2.4
+          - Refactor node rpc module
+          - Fixed the issue where the mining pool could not connect to the node.
+          - Fixed the issue that when a new node joins the network, only one node can provide it with data blocks to complete synchronization. Now multiple nodes can provide it with data blocks.
+          - Fixed a bug in the node when using the new version of the RandomX algorithm.
