@@ -149,3 +149,19 @@ roadmap_content:
       - date: phase3 2024
         events:
           - Introduce the XRC-20 protocol
+
+  - timeframe: 2025
+    dates:
+      - date: phase1 2025
+        events:
+          - Add a nonce to each transaction for users
+          - Use standard Xmrig mining software
+
+      - date: phase2 2025
+        events:
+          - Upgrade fixed fee to be variable
+          - Transactions sorted by variable fee
+
+      - date: phase3 2025
+        events:
+          - Introduce the XRC-20 protocol
