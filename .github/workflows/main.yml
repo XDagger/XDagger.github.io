@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        ruby: [3.1.0]
+        ruby: [3.2.2]
     steps:
       - name: Check out develop
         uses: actions/checkout@v2
