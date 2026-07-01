@@ -165,3 +165,19 @@ roadmap_content:
       - date: phase3 2025
         events:
           - Introduce the XRC-20 protocol
+
+  - timeframe: 2026
+    dates:
+      - date: phase1 2026
+        events:
+          - Complete the upgrade from fixed fees to variable fees
+          - Sort and package transactions by variable fees
+
+      - date: phase2 2026
+        events:
+          - Added function to re-execute old chain transactions after blockchain rollback
+          - Add execution status to the transaction block for easy verification during synchronization between nodes
+
+      - date: phase3 2026
+        events:
+          - Explore opening node whitelist
